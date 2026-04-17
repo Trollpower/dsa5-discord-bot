@@ -17,16 +17,17 @@ Ein Discord-Bot für **Das Schwarze Auge 5. Edition (DSA5)** Rollenspielsitzunge
     - [5. Bot starten](#5-bot-starten)
     - [6. Docker: Image bauen und Container starten](#6-docker-image-bauen-und-container-starten)
     - [7. Docker Compose (optional)](#7-docker-compose-optional)
+      - [Slash-Commands via Docker Compose deployen](#slash-commands-via-docker-compose-deployen)
   - [🎯 Verfügbare Commands](#-verfügbare-commands)
     - [**Grundlegende Commands**](#grundlegende-commands)
       - [`/help`](#help)
       - [`/ping`](#ping)
       - [`/roll`](#roll)
       - [`/show`](#show)
-    - [**Schnellzugriff**](#schnellzugriff)
-      - [`/quick`](#quick)
     - [**GM-Befehl (nur Meister)**](#gm-befehl-nur-meister)
       - [`/gm`](#gm)
+    - [**Schnellzugriff**](#schnellzugriff)
+      - [`/quick`](#quick)
     - [**Charakter-Management**](#charakter-management)
       - [`/char`](#char)
     - [**Eigenschaften \& Fertigkeiten**](#eigenschaften--fertigkeiten)
@@ -56,6 +57,7 @@ Ein Discord-Bot für **Das Schwarze Auge 5. Edition (DSA5)** Rollenspielsitzunge
   - [📝 Changelog](#-changelog)
     - [v2.0.0](#v200)
     - [Aktueller Stand](#aktueller-stand)
+  - [Rechtlicher Hinweis zu DSA5](#rechtlicher-hinweis-zu-dsa5)
 
 ## ⚠️ Wichtiger Hinweis
 
@@ -490,6 +492,13 @@ Der `/schip`-Befehl nutzt ebenfalls das letzte passende Event des Charakters aus
 - `/help` zeigt `/gm`-Subcommands nur für Meister an; andere Benutzer sehen nur den Hinweis
 - Probe-Tracking über Event-History (`storage/event-history.ndjson`) und `quickProbeFavorites` integriert
 
----
 
-**Entwickelt für private DSA5-Spielrunden • Keine kommerzielle Nutzung • Kein Support garantiert**
+
+
+## Rechtlicher Hinweis zu DSA5
+
+Dieses Projekt verwendet Begriffe, Mechaniken und Inhalte aus dem Rollenspiel **Das Schwarze Auge 5. Edition (DSA5)**.
+
+**DSA5 ist ein eingetragenes Warenzeichen der Ulisses Medien & Spiel Distribution GmbH.**
+
+Alle Rechte an DSA5, den Regelwerken, Namen, Begriffen und Inhalten liegen bei Ulisses Spiele. Dieses Projekt steht in keiner Verbindung zu Ulisses Spiele und dient ausschließlich privaten, nicht-kommerziellen Zwecken.
