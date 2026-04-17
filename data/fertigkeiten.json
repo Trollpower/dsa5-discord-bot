@@ -1,0 +1,1148 @@
+[
+    {
+        "name": "Alchimie",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "FF"
+        ],
+        "anwendungsgebiet": "alchimistische Gifte, Elixiere, profane Alchimie",
+        "beh": "ja",
+        "werkzeuge": "alchimistisches Labor",
+        "qualitaet": "Der Trank weist eine bessere Qualität auf.",
+        "misslungeneProbe": "Das Elixier ist misslungen oder eine Analyse hat kein Ergebnis gebracht.",
+        "kritischerErfolg": "Der Held weiß exakt, welches Elixier er vor sich hat, welche Stufe es besitzt und wie lange haltbar es ist.",
+        "patzer": "Das Elixier sorgt für einen unangenehmen Nebeneffekt.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Alchimie"
+    },
+    {
+        "name": "Bekehren & Überzeugen",
+        "kategorie": "talente",
+        "art": "Gesellschaftstalente",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "CH"
+        ],
+        "anwendungsgebiet": "Diskussionsführung, Einzelgespräch, öffentliche Rede",
+        "beh": "nein",
+        "qualitaet": "Mehr Menschen lassen sich von dem Helden bekehren, oder der Bekehrte folgt seiner neuen Überzeugung länger.",
+        "misslungeneProbe": "Das Opfer glaubt dem Prediger nicht.",
+        "kritischerErfolg": "Das Opfer der Überzeugungsversuche ist vollends überzeugt.",
+        "patzer": "Das Opfer fühlt sich vom Prediger beleidigt oder für dumm verkauft.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 194 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Bekehren+%26+%C3%9Cberzeugen"
+    },
+    {
+        "name": "Betören",
+        "kategorie": "talente",
+        "art": "Gesellschaftstalente",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "CH"
+        ],
+        "anwendungsgebiet": "Anbändeln, Aufhübschen, Liebeskünste",
+        "beh": "nein, situationsabhängige Ausnahmen können vorkommen, z.B. Verführen in Gestechrüstung",
+        "qualitaet": "Der Bezirzte ist bereit, mehr für den Helden zu tun.",
+        "misslungeneProbe": "Dem Helden gelingt es vorerst nicht, Interesse beim Opfer zu wecken.",
+        "kritischerErfolg": "Das Verführungsopfer versucht, dem betörenden Helden alle Wünsche zu erfüllen.",
+        "patzer": "Der Held kassiert eine schallende Ohrfeige für seinen plumpen Anmachversuch.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 194 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Bet%C3%B6ren"
+    },
+    {
+        "name": "Boote & Schiffe",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "FF",
+            "GE",
+            "KK"
+        ],
+        "anwendungsgebiet": "Kampfmanöver, Langstrecke, Verfolgungsjagden, Wettfahren",
+        "beh": "ja",
+        "werkzeuge": "Schiff oder Boot",
+        "qualitaet": "Die Distanz bis zum Ziel kann schneller überwunden werden.",
+        "misslungeneProbe": "Der Held kommt mit dem Boot oder Schiff kaum voran.",
+        "kritischerErfolg": "Der Held nutzt günstige Strömungen und Winde, um doppelt so schnell voranzukommen wie üblich.",
+        "patzer": "Der Held fällt von Bord oder ein wichtiger Teil des Wasserfahrzeugs wurde beschädigt.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Boote+%26+Schiffe"
+    },
+    {
+        "name": "Brett- & Glücksspiel",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "Würfelspiele, Brettspiele, Kartenspiele, Wettspiele",
+        "beh": "nein",
+        "werkzeuge": "Spiel",
+        "qualitaet": "Der Held hat einen guten Spielzug gemacht.",
+        "misslungeneProbe": "Der Held verliert.",
+        "kritischerErfolg": "Der Held gewinnt auf spektakuläre Art und Weise. Wurde um Geld gespielt, verdoppelt sich sein Gewinn.",
+        "patzer": "Der Held wird fälschlicherweise des Falschspiels verdächtigt oder hat eine Pechsträhne. Wird um Geld gespielt, verliert er mindestens den kompletten Einsatz (oder mehr).",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Brett-+%26+Gl%C3%BCcksspiel"
+    },
+    {
+        "name": "Einschüchtern",
+        "kategorie": "talente",
+        "art": "Gesellschaftstalente",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "CH"
+        ],
+        "anwendungsgebiet": "Drohung, Folter, Provokation, Verhör",
+        "beh": "nein",
+        "qualitaet": "Das Opfer ist länger eingeschüchtert oder verrät dem Helden mehr als erwartet.",
+        "misslungeneProbe": "Das Gegenüber ignoriert alle Schmähungen und Einschüchterungsversuche des Helden.",
+        "kritischerErfolg": "Das Gegenüber des Helden ist vollkommen eingeschüchtert und wird in absehbarer Zeit nichts mehr gegen den Helden unternehmen.",
+        "patzer": "Anstatt eingeschüchtert oder beleidigt zu sein, geschieht das Gegenteil: Das Opfer ist wütend, völlig gelassen oder amüsiert. Oder der Held macht sich mit seinem Gehabe völlig zum Affen.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 194 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Einsch%C3%BCchtern"
+    },
+    {
+        "name": "Etikette",
+        "kategorie": "talente",
+        "art": "Gesellschaftstalente",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "CH"
+        ],
+        "anwendungsgebiet": "Benehmen, Klatsch & Tratsch, leichte Unterhaltung, Mode",
+        "beh": "nein",
+        "qualitaet": "Der Held hinterlässt einen guten Eindruck und bleibt positiv in Erinnerung.",
+        "misslungeneProbe": "Der Held kann sich nicht an alle wichtigen Benimmregeln erinnern und fällt unangenehm auf.",
+        "kritischerErfolg": "Auf der Feier ist der Held aufgrund seines Benehmens, Wortwitzes und Charmes der Mittelpunkt.",
+        "patzer": "Der Held beleidigt mit seinem Verhalten eine wichtige Persönlichkeit.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 194 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Etikette"
+    },
+    {
+        "name": "Fährtensuchen",
+        "kategorie": "talente",
+        "art": "Naturtalente",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "GE"
+        ],
+        "anwendungsgebiet": "Verwischen eigener Fährte, humanoide Spuren, tierische Spuren",
+        "beh": "ja",
+        "qualitaet": "Über die Qualitätsstufe kann der Held mehr Details in der Fährte erkennen.",
+        "misslungeneProbe": "Der Held findet keine Spur oder kann keine neuen Erkenntnisse gewinnen.",
+        "kritischerErfolg": "Sofern die Spur nicht komplett zerstört wurde, kann der Held ihr zielsicher bis zum Ende folgen. Er erhält mehr Informationen als üblich. Täuschungsmanöver wie das Verwischen der Spuren durchschaut er sofort.",
+        "patzer": "Der Held verwechselt die Spur und folgt einer falschen Fährte. So trifft er vielleicht auf eine gefährliche Kreatur oder jagt den falschen Leuten hinterher.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 198 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=F%C3%A4hrtensuchen"
+    },
+    {
+        "name": "Fahrzeuge",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "CH",
+            "FF",
+            "KO"
+        ],
+        "anwendungsgebiet": "Kampfmanöver, Langstrecke, Verfolgungsjagden, Wettrennen",
+        "beh": "ja",
+        "werkzeuge": "Fahrzeug",
+        "qualitaet": "Die Distanz bis zum Ziel kann schneller überwunden werden.",
+        "misslungeneProbe": "Das Fahrzeug bewegt sich schwerfällig oder dem Helden gelingt es nicht, es in Bewegung zu setzen.",
+        "kritischerErfolg": "Das Fahrzeug kommt gut voran und schafft die Strecke in Rekordzeit.",
+        "patzer": "Das Fahrzeug erleidet einen Achsenbruch oder fällt während der Fahrt mitsamt dem Fahrer um, und der Held erleidet Fallschaden.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Fahrzeuge"
+    },
+    {
+        "name": "Fesseln",
+        "kategorie": "talente",
+        "art": "Naturtalente",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "KK"
+        ],
+        "anwendungsgebiet": "Fesselungen, Knotenkunde, Netze knüpfen",
+        "beh": "nein, eventuell ja bei Helmen, Panzerhandschuhen, etc.",
+        "werkzeuge": "Fessel",
+        "qualitaet": "Die Fessel hält länger und kann gegebenenfalls schwerer geöffnet werden.",
+        "misslungeneProbe": "Dem Held gelingt nur ein Knoten von schlechter Qualität. Das Befreien daraus ist leichter als üblich.",
+        "kritischerErfolg": "Der Held hat einen stabilen Knoten gemacht. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Der Held hat einen Knoten gemacht, der sich in jeder Lage löst – oder der denkbar ungünstigsten.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 198 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Fesseln"
+    },
+    {
+        "name": "Fischen & Angeln",
+        "kategorie": "talente",
+        "art": "Naturtalente",
+        "eigenschaften": [
+            "FF",
+            "GE",
+            "KO"
+        ],
+        "anwendungsgebiet": "Salzwassertiere, Süßwassertiere, Wasserungeheuer",
+        "beh": "ja, (beim Speerfischen) oder nein (beim Reusenfang oder dem Fischen mit Netzen)",
+        "werkzeuge": "Angel mit Schnur, Netz oder Reuse, Speer",
+        "qualitaet": "Die Fische sind wohlschmeckender als bei einem durchschnittlichen Fang.",
+        "misslungeneProbe": "Kein Fisch beißt an oder geht ins Netz.",
+        "kritischerErfolg": "Die Zahl der Rationen ist sehr hoch. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Der Angler fällt ins Wasser und die Angel geht verloren.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 198 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Fischen+%26+Angeln"
+    },
+    {
+        "name": "Fliegen",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "GE"
+        ],
+        "anwendungsgebiet": "Kampfmanöver, Langstreckenflug, Verfolgungsjagden",
+        "beh": "ja",
+        "werkzeuge": "das entsprechende Fluggerät",
+        "qualitaet": "Distanzen können schneller überwunden werden.",
+        "misslungeneProbe": "Das Flugmanöver ist misslungen und muss abgebrochen werden.",
+        "kritischerErfolg": "Dem Held ist nicht nur das Manöver gelungen, sondern er hat eine zusätzliche Aktion in dieser Runde.",
+        "patzer": "Der Held stürzt ab.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Fliegen"
+    },
+    {
+        "name": "Gassenwissen",
+        "kategorie": "talente",
+        "art": "Gesellschaftstalente",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "CH"
+        ],
+        "anwendungsgebiet": "Beschatten, Informationssuche, Ortseinschätzung",
+        "beh": "nein, eventuell ja bei bestimmten Situationen, zum Beispiel, wenn die Rüstung den Anschein eines Gardisten oder Adligen erweckt",
+        "qualitaet": "Der Held erhält mehr Informationen oder erlangt sie schneller als erwartet.",
+        "misslungeneProbe": "Der Held erhält keine hilfreichen Informationen.",
+        "kritischerErfolg": "Der Held entdeckt ein besonders gutes, aber günstiges Gasthaus, erhält mehr Informationen, als er erwartet hat, oder es gelingt ihm, einen Kontaktmann zu finden, der ihm exzellente Konditionen anbietet.",
+        "patzer": "Der Held gerät in den Hinterhalt einer Bande Schurken, die ihn ausplündern wollen.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 194 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Gassenwissen"
+    },
+    {
+        "name": "Gaukeleien",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "FF"
+        ],
+        "anwendungsgebiet": "Jonglieren, Possenreißen, Verstecktricks",
+        "beh": "ja",
+        "werkzeuge": "je nach Trick z.B. Bälle, Fackel, Schlangen, Spielkarten",
+        "qualitaet": "Der Trick ist besonders gut gelungen und die Zuschauer applaudieren mehr.",
+        "misslungeneProbe": "Der Trick funktioniert nicht richtig, kleine Fehler schleichen sich bei dem Versuch ein. Das Publikum ist enttäuscht.",
+        "kritischerErfolg": "Die Zuschauer sind fasziniert, halten den Trick gar für echte Magie, und potenzielle Geldeinnahmen des Gauklers verdoppeln sich.",
+        "patzer": "Der Held wird bei der Präsentation ausgebuht, da ihm ein Missgeschick passiert (mit Jonglierkeule einen Zuschauer getroffen, mit Pyrotechnik den Bürgermeister verletzt etc.).",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Gaukeleien"
+    },
+    {
+        "name": "Geographie",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "einzelne Provinzen des Mittelreiches (Albernia, Almada, Garetien, Kosch, Nordmarken, Rommilyser Mark, Tobrien, Weiden, Windhag), AlʼAnfanisches Imperium, Andergast,Aranien, Bergkönigreiche der Zwerge, Bornland, Gjalskerland, Hoher Norden, Horasreich, Kalifat, Maraskan, Nostria, Orkland, Salamandersteine & umliegende Gebiete der Elfen, Schattenlande, Südmeer & Waldinseln, Svellttal, Thorwal, Tiefer Süden, Tulamidenlande, Zyklopeninseln",
+        "beh": "nein",
+        "qualitaet": "mehr Detailinformationen zur Bevölkerung, Örtlichkeiten und Flussübergängen",
+        "misslungeneProbe": "Der Held hat keine Ahnung.",
+        "kritischerErfolg": "Der Held kennt viele Details der Region: Herrscher, Bevölkerungszahlen, Bräuche, Flussverläufe und Brücken.",
+        "patzer": "Der Held erinnert sich an völlig falsche geographische Details: Einwohnerzahlen von Städten stimmen nicht, Brücken befinden sich an anderer Stelle als gedacht.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Geographie"
+    },
+    {
+        "name": "Geschichtswissen",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "einzelne Provinzen des Mittelreiches (Albernia, Almada, Garetien, Kosch, Nordmarken, Rommilyser Mark, Tobrien, Weiden, Windhag), AlʼAnfanisches Imperium, Andergast,Aranien, Bergkönigreiche der Zwerge, Bornland, Gjalskerland, Hoher Norden, Horasreich, Kalifat, Maraskan, Nostria, Orkland, Salamandersteine & umliegende Gebiete der Elfen, Schattenlande, Südmeer & Waldinseln, Svellttal, Thorwal, Tiefer Süden, Tulamidenlande, Zyklopeninseln",
+        "beh": "nein",
+        "qualitaet": "mehr Details zu historischen Persönlichkeiten und Epochen",
+        "misslungeneProbe": "Der Held hat keine Ahnung.",
+        "kritischerErfolg": "Der Held kennt besonders viele Details über ein bestimmtes Ereignis oder eine historische Person.",
+        "patzer": "Der Held kann zu diesem Thema nur falsche Informationen beitragen: er irrt sich in Daten und Ereignissen.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Geschichtswissen"
+    },
+    {
+        "name": "Götter & Kulte",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "je nach Gottheit oder Philosophie, z. B. Praios, Rondra, Swafnir, Namenloser, Rastullah,",
+        "beh": "nein",
+        "qualitaet": "mehr Details zu Kulten, Göttern und Priestern",
+        "misslungeneProbe": "Der Held hat keine Ahnung.",
+        "kritischerErfolg": "Der Held hat detaillierte Einsichten in das Thema und kennt selbst spezielle Rituale, Gebetstexte oder philosophische Grundlagen.",
+        "patzer": "Der Held verwechselt kultische Handlungen und Ansichten dieser Kirche mit einer anderen.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=G%C3%B6tter+%26+Kulte"
+    },
+    {
+        "name": "Handel",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "CH"
+        ],
+        "anwendungsgebiet": "Buchhaltung, Feilschen, Geldwechsel",
+        "beh": "nein",
+        "qualitaet": "Der Held kann präziser den Preis bestimmen.",
+        "misslungeneProbe": "Der Held bekommt nicht so viel wie erhofft.",
+        "kritischerErfolg": "Der Held bekommt die Ware zu einem Spottpreis bzw. kann sie zu Wucherpreisen loswerden – ohne dass sein Handelspartner es ihm übel nimmt. Die Preiserhöhung oder der Nachlass sollte mindestens 50 % betragen.",
+        "patzer": "Der Held wird über den Tisch gezogen oder der Handelspartner weigert sich, Geschäfte mit dem Helden zu machen. Die Preiserhöhung oder der Nachlass sollte mindestens 50 % betragen.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Handel"
+    },
+    {
+        "name": "Heilkunde Gift",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "alchimistisches Gift, mineralisches Gift, pflanzliches Gift, tierisches Gift",
+        "beh": "ja",
+        "werkzeuge": "Gegenmittel",
+        "qualitaet": "Der Held kann das Gift schneller bestimmen.",
+        "misslungeneProbe": "Der Held hat keine Ahnung und kennt keine Möglichkeit der Heilung.",
+        "kritischerErfolg": "Der Patient kann vollständig entgiftet werden, ohne dass der Held das passende Gegenmittel verwenden musste.",
+        "patzer": "Der Held ordnet einen (schädlichen) Aderlass an oder hat den Patienten bei der Behandlung verletzt oder gar zusätzlich vergiftet (1W6 SP).",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Heilkunde+Gift"
+    },
+    {
+        "name": "Heilkunde Krankheiten",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "anwendungsgebiet": "jeweilige Krankheit (z. B. Sumpffieber)",
+        "beh": "ja",
+        "werkzeuge": "Heilmittel",
+        "qualitaet": "Der Held kann die Krankheit schneller bestimmen.",
+        "misslungeneProbe": "Der Held hat keine Ahnung und kennt weder Heilmittel noch die passende Behandlung.",
+        "kritischerErfolg": "Der Patient ist geheilt, ohne dass der Held ein Heilmittel verwenden musste. Zudem steckt er sich nicht beim Erkrankten an.",
+        "patzer": "Der Held hat dem Patienten bei der Behandlung geschadet (1W6 SP) oder der Krankheitsverlauf verschlimmert sich. Zudem besteht für den Helden bei ansteckenden Krankheiten eine 25 % höhere Chance, sich bei dem Patienten anzustecken.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Heilkunde+Krankheiten"
+    },
+    {
+        "name": "Heilkunde Seele",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "IN",
+            "CH",
+            "KO"
+        ],
+        "anwendungsgebiet": "Unterdrückung von Ängsten, Unterdrückung von Persönlichkeitsschwächen, Unterdrückung von Schlechten Eigenschaften",
+        "beh": "nein",
+        "qualitaet": "Die Unterdrückung des Nachteils hält länger an.",
+        "misslungeneProbe": "Der Held hat keine Ahnung, wie er dem Patienten helfen kann.",
+        "kritischerErfolg": "Der Patient kann einen Nachteil (Angst, Persönlichkeitsschwäche oder Schlechte Eigenschaft) für einen ganzen Tag unterdrücken.",
+        "patzer": "Der Held hat den Patienten bei der Behandlung verstört oder seinem Geist anderweitig geschadet. Der Patient erhält für einen Tag eine Stufe des Zustands Furcht oder Verwirrung.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Heilkunde+Seele"
+    },
+    {
+        "name": "Heilkunde Wunden",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "FF"
+        ],
+        "anwendungsgebiet": "Heilung fördern, Schmerzen nehmen, Stabilisieren",
+        "beh": "ja",
+        "werkzeuge": "eventuell Bandagen, chirurgisches Gerät, Kräuter, Nadel und Faden",
+        "qualitaet": "Der Held verbraucht weniger Heilkräuter oder kann die Verletzung schneller versorgen.\n\n[siehe auch Detailregeln zu \"Heilung\", \"Letzte Rettung und Tod\"]\n\n# Heilung fördern: QS LeP bei nächster Regenerationsphase\n\n# Schmerzen nehmen: je 1 QS wird eine Stufe des Zustands Schmerz ignoriert, Wirkung hält bis zum Ende der nächsten Regenerationsphase",
+        "misslungeneProbe": "Der Held kann dem Patienten nicht helfen.",
+        "kritischerErfolg": "Die vollen Fertigkeitspunkte werden bei der nächsten Regenerationsphase zusätzlich zur normalen Regeneration zu den Lebenspunkten des Patienten hinzuaddiert.",
+        "patzer": "Der Held hat den Patienten bei der Behandlung verletzt (1W6 SP).",
+        "steigerung": "D",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Heilkunde+Wunden"
+    },
+    {
+        "name": "Holzbearbeitung",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "FF",
+            "GE",
+            "KK"
+        ],
+        "anwendungsgebiet": "Schlagen & Schneiden, Tischlerarbeiten, Zimmermannsarbeiten",
+        "beh": "ja",
+        "werkzeuge": "je nach zu bearbeitendem Material z. B. Axt, Hobel, Messer, Säge",
+        "qualitaet": "Das Werkstück ist schneller fertig oder es wird eine bessere Qualität erzielt.",
+        "misslungeneProbe": "Der Held kommt mit der Arbeit an dem Werkstück nicht voran.",
+        "kritischerErfolg": "Die Zahl der FP bei dieser Probe verdoppelt sich, der Held erhält aber mindestens 5 FP. Erschwernisse, die durch misslungene Sammelproben aufgebaut wurden, werden komplett abgebaut.",
+        "patzer": "Ein Patzer sorgt dafür, dass die angesammelten QS auf 0 sinken und keine weitere Probe für dieses Vorhaben angewandt werden kann.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Holzbearbeitung"
+    },
+    {
+        "name": "Klettern",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "MU",
+            "GE",
+            "KK"
+        ],
+        "anwendungsgebiet": "Baumklettern, Bergsteigen, Eisklettern, Fassadenklettern",
+        "beh": "ja",
+        "werkzeuge": "eventuell Kletterausrüstung",
+        "qualitaet": "Der Held kommt schneller an seinem Ziel an.",
+        "misslungeneProbe": "Der Held braucht viel länger als üblich, verletzt sich leicht (1W3 SP), traut sich nicht, zu klettern, oder hängt fest.",
+        "kritischerErfolg": "Ohne Schwierigkeiten und viel schneller als gewöhnlich hat der Held den Aufstieg geschafft. Zuschauer halten ihn für den besten Kletterer Deres. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Der Held rutscht ab und fällt (siehe Seite 340, Sturzschaden).",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Klettern"
+    },
+    {
+        "name": "Körperbeherrschung",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "GE",
+            "GE",
+            "KO"
+        ],
+        "anwendungsgebiet": "Akrobatik, Balance, Entwinden, Kampfmanöver, Laufen, Springen",
+        "beh": "ja",
+        "qualitaet": "Der Abenteurer kann sich schneller aus einer Fesselung befreien.",
+        "misslungeneProbe": "Die Handlung des Helden geht teilweise schief, er braucht länger und macht Fehler oder muss die Handlung abbrechen.",
+        "kritischerErfolg": "Dem Held gelingt seine Handlung und er hat noch eine zusätzliche Aktion zur Verfügung. Und was immer der Held getan hat: Es sah elegant aus.",
+        "patzer": "Der Held stürzt und erleidet Schaden (1W6 SP).",
+        "steigerung": "D",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=K%C3%B6rperbeherrschung"
+    },
+    {
+        "name": "Kraftakt",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "KO",
+            "KK",
+            "KK"
+        ],
+        "anwendungsgebiet": "Drücken & Verbiegen, Eintreten & Zertrümmern, Stemmen & Heben, Ziehen & Zerren",
+        "beh": "ja",
+        "werkzeuge": "eventuell Brecheisen oder Seil",
+        "qualitaet": "Für einen kurzen Zeitraum kann der Held mehr Gewicht stemmen oder eine schwere Last länger halten.",
+        "misslungeneProbe": "Die Handlung des Helden misslingt.",
+        "kritischerErfolg": "Der Held beeindruckt durch seine Muskelkraft alle Zuschauer und gilt fortan als einer der stärksten Aventurier. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Die Handlung des Helden misslingt völlig. Er stürzt, verhebt sich o.Ä. und verletzt sich dabei (1W6 SP).",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Kraftakt"
+    },
+    {
+        "name": "Kriegskunst",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "Belagerung, Feldschlacht, Partisanenkampf, Seegefechte, Tunnelkampf",
+        "beh": "nein",
+        "qualitaet": "bessere Vorteile während des Gefechts",
+        "misslungeneProbe": "Der Held unterliegt einer Fehleinschätzung.",
+        "kritischerErfolg": "Der Held hat einen vortrefflichen Plan, der ihm zusätzliche Vorteile im Kampf einbringt.",
+        "patzer": "Der Held begeht einen kapitalen Planungsfehler, der den Kampf zu seinen Ungunsten beeinflusst oder ihm zumindest extreme Nachteile beschert.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Kriegskunst"
+    },
+    {
+        "name": "Lebensmittelbearbeitung",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "IN",
+            "FF",
+            "FF"
+        ],
+        "anwendungsgebiet": "Ausnehmen, Backen, Braten & Sieden, Brauen, Haltbarmachung",
+        "beh": "ja",
+        "werkzeuge": "entsprechende Zutaten, Feldküche, Kochutensilien",
+        "qualitaet": "Der Geschmack des Essens ist besser als üblich.",
+        "misslungeneProbe": "Das Essen ist angebrannt oder ungenießbar.",
+        "kritischerErfolg": "Die Mahlzeit ist ein echter Gaumenschmaus, ein gekelterter Wein ein wirklich edler Tropfen.",
+        "patzer": "Das Essen schmeckt nicht nur miserabel, der Konsum hat auch eine schwere Magenverstimmung, Durchfall oder Brechreiz (1W6 SP) zur Folge.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Lebensmittelbearbeitung"
+    },
+    {
+        "name": "Lederbearbeitung",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "FF",
+            "GE",
+            "KO"
+        ],
+        "anwendungsgebiet": "Gerben, Kürschnern, Lederwaren herstellen",
+        "beh": "ja",
+        "werkzeuge": "Ahle, Falzbein, Lochzange, Messer, Punziereisen, Zange",
+        "qualitaet": "Das Werkstück ist schneller fertig oder es wird eine bessere Qualität erzielt.",
+        "misslungeneProbe": "Der Held kommt mit der Arbeit an dem Werkstück nicht voran.",
+        "kritischerErfolg": "Die Zahl der FP bei dieser Probe verdoppelt sich, der Held erhält aber mindestens 5 FP. Erschwernisse, die durch misslungene Sammelproben aufgebaut wurden, werden komplett abgebaut.",
+        "patzer": "Ein Patzer sorgt dafür, dass die angesammelten QS auf 0 sinken und keine weitere Probe für dieses Vorhaben angewandt werden kann.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Lederbearbeitung"
+    },
+    {
+        "name": "Magiekunde",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "Artefakte, Magische Wesen, Rituale, Zaubersprüche",
+        "beh": "nein",
+        "qualitaet": "mehr Details zu Zaubern, magischen Wesen oder exotischer Magieanwendung",
+        "misslungeneProbe": "Der Held hat keine Ahnung.",
+        "kritischerErfolg": "Der Held kennt Herkunft, wirkenden Zauber und Auslöser eines alten Artefaktes.",
+        "patzer": "Der Held hat falsche Vorstellungen und irrt sich, sodass es zu einem gravierenden Fehlurteil kommt.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Magiekunde"
+    },
+    {
+        "name": "Malen & Zeichnen",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "IN",
+            "FF",
+            "FF"
+        ],
+        "anwendungsgebiet": "Malen, Ritzen, Zeichnen",
+        "beh": "ja",
+        "werkzeuge": "Farbe, Kreide, Stifte",
+        "qualitaet": "Die Qualität der Zeichnung ist besser als üblich.",
+        "misslungeneProbe": "Dem Held gelingt eine mit Phantasie erkennbare, aber wenig schöne Zeichnung.",
+        "kritischerErfolg": "Das Bild ist so gut, dass der Held für einen berühmten Maler gehalten wird.",
+        "patzer": "schreckliches, unmöglich erkennbares Gekrakel",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Malen+%26+Zeichnen"
+    },
+    {
+        "name": "Mechanik",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "FF"
+        ],
+        "anwendungsgebiet": "Hebel, Hydraulik, komplexe Systeme",
+        "beh": "nein",
+        "qualitaet": "schnellere Planung",
+        "misslungeneProbe": "Die geplante Mechanik funktioniert nicht.",
+        "kritischerErfolg": "Der doppelte FW zählt als FP.",
+        "patzer": "Was immer der Held konstruieren wollte: Das Objekt ist gefährlich oder die Konstruktion fällt in sich zusammen. Eine Falle wird mit größtmöglichem Erfolg ausgelöst.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Mechanik"
+    },
+    {
+        "name": "Menschenkenntnis",
+        "kategorie": "talente",
+        "art": "Gesellschaftstalente",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "CH"
+        ],
+        "anwendungsgebiet": "Lügen durchschauen, Motivation erkennen",
+        "beh": "nein",
+        "qualitaet": "Der Held hat einen stärkeren Verdacht, was sein Gegenüber vorhat oder warum es lügt.",
+        "misslungeneProbe": "Der Held ist sich nicht sicher.",
+        "kritischerErfolg": "Der Held durchschaut die Person komplett.",
+        "patzer": "Der Held ist einer kompletten Fehleinschätzung aufgesessen. So könnte er beispielsweise einem Lügner wirklich alles glauben, ehrlichen Leuten hingegen kein Wort.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 194 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Menschenkenntnis"
+    },
+    {
+        "name": "Metallbearbeitung",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "FF",
+            "KO",
+            "KK"
+        ],
+        "anwendungsgebiet": "Feinschmiedearbeiten, Grobschmiedearbeiten, Metallguss, Verhütten",
+        "beh": "ja",
+        "werkzeuge": "Hammer, Amboss, Schmiedefeuer",
+        "qualitaet": "Das Werkstück ist schneller fertig oder es wird eine bessere Qualität erzielt.",
+        "misslungeneProbe": "Der Held kommt mit der Arbeit an dem Werkstück nicht voran.",
+        "kritischerErfolg": "Die Zahl der FP bei dieser Probe verdoppelt sich, der Held erhält aber mindestens 5 FP. Erschwernisse, die durch misslungene Sammelproben aufgebaut wurden, werden komplett abgebaut.",
+        "patzer": "Ein Patzer sorgt dafür, dass die angesammelten QS auf 0 sinken und keine weitere Probe für dieses Vorhaben angewandt werden kann.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Metallbearbeitung"
+    },
+    {
+        "name": "Musizieren",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "CH",
+            "FF",
+            "KO"
+        ],
+        "anwendungsgebiet": "Blasinstrumente, Saiteninstrumente, Trommeln",
+        "beh": "ja",
+        "werkzeuge": "Musikinstrument",
+        "qualitaet": "Das Publikum zeigt sich begeisterter von der Vorstellung.",
+        "misslungeneProbe": "Die Melodie klingt schief.",
+        "kritischerErfolg": "Der Held spielt eine Melodie, der keiner widerstehen kann und die alle Zuhörer in ihren Bann zieht.",
+        "patzer": "Schreckliche, unheilvolle Töne werden dem Musikinstrument entlockt. Möglicherweise wird das Instrument dabei beschädigt. Menschen suchen das Weite oder wollen dem Musikanten das Instrument entreißen.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Musizieren"
+    },
+    {
+        "name": "Orientierung",
+        "kategorie": "talente",
+        "art": "Naturtalente",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "IN"
+        ],
+        "anwendungsgebiet": "Sonnenstand, Sternenhimmel, unter Tage",
+        "beh": "nein",
+        "qualitaet": "Der Held findet schneller heraus, in welche Richtung er sich bewegt.",
+        "misslungeneProbe": "Der Held weiß nicht sicher, wo es langgeht.",
+        "kritischerErfolg": "Der Held findet den Weg ohne Schwierigkeiten selbst unter schlechtesten Bedingungen.",
+        "patzer": "Der Held hat sich komplett verlaufen und bewegt sich in die falsche Richtung, was ihm jedoch nicht bewusst ist.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 198 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Orientierung"
+    },
+    {
+        "name": "Pflanzenkunde",
+        "kategorie": "talente",
+        "art": "Naturtalente",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "KO"
+        ],
+        "anwendungsgebiet": "Giftpflanzen, Heilpflanzen, Nutzpflanzen",
+        "beh": "ja, (beim Ackerbau und Nahrung sammeln) oder nein (bei der Bestimmung von Pflanzen)",
+        "qualitaet": "genauere Informationen zu einer Pflanze",
+        "misslungeneProbe": "Der Held hat keine Ahnung.",
+        "kritischerErfolg": "Der Held weiß alles über die Pflanze, auch besondere Wirkungen, und kann sie doppelt so lange haltbar machen wie üblich.",
+        "patzer": "Der Held verwechselt die Pflanze mit einer anderen.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 198 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Pflanzenkunde"
+    },
+    {
+        "name": "Rechnen",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "Bruchrechnung, Punktrechnung, Strichrechnung",
+        "beh": "nein",
+        "qualitaet": "schnelleres Ergebnis",
+        "misslungeneProbe": "Das Ergebnis ist falsch.",
+        "kritischerErfolg": "Schnelle und exakte Bestimmung der Lösung",
+        "patzer": "Das Ergebnis ist komplett falsch, der Held aber von der Richtigkeit absolut überzeugt.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Rechnen"
+    },
+    {
+        "name": "Rechtskunde",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "einzelne Provinzen des Mittelreiches (Albernia, Almada, Garetien, Kosch, Nordmarken, Rommilyser Mark, Tobrien, Weiden, Windhag), AlʼAnfanisches Imperium, Andergast,Aranien, Bergkönigreiche der Zwerge, Bornland, Gjalskerland, Hoher Norden, Horasreich, Kalifat, Maraskan, Nostria, Orkland, Salamandersteine & umliegende Gebiete der Elfen, Schattenlande, Südmeer & Waldinseln, Svellttal, Thorwal, Tiefer Süden, Tulamidenlande, Zyklopeninseln",
+        "beh": "nein",
+        "qualitaet": "mehr Optionen zur Lösung eines Falls",
+        "misslungeneProbe": "Der Held hat keine Ahnung.",
+        "kritischerErfolg": "Der Held kennt sich mit Besonderheiten des Gesetzes aus und kann einen Plan entwickeln, es zu seinem Vorteil auszulegen.",
+        "patzer": "Die Auslegung des Gesetzes ist falsch oder der Held übersieht einen wichtigen Passus.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Rechtskunde"
+    },
+    {
+        "name": "Reiten",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "CH",
+            "GE",
+            "KK"
+        ],
+        "anwendungsgebiet": "Kampfmanöver, Langstreckenreiten, Springreiten, Verfolgungsjagden",
+        "beh": "ja",
+        "werkzeuge": "Reittier",
+        "qualitaet": "Der Held ist schneller an seinem Ziel.",
+        "misslungeneProbe": "Das Tier bewegt sich nicht oder nicht so, wie es soll.",
+        "kritischerErfolg": "Das Tier macht seine Sache ausgezeichnet und wie gewünscht, der Reiter hat eine weitere Aktion zur Verfügung.",
+        "patzer": "Das Tier wirft den Reiter ab und er stürzt zu Boden (siehe Seite 340, Sturzschaden).",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Reiten"
+    },
+    {
+        "name": "Sagen & Legenden",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "einzelne Provinzen des Mittelreiches (Albernia, Almada, Garetien, Kosch, Nordmarken, Rommilyser Mark, Tobrien, Weiden, Windhag), AlʼAnfanisches Imperium, Andergast,Aranien, Bergkönigreiche der Zwerge, Bornland, Gjalskerland, Hoher Norden, Horasreich, Kalifat, Maraskan, Nostria, Orkland, Salamandersteine & umliegende Gebiete der Elfen, Schattenlande, Südmeer & Waldinseln, Svellttal, Thorwal, Tiefer Süden, Tulamidenlande, Zyklopeninseln",
+        "beh": "nein",
+        "qualitaet": "mehr Details oder verschiedene Versioneneiner Geschichte",
+        "misslungeneProbe": "Der Held kennt die Legende nicht.",
+        "kritischerErfolg": "Der Held kann sich an viele Details der Geschichte erinnern und kennt mehrere Varianten.",
+        "patzer": "Der Held verwechselt die Geschichte mit einer anderen oder meint sich an völlig andere Details zu erinnern.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Sagen+%26+Legenden"
+    },
+    {
+        "name": "Schlösserknacken",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "IN",
+            "FF",
+            "FF"
+        ],
+        "anwendungsgebiet": "Bartschlösser, Kombinationsschlösser",
+        "beh": "ja",
+        "werkzeuge": "Dietrich, Haarnadel, Haken",
+        "qualitaet": "Das Schloss lässt sich schneller öffnen.",
+        "misslungeneProbe": "Das Schloss geht nicht auf.",
+        "kritischerErfolg": "Das Schloss springt in Rekordzeit auf. Der Held benötigt nur die Hälfte des üblichen Zeitaufwandes.",
+        "patzer": "Der Dietrich bricht ab, die Falle wird ausgelöst oder das Schloss verklemmt sich.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Schl%C3%B6sserknacken"
+    },
+    {
+        "name": "Schwimmen",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "GE",
+            "KO",
+            "KK"
+        ],
+        "anwendungsgebiet": "Kampfmanöver, Langstreckenschwimmen, Tauchen, Verfolgungsjagden, Wassertreten",
+        "beh": "ja",
+        "qualitaet": "Der Held ist schneller an seinem Ziel.",
+        "misslungeneProbe": "Der Held traut sich nicht zu schwimmen oder kommt nicht sonderlich weit – auf jeden Fall nicht bis dahin, wohin er wollte.",
+        "kritischerErfolg": "Der Held schwimmt die Strecke in Bestzeit. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Der Held geht unter (siehe Seite 340ff., Erstickungsschaden). Grund dafür könnte ein Wadenkrampf sein.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Schwimmen"
+    },
+    {
+        "name": "Selbstbeherrschung",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "MU",
+            "MU",
+            "KO"
+        ],
+        "anwendungsgebiet": "Folter widerstehen, Handlungsfähigkeit bewahren, Störungen ignorieren",
+        "beh": "nein",
+        "qualitaet": "Die Selbstbeherrschung hält für einen längeren Zeitraum.",
+        "misslungeneProbe": "Dem Helden gelingt es nicht, den Schmerz zu unterdrücken oder die Ablenkung zu ignorieren.",
+        "kritischerErfolg": "Es gelingt dem Helden, Schmerzen (bis Stufe III) und Ablenkungen einen ganzen Tag lang zu ignorieren.",
+        "patzer": "Der Held erhält für die nächste Stunde 2 Stufen des Zustands Schmerz oder ist durch die Ablenkung Überrascht.",
+        "steigerung": "D",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Selbstbeherrschung"
+    },
+    {
+        "name": "Singen",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "KL",
+            "CH",
+            "KO"
+        ],
+        "anwendungsgebiet": "Bardenballade, Choral, Chorgesang, Sprechgesang",
+        "beh": "nein, eventuell ja bei Helmen",
+        "qualitaet": "Der Gesang ist so gut, dass der Held mehr Applaus durch die Zuhörer erhält.",
+        "misslungeneProbe": "Der Held vergisst den Text oder sein Auftritt gerät eher schlecht als recht.",
+        "kritischerErfolg": "Der Gesang des Helden ist noch in vielen Wochen Thema seiner Zuhörer. Hat der Held sich um Geld bemüht, dann nimmt er mindestens das Doppelte ein als üblich. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Der Held liegt mehrere Halbtöne daneben oder vergeigt den Rhythmus. Das Lied ist eine Qual für jeden Zuhörer, der Held wird ausgebuht.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Singen"
+    },
+    {
+        "name": "Sinnesschärfe",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "IN"
+        ],
+        "anwendungsgebiet": "Hinterhalt entdecken, Suchen, Wahrnehmen",
+        "beh": "nein, eventuell ja bei Helmen, Panzerhandschuhen o.Ä.",
+        "qualitaet": "Der Held bemerkt weitere Details.",
+        "misslungeneProbe": "Der Held bemerkt nichts.",
+        "kritischerErfolg": "Der Held nimmt sogar kaum bemerkbare Details wahr. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Der Held nimmt etwas anderes wahr, als das, was wirklich wichtig wäre. Er könnte zum Beispiel die in der Nähe befindlichen Blumen riechen, dafür aber nicht den auffällig stinkenden Oger, der an ihn heranschleicht.",
+        "steigerung": "D",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Sinnessch%C3%A4rfe"
+    },
+    {
+        "name": "Sphärenkunde",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "Limbus, nach Sphäre, Sphärenwesen",
+        "beh": "nein",
+        "qualitaet": "mehr Details zu Sphären oder dem Limbus",
+        "misslungeneProbe": "Der Held weiß nichts über das spezielle Thema.",
+        "kritischerErfolg": "Der Held erinnert sich an bemerkenswerte Details über einen einzelnen Dämon oder den Weg in eine verborgene Globule.",
+        "patzer": "Der Held unterliegt einer gefährlichen Fehleinschätzung.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Sph%C3%A4renkunde"
+    },
+    {
+        "name": "Steinbearbeitung",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "FF",
+            "FF",
+            "KK"
+        ],
+        "anwendungsgebiet": "Maurerarbeiten, Steine brechen, Steinmetzarbeiten",
+        "beh": "ja",
+        "werkzeuge": "entsprechendes Rohmaterial (Stein, Ton), Hammer, Meißel",
+        "qualitaet": "Das Werkstück ist schneller fertig oder es wird eine bessere Qualität erzielt.",
+        "misslungeneProbe": "Der Held kommt mit der Arbeit an dem Werkstück nicht voran.",
+        "kritischerErfolg": "Die Zahl der FP bei dieser Probe verdoppelt sich, der Held erhält aber mindestens 5 FP. Erschwernisse, die durch misslungene Sammelproben aufgebaut wurden, werden komplett abgebaut.",
+        "patzer": "Ein Patzer sorgt dafür, dass die angesammelten QS auf 0 sinken und keine weitere Probe für dieses Vorhaben angewandt werden kann.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Steinbearbeitung"
+    },
+    {
+        "name": "Sternkunde",
+        "kategorie": "talente",
+        "art": "Wissenstalente",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "IN"
+        ],
+        "anwendungsgebiet": "Astrologie, Himmelskartographie, Kalendarium",
+        "beh": "nein",
+        "qualitaet": "schnellere Horoskoperstellung",
+        "misslungeneProbe": "Der Held hat keine Ahnung.",
+        "kritischerErfolg": "Der Held kann sehr genau die Bewegungen der Himmelskörper berechnen.",
+        "patzer": "Eine Fehleinschätzung bei einem Horoskop, einer Mondfinsternis etc.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 201 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Sternkunde"
+    },
+    {
+        "name": "Stoffbearbeitung",
+        "kategorie": "talente",
+        "art": "Handwerkstalente",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "FF"
+        ],
+        "anwendungsgebiet": "Färben, Filzen, Schneidern, Spinnen, Weben",
+        "beh": "ja",
+        "werkzeuge": "Messer, Nähzeug, Schere, Webstuhl",
+        "qualitaet": "Das Werkstück ist schneller fertig oder es wird eine bessere Qualität erzielt.",
+        "misslungeneProbe": "Der Held kommt mit der Arbeit an dem Werkstück nicht voran.",
+        "kritischerErfolg": "Die Zahl der FP bei dieser Probe verdoppelt sich, der Held erhält aber mindestens 5 FP. Erschwernisse, die durch misslungene Sammelproben aufgebaut wurden, werden komplett abgebaut.",
+        "patzer": "Ein Patzer sorgt dafür, dass die angesammelten QS auf 0 sinken und keine weitere Probe für dieses Vorhaben angewandt werden kann.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 206 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Stoffbearbeitung"
+    },
+    {
+        "name": "Tanzen",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "KL",
+            "CH",
+            "GE"
+        ],
+        "anwendungsgebiet": "Dorftanz, exotischer Tanz, Hoftanz, Kulttanz",
+        "beh": "ja",
+        "qualitaet": "Der Tanz ist so gut, dass der Held mehr Applaus erhält.",
+        "misslungeneProbe": "Der Held bringt die Tanzschritte durcheinander.",
+        "kritischerErfolg": "Die Aufmerksamkeit der Zuschauer fällt wegen des perfekten Tanzes auf den Helden. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Der Held tritt seiner Tanzpartnerin auf die Füße und verletzt sie dabei oder er stürzt und blamiert sich.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Tanzen"
+    },
+    {
+        "name": "Taschendiebstahl",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "MU",
+            "FF",
+            "GE"
+        ],
+        "anwendungsgebiet": "Ablenkungen, Person bestehlen, Gegenstand entwenden, Zustecken",
+        "beh": "ja",
+        "werkzeuge": "eventuell Messer oder Dolch",
+        "qualitaet": "Der Taschendiebstahl wird später bemerkt.",
+        "misslungeneProbe": "Der Versuch misslingt oder das Opfer bemerkt den Diebstahl.",
+        "kritischerErfolg": "Das Opfer hat den Diebstahlversuch nicht bemerkt und der Held hat besonders wertvolle Beute gemacht oder gleich mehrere Ziele bestohlen. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Der Held wird von umstehenden Personen oder dem Opfer beobachtet, ohne es zu bemerken, und der Diebstahlversuch misslingt. Außerdem ist er Überrascht.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Taschendiebstahl"
+    },
+    {
+        "name": "Tierkunde",
+        "kategorie": "talente",
+        "art": "Naturtalente",
+        "eigenschaften": [
+            "MU",
+            "MU",
+            "CH"
+        ],
+        "anwendungsgebiet": "domestizierte Tiere, Ungeheuer, Wildtiere",
+        "beh": "ja",
+        "qualitaet": "genauere Informationen zu einem Tier",
+        "misslungeneProbe": "Der Held hat keine Ahnung.",
+        "kritischerErfolg": "Der Held weiß alles über das Tier.",
+        "patzer": "Der Held glaubt, etwas über das Tier zu wissen, liegt aber gefährlich falsch (schätzt es ungiftig ein, obwohl es sehr giftig ist, oder als Pflanzenfresser, obwohl es Fleischfresser ist).",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 198 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Tierkunde"
+    },
+    {
+        "name": "Überreden",
+        "kategorie": "talente",
+        "art": "Gesellschaftstalente",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "CH"
+        ],
+        "anwendungsgebiet": "Aufschwatzen, Betteln, Herausreden, Manipulieren, Schmeicheln",
+        "beh": "nein",
+        "qualitaet": "Das Gegenüber ist bereit, mehr für den Helden zu tun.",
+        "misslungeneProbe": "Dem Held gelingt es nicht, sein Gegenüber zu überreden.",
+        "kritischerErfolg": "Die Person, die der Held überreden wollte, tut weit mehr als sie muss.",
+        "patzer": "Die Person, die der Held überreden wollte, ist wütend auf den Helden und lässt sich in nächster Zeit nicht mehr überreden.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 194 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=%C3%9Cberreden"
+    },
+    {
+        "name": "Verbergen",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "GE"
+        ],
+        "anwendungsgebiet": "Gegenstände verbergen, Schleichen, sich Verstecken",
+        "beh": "ja",
+        "qualitaet": "Der Held kann schwieriger entdeckt werden oder findet schneller ein Versteck.",
+        "misslungeneProbe": "Der Held hat sich nur dürftig versteckt oder Geräusche beim Schleichen verursacht.",
+        "kritischerErfolg": "Der Held hat ein perfektes Versteck gefunden oder ist lautlos wie eine Katze. Für Qualitätsstufen, Vergleichs- und Sammelproben gilt: FP = doppelter FW.",
+        "patzer": "Irgendetwas (Teller, ein Möbelstück) ist umgefallen.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Verbergen"
+    },
+    {
+        "name": "Verkleiden",
+        "kategorie": "talente",
+        "art": "Gesellschaftstalente",
+        "eigenschaften": [
+            "IN",
+            "CH",
+            "GE"
+        ],
+        "anwendungsgebiet": "Bühnenschauspiel, Kostümierung, Personen imitieren",
+        "beh": "ja",
+        "qualitaet": "Die Verkleidung ist schwerer zu durchschauen.",
+        "misslungeneProbe": "Die Verkleidung ist nicht gut gewählt und hält einem prüfenden Blick nicht stand.",
+        "kritischerErfolg": "Die Verkleidung funktioniert tadellos.",
+        "patzer": "Die Kleidung wird sofort durchschaut und der Held handelt sich in der Regel Ärger ein.",
+        "steigerung": "B",
+        "publikationen": "Regelwerk, Seite 194 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Verkleiden"
+    },
+    {
+        "name": "Wildnisleben",
+        "kategorie": "talente",
+        "art": "Naturtalente",
+        "eigenschaften": [
+            "MU",
+            "GE",
+            "KO"
+        ],
+        "anwendungsgebiet": "Feuermachen, Lageraufbau, Lagersuche",
+        "beh": "ja",
+        "werkzeuge": "eventuell Zelt, Wildnisausrüstung",
+        "qualitaet": "Der Held benötigt nicht so lange, um ein Lager zu finden oder aufzubauen.",
+        "misslungeneProbe": "Der Lagerplatz ist schlecht gewählt. Die Regeneration ist um 1 gesenkt.",
+        "kritischerErfolg": "Ein phantastischer Schlafplatz! Die Regeneration ist um 1 Punkt erhöht.",
+        "patzer": "Das Lager wird überschwemmt oder von Ungeziefer heimgesucht.",
+        "steigerung": "C",
+        "publikationen": "Regelwerk, Seite 198 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Wildnisleben"
+    },
+    {
+        "name": "Willenskraft",
+        "kategorie": "talente",
+        "art": "Gesellschaftstalente",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "CH"
+        ],
+        "anwendungsgebiet": "Bekehren & Überzeugen widerstehen, Bedrohungen standhalten, Betören widerstehen, Einschüchtern widerstehen, Überreden widerstehen",
+        "beh": "nein",
+        "qualitaet": "Die Auswirkungen von Verführungs- oder Überredungsversuchen sind deutlich abgeschwächt oder es wird ihnen ganz widerstanden.",
+        "misslungeneProbe": "Der Held kann nicht widerstehen.",
+        "kritischerErfolg": "Der Held widersteht und kann von dieser Person oder Sache in nächster Zeit nicht mehr beeinflusst werden.",
+        "patzer": "Der Held ist der Person, die ihn beeinflussen will, vollkommen verfallen oder fällt bei Anblick eines scheußlichen Dämons in Ohnmacht.",
+        "steigerung": "D",
+        "publikationen": "Regelwerk, Seite 194 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Willenskraft"
+    },
+    {
+        "name": "Zechen",
+        "kategorie": "talente",
+        "art": "Körpertalente",
+        "eigenschaften": [
+            "KL",
+            "KO",
+            "KK"
+        ],
+        "anwendungsgebiet": "Vermeidung von Betäubung durch Rauschmittel, Vermeidung von Schmerz durch Rauschmittel, Vermeidung von Verwirrung durch Rauschmittel",
+        "beh": "nein",
+        "qualitaet": "Der Held verträgt viel mehr als üblich.",
+        "misslungeneProbe": "Der Held erhält eine Stufe des Zustands Betäubung und erwacht am nächsten Tag mit Kopfschmerzen oder anderen unliebsamen Auswirkungen seines Gelages.",
+        "kritischerErfolg": "Dem Helden gelingt es, bis zum bitteren Ende durchzuhalten, und trotzdem geht es ihm am nächsten Morgen blendend.",
+        "patzer": "Der Held begeht in seinem Zustand jedwede Peinlichkeit. Er zerlegt die halbe Taverne, wacht morgens nackt auf dem Markt oder in einem fremden Bett auf, plaudert Geheimnisse an den Feind aus und kann sich danach an nichts mehr erinnern.",
+        "steigerung": "A",
+        "publikationen": "Regelwerk, Seite 188 ff.",
+        "url": "https://ulisses-regelwiki.de/talent.html?talent=Zechen"
+    }
+]

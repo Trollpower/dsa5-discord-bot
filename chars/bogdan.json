@@ -1,0 +1,304 @@
+{
+    "name": "Bogdan",
+    "displayName": "Bogdan Medwed",
+    "zk": 0,
+    "sk": 2,
+    "gs": 8,
+    "eigenschaften": {
+        "MU": 14,
+        "KL": 16,
+        "IN": 15,
+        "CH": 14,
+        "FF": 12,
+        "GE": 13,
+        "KO": 11,
+        "KK": 11
+    },
+    "lep": {
+        "aktuell": 30,
+        "max": 30
+    },
+    "asp": {
+        "aktuell": 50,
+        "max": 50
+    },
+    "kampftechniken": [
+        {
+            "name": "Hiebwaffen",
+            "ktw": 14
+        }
+    ],
+    "talente": [
+        {
+            "name": "Alchimie",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Boote & Schiffe",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Etikette",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Fährtensuche",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Gassenwissen",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Geographie",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Geschichtswissen",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Götter & Kulte",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Heilkunde Gift",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Heilkunde Krankheiten",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Heilkunde Wunden",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Holzbearbeitung",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Klettern",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Körperbeherrschung",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Lebensmittelbearbeitung",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Magiekunde",
+            "fertigkeitswert": 13
+        },
+        {
+            "name": "Menschenkenntnis",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Musizieren",
+            "fertigkeitswert": 12
+        },
+        {
+            "name": "Pflanzenkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Rechnen",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Rechnen",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Reiten",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Sagen & Legenden",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Schwimmen",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Selbstbeherrschung",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Sinnesschärfe",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Sternkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Tierkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Überreden",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Wildnisleben",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Zechen",
+            "fertigkeitswert": 2
+        }
+    ],
+    "zauber": [
+        {
+            "name": "Ablativum",
+            "fertigkeitswert": 11
+        },
+        {
+            "name": "Adlerschwinge",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Analys Arkanstruktur",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Balsam Salabunde",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Blick in die Gedanken",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Blitz dich find",
+            "fertigkeitswert": 12
+        },
+        {
+            "name": "Flim Flam",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Fortifex",
+            "fertigkeitswert": 11
+        },
+        {
+            "name": "Gardianum",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Ignifaxius",
+            "fertigkeitswert": 16
+        },
+        {
+            "name": "Katzenaugen",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Klarum Purum",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Motoricus",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Odem Arcanum",
+            "fertigkeitswert": 12
+        },
+        {
+            "name": "Paralysis",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Respondami",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Transversalis",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Visibili",
+            "fertigkeitswert": 8
+        }
+    ],
+    "liturgien": [],
+    "rituale": [
+        {
+            "name": "Ruhe Körper",
+            "fertigkeitswert": 10
+        }
+    ],
+    "sonderfertigkeiten": [
+        {
+            "name": "Lieblingszauber",
+            "referenz": "Ignifaxius"
+        }
+    ],
+    "angelegteWaffen": [
+        "Streitkolben"
+    ],
+    "waffen": [
+        "Streitkolben"
+    ],
+    "vorteile": [
+        {
+            "name": "Adel I"
+        },
+        {
+            "name": "Hohe Astralkraft"
+        },
+        {
+            "name": "Vebesserte Regeneration I",
+            "category": "Astralenergie"
+        },
+        {
+            "name": "Vebesserte Regeneration II",
+            "category": "Astralenergie"
+        },
+        {
+            "name": "Vebesserte Regeneration III",
+            "category": "Astralenergie"
+        },
+        {
+            "name": "Verhüllte Aura"
+        },
+        {
+            "name": "Zauberer"
+        }
+    ],
+    "nachteile": [
+        {
+            "name": "Persönlichkeitsschwäche",
+            "category": "Verwöhnt"
+        },
+        {
+            "name": "Prinzipientreue I",
+            "category": "Loyalität, Schutz der Gefährten, Hilfe für Kranke"
+        },
+        {
+            "name": "Prinzipientreue II",
+            "category": "Loyalität, Schutz der Gefährten, Hilfe für Kranke"
+        },
+        {
+            "name": "Verpflichtung I",
+            "category": "Akademie"
+        }
+    ],
+    "initiative": 16,
+    "quickProbeFavorites": [
+        {
+            "category": "zauber",
+            "name": "Ignifaxius",
+            "label": "boom"
+        },
+        null,
+        null
+    ]
+}

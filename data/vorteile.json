@@ -1,0 +1,583 @@
+[
+    {
+        "name": "Adel I-III",
+        "regel": "Der Held ist angesehen, genießt die Privilegien des Adels und kann vom Meister Erleichterungen zugesprochen bekommen, wenn er gegenüber Rangniedrigeren agiert.",
+        "voraussetzungen": "Kultur muss über einen passenden Adel verfügen.",
+        "apWert": "5 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Affinität zu Dämonen",
+        "regel": "Der Held kann Dämonen leichter zu einem Dienst überreden, wenn er sie selbst beschworen hat. Der Dämon erfüllt ihm einen zusätzlichen Dienst (bis zu einem Maximum von 6 Diensten).",
+        "voraussetzungen": "Vorteil Zauberer, kein Vorteil Affinität zu Elementaren",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Affinität zu Elementaren",
+        "regel": "Der Held kann Elementare leichter zu einem Dienst überreden, wenn er sie selbst beschworen hat. Das Elementar erfüllt ihm einen zusätzlichen Dienst (bis zu einem Maximum von 6 Diensten).",
+        "voraussetzungen": "Vorteil Zauberer, kein Vorteil Affinität zu Dämonen",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Akoluth",
+        "regel": "Ein Akoluth verfügt über die Fähigkeit, einen Geweihten einer einzigen ausgewählten Kirche bei Liturgien zu unterstützen. Es muss sich um die Kirche handeln, für die er vorher die Prinzipientreue und die Verpflichtungen erworben hat. Sollte ein Akoluth bei einer Liturgie genauso viele Aktionen aufwenden, wie für die Liturgiedauer notwendig sind, erhält der Geweihte eine Erleichterung von 1 für die Liturgie. Der Akoluth muss sich in einem Radius von 3 Schritt um den Geweihten aufhalten, damit die Unterstützung funktioniert. Dieser Effekt ist nicht kumulativ mit weiteren Akoluthen.",
+        "voraussetzungen": "kein Vorteil Geweihter, Nachteil Prinzipientreue (Moralkodex einer Kirche), Verpflichtungen (Kirche)",
+        "apWert": "5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Allerweltsname",
+        "regel": "Ein Held mit diesem Vorteil ist schwer ausfindig  zu machen, weil sich niemand seinen Namen merken  kann oder ihn mit einem Träger eines ähnlichen Namens verwechselt. Die Teilprobe auf Klugheit bei Proben auf Gassenwissen (Informationsbeschaffung) ist um 1  erschwert, wenn es darum geht, den Helden ausfindig  zu machen oder Informationen über ihn zu sammeln.",
+        "voraussetzungen": "Ein gewöhnlicher Name ohne großen Wiedererkennungswert, kein Vorteil Heldenhafter Name oder Nachteil Lächerlicher Name, Schurkenname oder Unpassender Name. Elfen können diesen  Vorteil nicht wählen, da sie über keine Allerweltsnamen verfügen.",
+        "apWert": "2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Altersresistenz (*)",
+        "regel": "Der Held ist immun gegen natürliche wie magische Alterungserscheinungen. Negative Auswirkungen des Alters werden bei ihm nicht berücksichtigt.",
+        "voraussetzungen": "Spezies, Kultur oder Profession muss Altersresistenz als automatischen oder empfohlenen Vorteil aufweisen, kein Nachteil Schnelle Alterung",
+        "apWert": "5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Angenehmer Geruch",
+        "regel": "Fertigkeitsproben auf Betören (Anbändeln, Liebeskünste) sind um 1 erleichtert.",
+        "voraussetzungen": "keine",
+        "apWert": ": 6 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Basiliskentöter",
+        "regel": "Basiliskentöter werden respektvoll behandelt, erhalten regelmäßig Einladungen zu Festen der gehobenen Gesellschaft und oftmals kostenlos Speis und Trank in Tavernen. Der Held wird so behandelt, als hätte er einen um 2 höheren sozialen Rang als üblich (siehe Regelwerk Seite 338). Das Gegenüber muss aber wissen oder zumindest glauben, dass der Held ein Basiliskentöter ist, damit der Bonus zählt.",
+        "voraussetzungen": "Der Held muss einen Basilisken getötet haben.",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Begabte/r Aufreißer/in",
+        "regel": "Beim Abschleppen (siehe Seite 36) hat der Held mehr Erfolg als andere Personen. Bei der Probe auf Betören (Liebeskünste) zum Abschleppen bekommt er +1 FP (bis zu einem Maximum von 18 FP). Alternativ kann der Spieler auch beschließen, mehrere Personen gleichzeitig abzuschleppen. Die Probe ist dann jedoch pro Person, die er abschleppen will, um 2 erschwert. Dieser Vorteil kann mit der Sonderfertigkeit Abschleppspezialist/in (siehe Seite 41 Aventurisches Kompendium 2) kombiniert werden. Damit bekommt der Held +2 FP oder die Probe zum Abschleppen von mehreren Personen ist pro Person nur um 1 erschwert.",
+        "voraussetzungen": "keine",
+        "apWert": "5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Begabung",
+        "regel": "Ein begabter Abenteurer kann bei jeder Probe auf eine bestimmte Fertigkeit einen W20 neu würfeln. Der Spieler kann zunächst die 3W20 würfeln und sich eines der drei Ergebnisse aussuchen, dass er neu würfeln kann. Es gilt das bessere Ergebnis beider Würfe. Eine Begabung muss für jede Fertigkeit einzeln gewählt werden, also zum Beispiel auf ein bestimmtes Talent, einen Zauber oder eine Liturgie. Man kann nicht mehrfach in einer Fertigkeit begabt sein und somit zwei oder gar drei W20-Würfe in einer Probe wiederholen. Fällt eine Doppel-20 oder Dreifach-20 kann man diesen Vorteil nicht nutzen. Eine Begabung kann nur für eine Fertigkeit, nicht aber für eine Kampftechnik gewählt werden (dafür gibt es jedoch den Vorteil Waffenbegabung). Ein Einsatz von Schicksalspunkten ist vor oder nach dem Einsatz einer Begabung erlaubt (siehe Seite 29). Dadurch ist es möglich, mehrfach neu zu würfeln oder eine andere Wirkung der Schicksalspunkte mit der Begabung zu kombinieren.",
+        "voraussetzungen": "kein Nachteil Unfähig für diese Fertigkeit, nicht mehr als drei Begabungen pro Person",
+        "apWert": "A-/B-/C-/D-Fertigkeit: 6/12/18/24 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Beidhändig",
+        "regel": "Der Held erleidet keine Erschwernisse bei Fertigkeitsproben, wenn er die falsche Hand benutzt. Im Kampf hebt der Vorteil alle Abzüge auf, die durch das Führen einer Waffe mit der falschen Hand anfallen.",
+        "voraussetzungen": "keine",
+        "apWert": "15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Blutzauberer",
+        "regel": "Der Held wird zum Zauberer, obwohl er nicht mit der Gabe der Zauberei geboren wurde. Er verfügt nicht über einen eigenen AsP-Vorrat, sondern zaubert stattdessen mit seiner Lebensenergie. Dabei sind Lebenspunkte doppelt so viel Wert wie AsP, sodass ein Zauber, der 7 AsP kosten würde, den Helden nur 4 LeP kosten. Hat der Held einen eigenen AsP-Vorrat, kann er sich bei jedem Zauber entscheiden, ob er mit AsP oder LeP zaubern möchte.",
+        "voraussetzungen": "Paktgeschenk Zauberei mit Lebenskraft",
+        "apWert": "0 AP (wird automatisch über das Paktgeschenk Zauberei mit Lebenskraft vergeben)",
+        "alias": []
+    },
+    {
+        "name": "Drachentöter",
+        "regel": "Drachentöter werden respektvoll behandelt, erhalten regelmäßig Einladungen zu Festen der gehobenen Gesellschaft und oftmals kostenlos Speis und Trank in Tavernen. Der Held wird so behandelt, als hätte er einen um 1 höheren sozialen Rang als üblich (siehe Regelwerk Seite 338). Das Gegenüber muss aber wissen oder zumindest glauben, dass der Held ein Drachentöter ist, damit der Bonus zählt. Der Held erhält zudem einen Bonus von +1 TP gegen alle Drachen, sowohl gegenüber echten als auch niederen Drachen.",
+        "voraussetzungen": "Der Held muss einen echten Drachen getötet haben.",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Dunkelsicht I-II (*)",
+        "regel": "Auf Stufe I werden Erschwernisse durch Dunkelheit um eine Stufe gesenkt, auf Stufe II können alle Erschwernisse durch Dunkelheit ignoriert werden. Bei vollständiger Finsternis ist aber Dunkelsicht (egal ob Stufe I oder II) wirkungslos und es gelten die Abzüge für vollständige Finsternis.",
+        "voraussetzungen": "Spezies, Kultur oder Profession muss Dunkelsicht als automatischen oder empfohlenen Vorteil aufweisen, kein Nachteil Nachtblind",
+        "apWert": "10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Eisenaffine Aura",
+        "regel": "Wer diesen Vorteil aufweist, erleidet durch den Bann des Eisens lediglich pro vollen 4 Stein Gewicht Erschwernisse, anstatt bereits bei 2 vollen Stein.",
+        "voraussetzungen": "Vorteil Zauberer",
+        "apWert": "15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Einkommen I-VI",
+        "regel": "Für jede Stufe dieses Vorteils bekommt der Held die gleiche Stufe als dauerhaften Lebensstil. Das verdiente Geld des Vorteils fließt ausschließlich in den Erhalt des Lebensstils. Extrakosten wie Waffen, Rüstungen und andere Ausrüstung muss der Held von seinem Startkapital oder seinen Erwerbungen während des Spiels bezahlen. Alles was über den Lebensstil hinausgeht, muss allerdings extra gezahlt werden.",
+        "voraussetzungen": "",
+        "apWert": "Stufe V: 60 Abenteuerpunkte, Stufe VI: 200 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Eisern",
+        "regel": "Die Wundschwelle des Helden steigt durch den Vorteil um 1.",
+        "voraussetzungen": "keine",
+        "apWert": "5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Entfernungssinn",
+        "regel": "Proben auf Fernkampf mit Schusswaffen (und nur mit Schusswaffen) sind bei der Entfernungskategorie Weit nur um 1 anstatt um 2 erschwert.",
+        "voraussetzungen": "kein Nachteil Blind, Eingeschränkter Sinn (Sicht), Farbenblind oder Verstümmelt (Einäugig)",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Feenfreund",
+        "regel": "Proben auf Überreden (Aufschwatzen, Herausreden, Manipulieren, Schmeicheln), um Feen freundlich zu stimmen, gelten bei Gelingen der Probe als um 1 QS besser. Allerdings kann sich so die QS nie über 6 hinaus erhöhen.",
+        "voraussetzungen": "kein Vorteil Hass auf Feen (und deren Untergruppen), keine Schlechte Eigenschaft Vorurteile gegen Feen",
+        "apWert": "3 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Flink",
+        "regel": "Durch Flink bekommt ein Held 1 Punkt auf seinen Geschwindigkeit-Grundwert hinzu.",
+        "voraussetzungen": "kein Nachteil Behäbig, Fettleibig oder Verstümmelt (Einbeinig)",
+        "apWert": "8 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Fuchssinn",
+        "regel": "Der Held kann Fallen erspüren, die mit den herkömmlichen Sinnen nicht entdeckt werden können. Durch den Vorteil wird das Anwendungsgebiet Fuchssinn im Talent Sinnesschärfe erworben.",
+        "voraussetzungen": "keine",
+        "apWert": "15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Geweihter",
+        "regel": "Der Geweihte erhält als Karmaenergie-Grundwert 20 KaP. Der Vorteil beinhaltet nicht die Sonderfertigkeit Tradition. Diese muss einzeln erworben werden. Jeder Geweihte muss mit einer Tradition starten (eine Tradition ist eine spezielle Sonderfertigkeit). Ein Held kann auch im späteren Verlauf seines Lebens diesen Vorteil erwerben und Geweihter werden. Allerdings kann man nur eine geweihte Tradition besitzen. Ein Erwerb einer weiteren geweihten Tradition ist nicht möglich.",
+        "voraussetzungen": "keine",
+        "apWert": "25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Geborener Redner",
+        "regel": "Proben auf das Talent Bekehren & Überzeugen (öffentliche Rede) sind um 1 erleichtert.",
+        "voraussetzungen": "kein Nachteil Stumm",
+        "apWert": "4 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Giftresistenz I-II",
+        "regel": "Eine Giftresistenz verbessert Zähigkeit und Seelenkraft um 1 pro Stufe, wenn es darum geht, Giften zu widerstehen.",
+        "voraussetzungen": "kein Nachteil Giftanfällig",
+        "apWert": "10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Glück I-III",
+        "regel": "Das für den Helden erreichbare Maximum an Schicksalspunkten steigt hierdurch um 1 je Stufe und der Held er erhält diesen Schip gleich zu Spielbeginn zu seinem Vorrat.",
+        "voraussetzungen": "kein Nachteil Pech",
+        "apWert": "30 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Große Zauberauswahl I-II",
+        "regel": "Die Heldin kann pro Stufe des Vorteils einen zusätzlichen Zauber aktivieren und damit die Begrenzung von maximal 3 Zaubern übersteigen. Ob sie diese Zauber zu Spielbeginn oder später aktiviert, ist ihr überlassen.",
+        "voraussetzungen": "Sonderfertigkeit Tradition Intuitive Zauberer oder Animisten, kein Nachteil Kleine Zauberauswahl",
+        "apWert": "8 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Gutaussehend I-II",
+        "regel": "Jede Stufe des Vorteils gibt dem Helden eine Erleichterung von 1 auf Betören (Anbändeln, Liebeskünste), Überreden (Aufschwatzen, Herausreden, Manipulieren, Schmeicheln) und Handel (Feilschen).",
+        "voraussetzungen": "kein Nachteil Hässlich",
+        "apWert": "20 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Hart im Nehmen",
+        "regel": "Muss eine Probe auf Selbstbeherrschung (Handlungsfähigkeit bewahren oder Störungen ignorieren) bei Wundeffekten abgelegt werden, bekommt die Spielerin eine Erleichterung von 1.",
+        "voraussetzungen": "keine",
+        "apWert": "3 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Gutes Namensgedächtnis",
+        "regel": "Die Abenteurerin kann sich an so gut wie jeden  Namen (samt Titel, Ränge und Ämter) erinnern. Der  Meister sollte voraussetzen, dass die Heldin Personen  immer den korrekten Namen zuordnen kann, auch  wenn der Spieler der Heldin sich nicht immer erinnert. Zudem kann der Meister in passenden Situationen, z. B. auf Festen oder wenn der korrekte Name eine wichtige Rolle spielt, dem Spieler eine Erleichterung  von  1  bei  der  Teilprobe  auf  Klugheit  bei Etikette (Heraldik & Stammbäume oder Klatsch & Tratsch) zugestehen.",
+        "voraussetzungen": "kein Nachteil Schlechtes Namensgedächtnis",
+        "apWert": "2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Heldenhafter Name",
+        "regel": "Abenteurer mit einem heldenhaften Namen werden respektvoller behandelt als andere Menschen und man glaubt ihnen eher. Teilproben auf Charisma bei Bekehren & Überzeugen und Überreden sind um 1 erleichtert. Voraussetzung dafür ist, dass das Gegenüber des Helden den Namen als den Namen eines  Helden kennt.",
+        "voraussetzungen": "ein heldenhafter Name, kein Vorteil Allerweltsname, kein Nachteil Lächerlicher Name, Schurkenname oder Unpassender Name",
+        "apWert": "8 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Hass auf",
+        "regel": "Der Held richtet gegen eine Art von Wesen, das beim Erwerb dieses Vorteils festgelegt werden muss, +1 TP im Nahkampf an. Der Typus des Wesens muss dabei näher spezifiziert werden. Je häufiger der Typus des Wesens in Aventurien vorkommt, desto teurer der AP-Wert für diesen Vorteil. Ausgeschlossen als wählbare Typen sind die Oberkategorien Lebewesen und Nicht Lebende. Neben dem im Regelwerk aufgeführten Typen und Unterkategorien kann man auch Spezies und Kulturen wählen. Die eigene Spezies/Kultur ist prinzipiell wählbar, jedoch sind Helden mit Hass auf die eigene Spezies/Kultur oft nur schwer spielbar. Der Meister hat das letzte Wort bezüglich der Wählbarkeit eines Hassobjektes. Je kleinteiliger ein Typus gewählt wird und je seltener eine potenzielle Begegnung mit ihm ist, desto niedriger die AP-Kosten für den Vorteil. Mehr zu den Typen und ihren Unterkategorien siehe Regelwerk Seite 355.",
+        "voraussetzungen": "keine",
+        "apWert": "unterschiedlich",
+        "alias": []
+    },
+    {
+        "name": "Herausragende Fertigkeit",
+        "regel": "Durch den Vorteil Herausragende Fertigkeit verschiebt sich das Maximum in einer Fertigkeit um 1 nach oben, sowohl beim Maximum der Heldenerschaffung als auch beim endgültigen Maximum (abhängig von der höchsten beteiligten Eigenschaft). Zwar erhält ein Held nicht automatisch einen Fertigkeitspunkt dazu, aber er kann zu Spielbeginn zum Beispiel bei Erfahrungsgrad Erfahren mit einem Wert von 11 starten (anstatt 10) und auch sein absolutes Maximum in der Fertigkeit ist um 1 erhöht. Der Vorteil kann bis zu viermal gewählt werden, wobei keine Fertigkeit mehr als zweimal gewählt werden kann. Bei zweifacher Zuteilung auf eine Fertigkeit erhöht der Vorteil das Maximum um 2.",
+        "voraussetzungen": "kein Nachteil Unfähig in der Fertigkeit",
+        "apWert": "A-/B-/C-/D-Fertigkeit: 2/4/6/8 Abenteuerpunkte pro Anwendung",
+        "alias": []
+    },
+    {
+        "name": "Herausragende Kampftechnik",
+        "regel": "Durch den Vorteil Herausragende Kampftechnik verschiebt sich das Maximum in einer Kampftechnik um 1 nach oben, sowohl beim Maximum der Heldenerschaffung als auch beim endgültigen Maximum (abhängig von der Leiteigenschaft). Zwar erhält der Held nicht automatisch einen Kampftechnikpunkt dazu, aber er kann zu Spielbeginn zum Beispiel bei Erfahrungsgrad Erfahren mit einem Wert von 13 starten (anstatt 12) und auch das absolute Maximum in der Kampftechnik ist um 1 erhöht. Der Vorteil kann bis zu zweimal gewählt werden, wobei jede Kampftechnik nur einmal gewählt werden kann.",
+        "voraussetzungen": "keine",
+        "apWert": "B-/C-/D-Kampftechnik: 8/12/16 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Herausragender Sinn",
+        "regel": "Wer über einen Herausragenden Sinn verfügt, dessen Proben auf Sinnesschärfe sind um 1 erleichtert, wenn die Probe den entsprechenden Sinn betrifft. Folgende Sinne können gewählt werden: Sicht, Gehör, Geruch & Geschmack, Tastsinn. Herausragender Sinn ist mehrfach für die verschiedenen Sinne wählbar, nicht aber für einen einzelnen.",
+        "voraussetzungen": "kein Nachteil Eingeschränkter Sinn für den gleichen Sinn, kein Nachteil Blind (für Sicht), kein Nachteil Taub (für Gehör)",
+        "apWert": "Sicht/Gehör: 12 Abenteuerpunkte; Geruch & Geschmack: 6 Abenteuerpunkte; Tastsinn: 2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Hohe Astralkraft I-VII",
+        "regel": "Der AE-Grundwert steigt durch diesen Vorteil um 1 Punkt pro Stufe des Vorteils.",
+        "voraussetzungen": "Vorteil Zauberer, kein Nachteil Niedrige Astralkraft",
+        "apWert": "6 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Hitzeresistenz",
+        "regel": "Hitzestufen werden für den Helden um 1 Stufe reduziert, bis zu einem Minimum von Hitzestufe 1.",
+        "voraussetzungen": "kein Nachteil Hitzeempfindlich",
+        "apWert": "5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Hohe Karmalkraft I-VII",
+        "regel": "Der KE-Grundwert steigt durch diesen Vorteil um 1 Punkt pro Stufe des Vorteils.",
+        "voraussetzungen": "Vorteil Geweihter, kein Nachteil Niedrige Karmalkraft",
+        "apWert": "6 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Hohe Lebenskraft I-VII",
+        "regel": "Der LE-Grundwert steigt durch diesen Vorteil um 1 Punkt pro Stufe des Vorteils.",
+        "voraussetzungen": "kein Nachteil Niedrige Lebenskraft",
+        "apWert": "6 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Hohe Seelenkraft",
+        "regel": "Der SK-Grundwert des Helden ist um 1 besser.",
+        "voraussetzungen": "kein Nachteil Niedrige Seelenkraft",
+        "apWert": "25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Immunität gegen (Gift)",
+        "regel": "Wer immun gegen ein bestimmtes Gift ist, auf den hat dieses Gift keinerlei Wirkung. Eine Immunität muss für jedes Gift einzeln erworben werden.",
+        "voraussetzungen": "keine",
+        "apWert": "halbe Giftstufe in Abenteuerpunkten",
+        "alias": []
+    },
+    {
+        "name": "Hohe Zähigkeit",
+        "regel": "Der ZK-Grundwert des Helden ist um 1 besser.",
+        "voraussetzungen": "kein Nachteil Niedrige Zähigkeit",
+        "apWert": "25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Kein Bann des Eisens",
+        "regel": "Der Held kann die Erschwernisse durch Bann des Eisens (siehe Regelwerk Seite 256) ignorieren. Er ist weder durch das Tragen von Eisen in Form von Waffen, Rüstungen oder Ausrüstung betroffen, noch erleidet er irgendwelche Nachteile dadurch, dass er mit dem Material arbeitet.",
+        "voraussetzungen": "Sonderfertigkeit Tradition Meistertalentierte, kein Vorteil Eisenaffine Aura",
+        "apWert": "25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Immunität gegen (Krankheit)",
+        "regel": "Wer immun gegen eine bestimmte Krankheit ist, kann nicht an ihr erkranken. Eine Immunität muss für jede Krankheit einzeln erworben werden.",
+        "voraussetzungen": "keine",
+        "apWert": "halbe Krankheitsstufe in Abenteuerpunkten",
+        "alias": []
+    },
+    {
+        "name": "Koboldfreund",
+        "regel": "Proben auf Überreden (Aufschwatzen, Herausreden, Manipulieren, Schmeicheln), um einen Kobold/Klabauter freundlich zu stimmen, gelten bei Gelingen der Probe als um 1 QS besser. Allerdings kann sich die QS so nie über 6 hinaus erhöhen.",
+        "voraussetzungen": "kein Vorteil Hass auf Kobolde (und deren Untergruppen), keine Schlechte Eigenschaft Vorurteile gegen Kobolde",
+        "apWert": "3 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Krankheitsresistenz I-II",
+        "regel": "Eine Krankheitsresistenz verbessert Zähigkeit und Seelenkraft um 1 pro Stufe, wenn es darum geht, Krankheiten zu widerstehen.",
+        "voraussetzungen": "kein Nachteil Krankheitsanfällig",
+        "apWert": "10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Machtvolle Zaubertänze",
+        "regel": "Die Heldin kann Personen bis zu SK 3 durch ihre Zaubertänze verzaubern (statt nur bis zu SK 2).",
+        "voraussetzungen": "Sonderfertigkeit Tradition Zaubertänzer, kein Nachteil Schwache Zaubertänze",
+        "apWert": "15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Kälteresistenz",
+        "regel": "Kältestufen werden für den Helden um 1 Stufe reduziert, bis zu einem Minimum von 0.",
+        "voraussetzungen": "kein Nachteil Kälteempfindlich",
+        "apWert": "5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Machtvolle Zaubermelodien",
+        "regel": "Der Abenteurer kann Personen bis zu SK 3 durch seine Zaubermelodien verzaubern (statt nur bis zu SK 2).",
+        "voraussetzungen": "Sonderfertigkeit Tradition Zauberbarden, kein Nachteil Schwache Zaubermelodien",
+        "apWert": "15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Magische Einstimmung",
+        "regel": "Man muss sich für eine Variante des Vorteils entscheiden (Beispiele sind dem nebenstehenden Kasten zu entnehmen). In der betreffenden Umgebung oder Situation, für die der Vorteil gewählt wurde, hat der Zauberer bei magischen Fertigkeitsproben eine Erleichterung von 1.",
+        "voraussetzungen": "Vorteil Zauberer, kein Nachteil Magische Einschränkung auf die gleiche Umgebung",
+        "apWert": "40 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Mystiker",
+        "regel": "Bei einem Mystiker baut sich Entrückung erst nach zwei Stunden statt einer Stunde pro Stufe ab.",
+        "voraussetzungen": "Vorteil Geweihter, kein Vorteil Pragmatiker",
+        "apWert": "20 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Natürlicher Rüstungsschutz I-II",
+        "regel": "Das Wesen verfügt pro Stufe des Vorteils über einen natürlichen Rüstungsschutz, der mit anderen Rüstungen kombiniert werden kann.",
+        "voraussetzungen": "Spezies, Kultur oder Profession muss Natürlicher Rüstungsschutz als automatischen oder empfohlenen Vorteil aufweisen.",
+        "apWert": "20 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Pragmatiker",
+        "regel": "Bei einem Pragmatiker baut sich Entrückung bereits nach einer halben Stunde statt einer Stunde pro Stufe ab.",
+        "voraussetzungen": "",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Nichtschläfer (*)",
+        "regel": "Ein Wesen mit diesem Vorteil muss nicht regelmäßig schlafen, sondern kann bis zu einer Woche wach bleiben, ohne zu ermüden. Der Schlaf muss aber anschließend nachgeholt werden, was bei einigen Spezies durch echten Schlaf, bei anderen durch Meditation oder vergleichbare Techniken erreicht wird. Während der Zeit, in der der Nichtschläfer nicht schläft, kann er auch nicht durch Ausruhen und Schlafen regenerieren (Ausnahme stellt die Verwendung von Heilkräutern und der Einsatz des Talents Heilkunde Wunden dar).",
+        "voraussetzungen": "Spezies, Kultur oder Profession muss Nichtschläfer als automatischen oder empfohlenen Vorteil besitzen",
+        "apWert": "8 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Prediger",
+        "regel": "Der Held bekommt eine neue Einsatzmöglichkeit für Bekehren & Überzeugen (öffentliche Rede). Er kann bis zu drei Predigt-Sonderfertigkeiten erlernen, auch wenn er nicht über den Vorteil Geweihter verfügt. Der Zelot muss eine Gottheit auswählen, wenn er sich für diesen Vorteil entscheidet. Lässt sich ein Prediger im späteren Verlauf seines Lebens der ausgewählten Gottheit weihen, bekommt er die 10 AP dieses Vorteils wieder zurück bzw. kann sie mit Geweihter verrechnen.",
+        "voraussetzungen": "Nachteil Prinzipientreue I (ausgewählte Gottheit), kein Vorteil Geweihter, kein Vorteil Visionär",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Reich I-X",
+        "regel": "Durch den Vorteil Reich erhält ein Held bei der Generierung zusätzlich 250 Silbertaler pro Stufe.",
+        "voraussetzungen": "kein Nachteil Arm",
+        "apWert": "1 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Richtungssinn",
+        "regel": "Proben auf Orientierung sind immer um 1 erleichtert.",
+        "voraussetzungen": "kein Nachtteil Unfähig in Orientierung",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Saumagen I-II",
+        "regel": "Mit Saumagen kann der Held zähes Fleisch problemlos essen, so als ob es normales Fleisch wäre. Bei Stufe II kann er sogar ungenießbares Fleisch verzehren. Es wird ihm nicht sonderlich schmecken, aber er kann es verdauen, ohne dass ihm übel wird und er sich erbrechen muss. Gifte und Krankheitskeime können jedoch nicht durch den Vorteil umgangen werden. Ähnliches gilt auch für pflanzliche Nahrungsmittel. Schwerverdauliche Kost ist essbar, ohne dass es weitere Auswirkungen hat.",
+        "voraussetzungen": "keine",
+        "apWert": "2 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Schlangenmensch",
+        "regel": "Proben auf Körperbeherrschung (Akrobatik, Entwinden) sind um 1 erleichtert.",
+        "voraussetzungen": "keine",
+        "apWert": "6 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Schnell wieder auf den Beinen",
+        "regel": "Mit diesem Vorteil benötigt man nur noch die Hälfte der Zeit, bis eine Stufe des Zustands Betäubung oder Berauscht, der durch Alkohol verursacht wurde, abgebaut ist.",
+        "voraussetzungen": "keine",
+        "apWert": "2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Schutzgeist",
+        "regel": "Wer über einen Schutzgeist verfügt, der kann die folgenden Optionen einsetzen. Sie kosten weder eine Aktion noch eine freie Aktion, sondern können jederzeit eingesetzt werden.",
+        "voraussetzungen": "Tradition Intuitive Zauberer oder Meistertalentierte",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Schwer zu verzaubern (*)",
+        "regel": "Viele Zauber, die auf den Helden gesprochen werden können, die auf ihn wirken, sind um 1 erschwert. Dies gilt für alle Zauber und magischen Effekte mit den Merkmalen Einfluss, Heilung, Hellsicht und Verwandlung sowie für solche, die durch Seelenkraft oder Zähigkeit modifiziert werden. Diese Erschwernis gilt auch dann, wenn der Held sich verzaubern lassen möchte.",
+        "voraussetzungen": "Spezies, Kultur oder Profession muss Schwer zu verzaubern als automatischen oder empfohlenen Vorteil besitzen.",
+        "apWert": "15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Soziale Anpassungsfähigkeit",
+        "regel": "Personen mit Sozialer Anpassungsfähigkeit können Erschwernisse auf Gesellschaftstalente ignorieren, die durch Standesunterschiede entstehen. Die Soziale Anpassungsfähigkeit täuscht aber keine Personen des Hochadels.",
+        "voraussetzungen": "kein Nachteil Unfähig auf ein Gesellschaftstalent, kein Nachteil Unfrei",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Tierfreund",
+        "regel": "Proben auf Tierkunde (domestizierte Tiere, Wildtiere) gelten bei Gelingen der Probe als um 1 QS besser, allerdings kann sich die QS dabei nie über 6 erhöhen.",
+        "voraussetzungen": "kein Vorteil Hass auf die Tierart",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Unbeschwertes Zaubern",
+        "regel": "Der Schelm kann eine SK und ZK seiner Ziele von bis zu 2 bei seinen Schelmenstreichen ignorieren. Dieser Vorteil ist mit der Sonderfertigkeit Lockeres Zaubern (siehe Seite 72) kombinierbar, sodass SK und ZK von bis zu 3 ignoriert werden können.",
+        "voraussetzungen": "Tradition (Schelme)",
+        "apWert": "15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Unscheinbar",
+        "regel": "Helden mit diesem Vorteil erhalten eine Erleichterung von 1 auf Gassenwissen (Beschatten).",
+        "voraussetzungen": "keine",
+        "apWert": "4 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Verbesserte Regeneration (Astralenergie) I-III",
+        "regel": "Für jede Stufe des Vorteils bekommt der Held 1 zusätzlichen Punkt dazu, wenn er regeneriert.",
+        "voraussetzungen": "Vorteil Zauberer, kein Nachteil Schlechte Regeneration (Astralenergie)",
+        "apWert": "10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Verbesserte Regeneration (Lebensenergie) I-III",
+        "regel": "Für jede Stufe des Vorteils bekommt der Held 1 zusätzlichen Punkt dazu, wenn er regeneriert,",
+        "voraussetzungen": "kein Nachteil Schlechte Regeneration (Lebensenergie)",
+        "apWert": "10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Verbesserte Regeneration (Karmaenergie) I-III",
+        "regel": "Für jede Stufe des Vorteils bekommt der Held 1 zusätzlichen Punkt dazu, wenn er regeneriert.",
+        "voraussetzungen": "Vorteil Geweihter, kein Nachteil Schlechte Regeneration (Karmaenergie)",
+        "apWert": "10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Verhüllte Aura",
+        "regel": "Bei ungerichteter magischer Wahrnehmung erscheint der Zauberkundige immer als nicht magisch. Wer gezielt versucht, den Zauberkundigen zu entdecken oder zu analysieren, beispielsweise mit dem Zauber ODEM oder der Liturgie Magiesicht, muss eine Erschwernis von 3 hinnehmen.",
+        "voraussetzungen": "Vorteil Zauberer",
+        "apWert": "20 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Vertrauenerweckend",
+        "regel": "Proben auf Bekehren & Überzeugen (öffentliche Rede, Einzelgespräch, Diskussionsführung), Überreden (Betteln, Manipulieren, Schmeicheln) und Handel (Feilschen) sind um 1 erleichtert.",
+        "voraussetzungen": "kein Nachteil Unfähig in einem Gesellschaftstalent",
+        "apWert": "25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Waffenbegabung",
+        "regel": "Eine Waffenbegabung erlaubt bei Kritischen Erfolgen und Patzern bei einer Probe auf eine Kampftechnik eine Wiederholung des Bestätigungswurfs.",
+        "voraussetzungen": "keine",
+        "apWert": "B-/C-/D-Kampftechnik: 5/10/15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Weitreichende Zaubermelodien I-III",
+        "regel": "Die Zaubermelodien des Abenteurers reichen pro Stufe des Vorteils 2 Schritt weiter als üblich.",
+        "voraussetzungen": "Sonderfertigkeit Tradition Zauberbarden, kein Nachteil Verminderte Zaubermelodien",
+        "apWert": "5 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Wasserlebewesen (*)",
+        "regel": "Wesen mit diesem Vorteil erhalten automatisch die Sonderfertigkeit Unterwasserkampf (die Kosten der SF sind in diesem Vorteil einberechnet). Wasserlebewesen können unter Wasser atmen. Außerdem können sie sich darin mit Leichtigkeit fortbewegen, da es sich um ihr natürliches Element handelt. Sie müssen keine Proben ablegen, um nicht zu ertrinken.",
+        "voraussetzungen": "Spezies, Kultur oder Profession muss Wasserlebewesen als automatischen oder empfohlenen Vorteil aufweisen.",
+        "apWert": "15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Weitreichende Zaubertänze I-III",
+        "regel": "Die Zaubertänze der Abenteurerin reichen pro Stufe des Vorteils 2 Schritt weiter als üblich.",
+        "voraussetzungen": "Sonderfertigkeit Tradition Zaubertänzer, kein Nachteil Verminderte Zaubertänze",
+        "apWert": "5 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Wohlklang",
+        "regel": "Fertigkeitsproben auf Singen sind um 1 erleichtert.",
+        "voraussetzungen": "kein Nachteil Stumm",
+        "apWert": "5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Zahlreiche Predigten I-II",
+        "regel": "Bei Stufe I kann der Zelot 4 Predigt-Sonderfertigkeiten beherrschen, bei Stufe II sogar 5.",
+        "voraussetzungen": "Vorteil Prediger",
+        "apWert": "8 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Zauberer",
+        "regel": "Der Zauberer erhält als Astralenergie- Grundwert 20 AsP. Der Vorteil beinhaltet nicht die Sonderfertigkeit Tradition (siehe Regelwerk Seite 275). Diese muss einzeln erworben werden. Jeder Zauberer muss mit einer Tradition starten (eine Tradition ist eine spezielle Sonderfertigkeit). Dieser Vorteil lässt sich im späteren Spielverlauf nicht mehr erwerben.",
+        "voraussetzungen": "keine",
+        "apWert": "25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Zahlreiche Visionen I-II",
+        "regel": "Bei Stufe I kann der Zelot 4 Vision-Sonderfertigkeiten beherrschen, bei Stufe II sogar 5.",
+        "voraussetzungen": "Vorteil Visionär",
+        "apWert": "8 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Zeitgefühl",
+        "regel": "Der Charakter hat ein ausgezeichnetes Zeitgefühl und kann, ohne den Stand der Sonne zu sehen oder auf andere Hilfsmittel zurückzugreifen, die Tageszeit genau bestimmen.",
+        "voraussetzungen": "keine",
+        "apWert": "2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Zweistimmiger Gesang (*)",
+        "regel": "Ein Held kann den Zweistimmigen Gesang singen und hat somit die Möglichkeit, Elfenlieder zu erlernen. Durch den Vorteil erwirbt der Held das Anwendungsgebiet Zweistimmiger Gesang im Talent Singen.",
+        "voraussetzungen": "Spezies, Kultur oder Profession muss Zweistimmiger Gesang als automatischen oder empfohlenen Vorteil besitzen.",
+        "apWert": "5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Zwergennase",
+        "regel": "Der Abenteurer erhält bei Proben auf Sinnesschärfe zur Entdeckung von Geheimtüren, Hohlräumen, versteckten Schubladen und Ähnlichem eine Erleichterung von 1.",
+        "voraussetzungen": "keine",
+        "apWert": "8 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Zäher Hund",
+        "regel": "Dieser Vorteil sorgt dafür, dass der Held die Auswirkungen der höchsten Stufe des Zustands Schmerz ignorieren darf. Er erleidet lediglich die Auswirkungen der nächstniedrigeren Stufe. Wenn ein Held also beispielsweise drei Stufen Schmerz erlitten hat, gelten für ihn nur die Auswirkungen von Stufe II. Bei Schmerz Stufe IV wird der Held dennoch handlungsunfähig. Schmerz Stufe I wird so behandelt, als hätte der Held keine Stufe Schmerz.",
+        "voraussetzungen": "kein Nachteil Zerbrechlich",
+        "apWert": "20 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Visionär",
+        "regel": "Die Heldin bekommt eine neue Einsatzmöglichkeit für Götter & Kulte (eigene Gottheit). Sie kann bis zu drei Vision-Sonderfertigkeiten erlernen, auch wenn sie nicht über den Vorteil Geweihter verfügt. Die Zelotin muss eine Gottheit auswählen, wenn sie sich für diesen Vorteil entscheidet. Lässt sich eine Visionärin im späteren Verlauf ihres Lebens der ausgewählten Gottheit weihen, bekommt sie die 10 AP dieses Vorteils wieder zurück bzw. kann sie mit Geweihter verrechnen.",
+        "voraussetzungen": "Nachteil Prinzipientreue I (ausgewählte Gottheit), kein Vorteil Geweihter, kein Vorteil Prediger",
+        "apWert": "10 Abenteuerpunkte",
+        "alias": []
+    }
+]

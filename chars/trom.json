@@ -1,0 +1,294 @@
+{
+    "name": "Trom",
+    "displayName": "Trom Adlerauge",
+    "gs": 8,
+    "zk": 2,
+    "sk": 2,
+    "eigenschaften": {
+        "MU": 14,
+        "KL": 14,
+        "IN": 15,
+        "CH": 14,
+        "FF": 14,
+        "GE": 17,
+        "KO": 14,
+        "KK": 12
+    },
+    "lep": {
+        "aktuell": 36,
+        "max": 36
+    },
+    "kampftechniken": [
+        {
+            "name": "Bögen",
+            "ktw": 17
+        },
+        {
+            "name": "Dolche",
+            "ktw": 12
+        },
+        {
+            "name": "Stangenwaffen",
+            "ktw": 18
+        }
+    ],
+    "talente": [
+        {
+            "name": "Bekehren & Überzeugen",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Boote & Schiffe",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Fährtensuchen",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Fahrzeuge",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Fesseln",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Geschichtswissen",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Götter & Kulte",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Heilkunde Wunden",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Heilkunde Krankheiten",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Holzbearbeitung",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Klettern",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Körperbeherrschung",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Kraftakt",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Lebensmittelbearbeitung",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Lederbearbeitung",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Magiekunde",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Menschenkenntnis",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Orientierung",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Pflanzenkunde",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Reiten",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Sagen & Legenden",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Schwimmen",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Selbstbeherrschung",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Sinnesschärfe",
+            "fertigkeitswert": 11
+        },
+        {
+            "name": "Sphärenkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Tanzen",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Tierkunde",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Überreden",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Verbergen",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Wildnisleben",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Willenskraft",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Rechtskunde",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Gassenwissen",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Geographie",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Steinbearbeitung",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Sternkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Alchimie",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Kriegskunst",
+            "fertigkeitswert": 4
+        }
+    ],
+    "zauber": [],
+    "liturgien": [],
+    "sonderfertigkeiten": [
+        {
+            "name": "Belastungsgewöhnung I"
+        },
+        {
+            "name": "Ortskenntnis (Heimat: Ort)"
+        },
+        {
+            "name": "Jäger"
+        },
+        {
+            "name": "Fertigkeitsspezialisierung",
+            "referenz": "Heilkunde Wunden"
+        },
+        {
+            "name": "Tierstimmen imitieren"
+        },
+        {
+            "name": "Präziser Schuss/Wurf I"
+        },
+        {
+            "name": "Schnellladen (Bögen)"
+        },
+        {
+            "name": "Verbessertes Ausweichen I"
+        },
+        {
+            "name": "Finte I"
+        },
+        {
+            "name": "Finte II"
+        },
+        {
+            "name": "Finte III"
+        },
+        {
+            "name": "Rundumschlag I"
+        }
+    ],
+    "waffen": [
+        "Kurzbogen",
+        "Trauerlied"
+    ],
+    "angelegteWaffen": [
+        "Trauerlied",
+        "Kurzbogen"
+    ],
+    "angelegteRuestung": "",
+    "nachteile": [
+        {
+            "name": "Pechmagnet"
+        },
+        {
+            "name": "Persönlichkeitsschwäche",
+            "category": "Unheimlich"
+        },
+        {
+            "name": "Persönlichkeitsschwäche",
+            "category": "Vorurteile"
+        },
+        {
+            "name": "Schlechte Eigenschaft",
+            "category": "Aberglaube"
+        },
+        {
+            "name": "Angst vor Toten I"
+        },
+        {
+            "name": "Angst vor Untoten I"
+        }
+    ],
+    "vorteile": [
+        {
+            "name": "Begabung",
+            "category": "Sinnesschärfe"
+        },
+        {
+            "name": "Begabung",
+            "category": "Verbergen"
+        },
+        {
+            "name": "Entfernungssinn"
+        },
+        {
+            "name": "Herausragender Sinn",
+            "category": "Sicht"
+        },
+        {
+            "name": "Herausragende Kampftechnik",
+            "category": "Stangenwaffen"
+        }
+    ],
+    "initiative": 20,
+    "quickProbeFavorites": [
+        {
+            "category": "talente",
+            "name": "Sinnesschärfe",
+            "label": "Sicht",
+            "bonusMalus": 1
+        },
+        null,
+        null
+    ]
+}

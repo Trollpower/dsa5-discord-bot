@@ -1,0 +1,26 @@
+{
+  "watch": [
+    "bot.js",
+    "index.js",
+    "commands",
+    "events",
+    "handlers",
+    "managers",
+    "common",
+    "data",
+    "tables",
+    "config.json",
+    ".env"
+],
+"ext": "js,json",
+"ignore": [
+    "node_modules/**",
+    ".git/**",
+    "storage/**",
+    "chars/**",
+    "eslint-errors.json",
+    "README.md"
+  ],
+  "exec": "node bot.js",
+  "delay": "250"
+}

@@ -1,0 +1,1461 @@
+[
+    {
+        "name": "Accuratum",
+        "kategorie": "rituale",
+        "probe": "KL/CH/FF",
+        "eigenschaften": [
+            "KL",
+            "CH",
+            "FF"
+        ],
+        "wirkung": "Ein Satz Kleidung wird nach Wünschen des Zauberers abgeändert. Dies betrifft Schnitt und Farbe, nicht jedoch Menge und Art des Materials. Auf diesem Wege sind sowohl das simple Flicken zerrissener Hosen wie auch die Umwandlung eines Stoffballens oder einer schlichten Kutte in eine deutlich prächtigere Robe möglich. Die Kleidung kann nach Meisterentscheid Erschwernisse bei Gesellschaftstalenten ausgleichen, beispielsweise bei Etikette (Benehmen) oder Betören (Aufhübschen).",
+        "dauer": "5 Minuten",
+        "kosten": "4 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "QS x 3 Stunden",
+        "zielkategorie": "Objekte",
+        "verbreitung": "Scharlatane",
+        "steigerung": "A",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Adamantium",
+        "kategorie": "rituale",
+        "probe": "KL/IN/KO",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Adamantium verschafft einem Objekt bis zur Größe einer Truhe QS x 25 % zusätzliche Strukturpunkte. Sollte es während der Wirkungsdauer Strukturpunkte verlieren, werden zunächst die dazugewonnenen abgezogen. Waffen und Rüstungen können von dem Ritual nicht betroffen sein.",
+        "dauer": "5 Minuten",
+        "kosten": "4 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "QS Stunden",
+        "zielkategorie": "Objekte (profane Objekte bis zur Größe einer Truhe)",
+        "verbreitung": "Druiden, Gildenmagier",
+        "steigerung": "A",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Animatio",
+        "kategorie": "rituale",
+        "probe": "KL/IN/GE",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "GE"
+        ],
+        "wirkung": "Das verzauberte Objekt wiederholt auf einen bestimmten Auslöser hin eine festgelegte Bewegung für maximal 5 Minuten. Möglich ist dadurch beispielsweise eine Schatulle, die sich auf ein Fingerschnippen hin öffnet, oder ein Rad, das mit einem Klatschen der Hände zum Drehen gebracht werden kann. Die gewünschte Bewegung muss dabei während der Verzauberung festgelegt werden, eine nachträgliche Modifizierung ist nicht möglich. Soll etwa eine Karaffe auf einen Befehl hin die vorhandenen Krüge mit Wein füllen, müssen diese stets am gleichen Ort stehen, da der Inhalt ansonsten vergossen wird. Außerdem sind nur solche Bewegungen möglich, die der Zauberer mit seinem eigenen Geschick und seiner eigenen Kraft vollziehen kann. Bei dem Auslöser muss es sich um ein akustisches Signal oder eine einfache Bewegung handeln. Das Objekt darf maximal 5 Stein wiegen. Wird das Objekt von einer Person festgehalten oder von einem anderen Objekt blockiert, wirkt der Animatio nur, wenn sein Gewicht sowie die Kraft, die gegen ihn wirkt, 5 Stein nicht überschreiten. Der Animatio endet auch, wenn die Strukturpunkte eines Objekts unter die Hälfte sinken. Der Animatio kann nicht dazu eingesetzt werden, Sammelproben abzulegen.",
+        "dauer": "30 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "QS x 3 Tage",
+        "zielkategorie": "Objekte",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "B",
+        "merkmal": "Telekinese",
+        "alias": []
+    },
+    {
+        "name": "Arcanovi",
+        "kategorie": "rituale",
+        "probe": "KL/IN/FF",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "FF"
+        ],
+        "wirkung": "Details zur Verzauberung stehen im Abschnitt Die Artefakte im Detail im Regelwerk ab Seite 266.",
+        "dauer": "8 Stunden",
+        "kosten": "16 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "geweihte Objekte, profane Objekte",
+        "verbreitung": "allgemein",
+        "steigerung": "D",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Band der Freundschaft",
+        "kategorie": "rituale",
+        "probe": "IN/CH/CH",
+        "eigenschaften": [
+            "IN",
+            "CH",
+            "CH"
+        ],
+        "wirkung": "Dieser ursprünglich elfische Freundschaftszauber (eine lange Version des Bannbaladins für Gäste des Elfendorfes) weckt in seinem Ziel Sympathien und Freundschaft für den Zaubernden. Die genaue Wirkung ist davon abhängig, wie das Ziel anfangs zum Zaubernden steht. Pro QS verbessert sich die Verbindung zwischen den beiden um eine Stufe. Ist der Zaubernde dem Ziel vorher unbekannt, bewegt sich die Einstellung des Ziels meist zwischen Stufe 4 (Abneigung) und Stufe 6 (Zuneigung). Vorteile wie Gutaussehend oder Nachteile wie Vorurteile gegenüber demZaubernden können diesen ersten Eindruck je nach Situation um eine oder mehr Stufen modifizieren.Stufe 1: Das Ziel steht dem Zaubernden voller unstillbarem Hass gegenüber.Stufe 2: Das Ziel ist der erklärte Feind des Zaubernden.Stufe 3: Das Ziel verspürt dem Zaubernden gegenüber Abscheu und Ablehnung.Stufe 4: Das Ziel verspürt eine gewisse Abneigung für den Zaubernden.Stufe 5: Das Ziel ist dem Zaubernden gegenüber neutral.Stufe 6: Das Ziel verspürt eine gewisse Zuneigung für den Zaubernden.Stufe 7: Das Ziel empfindet Vertrauen und Freundschaft zum Zaubernden.Stufe 8: Das Ziel ist dem Zaubernden eng und loyal verbunden.Stufe 9: Das Ziel ist dem Zaubernden verfallen (geht für ihn jedoch nicht in den Tod).Der Zauber verändert nicht das Erinnerungsvermögen. Dem Verzauberten ist nach Ende des Zaubers bewusst, was er empfunden und getan hat. Während der Zauberwirkung mag er sich des Zaubers bewusst sein, das beeinflusst aber seine neue Einstellung nicht. Handlungen des Zauberers hingegen können während der Wirkung das Verhältnis zum Verzauberten positiv oder negativ beeinflussen.",
+        "dauer": "30 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "QS Tage",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Elfen",
+        "steigerung": "C",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Aufmerksamer Wächter",
+        "kategorie": "rituale",
+        "probe": "IN/CH/FF",
+        "eigenschaften": [
+            "IN",
+            "CH",
+            "FF"
+        ],
+        "wirkung": "Der Tiergeist stößt einen Warnruf aus, wenn sich etwas nähert, das er als Gefahr betrachtet. Seine Sinnesschärfe entspricht QS x 3, seine Eigenschaften denen eines typischen Exemplars der Tierart.",
+        "dauer": "30 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "Sichtweite des Tieres",
+        "wirkungsdauer": "QS x 3 Stunden",
+        "zielkategorie": "profane Objekte (Tierbild)",
+        "verbreitung": "Goblinzauberinnen",
+        "steigerung": "B",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Applicatus",
+        "kategorie": "rituale",
+        "probe": "KL/IN/FF",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "FF"
+        ],
+        "wirkung": "Mithilfe dieses Zauber kann man einen Zauberspruch (kein Ritual) an ein Objekt binden, sodass er einmalig ausgelöst werden kann. Der Zauberer muss das Objekt berühren und ein vorher festgelegtes Wort aussprechen, um den Zauber zu aktivieren. Ansonsten gelten die Regeln zum Auslösen von Zauberspeichern.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP + Kosten des fixierten Zaubers",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "maximal QS x 5 Stunden",
+        "zielkategorie": "profane Objekte",
+        "verbreitung": "allgemein",
+        "steigerung": "B",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Blick durch fremde Augen",
+        "kategorie": "rituale",
+        "probe": "MU/IN/CH",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "CH"
+        ],
+        "wirkung": "Der Zauberer ersetzt seine eigene Sicht durch jene des Ziels und sieht dadurch alles, was sich in dessen Blickfeld befindet. Ist es währenddessen notwendig, Proben auf Sinnesschärfe abzulegen, verwendet der Zauberer seine eigenen Werte. Erleidet das Ziel Abzüge auf seine Sinnesschärfe, sei es aufgrund von äußeren Einflüssen wie Sichtmodifikatoren und Zustandsstufen, oder einer eigenen Sehschwäche, gelten diese aber auch für den Zauberer. Dementsprechend vermag der Anwender des Zaubers nichts zu sehen, wenn das Ziel blind ist oder die Augen schließt. Dem Ziel bleibt die Anwesenheit des Zauberers in seinem Geist verborgen. Während der Wirkungsdauer ist der Zauberer blind für seine eigene Umgebung. Bei freiwilligen Zielen kommt keine Erschwernis durch die SK zu tragen",
+        "dauer": "5 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "16 Schritt",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Lebewesen",
+        "verbreitung": "Druiden, Hexen",
+        "steigerung": "C",
+        "merkmal": "Hellsicht",
+        "alias": []
+    },
+    {
+        "name": "Blick in die Vergangenheit",
+        "kategorie": "rituale",
+        "probe": "MU/KL/IN",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "IN"
+        ],
+        "wirkung": "Die Sicht des Zauberers wird in die Vergangenheit seines derzeitigen Aufenthaltsorts versetzt. Dabei handelt es sich um einen kontinuierlichen, mit einer Geschwindigkeit von einem Jahr pro Minute rückwärts laufenden Fluss. Im Laufe einer Stunde sieht er also die Ereignisse der vergangenen sechs Jahrzehnte an sich vorbeiziehen. Aufgrund der Schnelligkeit der wahrgenommenen Bilder ist es nicht möglich, Gesichter wahrzunehmen, wohl aber andere Details. Im Zweifelsfall entscheidet eine Probe auf Sinnesschärfe (Wahrnehmen) erschwert um 3, ob der Zauberer das sieht, was er sucht.",
+        "dauer": "30 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 30 Minuten",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "C",
+        "merkmal": "Hellsicht",
+        "alias": []
+    },
+    {
+        "name": "Bärenruhe",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Das Ritual versetzt einen freiwilligen Kulturschaffenden in einen tiefen Schlaf, aus dem er erst am Ende der Wirkungsdauer erwacht oder durch grobes Wecken gerissen werden kann. Während der Wirkungsdauer werden die Auswirkungen aller Zustände, Status, Gifte und Krankheiten unterbrochen, ebenso kommt es zu keiner Alterung.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP (Kosten nicht modifizierbar)",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS Tage",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Geoden, Elfen",
+        "steigerung": "B",
+        "merkmal": "Verwandlung",
+        "alias": []
+    },
+    {
+        "name": "Brandform",
+        "kategorie": "rituale",
+        "probe": "KL/FF/KK",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "KK"
+        ],
+        "wirkung": "Innerhalb eines Radius von QS Schritt vermag der Zauberer, das Element Feuer zu verformen, solange es nicht Teil eines Wesens ist (etwa bei einem Feuerdschinn). Auf diesem Wege können beispielsweise feurige Monumente erschaffen oder Säulen aus glühenden Kohlen errichtet werden. Der Prozess geht dabei nur langsam vonstatten. Soll das Feuer in eine bestimmte Richtung geformt werden, dauert dies 1 KR pro Schritt Fortbewegung. Am Ende der Wirkungsdauer ist das Verformte wieder den normalen Gesetzen der Natur ausgeliefert.",
+        "dauer": "5 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Zone",
+        "verbreitung": "Elfen",
+        "steigerung": "B",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Chimaeroform",
+        "kategorie": "rituale",
+        "probe": "KL/IN/KO",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer fügt mehrere Wesen zu einer Chimäre zusammen. Die Ritualprobe ist um die Erschaffungsschwierigkeit der Chimäre erschwert. Details zu diesem Prozess finden sich auf Seite 58.",
+        "dauer": "8 Stunden",
+        "kosten": "4/8/16/32/64 AsP für die Größenkategorie winzig/klein/mittel/groß/riesig, 1/2/4/8/16 AsP permanent (Kosten sind nicht modifizierbar)",
+        "reichweite": "4 Schritt",
+        "wirkungsdauer": "QS Wochen",
+        "zielkategorie": "Pflanzen, Tiere",
+        "verbreitung": "Gildenmagier, Hexen",
+        "steigerung": "C",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Chronoklassis",
+        "kategorie": "rituale",
+        "probe": "KL/IN/KO",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer legt einen Punkt innerhalb der Reichweite fest, der den Mittelpunkt einer Zone mit einem Radius von 4 Schritt bildet. Zudem bestimmt er einen Zeitpunkt, der maximal QS x 100 Jahre in der Vergangenheit liegen darf. Ist der Zauber erfolgreich, werden alle Wesen und unbefestigte Objekte, die zu dem gewählten Zeitpunkt innerhalb der Zone verweilten, in die Gegenwart transportiert. Am Ende der Wirkungsdauer werden sie an ihren Ursprungsort und in ihre Ursprungszeit zurückgeschleudert und nehmen dabei ihren ursprünglichen Zustand wieder an, können sich also an nichts erinnern und leben im Falle eines zwischenzeitlichen Todes wieder. Eine Veränderung der Vergangenheit ist auf diesem Wege also nicht möglich.",
+        "dauer": "8 Stunden",
+        "kosten": "64 AsP, 8 davon permanent (Kosten sind nicht modifizierbar)",
+        "reichweite": "16 Schritt",
+        "wirkungsdauer": "12 Stunden",
+        "zielkategorie": "Zone",
+        "verbreitung": "Druiden, Elfen, Gildenmagier, Hexen",
+        "steigerung": "D",
+        "merkmal": "Temporal",
+        "alias": []
+    },
+    {
+        "name": "Caldofrigo",
+        "kategorie": "rituale",
+        "probe": "IN/CH/KO",
+        "eigenschaften": [
+            "IN",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Mittels Caldofrigo kann die Temperatur eines maximal truhengroßen Objekts verändert werden. Es kann abgekühlt oder erwärmt werden und zwar in einem Spielraum von +/-100 Grad Celsius der Ausgangstemperatur. Der Zauberer muss hierzu die gewünschte Gradzahl festlegen und kann nicht beliebig während der Wirkungsdauer die Temperatur ändern. Die Temperaturveränderung funktioniert außerdem immer nur in eine Richtung. Sollte ein Held mit einem Gegenstand in Berührung kommen, der extrem heiß ist (oder kalt; dabei einfach analog dieselben Regeln verwenden), gelten die Regeln für Brennende Personen (siehe Regelwerk Seite 341). Nach dem Ende der Wirkungsdauer nimmt das Objekt wieder seine ursprüngliche Temperatur an. Durch große Temperaturänderungen entsteht bei den meisten Objekten ein Schaden von 1W6 Strukturpunkten. Bei welchen Temperaturen dies der Fall ist, entscheidet der Meister.",
+        "dauer": "5 Minuten",
+        "kosten": "4 AsP",
+        "reichweite": "4 Schritt",
+        "wirkungsdauer": "QS x 2 Minuten",
+        "zielkategorie": "Objekt (profane Objekte bis zur Größe einer Truhe)",
+        "verbreitung": "Druiden, Gildenmagier",
+        "steigerung": "B",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Chrononautos",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer legt einen Punkt innerhalb der Reichweite fest, der den Mittelpunkt einer Zone mit einem Radius von 4 Schritt bildet. Zudem bestimmt er einen Zeitpunkt, der maximal QS x 100 Jahre in der Vergangenheit liegen darf. Ist der Zauber erfolgreich, werden alle Wesen und unbefestigten Objekte, die innerhalb der Zone verweilen, an den gewählten Zeitpunkt transportiert, ohne jedoch den Ort zu wechseln. Am Ende der Wirkungsdauer werden sie an ihren Ursprungsort und in ihre Ursprungszeit zurückgeschleudert.",
+        "dauer": "8 Stunden",
+        "kosten": "64 AsP, 16 davon permanent (Kosten sind nicht modifizierbar)",
+        "reichweite": "16 Schritt",
+        "wirkungsdauer": "12 Stunden",
+        "zielkategorie": "Zone",
+        "verbreitung": "Druiden, Elfen, Gildenmagier, Hexen",
+        "steigerung": "D",
+        "merkmal": "Temporal",
+        "alias": []
+    },
+    {
+        "name": "Custodosigil",
+        "kategorie": "rituale",
+        "probe": "MU/KL/FF",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "FF"
+        ],
+        "wirkung": "Ein maximal truhengroßes Behältnis, das über ein Schloss verfügt, wird mit einem magischen Schutz ausgestattet. Versucht jemand anderes als der Zauberer, es zu öffnen, wird er von einem Flammenstoß getroffen. Dieser verursacht (QS + 2) x 2 Trefferpunkte und entzündet bei 1-3 auf 1W6 eventuell vorhandene brennbare Kleidung des Öffnenden, wodurch dieser den Status Brennend auf kleiner Fläche erhält. Nach der ersten Auslösung endet die Wirkungsdauer vorzeitig.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "QS Monate",
+        "zielkategorie": "Objekte",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "B",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Destructibo",
+        "kategorie": "rituale",
+        "probe": "KL/KL/FF",
+        "eigenschaften": [
+            "KL",
+            "KL",
+            "FF"
+        ],
+        "wirkung": "Mit diesem Ritual ist es möglich, Zauberspeicher- Artefakte zu entzaubern. Die Zauberkräfte des Artefakts verflüchtigen sich, wodurch es wieder zu einem rein profanen Gegenstand wird. Pro 30 Minuten (die Ritualdauer) können QS permanente AsP von einem Gegenstand genommen werden. Der Gegenstand ist erst dann von Magie befreit, wenn alle permanenten AsP gelöscht sind. Dies erfordert ggf. mehrere, direkt aufeinander folgende Destructibo-Sitzungen. Sollte der Zauberer unterbrochen werden oder nicht alle permanenten AsP zerstört werden, misslingt der Zauber insgesamt und der Gegenstand behält alle seine permanenten AsP. Der Zauber ist nach den Angaben der untenstehenden Tabelle modifiziert.",
+        "dauer": "30 Minuten",
+        "kosten": "16 AsP + so viele permanente AsP, wie im Zielobjekt gespeichert sind (Kosten sind nicht modifizierbar)",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "permanent",
+        "zielkategorie": "Objekte (magische Objekte)",
+        "verbreitung": "allgemein",
+        "steigerung": "D",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Eins mit der Natur",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer erhält während der Wirkungsdauer die SF Geländekunde für ein beliebiges Gelände. Besitzt er die SF bereits, so verdoppelt sich der Bonus, den er auf die Talente erhält.",
+        "dauer": "5 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS Stunden",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Elfen, Geoden",
+        "steigerung": "B",
+        "merkmal": "Heilung",
+        "alias": []
+    },
+    {
+        "name": "Dschinnenruf",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Ein Dschinn des gewünschten Elements erscheint. Details zur Herbeirufung und dem Umgang mit Dschinnen finden sich im Abschnitt \"Die Kunst der Elementarherbeirufung\" im Regelwerk ab Seite 262.* Um dieses Ritual zu erlernen benötigt man Elementarer Diener auf FW 12.",
+        "dauer": "8 Stunden",
+        "kosten": "32 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Elementare",
+        "verbreitung": "Druiden, Geoden, Gildenmagier",
+        "steigerung": "C",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Dämonenpakt beenden",
+        "kategorie": "rituale",
+        "probe": "MU/IN/CH",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "CH"
+        ],
+        "wirkung": "Der Zauberer kann mit diesem Ritual versuchen, den Dämonenpakt eines Paktierers zu brechen. Die Probe ist dabei um verschiedene Modifikatoren, beispielsweise durch die Kreise der Verdammnis des Paktierers, modifiziert. Zum genauen Verfahren siehe Seite 79. Die Berührung muss nicht über die ganze Dauer des Rituals erfolgen. Der Meister hat hierbei das letzte Wort.",
+        "dauer": "8 Stunden",
+        "kosten": "32 AsP, 8 davon permanent",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Kulturschaffende (Paktierer)",
+        "verbreitung": "Hexen, Druiden, Gildenmagier, Geoden",
+        "steigerung": "C",
+        "merkmal": "Antimagie",
+        "alias": []
+    },
+    {
+        "name": "Felsenform",
+        "kategorie": "rituale",
+        "probe": "KL/FF/KK",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "KK"
+        ],
+        "wirkung": "Innerhalb eines Radius von QS Schritt vermag der Zauberer, alle Materie des Elements Erz zu verformen, solange sie nicht Teil eines Wesens ist (etwa eines Erzdschinns). Auf diesem Wege können beispielsweise Steine zu einer Wand zusammengefügt oder die Pfeiler einer Brücke zum Einsturz gebracht werden. Der Prozess geht dabei nur langsam vonstatten. Soll der Fels in eine bestimmte Richtung  geformt werden, dauert dies 1 KR pro Schritt Fortbewegung. Am Ende der Wirkungsdauer ist das Verformte wieder den normalen Gesetzen der Natur ausgeliefert.",
+        "dauer": "5 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Zone",
+        "verbreitung": "Elfen",
+        "steigerung": "D",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Erhabenheit des Marmors",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer verwandelt sich in eine steinerne Statue. Während der Wirkungsdauer ist er zu keinen körperlichen oder geistigen Handlungen fähig und behält keine Erinnerung an die Zeit der Verwandlung zurück. Dafür sind sämtliche körperlichen Prozesse ausgesetzt, er benötigt also weder Nahrung noch Atemluft, unterliegt nicht der Wirkung von Giften und Krankheiten und ist keinerlei Alterung ausgesetzt. Wird er angegriffen, kann er wie eine normale Statue aus Stein zerstört werden. Während der Wirkungsdauer hat das Ziel den Status Versteinert.",
+        "dauer": "30 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 3 Wochen",
+        "zielkategorie": "Lebewesen",
+        "verbreitung": "Gildenmagier, Hexen",
+        "steigerung": "C",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Ergebenheit der Wogen",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer verwandelt sich in Wasser. Während der Wirkungsdauer ist er zu keinen körperlichen oder geistigen Handlungen fähig und behält keine Erinnerung an die Zeit der Verwandlung zurück. Dafür sind sämtliche körperlichen Prozesse ausgesetzt, er benötigt also weder Nahrung noch Atemluft, unterliegt nicht der Wirkung von Giften und Krankheiten und ist keinerlei Alterung ausgesetzt. Der verwandelte Körper ist nicht zu zerstören, da er sich auf eine unzusammenhängende Masse verteilt. Deren Teile ziehen sich zwar gegenseitig an, werden also nicht durch Strömungen auseinandergezogen, können aber auch ohne Nachteile vorübergehend voneinander getrennt werden. Selbst ein Verdampfen, Vereisen oder Kondensieren fügt keinen Schaden zu. Liegt eine solche Trennung jedoch zum Zeitpunkt der Rückverwandlung vor, fehlt dem Zauberer ein entsprechend großer Teil seines Körpers. Während der Wirkungsdauer hat das Ziel den Status Verflüssigt.",
+        "dauer": "30 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 3 Tage",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Elfen",
+        "steigerung": "B",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Freiheit der Wolken",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer verwandelt sich in Dampf oder Rauch. Während der Wirkungsdauer ist er zu keinen körperlichen oder geistigen Handlungen fähig und behält keine Erinnerung an die Zeit der Verwandlung zurück. Dafür sind sämtliche körperlichen Prozesse ausgesetzt, er benötigt also weder Nahrung noch Atemluft, unterliegt nicht der Wirkung von Giften und Krankheiten und ist keinerlei Alterung ausgesetzt. Der verwandelte Körper ist nicht zu zerstören, da er sich auf eine unzusammenhängende Masse verteilt. Deren Teile ziehen sich zwar gegenseitig an, werden also nicht durch Wind auseinandergezogen, können aber auch ohne Nachteile vorübergehend voneinander getrennt werden. Liegt eine solche Trennung jedoch zum Zeitpunkt der Rückverwandlung vor, fehlt dem Zauberer ein entsprechend großer Teil seines Körpers. Während der Wirkungsdauer hat das Ziel den Status Gasförmig.",
+        "dauer": "30 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 3 Wochen",
+        "zielkategorie": "Lebewesen",
+        "verbreitung": "Elfen",
+        "steigerung": "C",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Gefäß der Jahre",
+        "probe": "MU/KL/KO",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer bannt seine Alterungserscheinungen in ein Abbild seiner selbst, sei es ein Gemälde oder eine Staue. Dadurch wirkt er selbst wie eine Person in ihren besten Jahren, während das Abbild Züge seines wahren Alters annimmt. Betroffen ist nicht nur die äußere Erscheinung, sondern auch das körperliche Befinden. Am Ende der Wirkungsdauer fallen sämtliche Alterungserscheinungen auf den Zauberer zurück. Wird das Bildnis zerstört, endet die Wirkungsdauer vorzeitig. Gleiches geschieht, wenn sich der Zauberer weiter als QS x 3 Meilen von dem Abbild entfernt.",
+        "dauer": "8 Stunden",
+        "kosten": "64 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "1 Jahr",
+        "zielkategorie": "Objekt",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "D",
+        "merkmal": "Temporal",
+        "alias": []
+    },
+    {
+        "name": "Elementarer Diener",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Ein Elementargeist des gewünschten Elements erscheint. Details zur Herbeirufung und dem Umgang mit Elementargeistern finden sich im Abschnitt Die Kunst der Elementarherbeirufung im Regelwerk ab Seite 262.* Um dieses Ritual zu erlernen benötigt man Manifesto auf FW 10.",
+        "dauer": "30 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Elementare",
+        "verbreitung": "Druiden, Geoden, Gildenmagier",
+        "steigerung": "B",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Gletscherform",
+        "kategorie": "rituale",
+        "probe": "KL/FF/KK",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "KK"
+        ],
+        "wirkung": "Innerhalb eines Radius von QS Schritt vermag der Zauberer alle Materie des Elements Eis zu verformen, solange sie nicht Teil eines Wesens ist (etwa eines Eisdschinns). Auf diesem Wege können beispielsweise Eisbrocken zu einer Wand zusammengefügt oder eine Behausung aus gepresstem Schnee errichtet werden. Der Prozess geht dabei nur langsam vonstatten. Soll das Eis in eine bestimmte Richtung geformt werden, dauert dies 1 KR pro Schritt Fortbewegung. Am Ende der Wirkungsdauer ist das Verformte wieder den normalen Gesetzen der Natur ausgeliefert.",
+        "dauer": "5 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Zone",
+        "verbreitung": "Nachtalben]",
+        "steigerung": "C",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Geisterruf",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer ruft einen niederen Geist einer verstorbenen Person innerhalb eines Radius von 49 Schritt herbei. Details zur Kunst der Geisterbeschwörung.* Um dieses Ritual zu erlernen benötigt man Geisteressenz auf FW 10.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Geister",
+        "verbreitung": "Druiden, Geoden, Gildenmagier, Hexen",
+        "steigerung": "B",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Geisterbeschwörung",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer ruft einen mittleren Geist einer verstorbenen Person innerhalb eines Radius von 49 Schritt herbei. Details zur Kunst der Geisterbeschwörung.* Um dieses Ritual zu erlernen benötigt man Geisterruf auf FW 12.",
+        "dauer": "2 Stunden",
+        "kosten": "16 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Geister",
+        "verbreitung": "Druiden, Geoden, Gildenmagier, Hexen",
+        "steigerung": "C",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Hartes schmelze",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Das Ritual raubt einem Objekt seine Festigkeit und macht einen harten Gegenstand weich und formbar. Dies erlaubt sowohl künstlerische Gestaltungen, ermöglicht aber auch das Erschaffen von Löchern oder das Abtrennen einzelner Teile. Der Zauberer kann z. B. Türen wie Knetmasse zusammenrollen oder ein Schloss aus der Tür entfernen. Dabei ist zu beachten, dass der Meister entscheidet, welche Gegenstände miteinander verbunden sind. Ein Schloss gehört zu einer Tür, eine Tür aber nicht zu einer Wand. Der Zauber ist kein Ersatz für Handwerkstalente, man kann damit beispielsweise nicht Metall verformen, um eine scharfe Schwertklinge zu erhalten. Am Ende der Wirkungsdauer wird der Gegenstand augenblicklich wieder hart.",
+        "dauer": "30 Minuten",
+        "kosten": "2/4/8/16 AsP für einen Gegenstand von der Größe einer Tasse/Truhe/Tür/Burgtor (Kosten nicht modifizierbar)",
+        "reichweite": "4 Schritt",
+        "wirkungsdauer": "QS x 2 Minuten",
+        "zielkategorie": "Objekt (profane Objekte bis zur Größe einer Truhe)",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "B",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Hagelschlag und Sturmgebrüll",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "sdauer: QS Stunden",
+        "dauer": "5 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS Stunden",
+        "zielkategorie": "Zone",
+        "verbreitung": "Druiden, Geoden",
+        "steigerung": "D",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Invocatio Maior",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Ein zuvor ausgewählter gehörnter Dämon mit maximal fünf Hörnern erscheint. Die Ritualprobe ist um die Beschwörungsschwierigkeit des Dämons erschwert. Details zur Beschwörung und dem Umgang mit Dämonen finden sich im Abschnitt Die Kunst der Dämonenbeschwörung im Regelwerk ab Seite 262.* Um dieses Ritual zu erlernen benötigt man Invocatio Minor auf FW 12.",
+        "dauer": "8 Stunden",
+        "kosten": "32 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Dämonen",
+        "verbreitung": "Gildenmagier, Hexen",
+        "steigerung": "C",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Infinitum Immerdar",
+        "kategorie": "rituale",
+        "probe": "KL/CH/KO",
+        "eigenschaften": [
+            "KL",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Mit Hilfe des Infinitums kann ein Zauberer sich darauf vorbereiten, ein dauerhaft wirkendes Artefakt herzustellen. Er muss dabei vorher den Infinitum auf sich wirken und das Artefakt nach den üblichen Regeln für Zauberspeicher herstellen (siehe Regelwerk auf Seite 267). Die Probe des ARCANOVI ist zusätzlich um 10-QS des Infinitums erschwert. Es kann so nur ein Zauber permanent in dem Artefakt verankert werden.",
+        "dauer": "16 Stunden",
+        "kosten": "64 AsP, davon 8 permanent + Kosten des Zaubers, der in dem Objekt wirken soll",
+        "reichweite": "selbst",
+        "wirkungsdauer": "bis zur Erschaffung des nächsten Artefakts, maximal 24 Stunden",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Druiden, Elfen, Geoden, Gildenmagier, Hexen",
+        "steigerung": "D",
+        "merkmal": "Temporal",
+        "alias": []
+    },
+    {
+        "name": "Invocatio Maxima",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Ein zuvor ausgewählter gehörnter Dämon mit über fünf Hörnern erscheint. Die Ritualprobe ist um die Beschwörungsschwierigkeit des Dämons erschwert. Details zur Beschwörung und dem Umgang mit Dämonen finden sich im Regelwerk ab Seite 262.* Um dieses Ritual zu erlernen benötigt man Invovatio Maior auf FW 14.",
+        "dauer": "16 Stunden",
+        "kosten": "64 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Dämonen",
+        "verbreitung": "Gildenmagier, Hexen",
+        "steigerung": "D",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Immortalis Lebenszeit",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Während der Wirkungsdauer wird die Alterung des Zauberers ausgesetzt.*Es soll Techniken geben, mit denen man die Kosten des Zaubers auf andere Wesen übertragen kann.",
+        "dauer": "32 Stunden",
+        "kosten": "64 AsP, 16 davon permanent (Kosten sind nicht modifizierbar)*",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS Jahre",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Gildenmagier, Hexen",
+        "steigerung": "D",
+        "merkmal": "Temporal",
+        "alias": []
+    },
+    {
+        "name": "Invocatio Minor",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Ein zuvor ausgewählter niederer Dämon erscheint. Die Ritualprobe ist um die Anrufungsschwierigkeit des Dämons erschwert. Details zur Beschwörung und dem Umgang mit Dämonen finden sich im Abschnitt Die Kunst der Dämonenbeschwörung im Regelwerk ab Seite 262.* Um dieses Ritual zu erlernen benötigt man Invocatio Minima auf FW 10.",
+        "dauer": "30 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Dämonen",
+        "verbreitung": "Gildenmagier, Hexen",
+        "steigerung": "B",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Körperlose Reise",
+        "kategorie": "rituale",
+        "probe": "MU/KL/IN",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "IN"
+        ],
+        "wirkung": "Der Zauberer trennt seinen Geist von seinem Körper und kann sich auf diesem Wege mit einer GS von QS x 3 fortbewegen, feste Objekte halten den Geisterkörper jedoch auf. Er behält dabei Sicht, Gehör und Geruch, vermag jedoch nicht, mit seiner Umgebung zu interagieren, was auch das Wirken von Magie ausschließt. Ein Eindringen in Bereiche, in denen Magie im Allgemeinen sowie Zauber des Merkmals Sphären im Speziellen unterbunden oder zumindest erschwert werden, ist nur möglich, wenn die erreichten QS die QS der zu überwindenden Wirkung übersteigen. Während der Wirkungsdauer bemerkt der Zauberer nicht, was mit seinem bewusstlosen Körper geschieht, selbst wenn dieser Schaden erleidet. Stirbt der Köper, wird der Geist zu einer Gefesselten Seele. Gleiches geschieht, wenn der Geist nicht vor Ende der Wirkungsdauer in den Körper zurückkehrt, der daraufhin als leere Hülle verendet.",
+        "dauer": "30 Minuten",
+        "kosten": "8 AsP (Aktivierung des Zaubers) + 4 AsP pro 10 Minuten",
+        "reichweite": "selbst",
+        "wirkungsdauer": "aufrechterhaltend",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Druiden, Gildenmagier",
+        "steigerung": "C",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Leidensbund",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer kann den erlittenen LeP-Verlust von einer anderen Person auf sich selbst übertragen. Dadurch werden die Wunden des Ziels geheilt und entstehen dafür beim Zaubernden. Maximal können auf diesem Wege QS x 3 verlorene LeP übertragen werden, wobei sich der Zauberer auch für weniger entscheiden kann. Auch ist keine Übertragung möglich, die beim Zauberer zu einem LeP-Stand führen würde, der bei 0 oder darunter liegt. Die Wirkung des Zaubers setzt erst nach Ende der Ritualdauer ein, es ist daher mit diesem Ritual nicht möglich, Sterbende von der Schwelle des Todes zu retten.",
+        "dauer": "5 Minuten",
+        "kosten": "4 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "A",
+        "merkmal": "Heilung",
+        "alias": []
+    },
+    {
+        "name": "Klarheit des Eises",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer verwandelt sich in eine Statue aus purem Eis. Während der Wirkungsdauer ist er zu keinen körperlichen oder geistigen Handlungen fähig und behält keine Erinnerung an die Zeit der Verwandlung zurück. Dafür sind sämtliche körperlichen Prozesse ausgesetzt, er benötigt also weder Nahrung noch Atemluft, unterliegt nicht der Wirkung von Giften und Krankheiten und ist keinerlei Alterung ausgesetzt. Wird er angegriffen, kann er wie ein normales Objekt aus Eis zerstört werden. Während der Wirkungsdauer hat das Ziel den Status Vereist.",
+        "dauer": "30 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 3 Wochen",
+        "zielkategorie": "Lebewesen",
+        "verbreitung": "Elfen",
+        "steigerung": "C",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Lawinenfall und Trümmerfeld",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer erschafft um sich herum eine Zone von QS x 50 Schritt Radius, innerhalb derer die Erde erbebt. Alle darin befindlichen Wesen müssen jede KR 1 Aktion aufwenden und eine um die QS erschwerte Probe auf Körperbeherrschung (Balance) bestehen, um nicht zu Boden zu fallen und den Status Liegend zu erhalten. Feste Konstruktionen verlieren pro KR 20 Strukturpunkte. Befindet sich im Wirkungsbereich ein mit Geröll, Schnee oder Schlamm bedeckter Abhang, wird eine Lawine ausgelöst.",
+        "dauer": "5 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 2 KR",
+        "zielkategorie": "Zone",
+        "verbreitung": "Geoden",
+        "steigerung": "D",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Madas Spiegel",
+        "kategorie": "rituale",
+        "probe": "MU/KL/IN",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "IN"
+        ],
+        "wirkung": "Blickt der Zauberer auf eine Wasserfläche, vermag er darin eine mit ihm befreundete Person seiner Wahl zu erkennen. Als befreundet zählen Familienmitglieder, andere Helden und weitere gute Freunde, nicht aber der nette Tavernenwirt, den man erst seit ein paar Tagen kennt. Der Zauberer sieht dabei lediglich den Körper der Person in Frontalsicht und kann daher nur dessen derzeitige Bewegungen, die getragene Kleidung und den körperlichen Zustand bestimmen. Den Hintergrund der Person sieht der Zauberer nicht. Ist die Person verstorben, sieht er stattdessen ihre Leiche oder ihr Grab. Ist die Person weiter als QS x 50 Meilen vom Zauberer entfernt, scheitert der Zauber automatisch. Gleiches geschieht, wenn die Person vor Magie im Allgemeinen oder Zaubern des Merkmals Hellsicht im Speziellen geschützt ist und die erreichten QS die QS der Schutzwirkung nicht übersteigen.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 3 KR",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Hexen",
+        "steigerung": "B",
+        "merkmal": "Hellsicht",
+        "alias": []
+    },
+    {
+        "name": "Meister der Elemente",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Ein Elementarer Meister des gewünschten Elements erscheint. Details zur Herbeirufung und dem Umgang mit Elementaren finden sich im Regelwerk auf Seite 262.*Um dieses Ritual zu erlernen benötigt man Dschinnenruf auf FW 14.",
+        "dauer": "16 Stunden",
+        "kosten": "64 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Elementare",
+        "verbreitung": "Druiden, Geoden, Gildenmagier",
+        "steigerung": "D",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Magischer Raub",
+        "kategorie": "rituale",
+        "probe": "MU/KL/KO",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "KO"
+        ],
+        "wirkung": "Während der Wirkungsdauer kann der Zauberer auf die AsP des Ziels zugreifen. Das Opfer kann sich nach Ende der Zauberdauer beliebig weit vom Zauberer entfernt haben. Die Verbindung endet nur dann automatisch, wenn das Opfer sich nicht mehr in der gleichen Sphäre wie der Zauberer aufhält. Wirkt der Zauberer Magie, während die Verbindung besteht, werden die benötigten AsP auf seinen Wunsch hin aus dem Vorrat des Opfers verbraucht. Sind alle AsP des Opfers aufgebraucht, muss der Zauberer alle weiteren Kosten selbst aufbringen. Der Verbrauch von pAsP kann jedoch nicht auf das Ziel übertragen werden. Maximal kann durch den Zauber 1 Ziel beraubt werden.",
+        "dauer": "30 Minuten",
+        "kosten": "4 AsP (Kosten nicht modifizierbar)",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "QS x 30 Minuten",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Druiden, Geoden, Gildenmagier",
+        "steigerung": "C",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Memorabia Falsifir",
+        "kategorie": "rituale",
+        "probe": "KL/IN/CH",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "CH"
+        ],
+        "wirkung": "Der Zauberer entfernt Erinnerungen aus dem Gedächtnis des Ziels. Dabei kann er jedoch keine bestimmte Erinnerung festlegen, sondern lediglich einen Zeitraum von maximal QS x 3 Tagen ab einem von ihm gewünschten Anfangszeitpunkt.",
+        "dauer": "2 Stunden",
+        "kosten": "8 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "1 Jahr",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Druiden",
+        "steigerung": "C",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Movimento",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Während der Wirkungsdauer kann sich der Zauberer beliebig lange im Dauerlauf fortbewegen, ohne dass ihn dies erschöpft. Die Reisestrecke erhöht sich um QS x 10 % für eine Tagesleistung Fußmarsch (siehe Strategische Bewegung im Regelwerk auf Seite 348).",
+        "dauer": "5 Minuten",
+        "kosten": "4 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "8 Stunden (Wirkungsdauer nicht modifizierbar)",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Elfen",
+        "steigerung": "A",
+        "merkmal": "Heilung",
+        "alias": []
+    },
+    {
+        "name": "Nekropathia",
+        "kategorie": "rituale",
+        "probe": "MU/KL/CH",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "CH"
+        ],
+        "wirkung": "Der Zauberer trennt seinen Geist von seinem Körper und kann sich mit ihm in eines der Totenreiche begeben. Dadurch ist es ihm möglich, mit den dort weilenden Seelen zu kommunizieren. Es dauert 5 Minuten, eine Seele ausfindig zu machen oder ihre Abwesenheit festzustellen, während die Kommunikation in normaler Sprachgeschwindigkeit erfolgt. Der Zauberer muss zu Beginn festlegen, in welches der Totenreiche er reisen möchte, denn ein späterer Wechsel ist nicht möglich. Befindet sich die gesuchte Seele nicht in dem ausgewählten Totenreich, muss der Zauber also erneut gewirkt werden, um die Reise fortzusetzen. Eine Reise an Orte außerhalb der Totenreiche, beispielsweise die zwölfgöttlichen Paradise oder die Niederhöllen, ist nicht möglich. Während der Wirkungsdauer bemerkt der Zauberer nicht, was mit seinem bewusstlosen Körper geschieht, selbst wenn dieser Schaden erleidet. Stirbt der Köper, kehrt der Geist zwar in die dritte Sphäre zurück, wird jedoch zu einer Gefesselten Seele. Gleiches geschieht, wenn der Geist nicht vor Ende der Wirkungsdauer in den Körper zurückkehrt, der daraufhin als leere Hülle verendet. Sollte der Geist eines Toten nicht in einem der Totenreiche sein, so kann er mittels dieses Rituals nicht kontaktiert werden. Durch die Trennung von Körper und Seele und das Reisen in eine andere Sphäre erleidet der Zauberer 4-QS Stufen Verwirrung (mindestens jedoch 1 Stufe).",
+        "dauer": "30 Minuten",
+        "kosten": "16 AsP (Kosten sind nicht modifizierbar)",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Gildenmagier, Hexen",
+        "steigerung": "C",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Orvai Kurims Kriegstrommel",
+        "kategorie": "rituale",
+        "probe": "IN/FF/KO",
+        "eigenschaften": [
+            "IN",
+            "FF",
+            "KO"
+        ],
+        "wirkung": "Der Klang der Trommel versetzt Angehörige der Spezies in Raserei, aus deren Haut das Trommelfell gefertigt wurde. Wenn ihnen keine Probe auf Willenskraft (Bedrohungen standhalten) erschwert um die QS des Rituals gelingt, erhalten alle Kulturschaffenden oder Tiere den Status Blutrausch (siehe Regelwerk Seite 35). Der Wirkungsradius beträgt 16 Schritt. Zum Schlagen der Trommel benötigt man 1 Aktion, der Blutrausch dauert für 2W20+QS KR an.",
+        "dauer": "30 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "QS x 3 in Tagen",
+        "zielkategorie": "profane Objekte (Trommeln)",
+        "verbreitung": "Goblinzauberinnen",
+        "steigerung": "C",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Pflanzenform",
+        "kategorie": "rituale",
+        "probe": "KL/FF/KK",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "KK"
+        ],
+        "wirkung": "Innerhalb eines Radius von QS Schritt vermag der Zauberer alle Materie des Elements Humus zu verformen, solange sie nicht Teil eines Wesens ist (etwa eines Humusdschinns). Auf diesem Wege kann beispielsweise ein Graben gezogen oder ein Baum über einen Abgrund gebogen werden. Der Prozess geht dabei nur langsam vonstatten. Soll die Erde in eine bestimmte Richtung geformt werden, dauert dies 1 KR pro Schritt Fortbewegung. Am Ende der Wirkungsdauer ist das Verformte wieder den normalen Gesetzen der Natur ausgeliefert.",
+        "dauer": "5 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Zone",
+        "verbreitung": "Elfen",
+        "steigerung": "C",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Nihilogravo",
+        "kategorie": "rituale",
+        "probe": "KL/IN/KO",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberspruch sorgt für eine zylinderförmige Zone, in der die Schwerkraft aufgehoben ist. Der Zauberer muss einen Mittelpunkt innerhalb der Reichweite des Zauberspruchs benennen. Von dort aus wirkt die Zone mit einem Radius von QS in Schritt. Die Höhe der schwerelosen Zone beträgt QS x 5 Schritt. Durch die ungewohnte Umgebung sind alle Proben für Personen innerhalb dieser Zone um 1 erschwert. Um sich gezielt in der Schwerelosigkeit bewegen zu können, ist eine Probe auf Schwimmen (Tauchen) notwendig. Pro QS schafft man 1 Schritt. Unfälle, Patzer oder Einwirkungen nach Meisterentscheid können dazu führen, dass eine Person aus der Zone gelangt und stürzt. Sollten sich am Ende der Wirkungsdauer noch Wesen in der Zone der Schwerelosigkeit befinden, stürzen diese herunter und erleiden Sturzschaden (siehe Regelwerk Seite 340). Über die Sturzhöhe entscheidet der Meister.",
+        "dauer": "5 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "QS x 5 Minuten",
+        "zielkategorie": "Zone",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "B",
+        "merkmal": "Telekinese",
+        "alias": []
+    },
+    {
+        "name": "Reinheit der Lohe",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer verwandelt sich in reines Feuer. Während der Wirkungsdauer ist er zu keinen körperlichen oder geistigen Handlungen fähig und behält keine Erinnerung an die Zeit der Verwandlung zurück. Dafür sind sämtliche körperlichen Prozesse ausgesetzt, er benötigt also weder Nahrung noch Atemluft, unterliegt nicht der Wirkung von Giften und Krankheiten und ist keinerlei Alterung ausgesetzt. Der verwandelte Körper ist nicht zu zerstören, da er sich auf eine unzusammenhängende Masse verteilt, kein Brennmaterial und keinen Sauerstoff benötigt und nicht durch Luftzüge zum Erlöschen gebracht wird. Es besteht jedoch die Möglichkeit, die Flammen mit Wasser, Sand oder ähnlichen Materialien aktiv zu löschen, was zum Tod des Zauberers führt. Während der Wirkungsdauer hat das Ziel den Status Feuerförmig.",
+        "dauer": "30 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 3 Wochen",
+        "zielkategorie": "Lebewesen",
+        "verbreitung": "Elfen",
+        "steigerung": "C",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Planastrale",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauber öffnet ein bis zu 3 Schritt durchmessendes Tor in den angrenzenden Limbus, das von beiden Seiten aus durchquert werden kann. Befindet sich der Zauberer im Limbus, wird stattdessen ein Tor in die angrenzende Dritte Sphäre geöffnet.",
+        "dauer": "5 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "QS x 3 KR",
+        "zielkategorie": "Zone",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "D",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Ruf des Bienenstocks",
+        "kategorie": "rituale",
+        "probe": "KL/IN/FF",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "FF"
+        ],
+        "wirkung": "Durch Berührung einer Münze oder Ware, die gegen das gesuchte Objekt getauscht wurde, erfährt man Richtung und Entfernung des Objekts in Tagesreisen. Jedes angefangene Jahr, in dem die Zibilja (oder ihre Sippe) das Objekt vorher besaß, erleichtert die Probe um 1, jedes angefangene Jahr nach dem Verkauf erschwert sie um 1 (insgesamt maximal +/-5).",
+        "dauer": "30 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "FW x 50 Meilen",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "profane Objekte",
+        "verbreitung": "Zibilja",
+        "steigerung": "C",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Ruf der Feenwesen",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Ein zufällig ausgewähltes, mittleres Feenwesen aus einem Umkreis von 7 Meilen kommt zum Zauberer und ist in der Regel bereit, ihm zu Diensten zu sein. Details zur Herbeirufung und dem Umgang mit Feen finden sich im Abschnitt Die Kunst der Feenherbeirufung.* Um dieses Ritual zu erlernen benötigt man Zauberwesen der Natur auf FW 12.",
+        "dauer": "2 Stunden",
+        "kosten": "16 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Feenwesen",
+        "verbreitung": "Elfen",
+        "steigerung": "C",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Seelenwanderung",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer tauscht seine Seele mit der des Ziels. Dadurch übernimmt er dessen Körper, während das Ziel in den Körper des Zauberers einfährt. Beide Beteiligten behalten ihre eigenen geistigen Eigenschaften und Fertigkeiten. Nur die körperlichen Eigenschaften und daraus abgeleitete Werte entsprechen jenen des neuen Körpers. Stirbt einer der Körper, werden die beiden Seelen sofort zurück getauscht. Eine dauerhafte Berührung ist während der Ritualdauer nicht notwendig, allerdings darf der Zauberer einen Radius von 8 Schritt um das Ziel nicht verlassen, solange das Ritual gewirkt wird. Außerdem muss am Ende der Ritualdauer eine Berührung stattfinden.",
+        "dauer": "8 Stunden",
+        "kosten": "64 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "QS Tage",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Druiden, Gildenmagier, Hexen",
+        "steigerung": "D",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Standhafter Wächter",
+        "kategorie": "rituale",
+        "probe": "MU/IN/GE",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "GE"
+        ],
+        "wirkung": "Alle Verteidigungen des Ziels sind um 1 erleichtert, unabhängig davon, ob es Angriffe pariert oder ihnen ausweicht.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP (Kosten sind nicht modifizierbar)",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Elfen",
+        "steigerung": "B",
+        "merkmal": "Heilung",
+        "alias": []
+    },
+    {
+        "name": "Stein wandle",
+        "kategorie": "rituale",
+        "probe": "MU/KL/CH",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "CH"
+        ],
+        "wirkung": "Der Zauber erweckt einen Golem. Die Ritualprobe ist um die Erschaffungsschwierigkeit des Golems erschwert. Details zur Erschaffung von Golems finden sich auf Seite 58.",
+        "dauer": "8 Stunden",
+        "kosten": "4/8/16/32/64 AsP für die Größenkategorie winzig/klein/mittel/groß/riesig, 1/2/4/8/16 AsP permanent (Kosten sind nicht modifizierbar)",
+        "reichweite": "4 Schritt",
+        "wirkungsdauer": "QS Wochen",
+        "zielkategorie": "Objekte",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "C",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Ruhe Körper",
+        "kategorie": "rituale",
+        "probe": "KL/CH/KO",
+        "eigenschaften": [
+            "KL",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Die während der nächsten Regenerationsphase zurückgewonnenen LeP erhöhen sich um die doppelte QS. Zudem verläuft der Schlaf ruhig und traumlos, solange äußere Einflüsse dem nicht entgegenwirken. Der Zauber kann nicht verhindern, dass Gifte und Krankheiten in der Regenerationsphase wirken.",
+        "dauer": "5 Minuten",
+        "kosten": "4 AsP (Kosten sind nicht modifizierbar)",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Lebewesen",
+        "verbreitung": "Elfen, Gildenmagier",
+        "steigerung": "B",
+        "merkmal": "Heilung",
+        "alias": []
+    },
+    {
+        "name": "Transmutare",
+        "kategorie": "rituale",
+        "probe": "IN/CH/KO",
+        "eigenschaften": [
+            "IN",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer kann das Äußere seines Körpers beliebig umformen, solange es im möglichen Rahmen seiner Spezies bleibt. Dies schließt Gesichtsform, Hautfarbe, Augenfarbe, Haarfarbe sowie Haarlänge ein, nicht jedoch Stimme, Geruch, Größe und Gewicht. Das Geschlecht bleibt gleich. Seine Werte ändern sich dadurch allerdings nicht. Auch Vor- und Nachteile wie Gutaussehend und Hässlich lassen sich dadurch nicht verändern. Alterserscheinungen können allerdings vermieden werden, da die Haut gestrafft werden kann und selbst Altersflecken verschwinden.",
+        "dauer": "2 Stunden",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 3 Wochen",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Hexen",
+        "steigerung": "C",
+        "merkmal": "Verwandlung",
+        "alias": []
+    },
+    {
+        "name": "Totes handle",
+        "kategorie": "rituale",
+        "probe": "MU/KL/CH",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "CH"
+        ],
+        "wirkung": "Der Zauberer erhebt die körperlichen Überreste eines verstorbenen Lebewesens langfristig zum Untoten. Die Ritualprobe ist um die Erschaffungsschwierigkeit des Untoten erschwert. Details zum Thema Untote finden sich auf Seite 58.",
+        "dauer": "8 Stunden",
+        "kosten": "4/8/16/32/64 AsP für die Größenkategorie winzig/klein/mittel/groß/riesig, 0/1/2/4/8 AsP permanent (Kosten sind nicht modifizierbar)",
+        "reichweite": "4 Schritt",
+        "wirkungsdauer": "QS Wochen",
+        "zielkategorie": "Lebewesen (Verstorbene)",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "C",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Traumgestalt",
+        "kategorie": "rituale",
+        "probe": "MU/IN/CH",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "CH"
+        ],
+        "wirkung": "Der Zauberer dringt in die Träume des Ziels ein und kann diese manipulieren.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "4 Schritt",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Lebewesen",
+        "verbreitung": "Druiden, Geoden, Elfen, Hexen",
+        "steigerung": "C",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Weisheit der Bäume",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer verwandelt sich in einen beliebigen Baum und verwurzelt mit dem Untergrund, solange dies durch die Bodenbeschaffenheit möglich ist. Während der Wirkungsdauer ist er zu keinen körperlichen oder geistigen Handlungen fähig und behält keine Erinnerung an die Zeit der Verwandlung zurück. Dafür sind sämtliche körperlichen Prozesse ausgesetzt, er benötigt also keine Atemluft, unterliegt nicht der Wirkung von Giften und Krankheiten und ist keinerlei Alterung ausgesetzt. Wird er angegriffen, kann er wie ein normaler Baum zerstört werden. Dies schließt die Möglichkeit ein, dem Baum Wasser und Nährstoffe zu entziehen und ihn dadurch langsam absterben zu lassen. Während der Wirkungsdauer hat das Ziel den Status Baumartig.",
+        "dauer": "30 Minuten",
+        "kosten": "32 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 3 Wochen",
+        "zielkategorie": "Lebewesen",
+        "verbreitung": "Druiden, Elfen, Hexen",
+        "steigerung": "C",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Unberührt von Satinav",
+        "kategorie": "rituale",
+        "probe": "KL/IN/FF",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "FF"
+        ],
+        "wirkung": "Ein maximal 5 Stein wiegendes Objekt ist während der Wirkungsdauer vor Verfall geschützt. Die Zeit kann ihm nichts anhaben und es wird also weder verrotten, verrosten noch verfallen. Dies gilt auch in widrigen Umgebungen, etwa überdurchschnittlich feuchten oder heißen Gegenden. Vor gewaltsamen Einflüssen wie Waffenschaden, Feuer oder Säure bietet die Verzauberung jedoch keinen Schutz.",
+        "dauer": "30 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "QS x 3 Wochen",
+        "zielkategorie": "Objekte",
+        "verbreitung": "Kristallomanten",
+        "steigerung": "B",
+        "merkmal": "Zeit",
+        "alias": []
+    },
+    {
+        "name": "Weiches erstarre",
+        "kategorie": "rituale",
+        "probe": "MU/KL/KK",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "KK"
+        ],
+        "wirkung": "Um einen Punkt innerhalb der Reichweite bildet sich eine Zone aus, in der sämtliche Flüssigkeit erstarrt. Dadurch ist es beispielsweise möglich, eine Wasserfläche zu überqueren. Lebewesen werden sofort aus der Flüssigkeit verdrängt und damit nicht Teil der erstarrten Flüssigkeit. Je nach QS kann der Zauberer eine bestimmte Menge an Raumschritt verdicken.QS 1: 1 RaumschrittQS 2: 2 RaumschrittQS 3: 4 RaumschrittQS 4: 8 RaumschrittQS 5: 16 RaumschrittQS 6: 32 RaumschrittJeder Raumschritt erstarrter Flüssigkeit weist 20 Strukturpunkte auf und zerfällt in kleine Einzelteile, wenn er zerschlagen wird. Der Zauber wirkt auch auf lediglich dickflüssige Substanzen. Nicht betroffen sind hingegen Flüssigkeiten, die Teil eines Lebewesens sind. Dringt nachträglich Flüssigkeit in die Zone ein, wird sie ebenfalls von der Wirkung erfasst, sodass sich Flüsse kurzzeitig aufstauen lassen. Bei Seen und anderen Gewässern wird nur die Oberfläche (etwa 1 Schritt) hart. Luft kann nicht zum Erstarren gebracht werden.",
+        "dauer": "5 Minuten",
+        "kosten": "4 AsP + 1 AsP pro Rechtschritt",
+        "reichweite": "16 Schritt",
+        "wirkungsdauer": "QS x 2 Minuten",
+        "zielkategorie": "Zone",
+        "verbreitung": "Gildenmagier",
+        "steigerung": "B",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Wirbelform",
+        "kategorie": "rituale",
+        "probe": "KL/FF/KK",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "KK"
+        ],
+        "wirkung": "Innerhalb eines Radius von QS Schritt vermag der Zauberer alle Materie des Elements Luft zu verformen, solange sie nicht Teil eines Wesens ist. Auf diesem Weg kann eine Zone erschaffen werden, in der ein Sturm nicht wütet, aber auch die Formung von Rauch und Dampf ist möglich. Der Prozess geht dabei nur langsam vonstatten. Soll die Luft in eine bestimmte Richtung geformt werden, dauert dies 1 KR pro Schritt Fortbewegung. Am Ende der Wirkungsdauer ist das Verformte wieder den normalen Gesetzen der Natur ausgeliefert.",
+        "dauer": "5 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Zone",
+        "verbreitung": "Elfen",
+        "steigerung": "B",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Widerwille",
+        "kategorie": "rituale",
+        "probe": "IN/CH/GE",
+        "eigenschaften": [
+            "IN",
+            "CH",
+            "GE"
+        ],
+        "wirkung": "Personen mit SK 2 oder schlechter ignorieren ein vom Zauberer bestimmtes Objekt, selbst wenn es sich direkt vor ihnen befindet. Kommt es zu einer Interaktion mit dem Opfer, etwa wenn dieses mit einem bislang ignorierten Schwert angegriffen wird, endet die Wirkung jedoch. Ein einfaches Berühren oder Ertasten reicht hierfür aber nicht aus. Der Zauberer selbst nimmt das Objekt immer wahr, auch wenn der Zauber wirkt. Es können lediglich kleinere Gegenstände bis zur Größe einer Zweihandwaffe oder eines Seils verzaubert werden, nicht jedoch Truhen, Türen oder gar ganze Gebäude.",
+        "dauer": "30 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "16 Schritt",
+        "wirkungsdauer": "QS Stunden",
+        "zielkategorie": "Objekte",
+        "verbreitung": "Gildenmagier, Scharlatane",
+        "steigerung": "B",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Xenographus",
+        "kategorie": "rituale",
+        "probe": "MU/KL/IN",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "IN"
+        ],
+        "wirkung": "Liest der Zauberer einen Text, erhält er ein Gefühl für die Bedeutung des Niedergelegten, selbst wenn er die Schrift oder Sprache nicht beherrscht. Damit ist es ihm möglich, jeden Text zu verstehen, jedoch lediglich auf dem Niveau einer Person, die die entsprechende Sprache auf Stufe II beherrscht. Die Wirkung umfasst lediglich das geschriebene Wort, nicht jedoch das gesprochene. Ebenso bietet das Ritual keine Hilfestellung bei Schwierigkeiten, die nicht sprachlicher Natur sind, etwa wenn der Text verschlüsselt, in Rätseln verfasst, unleserlich oder unzusammenhängend geschrieben wurde. Das Erlernen einer Sprache oder einer Schrift ist auf diesem Wege nicht möglich, da lediglich die Gesamtbedeutung eines Textes erfasst werden kann, nicht jedoch die Bedeutung einzelner Elemente.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 5 Minuten",
+        "zielkategorie": "Lebewesen",
+        "verbreitung": "Gildenmagier, Scharlatane",
+        "steigerung": "A",
+        "merkmal": "Hellsicht",
+        "alias": []
+    },
+    {
+        "name": "Zauberklinge Geisterspeer",
+        "kategorie": "rituale",
+        "probe": "KL/IN/FF",
+        "eigenschaften": [
+            "KL",
+            "IN",
+            "FF"
+        ],
+        "wirkung": "Mit diesem Ritual lassen sich arkane Kräfte in eine Waffe binden. Diese gilt dann als magische Waffe. Die Kosten des Rituals sind abhängig von der Größe der Waffe.",
+        "dauer": "8 Stunden",
+        "kosten": "abhängig von der Waffe (nicht modifizierbar)",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "FP in Tage",
+        "zielkategorie": "Objekt",
+        "verbreitung": "allgemein",
+        "steigerung": "C",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Wogenform",
+        "kategorie": "rituale",
+        "probe": "KL/FF/KK",
+        "eigenschaften": [
+            "KL",
+            "FF",
+            "KK"
+        ],
+        "wirkung": "Innerhalb eines Radius von QS Schritt vermag der Zauberer, alle Materie des Elements Wasser zu verformen, solange sie nicht Teil eines Wesens ist (etwa eines Wasserdschinns). Auf diesem Weg können z. B. Fontänen oder trockene Passagen durch einen Bach erschaffen werden. Der Prozess geht dabei nur langsam vonstatten. Soll das Wasser in eine bestimmte Richtung geformt werden, dauert dies 1 KR pro Schritt Fortbewegung. Am Ende der Wirkungsdauer ist das Verformte wieder den normalen Gesetzen der Natur ausgeliefert.",
+        "dauer": "5 Minuten",
+        "kosten": "16 AsP",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 10 Minuten",
+        "zielkategorie": "Zone",
+        "verbreitung": "Druiden, Elfen, Gildenmagier",
+        "steigerung": "B",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Zauberschnurren",
+        "kategorie": "rituale",
+        "probe": "MU/IN/CH",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "CH"
+        ],
+        "wirkung": "Die Hexe beginnt, ein kaum wahrnehmbares Schnurren von sich zu geben, welches die meisten Kulturschaffenden als angenehm und beruhigend empfinden. Derjenige, den die Hexe während der Wirkungsdauer des Zaubers zudem berührt, erhält Boni. Diese Boni sind kumulativ.QS 1: In der nächsten Regenerationsphase regeneriert das Ziel +2 LeP und +2 AsP.QS 3: Das Ziel kann eine Stufe Betäubung oder Verwirrung abbauen.QS 2: Ein Hexenfluch, der auf das Ziel wirkt, wird aufgehoben.QS 4: Eine magische Handlung, die auf das Ziel wirkt, wird aufgehoben.QS 5: In der nächsten Regenerationsphase regeneriert das Ziel +2 LeP und +2 AsP.QS 6: Das Ziel kann eine Stufe Betäubung oder Verwirrung abbauen.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP (Kosten sind nicht modifizierbar)",
+        "reichweite": "4 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Hexen",
+        "steigerung": "C",
+        "merkmal": "Heilung",
+        "alias": []
+    },
+    {
+        "name": "Zaubernahrung",
+        "kategorie": "rituale",
+        "probe": "MU/IN/KO",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "KO"
+        ],
+        "wirkung": "Der Zauberer erschafft ein sättigendes Elfenbrot aus dem Nichts, das seinen Hunger zu stillen vermag. Durch den Zauber kann er Nahrung für QS Tage erzeugen. Die Nahrung sättigt nur den Zauberer selbst. Sie darf nicht eingelagert werden, sondern muss nach und nach als Reiseproviant verzehrt werden, sonst verliert sie ihre Wirkung. Während der Wirkungsdauer verdirbt die Nahrung nicht.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP (Kosten sind nicht modifizierbar)",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS Tage",
+        "zielkategorie": "Objekte",
+        "verbreitung": "Elfen",
+        "steigerung": "B",
+        "merkmal": "Heilung",
+        "alias": []
+    },
+    {
+        "name": "Überlegener Krieger",
+        "kategorie": "rituale",
+        "probe": "MU/IN/GE",
+        "eigenschaften": [
+            "MU",
+            "IN",
+            "GE"
+        ],
+        "wirkung": "Alle Proben auf AT oder FK des Ziels sind um 1 erleichtert.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP (Kosten sind nicht modifizierbar)",
+        "reichweite": "selbst",
+        "wirkungsdauer": "QS x 30 Minuten der beiden.",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Elfen",
+        "steigerung": "B",
+        "merkmal": "Heilung",
+        "alias": []
+    },
+    {
+        "name": "Zauberwesen der Natur",
+        "kategorie": "rituale",
+        "probe": "MU/CH/KO",
+        "eigenschaften": [
+            "MU",
+            "CH",
+            "KO"
+        ],
+        "wirkung": "Ein zufällig ausgewähltes, niederes Feenwesen aus einem Umkreis von 7 Meilen kommt zum Zauberer und ist in der Regel bereit, ihm zu Diensten zu sein. Details zur Herbeirufung und dem Umgang mit Feen finden sich im Abschnitt Die Kunst der Feenherbeirufung.* Um dieses Ritual zu erlernen benötigt man Feenstaub auf FW 10.",
+        "dauer": "5 Minuten",
+        "kosten": "8 AsP",
+        "reichweite": "8 Schritt",
+        "wirkungsdauer": "sofort",
+        "zielkategorie": "Feenwesen",
+        "verbreitung": "Elfen",
+        "steigerung": "B",
+        "merkmal": "Sphären",
+        "alias": []
+    },
+    {
+        "name": "Zauberzwang",
+        "kategorie": "rituale",
+        "probe": "MU/KL/CH",
+        "eigenschaften": [
+            "MU",
+            "KL",
+            "CH"
+        ],
+        "wirkung": "Dem Ziel kann ein einzelner Auftrag gegeben werden. Es steht dem Ziel frei, ob und wie es ihn befolgt. Handelt es ihm jedoch zuwider, erleidet es 2 Stufen des Zustands Schmerz, die erst verschwinden, wenn es sich wieder seiner Aufgabe widmet. Zudem verliert es in diesem Fall zu Beginn jeder Stunde 1 LeP. Notwendige Nebentätigkeiten wie  Essen, Schlafen oder Ausruhen zählen nicht als Zuwiderhandlung, sehr wohl aber absichtliches Verzögern oder das Reisen in die falsche Richtung. Vollzieht das Ziel eine Handlung, die das Erfüllen des Auftrags unmöglich macht oder eine Erfüllung extrem unwahrscheinlich erscheinen lässt, wird der Zauberzwang dennoch nicht aufgehoben. Das Ziel leidet weiterhin unter den Auswirkungen. Dies gilt auch, wenn es indirekt, aber absichtlich eine Unmöglichkeit herbeiführt, nicht jedoch, wenn sie ohne Zutun des Ziels auftritt. Beispiele für eine Unmöglichkeit umfassen das Zerstören eines zu beschützenden Objekts oder Warnen einer zu tötenden Person, die sich daraufhin versteckt und nicht mehr auffindbar ist. Das Ziel wird sich durch den Zauber weder selbst schaden oder in eine tödliche Situation bringen, noch seine Hände essen usw. Das Ziel muss während der Ritualdauer nicht die ganze Zeit berührt werden, der Zauberer muss sich aber in einem Radius von 8 Schritt um das Ziel befinden. Außerdem muss am Ende der Ritualdauer eine Berührung erfolgen.",
+        "dauer": "2 Stunden",
+        "kosten": "16 AsP",
+        "reichweite": "Berührung",
+        "wirkungsdauer": "QS x 3 Tage",
+        "zielkategorie": "Kulturschaffende",
+        "verbreitung": "Hexen",
+        "steigerung": "C",
+        "merkmal": "Einfluss",
+        "alias": []
+    }
+]

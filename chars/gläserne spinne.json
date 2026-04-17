@@ -1,0 +1,94 @@
+{
+  "name": "Gläserne Spinne",
+  "displayName": "Gläserne Spinne",
+  "gs": 12,
+  "zk": 5,
+  "sk": -2,
+  "cheating": {
+    "general": 59,
+    "crit": 15
+  },
+  "eigenschaften": {
+    "MU": 18,
+    "KL": 8,
+    "IN": 16,
+    "CH": 8,
+    "FF": 10,
+    "GE": 26,
+    "KO": 13,
+    "KK": 13
+  },
+  "lep": {
+    "aktuell": 50,
+    "max": 50
+  },
+  "kampftechniken": [
+    {
+      "name": "Biss",
+      "ktw": 18
+    },
+    {
+      "name": "Speiangriff",
+      "ktw": 18
+    }
+  ],
+  "talente": [
+    {
+      "name": "Körperbeherrschung",
+      "fertigkeitswert": 18
+    },
+    {
+      "name": "Sinnesschärfe",
+      "fertigkeitswert": 20
+    }
+  ],
+  "zauber": [],
+  "liturgien": [],
+  "sonderfertigkeiten": [
+    {
+      "name": "Feindgespür"
+    },
+    {
+      "name": "Kampfreflexe I"
+    },
+    {
+      "name": "Kampfreflexe II"
+    },
+    {
+      "name": "Kampfreflexe III"
+    },
+    {
+      "name": "Klingentänzer"
+    },
+    {
+      "name": "Meisterlicher Klingentänzer"
+    },
+    {
+      "name": "Meisterliches Ausweichen"
+    },
+    {
+      "name": "Verbessertes Ausweichen I"
+    },
+    {
+      "name": "Verbessertes Ausweichen II"
+    },
+    {
+      "name": "Verbessertes Ausweichen III"
+    }
+  ],
+  "ruestungen": [],
+  "waffen": [
+    "Gläserne Spucke",
+    "Glasspinnenbiss"
+  ],
+  "angelegteWaffen": [
+    "Gläserne Spucke",
+    "Glasspinnenbiss"
+  ],
+  "initiative": 33,
+  "quickProbeFavorites": [
+    null,
+    null,
+    null
+  ]
+}

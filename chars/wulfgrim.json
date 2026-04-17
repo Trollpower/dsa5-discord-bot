@@ -1,0 +1,163 @@
+{
+  "name": "Wulfgrim",
+  "gs": 8,
+  "eigenschaften": {
+    "MU": 13,
+    "KL": 14,
+    "IN": 15,
+    "CH": 14,
+    "FF": 14,
+    "GE": 12,
+    "KO": 10,
+    "KK": 10
+  },
+  "kampftechniken": [
+    {
+      "name": "Dolche",
+      "ktw": 10
+    },
+    {
+      "name": "Hiebwaffen",
+      "ktw": 8
+    },
+    {
+      "name": "Stangenwaffen",
+      "ktw": 10
+    }
+  ],
+  "talente": [
+    {
+      "name": "Selbstbeherrschung",
+      "fertigkeitswert": 8
+    },
+    {
+      "name": "Zechen",
+      "fertigkeitswert": 1
+    },
+    {
+      "name": "Bekehren & Überzeugen",
+      "fertigkeitswert": 7
+    },
+    {
+      "name": "Etikette",
+      "fertigkeitswert": 6
+    },
+    {
+      "name": "Menschankenntniss",
+      "fertigkeitswert": 5
+    },
+    {
+      "name": "Überreden",
+      "fertigkeitswert": 4
+    },
+    {
+      "name": "Willenskraft",
+      "fertigkeitswert": 4
+    },
+    {
+      "name": "Fährtensuchen",
+      "fertigkeitswert": 1
+    },
+    {
+      "name": "Orientierung",
+      "fertigkeitswert": 1
+    },
+    {
+      "name": "Pflanzenkunde",
+      "fertigkeitswert": 10
+    },
+    {
+      "name": "Tierkunde",
+      "fertigkeitswert": 4
+    },
+    {
+      "name": "Wildnisleben",
+      "fertigkeitswert": 4
+    },
+    {
+      "name": "Götter & Kulte",
+      "fertigkeitswert": 10
+    },
+    {
+      "name": "Rechnen",
+      "fertigkeitswert": 3
+    },
+    {
+      "name": "Rechtskunde",
+      "fertigkeitswert": 2
+    },
+    {
+      "name": "Sagen & Legenden",
+      "fertigkeitswert": 7
+    },
+    {
+      "name": "Alchimie",
+      "fertigkeitswert": 3
+    },
+    {
+      "name": "Boote & Schiffe",
+      "fertigkeitswert": 4
+    },
+    {
+      "name": "Fahrzeuge",
+      "fertigkeitswert": 3
+    },
+    {
+      "name": "Handel",
+      "fertigkeitswert": 5
+    },
+    {
+      "name": "Heilkunde Gift",
+      "fertigkeitswert": 10
+    },
+    {
+      "name": "Heilkunde Seele",
+      "fertigkeitswert": 10
+    },
+    {
+      "name": "Heilkunde Wunden",
+      "fertigkeitswert": 10
+    },
+    {
+      "name": "Holzbearbeitung",
+      "fertigkeitswert": 1
+    },
+    {
+      "name": "Lederbearbeitung",
+      "fertigkeitswert": 10
+    }
+  ],
+  "zauber": [],
+  "liturgien": [
+    {
+      "name": "Friedvolle Aura",
+      "fertigkeitswert": 10
+    },
+    {
+      "name": "Giftbann",
+      "fertigkeitswert": 10
+    },
+    {
+      "name": "Heilsegen",
+      "fertigkeitswert": 10
+    },
+    {
+      "name": "Krankheitsbann",
+      "fertigkeitswert": 10
+    },
+    {
+      "name": "Objektsegen",
+      "fertigkeitswert": 6
+    },
+    {
+      "name": "Pflanzenwuchs",
+      "fertigkeitswert": 9
+    }
+  ],
+  "sonderfertigkeiten": [],
+  "quickProbeFavorites": [
+    null,
+    null,
+    null
+  ]
+}

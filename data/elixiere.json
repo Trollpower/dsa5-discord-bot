@@ -1,0 +1,874 @@
+[
+    {
+        "name": "Alchimistensäure",
+        "typischeIngredenzien": "Orazal, Quallen, Seifenreste, Schweiß einer Kröte, Splitter einer scharlatanischen Zauberkugel, verschiedene, mindere Säuren",
+        "kostenProIngredienzstufe": "50 Silbertaler pro Stufe",
+        "labor": "alchimistisches Labor",
+        "brauschwierigkeit": "-1",
+        "voraussetzungen": "keine",
+        "apWert": "3 AP",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Die Säure wirkt 1W3 KR."
+            },
+            {
+                "qs": 2,
+                "text": "Die Säure wirkt 1W6 KR."
+            },
+            {
+                "qs": 3,
+                "text": "Die Säure wirkt 1W6+2 KR."
+            },
+            {
+                "qs": 4,
+                "text": "Die Säure wirkt 1W6+4 KR."
+            },
+            {
+                "qs": 5,
+                "text": "Die Säure wirkt 1W6+6 KR."
+            },
+            {
+                "qs": 6,
+                "text": "Die Säure wirkt 1W6+8 KR."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/grgrtg.html"
+    },
+    {
+        "name": "Berserkerelixier",
+        "typischeIngredenzien": "Blut von einem durch das Beil gerichteten wahnsinnigen Mörder, echtes Premer Feuer, Feuerkraut, Feueropal, Schleimiger Sumpfknöterich",
+        "kostenProIngredienzstufe": "70 Silbertaler pro Stufe",
+        "labor": "archaisches Labor",
+        "brauschwierigkeit": "-2",
+        "voraussetzungen": "keine",
+        "apWert": "2 AP",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Anwender ist für 5 KR im Kampf leicht aggressiv (+1 AT, -2 VW). Nach dem Ablauf der Wirkung erhält der Anwender 1 Stufe Betäubung."
+            },
+            {
+                "qs": 2,
+                "text": "Anwender ist für 5 KR im Kampf sehr aggressiv (+2 AT, -4 VW)."
+            },
+            {
+                "qs": 3,
+                "text": "Anwender erhält Status Blutrausch für 5 KR."
+            },
+            {
+                "qs": 4,
+                "text": "Anwender erhält Status Blutrausch für 10 KR."
+            },
+            {
+                "qs": 5,
+                "text": "Anwender erhält Status Blutrausch für 20 KR."
+            },
+            {
+                "qs": 6,
+                "text": "Anwender erhält Status Blutrausch für 40 KR."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/rerfreg.html"
+    },
+    {
+        "name": "Eulentränen",
+        "typischeIngredenzien": "Alraunenpulver, Auge eines Nachtwinds, Carlog, Mondsteinstaub, Praiosblumenkerne, Tollkirschensaft, Tränen einer Eule, Wasser",
+        "kostenProIngredienzstufe": "10 Silbertaler pro Stufe",
+        "labor": "archaisches Labor",
+        "brauschwierigkeit": "+/-0",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Der Anwender bekommt den Vorteil Dämmerungssicht I für 5 Minuten."
+            },
+            {
+                "qs": 2,
+                "text": "Der Anwender bekommt den Vorteil Dämmerungssicht I für 10 Minuten."
+            },
+            {
+                "qs": 3,
+                "text": "Der Anwender bekommt den Vorteil Dämmerungssicht I für 15 Minuten."
+            },
+            {
+                "qs": 4,
+                "text": "Der Anwender bekommt den Vorteil Dämmerungssicht II für 30 Minuten."
+            },
+            {
+                "qs": 5,
+                "text": "Der Anwender bekommt den Vorteil Dämmerungssicht II für 1 Stunde."
+            },
+            {
+                "qs": 6,
+                "text": "Der Anwender bekommt den Vorteil Dämmerungssicht II für 2 Stunden."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Eulentr%C3%A4nen.html"
+    },
+    {
+        "name": "Bannstaub",
+        "typischeIngredenzien": "Bernstein, Koschbasalt, Nitrol, die Eierschale eines am 1. Praios geschlüpften Hahns, Greifenfedern, Eisenpulver, durch Sonnenhitze destilliertes Regenwasser, reines Salz, Brabaker Vitriol, Gold, Harn vom Sonnenluchs, frische Blütenblätter der Praiosblume (Sonnenblume)",
+        "kostenProIngredienzstufe": "400 Silbertaler pro Stufe",
+        "labor": "Archaisches Labor",
+        "brauschwierigkeit": "-4",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Das Opfer des Bannstaubs verliert sofort 1W6+2 AsP."
+            },
+            {
+                "qs": 2,
+                "text": "Das Opfer des Bannstaubs verliert sofort 2W6+4 AsP und kann 1 Tag lang keine AsP regenerieren."
+            },
+            {
+                "qs": 3,
+                "text": "Das Opfer des Bannstaubs verliert sofort 3W6+6 AsP und kann 1W2+1 Tage lang keine AsP regenerieren."
+            },
+            {
+                "qs": 4,
+                "text": "Das Opfer des Bannstaubs verliert sofort 4W6+8 AsP und kann 1W3+2 Tage lang keine AsP regenerieren."
+            },
+            {
+                "qs": 5,
+                "text": "Das Opfer des Bannstaubs verliert sofort 5W6+10 AsP und kann 1W3+3 Tage lang keine AsP regenerieren."
+            },
+            {
+                "qs": 6,
+                "text": "Das Opfer des Bannstaubs verliert sofort 6W6+12 AsP und kann 2W3+3 Tage lang keine AsP regenerieren."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Bannstaub.html"
+    },
+    {
+        "name": "Angstgift",
+        "typischeIngredenzien": "Alraune, Bärenfett, Haifischzähne, Hasenohren, Höllenkraut, Speichel eines Berserkers, Staub aus einer Gruft, Vitriol",
+        "kostenProIngredienzstufe": "60 Silbertaler pro Stufe",
+        "labor": "Hexenküche",
+        "brauschwierigkeit": "-2",
+        "voraussetzungen": "keine",
+        "apWert": "4 AP",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": ""
+            },
+            {
+                "qs": 2,
+                "text": "gstgift"
+            },
+            {
+                "qs": 3,
+                "text": "e der Name bereits sagt, löst dieses Gift große Panik bei demjenigen aus, der mit einer vergifteten Waffe getroffen wird. Die Wirkung des Angstgifts ist dabei allerdings nicht kumulativ. Wer durch das Gift Zustandsstufen Furcht erlitten hat, kann erst wieder am Ende der Wirkungsdauer davon betroffen sein."
+            },
+            {
+                "qs": 4,
+                "text": "ufe: QS"
+            },
+            {
+                "qs": 5,
+                "text": "t: Waffengift, alchimistisch"
+            },
+            {
+                "qs": 6,
+                "text": "derstand: Seelenkraft"
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/grtgrtgrtgt.html"
+    },
+    {
+        "name": "Antidot",
+        "typischeIngredenzien": "Alicorn, Belmartblätter, geharzter Wein, Giftzahn einer Sandviper, Menchalsaft, Schwarzer Lotus, Storchen- oder Ibiseier, Tulmadron, Turmalin, Zinnober",
+        "kostenProIngredienzstufe": "40 Silbertaler pro Stufe",
+        "labor": "Hexenküche",
+        "brauschwierigkeit": "-1",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Hebt Gifte bis zu einer Stufe von 1 auf."
+            },
+            {
+                "qs": 2,
+                "text": "Hebt Gifte bis zu einer Stufe von 2 auf."
+            },
+            {
+                "qs": 3,
+                "text": "Hebt Gifte bis zu einer Stufe von 3 auf."
+            },
+            {
+                "qs": 4,
+                "text": "Hebt Gifte bis zu einer Stufe von 4 auf."
+            },
+            {
+                "qs": 5,
+                "text": "Hebt Gifte bis zu einer Stufe von 5 auf."
+            },
+            {
+                "qs": 6,
+                "text": "Hebt Gifte bis zu einer Stufe von 6 auf."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Antidot.html"
+    },
+    {
+        "name": "Heiltrank",
+        "typischeIngredenzien": "Achat, Eidechsenschwänze, Goldstaub, Hämatit, Heilkräuter wie Einbeeren oder Wirselkraut, Malachit, Morgentau, Storchen- oder Ibiseier",
+        "kostenProIngredienzstufe": "40 Silbertaler pro Stufe",
+        "labor": "archaisches Labor",
+        "brauschwierigkeit": "0",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Heilt bei Einnahme 1W3 LeP."
+            },
+            {
+                "qs": 2,
+                "text": "Heilt bei Einnahme 1W6 LeP."
+            },
+            {
+                "qs": 3,
+                "text": "Heilt bei Einnahme 1W6+2 LeP."
+            },
+            {
+                "qs": 4,
+                "text": "Heilt bei Einnahme 1W6+4 LeP."
+            },
+            {
+                "qs": 5,
+                "text": "Heilt bei Einnahme 1W6+6 LeP."
+            },
+            {
+                "qs": 6,
+                "text": "Heilt bei Einnahme 1W6+8 LeP."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Heiktrank.html"
+    },
+    {
+        "name": "Hylailer Feuer",
+        "typischeIngredenzien": "Erdpech, Holzkohle, Orazal, reinster Schwefel, Steinöl, Walrat",
+        "kostenProIngredienzstufe": "150 Silbertaler",
+        "labor": "alchimistisches Labor",
+        "brauschwierigkeit": "-4",
+        "voraussetzungen": "luftdicht",
+        "apWert": "10 AP"
+    },
+    {
+        "name": "Pastillen gegen Schmerzen",
+        "typischeIngredenzien": "Eiswasser, Gulmond, Kandiszucker, Knoblauch, Pferdeschweiß, Steineicheln",
+        "kostenProIngredienzstufe": "10 Silbertaler pro Stufe",
+        "labor": "Archaisches Labor",
+        "brauschwierigkeit": "0",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Die Auswirkungen einer Stufe Schmerz können für 15 Minuten unterdrückt werden."
+            },
+            {
+                "qs": 2,
+                "text": "Die Auswirkungen einer Stufe Schmerz können für 30 Minuten unterdrückt werden."
+            },
+            {
+                "qs": 3,
+                "text": "Die Auswirkungen von zwei Stufen Schmerz können für 15 Minuten unterdrückt werden, danach noch für weitere 15 Minuten die Auswirkungen von einer Stufe Schmerz."
+            },
+            {
+                "qs": 4,
+                "text": "Die Auswirkungen von zwei Stufen Schmerz können für 30 Minuten unterdrückt werden."
+            },
+            {
+                "qs": 5,
+                "text": "Die Auswirkungen von drei Stufen Schmerz können für 15 Minuten unterdrückt werden, danach noch für weitere 15 Minuten die Auswirkungen von zwei Stufen Schmerz."
+            },
+            {
+                "qs": 6,
+                "text": "Die Auswirkungen von drei Stufen Schmerz können für 30 Minuten unterdrückt werden."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Pastillen.html"
+    },
+    {
+        "name": "Kaltes Licht",
+        "typischeIngredenzien": "Bienenwachs, Eigelb, fauler Urin, Knochenasche, Phosphorpilze, Schneelaurerfett",
+        "kostenProIngredienzstufe": "15 Silbertaler pro Stufe",
+        "labor": "archaisches Labor",
+        "brauschwierigkeit": "-1",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Das Kalte Licht besitzt den Lichtradius einer Kerze für 0,5 Stunden."
+            },
+            {
+                "qs": 2,
+                "text": "Das Kalte Licht besitzt den Lichtradius einer Kerze für 1 Stunde."
+            },
+            {
+                "qs": 3,
+                "text": "Das Kalte Licht besitzt den Lichtradius einer Kerze für 1,5 Stunden."
+            },
+            {
+                "qs": 4,
+                "text": "Das Kalte Licht besitzt den Lichtradius einer Fackel für 2 Stunden."
+            },
+            {
+                "qs": 5,
+                "text": "Das Kalte Licht besitzt den Lichtradius einer Fackel für 2,5 Stunden."
+            },
+            {
+                "qs": 6,
+                "text": "Das Kalte Licht besitzt den Lichtradius einer Fackel für 3 Stunden."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/KaltesLicht.html"
+    },
+    {
+        "name": "Leuchtkreide",
+        "typischeIngredenzien": "abgebrannter Kerzendocht, Kreide, Überreste einer elfischen Leuchtblume, Zikade",
+        "kostenProIngredienzstufe": "12 Silbertaler pro Stufe",
+        "labor": "Hexenküche",
+        "brauschwierigkeit": "-1",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Die Kreide hat eine Haltbarkeit von 1 Monat."
+            },
+            {
+                "qs": 2,
+                "text": "Die Kreide hat eine Haltbarkeit von 2 Monaten."
+            },
+            {
+                "qs": 3,
+                "text": "Die Kreide hat eine Haltbarkeit von 3 Monaten."
+            },
+            {
+                "qs": 4,
+                "text": "Die Kreide hat eine Haltbarkeit von 4 Monaten."
+            },
+            {
+                "qs": 5,
+                "text": "Die Kreide hat eine Haltbarkeit von 5 Monaten."
+            },
+            {
+                "qs": 6,
+                "text": "Die Kreide hat eine Haltbarkeit von 6 Monaten."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Leuchtkreide.html"
+    },
+    {
+        "name": "Liebestrunk",
+        "typischeIngredenzien": "Alraunen, Amethyst, Biberklötze, Erdbeeren, Granat, Hahnenkämme, Kekeyatonba, Ilmenblatt, Pollen des Schleichenden Todes, Premer Feuer, Rosenöl, Rosenquarz, Samthauch, Tabaschir, Walpenisknochen",
+        "kostenProIngredienzstufe": "55 Silbertaler pro Stufe",
+        "labor": "Hexenküche",
+        "brauschwierigkeit": "-1",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Die Potenz oder Fruchtbarkeit des Einnehmenden wird gesteigert."
+            },
+            {
+                "qs": 2,
+                "text": "Der Anwender fühlt sich zudem nach Einnahme der ersten Person freundschaftlich verbunden, die es erblickt."
+            },
+            {
+                "qs": 3,
+                "text": "Der Anwender ist zudem für die nächste Stunde stark sexuell erregt."
+            },
+            {
+                "qs": 4,
+                "text": "Der Anwender hegt zudem für die erste Person, die er erblickt, romantische Gefühl und sexuelle Gelüste."
+            },
+            {
+                "qs": 5,
+                "text": "Der Anwender verliebt sich zudem für einen Tag in die erste Person, die er erblickt."
+            },
+            {
+                "qs": 6,
+                "text": "Der Anwender verliebt sich zudem für eine Woche in die erste Person, die er erblickt."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Liebestrunk.html"
+    },
+    {
+        "name": "Pyrophor",
+        "typischeIngredenzien": "",
+        "kostenProIngredienzstufe": "",
+        "labor": "",
+        "brauschwierigkeit": "",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Pyrophor.html"
+    },
+    {
+        "name": "Schlaftrunk",
+        "typischeIngredenzien": "Einbeere, klares Regenwasser, Yagannüsse, Minze, Gulmond, Kamille, Rabenfedern, weißer Khômsand",
+        "kostenProIngredienzstufe": "20 Silbertaler pro Stufe",
+        "labor": "Archaisches Labor",
+        "brauschwierigkeit": "0",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Regeneration von 1 zusätzlichen Punkt LE, AE und KE im Schlaf während der nächsten Regenerationsphase."
+            },
+            {
+                "qs": 2,
+                "text": "Regeneration von 2 zusätzlichen Punkten LE, AE und KE im Schlaf während der nächsten Regenerationsphase."
+            },
+            {
+                "qs": 3,
+                "text": "Regeneration von 3 zusätzlichen Punkten LE, AE und KE im Schlaf während der nächsten Regenerationsphase."
+            },
+            {
+                "qs": 4,
+                "text": "Regeneration von 4 zusätzlichen Punkten LE, AE und KE im Schlaf während der nächsten Regenerationsphase."
+            },
+            {
+                "qs": 5,
+                "text": "Regeneration von 5 zusätzlichen Punkten LE, AE und KE im Schlaf während der nächsten Regenerationsphase."
+            },
+            {
+                "qs": 6,
+                "text": "Regeneration von 6 zusätzlichen Punkten LE, AE und KE im Schlaf während der nächsten Regenerationsphase."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Schlaftrunk.html"
+    },
+    {
+        "name": "Stinktöpfchen",
+        "typischeIngredenzien": "abgestandenes Wasser, Alraunenpulver, Drachendung, geriebene Rinde des Faulbaums, Sekret des Stinktiers",
+        "kostenProIngredienzstufe": "40 Silbertaler pro Stufe",
+        "labor": "archaisches Labor",
+        "brauschwierigkeit": "+/-0",
+        "voraussetzungen": "luftdicht",
+        "apWert": "3 AP",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "In einem Radius von 1 Schritt um das Töpfchen stinkt es so gewaltig, dass alle Lebewesen eine Erschwernis von 1 auf alle Fertigkeitsproben erleiden."
+            },
+            {
+                "qs": 2,
+                "text": "In einem Radius von 3 Schritt um das Töpfchen stinkt es so gewaltig, dass alle Lebewesen eine Erschwernis von 1 auf alle Fertigkeitsproben erleiden."
+            },
+            {
+                "qs": 3,
+                "text": "In einem Radius von 3 Schritt um das Töpfchen stinkt es so gewaltig, dass alle Lebewesen eine Erschwernis von 1 auf alle Fertigkeitsproben erleiden. Außerdem erleiden sie den Status Übler Geruch für 30 Minuten."
+            },
+            {
+                "qs": 4,
+                "text": "In einem Radius von 7 Schritt um das Töpfchen stinkt es so gewaltig, dass alle Lebewesen eine Erschwernis von 1 auf alle Fertigkeitsproben erleiden. Außerdem erleiden sie den Status Übler Geruch für 1 Stunde."
+            },
+            {
+                "qs": 5,
+                "text": "In einem Radius von 7 Schritt um das Töpfchen stinkt es so gewaltig, dass alle Lebewesen eine Erschwernis von 1 auf alle Fertigkeitsproben erleiden. Außerdem erleiden sie den Status Übler Geruch für 1 Tag."
+            },
+            {
+                "qs": 6,
+                "text": "In einem Radius von 7 Schritt um das Töpfchen stinkt es so gewaltig, dass alle Lebewesen eine Erschwernis von 2 auf alle Fertigkeitsproben erleiden. Außerdem erleiden sie den Status Übler Geruch für 1 Woche."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/bgbttrt.html"
+    },
+    {
+        "name": "Schwadenbeutel",
+        "typischeIngredenzien": "Alraunenpulver, Asche verkohlter Tannenzapfen, schwefliges Wasser",
+        "kostenProIngredienzstufe": "40 Silbertaler pro Stufe",
+        "labor": "archaisches Labor",
+        "brauschwierigkeit": "-1",
+        "voraussetzungen": "luftdicht",
+        "apWert": "3 AP",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "In 3 Schritt Radius um den Beutel entsteht ein Sichtmodifikator der Stufe 1."
+            },
+            {
+                "qs": 2,
+                "text": "In 3 Schritt Radius um den Beutel entsteht ein Sichtmodifikator der Stufe 2."
+            },
+            {
+                "qs": 3,
+                "text": "In 3 Schritt Radius um den Beutel entsteht ein Sichtmodifikator der Stufe 3."
+            },
+            {
+                "qs": 4,
+                "text": "In 3 Schritt Radius um den Beutel entsteht ein Sichtmodifikator der Stufe 4."
+            },
+            {
+                "qs": 5,
+                "text": "In 7 Schritt Radius um den Beutel entsteht ein Sichtmodifikator der Stufe 4."
+            },
+            {
+                "qs": 6,
+                "text": "In 15 Schritt Radius um den Beutel entsteht ein Sichtmodifikator der Stufe 4."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/bfgbgfbgb.html"
+    },
+    {
+        "name": "Trunk der ruhigen Hand",
+        "typischeIngredenzien": "Atmon, Finage, Finger eines Diebes, rechte Vorderpfote vom Feh, reiner Alkohol, Schwanz eines Faultiers, zerhauener Topas",
+        "kostenProIngredienzstufe": "20 Silbertaler pro Stufe",
+        "labor": "Hexenküche",
+        "brauschwierigkeit": "-1",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Die erste Teilprobe auf FF bei Schlösserknacken ist um 1 erleichtert. Die Wirkung hält 15 Minuten an."
+            },
+            {
+                "qs": 2,
+                "text": "Beide Teilproben auf FF bei Schlösserknacken sind um 1 erleichtert. Die Wirkung hält 30 Minuten an."
+            },
+            {
+                "qs": 3,
+                "text": "Beide Teilproben auf FF bei Schlösserknacken sind um 1 erleichtert. Die Wirkung hält 1 Stunde an"
+            },
+            {
+                "qs": 4,
+                "text": "Proben auf Schlösserknacken sind um 1 erleichtert. Die Wirkung hält 2 Stunden an."
+            },
+            {
+                "qs": 5,
+                "text": "Proben auf Schlösserknacken sind um 1 erleichtert. Die Wirkung hält 4 Stunden an."
+            },
+            {
+                "qs": 6,
+                "text": "Proben auf Schlösserknacken sind um 1 erleichtert. Die Wirkung hält 8 Stunden an."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Trunk_der_ruhigen_Hand.html"
+    },
+    {
+        "name": "Unsichtbarkeitselixier",
+        "typischeIngredenzien": "Alraunen, Blut eines Unsichtbaren, Chamäleonschuppen, Coelestin, Diamant, Geisterflug, Kristallglas, Meteoreisen, rauchendes Braunöl, Späne eines misslungenen Magierstabes, Spinnennetze, Wasser aus Nebeltau, Wermut",
+        "kostenProIngredienzstufe": "55 Silbertaler pro Stufe",
+        "labor": "Hexenküche",
+        "brauschwierigkeit": "-2",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Der Anwender wird 1 Minute unsichtbar. Die Transformation dauert jeweils 10 Minuten."
+            },
+            {
+                "qs": 2,
+                "text": "Der Anwender wird 3 Minuten unsichtbar. Die Transformation dauert jeweils 5 Minuten."
+            },
+            {
+                "qs": 3,
+                "text": "Der Anwender wird 5 Minuten unsichtbar. Die Transformation dauert jeweils 2 Minuten."
+            },
+            {
+                "qs": 4,
+                "text": "Der Anwender wird 10 Minuten unsichtbar. Die Transformation dauert jeweils 1 Minute."
+            },
+            {
+                "qs": 5,
+                "text": "Der Anwender wird 15 Minuten unsichtbar. Die Transformation dauert jeweils 30 Sekunden."
+            },
+            {
+                "qs": 6,
+                "text": "Der Anwender wird 20 Minuten unsichtbar. Die Transformation dauert jeweils 15 Sekunden."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Unsichtbar.html"
+    },
+    {
+        "name": "Verwandlungselixier",
+        "typischeIngredenzien": "Achat, Alkohol, Blüten des Morgendornstrauches, Ei oder Embryo des jeweiligen Tieres, Herzblut von Werkreaturen, Kairanrohr, Lapislazuli, Mäusemilch, Neunaugenblut, Quecksilber, Smaragd",
+        "kostenProIngredienzstufe": "55 Silbertaler pro Stufe",
+        "labor": "Hexenküche",
+        "brauschwierigkeit": "-2",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Der Anwender verwandelt sich für 1 Minute. Die Transformation dauert jeweils 10 Minuten. Finger, Ohren oder Zehen verwandeln sich nicht komplett mit."
+            },
+            {
+                "qs": 2,
+                "text": "Der Anwender verwandelt sich für 2 Minuten. Die Transformation dauert jeweils 5 Minuten."
+            },
+            {
+                "qs": 3,
+                "text": "Der Anwender verwandelt sich für 5 Minuten. Die Transformation dauert jeweils 2 Minuten."
+            },
+            {
+                "qs": 4,
+                "text": "Der Anwender verwandelt sich für 10 Minuten. Die Transformation dauert jeweils 1 Minute."
+            },
+            {
+                "qs": 5,
+                "text": "Der Anwender verwandelt sich für 15 Minuten. Die Transformation dauert jeweils 30 Sekunden."
+            },
+            {
+                "qs": 6,
+                "text": "Der Anwender verwandelt sich für 20 Minuten. Die Transformation dauert jeweils 15 Sekunden."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Verwandlung.html"
+    },
+    {
+        "name": "Wasserodem",
+        "typischeIngredenzien": "eine Strähne schwarzes Neckerhaar, eine große Perle, 10 Skrupel Gwen Petryl-Staub, Kiemen eines Thunfischs, Seerosenblüten, ein halber Schank efferdgeweihtes Wasser",
+        "kostenProIngredienzstufe": "100 Silbertaler pro Stufe",
+        "labor": "Archaisches Labor",
+        "brauschwierigkeit": "-2",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Wasseratmung für 5 Minuten."
+            },
+            {
+                "qs": 2,
+                "text": "Wasseratmung für 10 Minuten."
+            },
+            {
+                "qs": 3,
+                "text": "Wasseratmung für 20 Minuten."
+            },
+            {
+                "qs": 4,
+                "text": "Wasseratmung für 40 Minuten."
+            },
+            {
+                "qs": 5,
+                "text": "Wasseratmung, Schutz vor Unterkühlung für 60 Minuten."
+            },
+            {
+                "qs": 6,
+                "text": "Wasseratmung, Schutz vor Unterkühlung für 120 Minuten."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Wasserodem.html"
+    },
+    {
+        "name": "Waffenbalsam",
+        "typischeIngredenzien": "Asche von Greifenfedern, Bärenfett, Brabaker Vitriol, Horuschenkerne, Silberstaub, Smaragd, Schuppen eines Höhlendrachen, Topas, Wasser aus einem fließenden Gewässer",
+        "kostenProIngredienzstufe": "65 Silbertaler pro Stufe",
+        "labor": "Alchimistisches Labor",
+        "brauschwierigkeit": "-2",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Waffe gilt für 5 Minuten als magisch."
+            },
+            {
+                "qs": 2,
+                "text": "Waffe gilt für 15 Minuten als magisch."
+            },
+            {
+                "qs": 3,
+                "text": "Waffe gilt für 2 Stunden als magisch, +1 TP."
+            },
+            {
+                "qs": 4,
+                "text": "Waffe gilt für 8 Stunden als magisch, +1 TP."
+            },
+            {
+                "qs": 5,
+                "text": "Waffe gilt für einen Tag als magisch und ist unzerbrechlich, +1 TP."
+            },
+            {
+                "qs": 6,
+                "text": "Waffe gilt für eine Woche als magisch und ist unzerbrechlich, +1 TP."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Waffenbalsam.html"
+    },
+    {
+        "name": "Willenstrank",
+        "typischeIngredenzien": "Amethyst, Bosparanienholz, Diamant, Kokosnuss, Feuerschlick, Granit, Greifenfedern, Haare aus einem Zwergenbart, Magnetit, Quecksilber, Thonnys, Unauer Salzlake",
+        "kostenProIngredienzstufe": "55 Silbertaler pro Stufe",
+        "labor": "Alchimistisches Labor",
+        "brauschwierigkeit": "-2",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Die Seelenkraft verbessert sich für 5 Minuten um 1."
+            },
+            {
+                "qs": 2,
+                "text": "Die Seelenkraft verbessert sich für 10 Minuten um 2."
+            },
+            {
+                "qs": 3,
+                "text": "Die Seelenkraft verbessert sich für 15 Minuten um 2."
+            },
+            {
+                "qs": 4,
+                "text": "Die Seelenkraft verbessert sich für 20 Minuten um 2."
+            },
+            {
+                "qs": 5,
+                "text": "Die Seelenkraft verbessert sich für 30 Minuten um 3."
+            },
+            {
+                "qs": 6,
+                "text": "Die Seelenkraft verbessert sich für 45 Minuten um 3."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Willenstrank.html"
+    },
+    {
+        "name": "Zaubertrank",
+        "typischeIngredenzien": "Alicorn, Alraunen, Diamantstaub, Blut magischer Wesen, Drachentränen, Kairanrohr, Karfunkel, Meteoreisen, Mindoriumpulver, Orichalcum, Schnee vom 1. Hesinde, Thonnys, Topas",
+        "kostenProIngredienzstufe": "55 Silbertaler pro Stufe",
+        "labor": "Alchimistisches Labor",
+        "brauschwierigkeit": "-2",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Regeneriert bei Einnahme 1W3 AsP."
+            },
+            {
+                "qs": 2,
+                "text": "Regeneriert bei Einnahme 1W6 AsP."
+            },
+            {
+                "qs": 3,
+                "text": "Regeneriert bei Einnahme 1W6+2 AsP."
+            },
+            {
+                "qs": 4,
+                "text": "Regeneriert bei Einnahme 1W6+4 AsP."
+            },
+            {
+                "qs": 5,
+                "text": "Regeneriert bei Einnahme 1W6+6 AsP."
+            },
+            {
+                "qs": 6,
+                "text": "Regeneriert bei Einnahme 1W6+8 AsP."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Zaubertrank.html"
+    },
+    {
+        "name": "Zielwasser",
+        "typischeIngredenzien": "Alraune, Angbarer Blutstein, Auge vom Bergadler, Brabaker Vitriol, Finage, Kairan",
+        "kostenProIngredienzstufe": "30 Silbertaler pro Stufe",
+        "labor": "archaisches Labor",
+        "brauschwierigkeit": "-1",
+        "voraussetzungen": "keine",
+        "apWert": "3 AP",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Der FK-Wert steigt für 1 Minute um 1."
+            },
+            {
+                "qs": 2,
+                "text": "Der FK-Wert steigt für 5 Minuten um 1."
+            },
+            {
+                "qs": 3,
+                "text": "Der FK-Wert steigt für 5 Minuten um 2."
+            },
+            {
+                "qs": 4,
+                "text": "Der FK-Wert steigt für 10 Minuten um 2."
+            },
+            {
+                "qs": 5,
+                "text": "Der FK-Wert steigt für 10 Minuten um 3."
+            },
+            {
+                "qs": 6,
+                "text": "Der FK-Wert steigt für 15 Minuten um 3."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/bgvfdgr.html"
+    },
+    {
+        "name": "Zähigkeitstrunk",
+        "typischeIngredenzien": "Diamant, Finage, Kokosnuss, Granit, Ochsenblut Olginwurz, Unkraut, Unauer Salzlake",
+        "kostenProIngredienzstufe": "55 Silbertaler pro Stufe",
+        "labor": "Alchimistisches Labor",
+        "brauschwierigkeit": "-2",
+        "voraussetzungen": "",
+        "apWert": "",
+        "qualitaetsStufen": [
+            {
+                "qs": 1,
+                "text": "Die Zähigkeit verbessert sich für 5 Minuten um 1."
+            },
+            {
+                "qs": 2,
+                "text": "Die Zähigkeit verbessert sich für 10 Minuten um 2."
+            },
+            {
+                "qs": 3,
+                "text": "Die Zähigkeit verbessert sich für 15 Minuten um 2."
+            },
+            {
+                "qs": 4,
+                "text": "Die Zähigkeit verbessert sich für 20 Minuten um 2."
+            },
+            {
+                "qs": 5,
+                "text": "Die Zähigkeit verbessert sich für 30 Minuten um 3."
+            },
+            {
+                "qs": 6,
+                "text": "Die Zähigkeit verbessert sich für 45 Minuten um 3."
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Z%C3%A4higkeitstrunk.html"
+    }
+]

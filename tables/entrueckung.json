@@ -1,0 +1,26 @@
+{
+    "title": "Entrückung",
+    "key": "ent",
+    "table": [
+        [
+            "Entrückungsstufe",
+            "Auswirkung"
+        ],
+        [
+            "Stufe I",
+            "leicht entrückt, alle Proben auf Talente und Zauber -1, so sie nicht dem Gott des Geweihten gefällig sind"
+        ],
+        [
+            "Stufe II",
+            "entückt, alle dem Gott des Geweihten gefällige Proben auf Talente und Zauber +1, alle anderen -2"
+        ],
+        [
+            "Stufe III",
+            "göttlich berührt, alle dem Gott des Geweihten gefällige Proben auf Talente und Zauber +2, alle anderen -3"
+        ],
+        [
+            "Stufe IV",
+            "ein Werkzeug des Gottes, alle dem Gott des Geweihten gefällige Proben auf Talente und Zauber +3, alle um 4 erschwert"
+        ]
+    ]
+}

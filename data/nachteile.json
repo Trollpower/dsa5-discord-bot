@@ -1,0 +1,527 @@
+[
+    {
+        "name": "Angst vor ... I-III",
+        "regel": "Pro Stufe der Angst erleidet der Held eine Stufe Furcht, so lange er dem Auslöser ausgesetzt ist.",
+        "voraussetzungen": "keine",
+        "apWert": "-8 Abenteuerpunkt pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Arm I-III",
+        "regel": "Durch den Nachteil Arm erhält ein Held bei der Generierung 250 Silbertaler weniger pro Stufe. Wählt er also 3 Stufen Arm, beginnt er ohne Startkapital und besitzt nur ein Kleiderpaket der Kategorie arm.",
+        "voraussetzungen": "kein Vorteil Reich",
+        "apWert": "-1 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Behäbig",
+        "regel": "Durch Behäbig verliert ein Held 1 Punkt von seinem Geschwindigkeit-Grundwert.",
+        "voraussetzungen": "kein Vorteil Flink",
+        "apWert": "-4 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Artefaktgebunden",
+        "regel": "Ist der Held nicht in direktem Kontakt mit dem Artefakt (dies bedeutet: Kontakt mit der Haut), kann er nur erschwert Zaubern. Dieser Nachteil erschwert Zauber um 1, wenn die Bedingung des Körperkontaktes nicht erfüllt ist. Wird das Artefakt vernichtet, kann er so lange nur mit der Erschwernis Zauber wirken, bis er selbst ein neues Artefakt gleicher Machart hergestellt hat, in das die Artefaktgebundenheit automatisch einfließt.",
+        "voraussetzungen": "Vorteil Zauberer",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Blind",
+        "regel": "Durch den Nachteil ist ihm der Einsatz vieler Fertigkeiten erschwert oder erst gar nicht möglich. Dies gilt ebenfalls für Sonderfertigkeiten. Welche Handlungen um wie viel erschwert oder gar unmöglich sind, entscheidet der Meister. Die Blindheit ist nicht heilbar, außer durch ein Großes Wunder. Der Held erhält den Status Blind.",
+        "voraussetzungen": "kein Vorteil Herausragender Sinn (Sicht), keine Nachteile Einäugig, Farbenblind, Nachtblind, Eingeschränkter Sinn (Sicht)",
+        "apWert": "-50 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Böser Namensvetter",
+        "regel": "Der Held gerät ständig in Schwierigkeiten, weil  sich jemand für ihn ausgibt oder schlimmer: tatsächlich so heißt wie er. Dies kann nach Meisterentscheid  Erschwernisse von 1 bis 3 auf Gesellschaftstalente  nach sich ziehen (mit Ausnahme von Menschenkenntnis und Willenskraft).  Die  Häufigkeit  und  die  Auswirkungen sollten von Spielerin und Spielleiterin zusammen festgelegt werden.",
+        "voraussetzungen": "Ein Name mit Wiedererkennungswert, der aber nicht zu exotisch ist, kein Vorteil Allerweltsname. Elfen können diesen Vorteil nicht wählen,  da ihre Namen einzigartig sind.",
+        "apWert": "-10 Abenteuerpunkte (Je nach Kampagne und Problemen, die sich durch den Nachteil Böser Namensvetter ergeben, kann der Wert auch zwischen -2  und -20 AP liegen.)",
+        "alias": []
+    },
+    {
+        "name": "Eingeschränkter Sinn",
+        "regel": "Wer über einen Eingeschränkten Sinn verfügt, dessen Proben auf Sinnesschärfe sind um 2 erschwert, wenn die Probe den entsprechenden Sinn betrifft. Eingeschränkte Sicht erschwert zudem Proben auf Fernkampf um 2. Folgende Sinne können gewählt werden: Sicht, Gehör, Geruch & Geschmack, Tastsinn. Ein Held kann bis zu zwei eingeschränkte Sinne besitzen.",
+        "voraussetzungen": "kein Vorteil Herausragender Sinn für den gleichen Sinn, kein Nachteil Blind (bei Sicht), kein Nachteil Taub (bei Gehör)",
+        "apWert": "Sicht: -15 Abenteuerpunkte; Gehör: -10 Abenteuerpunkte; Geruch & Geschmack: -6 Abenteuerpunkte; Tastsinn: -2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Blutrausch",
+        "regel": "Der Held erhält unter speziellen Umständen den Status Blutrausch. Der Blutrausch wird aktiviert, wenn der Held durch einen Angriff eine Stufe des Zustands Schmerz erleidet oder ihm seine Probe auf Willenskraft zur Aktivierung der Schlechten Eigenschaft Jähzorn misslingt.",
+        "voraussetzungen": "Schlechte Eigenschaft Jähzorn, kein Nachteil Angst vor Blut",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Empfindlichkeit (unedle Metalle)*",
+        "regel": "Verliert der Held Lebenspunkte durch Metallwaffen, steigen die Schadenspunkte um 4. Eine einfache Berührung mit entsprechenden Metallen richtet 1 Schadenspunkt pro 5 vollen Minuten an. Bei Unterbrechungen addieren sich die Teilzeiten auf, solange die Unterbrechungen die Dauer von 1 Stunde nicht überschreiten. Diese Empfindlichkeit gilt gegen unedle Metalle (z. B: Eisen, Stahl, Blei, Kupfer) nicht aber gegen magische Metalle oder Edelmetalle.",
+        "voraussetzungen": "keine",
+        "apWert": "-30 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Farbenblind",
+        "regel": "Für den Abenteurer sind Farben nicht zu unterscheiden. Dies kann sich bei einigen Proben, etwa auf Alchimie („Rote Flüssigkeit in grüne Flüssigkeit schütten.“), beim Zuordnen von Wappen (Etikette) oder bei der Orientierung im Dschungel negativ auswirken. Ob eine Probe abgelegt werden kann und wie hoch die Erschwernis ist, entscheidet der Meister.",
+        "voraussetzungen": "kein Nachteil Blind",
+        "apWert": "-2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Fettleibig",
+        "regel": "Der Nachteil hat zur Folge, dass Proben auf Klettern, Körperbeherrschung, Tanzen und Verbergen um 1 erschwert sind.",
+        "voraussetzungen": "Nachteil Behäbig",
+        "apWert": "-25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Giftanfällig I-II",
+        "regel": "Eine Giftanfälligkeit verschlechtert Zähigkeit und Seelenkraft um 1 pro Stufe, wenn es darum geht, Giften zu widerstehen.",
+        "voraussetzungen": "kein Vorteil Giftresistenz",
+        "apWert": "-5 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Hitzeempfindlich",
+        "regel": "Hitzestufen werden für den Helden um 1 Stufe erhöht, sobald er mindestens unter Hitzestufe 2 leidet.",
+        "voraussetzungen": "kein Vorteil Hitzeresistenz",
+        "apWert": "-3 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Gläsern",
+        "regel": "Die Wundschwelle des Helden sinkt durch den Nachteil um 1.",
+        "voraussetzungen": "keine",
+        "apWert": "3 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Hässlich I-II",
+        "regel": "Durch jede Stufe dieses Nachteils erleidet der Held eine Erschwernis von 1 auf Betören (Anbändeln, Liebeskünste), Überreden (Manipulieren, Schmeicheln) und Handel (Feilschen).",
+        "voraussetzungen": "kein Vorteil Gutaussehend",
+        "apWert": "-10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Hitzeempfindlich II*",
+        "regel": "Hitzestufen werden für den Helden um 2 Stufen erhöht, sobald er mindestens unter Hitzestufe 2 leidet.",
+        "voraussetzungen": "kein Vorteil Hitzeresistenz, kein Nachteil Hitzeempfindlich I",
+        "apWert": "-6 AP",
+        "alias": []
+    },
+    {
+        "name": "Instabiler Zauberer",
+        "regel": "Würfelt der Held einen Patzer bei einem Zauber oder einer magischen Handlung, durchdringt ihn magische Energie und er erleidet 2W6 SP.",
+        "voraussetzungen": "Vorteil Zauberer",
+        "apWert": "5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Jagdwildgeruch",
+        "regel": "Der Meister kann immer, wenn der Held nahegenug an hungrigen Raubtieren ist (50 Schritt Radius) und diese ihn wittern, mit dem W6 würfeln. Bei einer 1-2 halten sie den Abenteurer für Beute und greifen ihn an. Sollte es zu einem Kampf mit einer ganzen Heldengruppe kommen, so greifen die Raubtiere bevorzugt einen Helden mit dem Nachteil Jagdwildgeruch an. Als Raubtiere gelten beispielsweise Jaguare und Würgeschlangen, auf keinen Fall aber reine Pflanzenfresser. Welche Tiere von dem Geruch genau angelockt werden, entscheidet der Meister.",
+        "voraussetzungen": "keine",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Keine Flugsalbe (*)",
+        "regel": "Der Held kann die Sonderfertigkeit Flugsalbe nicht erwerben. Dadurch wird die Sonderfertigkeit Tradition (Hexen) um 10 AP billiger.",
+        "voraussetzungen": "Vorteil Zauberer, Zauberertradition kann Sonderfertigkeit Flugsalbe wählen",
+        "apWert": "-25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Kein Vertrauter (*)",
+        "regel": "Der Held kann die Sonderfertigkeit Vertrautenbindung nicht erwerben. Dadurch wird die Sonderfertigkeit Tradition (Hexen) um 10 AP billiger.",
+        "voraussetzungen": "Vorteil Zauberer, Zauberertradition kann Sonderfertigkeit Vertrautenbindung wählen",
+        "apWert": "-25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Kleine Zauberauswahl I-II",
+        "regel": "Der intuitive Zauberer muss pro Stufe einen der drei Zauber streichen, über die er maximal verfügen kann.",
+        "voraussetzungen": "Sonderfertigkeit Tradition Intuitive Zauberer oder Animisten, kein Vorteil Große Zauberauswahl",
+        "apWert": "10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Kälteempfindlich",
+        "regel": "Kältestufen werden für den Helden um 1 Stufe erhöht, sobald er mindestens unter Kältestufe 1 leidet.",
+        "voraussetzungen": "kein Vorteil Kälteresistenz",
+        "apWert": "-3 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Krankheitsanfällig I-II",
+        "regel": "Eine Krankheitsanfälligkeit verschlechtert Zähigkeit und Seelenkraft um 1 pro Stufe, wenn es darum geht, Krankheiten zu widerstehen.",
+        "voraussetzungen": "kein Vorteil Krankheitsresistenz",
+        "apWert": "-5 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Körperliche Auffälligkeit",
+        "regel": "Ein Held kann maximal zwei Körperliche Auffälligkeiten wählen. Die Körperliche Auffälligkeit zieht gelegentlich Erschwernisse auf Gesellschaftstalente aufgrund von Aberglaube oder Misstrauen nach sich.",
+        "voraussetzungen": "keine",
+        "apWert": "-2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Körpergebundene Kraft",
+        "regel": "Sobald der Held, aus welchem Grunde auch immer, einen Teil seiner Haarpracht einbüßt (z. B. durch Abschneiden, Feuer etc.; unabhängig von der Länge), verliert er sofort 10 Astralpunkte (bis zu einem Minimum von 0). Diese können normal regeneriert werden. Der normale menschliche Haarverlust zählt nicht als Verlust der Haarpracht.",
+        "voraussetzungen": "Vorteil Zauberer, Spezies des Zauberers muss über Haare verfügen",
+        "apWert": "-5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Lichtempfindlich",
+        "regel": "Der Held erleidet eine Stufe Schmerz, sobald er Sonnenlicht ausgesetzt ist, das heller ist als Dämmerlicht. Diese Auswirkung lässt sich vermeiden, wenn der Betroffene seinen kompletten Körper inklusive der Augen verhüllt.",
+        "voraussetzungen": "keine",
+        "apWert": "-20 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Lernfaul",
+        "regel": "Der Schelm kann keine Zauber in Schelmenstreiche umwandeln.",
+        "voraussetzungen": "Tradition (Schelme)",
+        "apWert": "-15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Lichtempfindlich II*",
+        "regel": "Der Held erleidet zwei Stufen Schmerz, sobald er Sonnenlicht ausgesetzt ist, das heller ist als Dämmerlicht. Diese Auswirkung lässt sich vermeiden, wenn der Betroffene seinen kompletten Körper inklusive der Augen verhüllt.",
+        "voraussetzungen": "kein Nachteil Lichtempfindlich I",
+        "apWert": "-30 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Lächerlicher Name",
+        "regel": "Die Heldin hatte schon immer einen lächerlichen Namen, oder aber sie hat sich irgendwann einen  ehrenrührigen Beinamen verdient. Wenn die Heldin  ihren Namen nennt, muss ihr Gegenüber eine Probe  auf Willenskraft bestehen, um nicht unangemessen zu  reagieren. Hat sich jemand an den Namen gewöhnt,  entfällt diese Probe.",
+        "voraussetzungen": "ein möglichst lächerlicher Name,  kein Vorteil Allerweltsname, Heldenhafter Name oder Nachteil Schurkenname",
+        "apWert": "-3 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Lästige Blütenfeen",
+        "regel": "Jedes Mal, wenn der Zauberer Astralenergie ausgibt und es eine Gegend ist, in der Blütenfeen leben, würfelt er mit dem W20. Ist das Ergebnis gleich oder kleiner der ausgegebenen Astralenergiemenge, dann tauchen eine oder mehrere Blütenfeen auf und belästigen den Zauberer. Alle folgenden Fertigkeitsproben sind in diesem Fall wegen der Ablenkung um 1 erschwert. Die Feenbleiben für 10 Minuten, ehe sie von selbst wieder verschwinden. Man kann nicht von mehr als einer Blütenfee gleichzeitig abgelenkt werden, die Erschwernis steigt also nicht durch weitere Feen, die durch den Nachteil erscheinen.",
+        "voraussetzungen": "Vorteil Zauberer",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Lästige Mindergeister",
+        "regel": "Jedes Mal wenn der Zauberer Astralenergie ausgibt, würfelt er mit dem W20. Ist das Ergebnis gleich oder kleiner der ausgegebenen Astralenergiemenge, tauchen Mindergeister auf und belästigen den Zauberer. Welche Art von Mindergeistern erscheinen, entscheidet der Meister je nach Situation. Beispiele sind Windbeutel, die das Haar des Zauberers selbst bei Windstille wallen lassen, Tränenlinge, die sich unter die Augen setzen, oder Feuerwusel, die Gegenstände des Zauberers erhitzen oder gar verkohlen. Außerdem sind alle Fertigkeitsproben wegen der Ablenkung um 1 erschwert. Die Mindergeister bleiben für 10 Minuten, ehe sie von selbst wieder verschwinden. Sind durch zu häufiges Zaubern mehrere Mindergeister erschienen, summieren sich die Erschwernis dennoch nicht auf.",
+        "voraussetzungen": "Vorteil Zauberer",
+        "apWert": "-20 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Nachtblind",
+        "regel": "Sobald der Held mindestens eine Stufe Sichterschwernis durch Dunkelheit erleidet, wird diese Erschwernis für ihn um eine Stufe erhöht.",
+        "voraussetzungen": "kein Vorteil Dunkelsicht, kein Nachteil Blind",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Magische Einschränkung",
+        "regel": "In der Umgebung, für die der Nachteil gilt, hat der Zauberer bei magischen Fertigkeitsproben keine Erschwernisse, ansonsten eine von 1.",
+        "voraussetzungen": "Vorteil Zauberer",
+        "apWert": "-30 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Niedrige Astralkraft I-VII",
+        "regel": "Der AE-Grundwert sinkt durch diesen Nachteil um 1 Punkt pro Stufe des Nachteils.",
+        "voraussetzungen": "Vorteil Zauberer, kein Vorteil Hohe Astralkraft",
+        "apWert": "-2 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Niedrige Karmalkraft I-VII",
+        "regel": "Der KE-Grundwert sinkt durch diesen Nachteil um 1 Punkt pro Stufe des Nachteils.",
+        "voraussetzungen": "Vorteil Geweihter, kein Vorteil Hohe Karmalkraft",
+        "apWert": "-2 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Niedrige Lebenskraft I-VII",
+        "regel": "Der LE-Grundwert sinkt durch diesen Nachteil um 1 Punkt pro Stufe des Nachteils.",
+        "voraussetzungen": "kein Vorteil Hohe Lebenskraft",
+        "apWert": "-4 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Niedrige Seelenkraft",
+        "regel": "Der SK-Grundwert des Helden ist um 1 schlechter.",
+        "voraussetzungen": "kein Vorteil Hohe Seelenkraft",
+        "apWert": "-25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Pech I-III",
+        "regel": "Der Held startet pro Stufe des Nachteils mit 1 Schicksalspunkt weniger als üblich. Sein Maximum an Schicksalspunkten sinkt hierdurch um einen Punkt pro Stufe. Die Anzahl der Schicksalspunkte darf hierbei nicht unter 0 fallen.",
+        "voraussetzungen": "kein Vorteil Glück",
+        "apWert": "-20 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Niedrige Zähigkeit",
+        "regel": "Der ZK-Grundwert des Helden ist um 1 schlechter.",
+        "voraussetzungen": "kein Vorteil Hohe Zähigkeit",
+        "apWert": "-25 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Persönlichkeitsschwäche",
+        "regel": "In passenden Situationen kann der Meister durchaus für die angegebenen Fertigkeiten eine Erschwernis von 1 aussprechen, wenn er dies für angemessen hält. Es dürfen bis zu zwei Persönlichkeitsschwächen pro Held gewählt werden.",
+        "voraussetzungen": "keine",
+        "apWert": "je nach Persönlichkeitsschwäche",
+        "alias": []
+    },
+    {
+        "name": "Pechmagnet",
+        "regel": "Bei jeder zufälligen Bestimmung des Meisters (Welcher Held wird von dem Pfeil getroffen? Wer stand von der Gruppe in der Nähe der Falle, als sie ausgelöst wurde?) sind die Chancen bei einem Abenteurer mit diesem Nachteil mindestens doppelt so hoch wie die eines Helden ohne Pechmagnet. Der Nachteil sollte in der Heldengruppe nicht bei allen Helden auftreten, da sich der Nachteil ansonsten aufhebt. Dementsprechend erfordert die Wahl von Pechmagnet Rücksprache mit dem Meister.",
+        "voraussetzungen": "keine",
+        "apWert": "-5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Raubtiergeruch",
+        "regel": "Der Meister kann immer, wenn der Held nahe genug an domestizierten Tieren ist und diese ihn wittern, mit dem W6 würfeln. Bei einer 1 versuchen sie, vor der vermeintlichen Bedrohung zu fliehen. Hunde und Katzen meiden die Nähe eines Helden mit diesem Nachteil, Pferde scheuen und selbst Schafe und Ziegen fliehen blökend, sobald er sich ihnen nähert. Bei Proben auf Tierkunde und Reiten im Umgang mit domestizierten Tieren kann ein Held mit Raubtiergeruch maximal 1 QS übrig behalten.",
+        "voraussetzungen": "Nachteil Unfähig (Reiten) und Nachteil Unfähig (Tierkunde)",
+        "apWert": "-3 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Schlafwandler",
+        "regel": "Kein Held sollte mehr als einmal pro Woche schlafwandeln. Am Tag nach dem Schlafwandeln erhält der Held 24 Stunden lang eine Stufe des Zustands Betäubung durch die geringe Erholung in der Nacht. Die Regeneration ist für den Held in der Nacht, in der er schlafwandelt um 1 gesenkt.",
+        "voraussetzungen": "keine",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Prinzipientreue I-III",
+        "regel": "Prinzipientreue gibt es in drei Stufen. Während die erste Stufe den Helden nur leicht einschränkt, ist die zweite Stufe schon fordernd, die letzte Stufe benachteiligt den Helden schwer. Ein Held kann mehreren Prinzipien folgen, er bekommt jedoch nur einmal Abenteuerpunkte für den Nachteil (und zwar für die höchste Prinzipientreuestufe). Wer gegen seine Prinzipien verstößt, erleidet eine Erschwernis von 1 auf alle Fertigkeitsproben. Dieser Zustand dauert mindestens eine Stunde an, über die genaue Länge entscheidet der Meister unter Berücksichtigung der Schwere des Verstoßes.",
+        "voraussetzungen": "keine",
+        "apWert": "-10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Schlechte Angewohnheit",
+        "regel": "Ein Held kann so viele Schlechte Angewohnheiten wählen, wie er möchte, erhält hierdurch allerdings insgesamt maximal 6 AP. In seltenen Fällen kann der Meister auch Erschwernisse auf Gesellschaftstalente vergeben.",
+        "voraussetzungen": "keine",
+        "apWert": "-2 Abenteuerpunkte pro Schlechter Angewohnheit",
+        "alias": []
+    },
+    {
+        "name": "Schlechte Regeneration (Astralenergie) I-III",
+        "regel": "Für jede Stufe des Nachteils muss der Held beim Regenerationswurf 1 Punkt abziehen (bis zu einem Minimum von 0).",
+        "voraussetzungen": "Vorteil Zauberer, kein Vorteil Verbesserte Regeneration (Astralenergie)",
+        "apWert": "-10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Schlechte Eigenschaft",
+        "regel": "In jeder Situation, in der der Held mit einem potenziellen Auslöser seiner Schlechten Eigenschaft konfrontiert wird, muss er eine Probe auf Willenskraft bestehen, um sich zu beherrschen. Gelingt ihm diese Probe, ist alles in Ordnung, ansonsten muss er entsprechend der Schlechten Eigenschaft agieren. Seine Schlechte Eigenschaft hat ihn so lange im Griff, wie er dem Auslöser ausgesetzt ist. Der Meister kann für die Probe auf Willenskraft entsprechend der Stärke des Auslösers Erschwernisse oder Erleichterungen aussprechen. Es dürfen bis zu zwei Schlechte Eigenschaften pro Held gewählt werden. Kombinationen, die sich ausschließen (z. B. Geiz und Verschwendungssucht), dürfen nicht gewählt werden. Das letzte Wort darüber hat der Spielleiter.",
+        "voraussetzungen": "keine",
+        "apWert": "je nach Schlechter Eigenschaft",
+        "alias": []
+    },
+    {
+        "name": "Schlechte Regeneration (Karmaenergie) I-III",
+        "regel": "Für jede Stufe des Nachteils muss der Held beim Regenerationswurf 1 Punkt abziehen (bis zu einem Minimum von 0).",
+        "voraussetzungen": "Vorteil Geweihter, kein Vorteil Verbesserte Regeneration (Karmaenergie)",
+        "apWert": "-10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Schlechte Regeneration (Lebensenergie) I-III",
+        "regel": "Für jede Stufe des Nachteils muss der Held beim Regenerationswurf 1 Punkt abziehen (bis zu einem Minimum von 0).",
+        "voraussetzungen": "kein Vorteil Verbesserte Regeneration (Lebensenergie)",
+        "apWert": "-10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Schlechtes Namensgedächtnis",
+        "regel": "Der Held kann sich kaum einen Namen richtig merken, auch nicht die seiner Reisegefährten, seines Lehnsherrn, des Kontaktmanns in den Schwarzen Landen, der eigenen Kinder oder seiner Angebeteten. Entweder bringt er alles durcheinander, nennt Leute  beim falschen Namen, oder aber er ändert sie aus Versehen ständig ab. Alle Teilproben auf Klugheit bei Proben auf Etikette (Heraldik & Stammbäume oder Klatsch & Tratsch) sind um 2 erschwert.",
+        "voraussetzungen": "keine",
+        "apWert": "-2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Schurkenname",
+        "regel": "Eine Heldin mit diesem Nachteil bekommt nach Meisterentscheid bei Proben auf die Talente Etikette und  Überreden eine Erschwernis von 1 auf alle Teilproben, die auf Charisma abgelegt werden, wenn sich ihr Gegenüber an dem Schurkennamen stört und dieser dem Gegenüber bekannt ist. Dafür erhält die Heldin eine Erleichterung von 1 auf Teilproben bei Charisma in dem Talent Einschüchtern.",
+        "voraussetzungen": "Ein möglichst schurkischer Name,  kein Vorteil Allerweltsname, Heldenhafter Name,  kein Nachteil Lächerlicher Name oder Unpassender  Name. Elfen können diesen Vorteil nicht wählen, da  sie keine Schurkennamen aufweisen.",
+        "apWert": "-2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Schwache Zaubermelodien",
+        "regel": "Die Heldin kann nur Personen bis zu SK 1 durch ihre Zaubermelodien verzaubern (statt bis zu SK 2).",
+        "voraussetzungen": "Sonderfertigkeit Tradition Zauberbarden, kein Vorteil Machtvolle Zaubermelodien",
+        "apWert": "8 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Schwache Zaubertänze",
+        "regel": "Der Held kann nur Personen bis zu SK 1 durch seine magischen Handlungen verzaubern (statt bis zu SK 2).",
+        "voraussetzungen": "Vorteil Zauberer, Sonderfertigkeit Tradition Zaubertänzer, kein Vorteil Machtvolle Zaubertänze",
+        "apWert": "8 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Schwacher Astralkörper",
+        "regel": "Jedes Mal, wenn der Held Astralpunkte ausgibt, verliert er einen Astralpunkt zusätzlich.",
+        "voraussetzungen": "Vorteil Zauberer",
+        "apWert": "-15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Schwacher Karmalkörper",
+        "regel": "Jedes Mal, wenn der Held Karmapunkte ausgibt, verliert er einen Karmapunkt zusätzlich.",
+        "voraussetzungen": "Vorteil Geweihter",
+        "apWert": "-15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Stigma",
+        "regel": "Der Meister kann eine Erschwernis von 1 auf Gesellschaftstalente (ausgenommen Einschüchtern, Menschenkenntnis und Willenskraft) und Handel (Feilschen) aussprechen, wenn er dies für angemessen hält. Ein Held kann den Nachteil nur einmal wählen.",
+        "voraussetzungen": "keine",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Sensibler Geruchssinn (*)",
+        "regel": "Solange der Held dem Geruch ausgesetzt ist, erleidet er eine Stufe Verwirrung.",
+        "voraussetzungen": "Spezies, Kultur oder Profession muss Sensibler Geruchssinn als automatischen oder empfohlenen Nachteil besitzen, kein Eingeschränkter Sinn (Geruch)",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Sprachfehler",
+        "regel": "Bei Gesellschaftstalenten (außer Menschenkenntnis und Willenskraft) und Handeln (Feilschen) kann er nach Meisterentscheid eine Erschwernis von 1 erhalten, wenn es darum geht, mit anderen Personen zu sprechen.",
+        "voraussetzungen": "kein Nachteil Stumm",
+        "apWert": "-15 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Stumm",
+        "regel": "Der Held kann sich in den meisten Fällen mit anderen Personen nicht verständigen (außer über Zeichensprache oder schriftlich). Der Einsatz von Zaubern und anderen Handlungen, die Sprache erfordern, ist unmöglich oder stark erschwert. Der Held erhält dauerhaft den Status Stumm.",
+        "voraussetzungen": "kein Vorteil Wohlklang, kein Vorteil Geborener Redner, kein Nachteil Sprachfehler",
+        "apWert": "-40 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Taub",
+        "regel": "Der Held kann keine Probe auf Sinnesschärfe ablegen, die mit dem Hören zu tun haben. Er erhält den Status Taub.",
+        "voraussetzungen": "kein Vorteil Herausragender Sinn (Gehör)",
+        "apWert": "-40 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Unfähig",
+        "regel": "Der Held muss bei einer Probe auf das Talent das beste Würfelergebnis einer Teilprobe neu würfeln. Das zweite Ergebnis ist bindend. Ein Abenteurer kann maximal zwei Unfähigkeiten besitzen.",
+        "voraussetzungen": "kein Vorteil Begabung auf das  gleiche Talent, maximal 2 Unfähigkeiten",
+        "apWert": "A-/B-/C-/D- Talent: -1/-2/-3/-4 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Unfrei",
+        "regel": "Der Held kann eine Erschwernis erhalten, wenn er als Unfreier Höhergestellte mit Gesellschaftstalenten überzeugen will. In seiner Kultur hat er zudem mit Unterdrückung zu kämpfen, genießt fast keinen rechtlichen Schutz und gilt als Besitz eines Höhergestellten.",
+        "voraussetzungen": "keine",
+        "apWert": "-8 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Unpassender Name",
+        "regel": "Ein Held mit diesem Nachteil bekommt nach Meisterentscheid bei Proben auf die Talente Bekehren & Überzeugen und Überreden eine Erschwernis von 1  auf alle Teilproben, die auf Charisma abgelegt werden, wenn sich sein Gegenüber an dem unpassenden Namen stört und dieser dem Gegenüber bekannt ist",
+        "voraussetzungen": "Ein möglichst unpassender Name, kein Vorteil Allerweltsname, Heldenhafter Name, kein Nachteil Lächerlicher Name oder Schurkenname. Elfen können diesen Vorteil nicht wählen, da ihre Namen immer passend sind.",
+        "apWert": "-4 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Unverträglichkeit gegenüber Alkohol",
+        "regel": "Wer über diesen Nachteil verfügt, für den verdoppeln sich die Auswirkungen nach Giftproben beim Konsum von Alkohol. Würde der Held beispielsweise 1 Stufe Berauscht erleiden, erhält er stattdessen direkt 2 Stufen des Zustands.",
+        "voraussetzungen": "keine Sonderfertigkeit Kampftrinker",
+        "apWert": "-2 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Verminderte Zaubermelodien I-III",
+        "regel": "Die Zaubermelodien der Abenteurerin reichen pro Stufe des Nachteils 2 Schritt weniger weit als üblich.",
+        "voraussetzungen": "Sonderfertigkeit Tradition Zauberbarden, kein Vorteil Weitreichende Zaubermelodien",
+        "apWert": "-2 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Verminderte Zaubertänze I-III",
+        "regel": "Die Zaubertänze des Abenteurers reichen pro Stufe des Nachteils 2 Schritt weniger weit als üblich.",
+        "voraussetzungen": "Sonderfertigkeit Tradition Zaubertänzer, kein Vorteil Weitreichende Zaubertänze",
+        "apWert": "-2 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Verpflichtungen I-III",
+        "regel": "Der Held muss Anweisungen desjenigen befolgen, dem er verpflichtet ist, oder mit den Konsequenzen leben. Ein Held kann mehreren Institutionen oder Personen verpflichtet sein, er bekommt jedoch nur einmal Abenteuerpunkte für den Nachteil (und zwar für die höchste Verpflichtungsstufe).",
+        "voraussetzungen": "keine",
+        "apWert": "-10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Verstümmelt",
+        "regel": "Viele Fertigkeitsproben können durch die Verstümmelung erschwert oder unmöglich sein. Die Entscheidung hierüber obliegt dem Meister je nach Situation. #Einarmig: Einer der beiden Arme des Charakters fehlt mindestens bis zum Ellbogen. #Einäugig: Eines der beiden Augen des Helden ist blind oder er hat es verloren. Fernkampfangriffe sind dadurch um 4 erschwert. #Einbeinig: Der Held hat nur ein Bein, bzw. es ist unterhalb des Knies amputiert. Der Geschwindigkeit- Grundwert ist halbiert. Krücken und einfache Prothesen wie ein Holzbein helfen gegen die Verminderung der Geschwindigkeit nicht. #Einhändig: Dem Abenteurer fehlt eine Hand. #Einohrig: Eines der Ohren ist abgeschnitten oder verkrüppelt. Proben auf Sinnesschärfe auf Hören sind für den Helden grundsätzlich um 1 erschwert.",
+        "voraussetzungen": "keine",
+        "apWert": "Einarmig: -30 Abenteuerpunkte; Einäugig: -10 Abenteuerpunkte; Einbeinig: -30 Abenteuerpunkte; Einhändig: -20 Abenteuerpunkte; Einohrig: -5 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Verweichlicht",
+        "regel": "Bei der Probe auf Selbstbeherrschung (Handlungsfähigkeit bewahren oder Störungen ignorieren) bei Wundeffekten bekommt die Heldin eine Erschwernis von 2.",
+        "voraussetzungen": "keine",
+        "apWert": "3 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Wenige Predigten I-II",
+        "regel": "Bei Stufe I kann der Zelot nur 2 Predigt-Sonderfertigkeiten beherrschen, bei Stufe II sogar nur 1.",
+        "voraussetzungen": "Vorteil Prediger",
+        "apWert": "-10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Wahrer Name",
+        "regel": "Wenn ein Zauberer einen Zauberspruch gegen ein Ziel einsetzt, dessen Wahren Namen er kennt (und der über diesen Nachteil verfügt), verschlechtert sich die Seelenkraft und die Zähigkeit des Ziels um 4, womit es leichter zu verzaubern ist.",
+        "voraussetzungen": "keine",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Wilde Magie",
+        "regel": "19er werden bei Fertigkeitsproben auf Zauber und Rituale in Hinsicht auf die Bestimmung eines Patzers wie eine 20 behandelt.",
+        "voraussetzungen": "Vorteil Zauberer",
+        "apWert": "-10 Abenteuerpunkte",
+        "alias": []
+    },
+    {
+        "name": "Wenige Visionen I-II",
+        "regel": "Bei Stufe I kann der Zelot nur 2 Vision-Sonderfertigkeiten beherrschen, bei Stufe II sogar nur 1.",
+        "voraussetzungen": "Vorteil Visionär",
+        "apWert": "-10 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Zauberanfällig I-II",
+        "regel": "Gegen Magie sind Seelenkraft und Zähigkeit um 1 pro Stufe schlechter als üblich.",
+        "voraussetzungen": "kein Vorteil Schwer zu verzaubern",
+        "apWert": "-12 Abenteuerpunkte pro Stufe",
+        "alias": []
+    },
+    {
+        "name": "Zerbrechlich",
+        "regel": "Erschwernisse durch den Zustand Schmerz werden wie bei einer Stufe höher behandelt. Die Handlungsunfähigkeit tritt somit bereits bei Stufe III ein.",
+        "voraussetzungen": "kein Vorteil Zäher Hund",
+        "apWert": "-20 Abenteuerpunkte",
+        "alias": []
+    }
+]

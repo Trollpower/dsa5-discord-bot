@@ -1,0 +1,16 @@
+{
+    "meister": [
+        "dein_discord_username"
+    ],
+    "alias": {
+        "dein_discord_username": "Charaktername",
+        "spieler1": "Charaktername1",
+        "spieler2": "Charaktername2"
+    },
+    "enableGMChanceImprovement": true,
+    "probeQuickButtonsEnabled": true,
+    "probeQuickButtonsCount": 8,
+    "eventHistoryProvider": "ndjson",
+    "eventHistoryNdjsonPath": "storage/event-history.ndjson",
+    "eventHistoryBlockedPayloadTypes": []
+}

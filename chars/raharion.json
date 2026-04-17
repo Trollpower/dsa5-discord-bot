@@ -1,0 +1,384 @@
+{
+    "name": "Raharion",
+    "gs": 8,
+    "zk": 0,
+    "sk": 3,
+    "eigenschaften": {
+        "MU": 14,
+        "KL": 12,
+        "IN": 15,
+        "CH": 11,
+        "FF": 14,
+        "GE": 15,
+        "KO": 12,
+        "KK": 11
+    },
+    "lep": {
+        "aktuell": 35,
+        "max": 35
+    },
+    "asp": {
+        "aktuell": 40,
+        "max": 40
+    },
+    "kampftechniken": [
+        {
+            "name": "Bögen",
+            "ktw": 15
+        },
+        {
+            "name": "Dolche",
+            "ktw": 13
+        },
+        {
+            "name": "Fechtwaffen",
+            "ktw": 15
+        }
+    ],
+    "talente": [
+        {
+            "name": "Alchimie",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Bekehren & Überzeugen",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Boote & Schiffe",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Fährtensuchen",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Gassenwissen",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Geographie",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Geschichtswissen",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Götter & Kulte",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Handel",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Heilkunde Krankheiten",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Heilkunde Wunden",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Holzbearbeitung",
+            "fertigkeitswert": 13
+        },
+        {
+            "name": "Klettern",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Körperbeherrschung",
+            "fertigkeitswert": 12
+        },
+        {
+            "name": "Kriegskunst",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Magiekunde",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Mechanik",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Menschenkenntnis",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Musizieren",
+            "fertigkeitswert": 12
+        },
+        {
+            "name": "Orientierung",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Pflanzenkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Rechnen",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Rechtskunde",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Reiten",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Sagen & Legenden",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Schlösserknacken",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Schwimmen",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Selbstbeherrschung",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Singen",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Sinnesschärfe",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Sphärenkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Sternkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Tanzen",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Tierkunde",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Überreden",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Verbergen",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Wildnisleben",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Willenskraft",
+            "fertigkeitswert": 6
+        }
+    ],
+    "zauber": [
+        {
+            "name": "Adlerschwinge",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Axxeleratus",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Blick in die Gedanken",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Eispfeil",
+            "fertigkeitswert": 14
+        },
+        {
+            "name": "Firnlauf",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Himmelslauf",
+            "fertigkeitswert": 13
+        },
+        {
+            "name": "Krötensprung",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Odem Arcanum",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Silentium",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Spinnenlauf",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Wasseratem",
+            "fertigkeitswert": 16
+        },
+        {
+            "name": "Wellenlauf",
+            "fertigkeitswert": 12
+        }
+    ],
+    "liturgien": [],
+    "elfenlieder": [
+        {
+            "name": "Erinnerungsmelodie",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Zaubermelodie",
+            "fertigkeitswert": 4
+        }
+    ],
+    "sonderfertigkeiten": [
+        {
+            "name": "Beidhändiger Kampf I"
+        },
+        {
+            "name": "Beidhändiger Kampf II"
+        },
+        {
+            "name": "Einhändiger Kampf"
+        },
+        {
+            "name": "Fallen entschärfen"
+        },
+        {
+            "name": "Fertigkeitsspezialisierung (Reiten: Gebiet)"
+        },
+        {
+            "name": "Finte I"
+        },
+        {
+            "name": "Kampfreflexe I"
+        },
+        {
+            "name": "Lieblingszauber",
+            "referenz": "Axxeleratus"
+        },
+        {
+            "name": "Magische Regeneration I"
+        },
+        {
+            "name": "Meisterliche Regeneration"
+        },
+        {
+            "name": "Merkmalskenntnis (Verwandlung)",
+            "referenz": "Verwandlung"
+        },
+        {
+            "name": "Ortskenntnis"
+        },
+        {
+            "name": "Schnellladen (Bögen)"
+        },
+        {
+            "name": "Schnellziehen"
+        },
+        {
+            "name": "Verbessertes Ausweichen I"
+        },
+        {
+            "name": "Verbessertes Ausweichen II"
+        },
+        {
+            "name": "Verbessertes Ausweichen III"
+        },
+        {
+            "name": "Zauberweber"
+        }
+    ],
+    "waffen": [
+        "Elfenbogen",
+        "Herzsucher"
+    ],
+    "ruestungen": [],
+    "angelegteWaffen": [
+        "Elfenbogen"
+    ],
+    "nachteile": [
+        {
+            "name": "Pech I"
+        },
+        {
+            "name": "Pechmagnet"
+        },
+        {
+            "name": "Persönlichkeitsschwäche",
+            "category": "Arroganz"
+        },
+        {
+            "name": "Schlechte Angewohnheit",
+            "category": "Duzer"
+        },
+        {
+            "name": "Schlechte Angewohnheit",
+            "category": "Erster"
+        },
+        {
+            "name": "Schlechte Eigenschaft",
+            "category": "Neugier"
+        },
+        {
+            "name": "Schwacher Astralkörper"
+        },
+        {
+            "name": "Stigma",
+            "category": "Katzenhafte Augen"
+        },
+        {
+            "name": "Unfähig",
+            "category": "Zechen"
+        },
+        {
+            "name": "Wilde Magie"
+        }
+    ],
+    "vorteile": [
+        {
+            "name": "Altersresistenz"
+        },
+        {
+            "name": "Beidhändig"
+        },
+        {
+            "name": "Dunkelsicht I"
+        },
+        {
+            "name": "Zauberer"
+        },
+        {
+            "name": "Zweistimmiger Gesang"
+        }
+    ],
+    "initiative": 17,
+    "quickProbeFavorites": [
+        {
+            "category": "talente",
+            "name": "Sinnesschärfe",
+            "label": "Sinn"
+        },
+        null,
+        null
+    ]
+}

@@ -1,0 +1,189 @@
+[
+    {
+        "name": "Knochenrüstung",
+        "rs": 2,
+        "be": 1,
+        "gewicht": "6 Stein",
+        "preis": "80 S",
+        "komp": "prim",
+        "abzuege": [],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/knochenruestung.html"
+    },
+    {
+        "name": "Lederrüstung",
+        "rs": 3,
+        "be": 1,
+        "gewicht": "6 Stein",
+        "preis": "150 S",
+        "komp": "einf",
+        "abzuege": [
+            {
+                "was": "GS",
+                "wieviel": -1
+            },
+            {
+                "was": "INI",
+                "wieviel": -1
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/lederruestung.html"
+    },
+    {
+        "name": "Gestechrüstung",
+        "rs": 7,
+        "be": 4,
+        "gewicht": "35 Stn",
+        "preis": "2.500 S",
+        "komp": "komp (3 AP)",
+        "abzuege": [],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/gestechruestung.html"
+    },
+    {
+        "name": "Holzrüstung",
+        "rs": 4,
+        "be": 2,
+        "gewicht": "10 Stein",
+        "preis": "300 S",
+        "komp": "einf",
+        "abzuege": [],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/holzruestung.html"
+    },
+    {
+        "name": "Kettenrüstung",
+        "rs": 4,
+        "be": 2,
+        "gewicht": "12 Stein",
+        "preis": "250 S",
+        "komp": "einf",
+        "abzuege": [],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/kettenruestung.html"
+    },
+    {
+        "name": "Normale Kleidung/Felle/Nackt",
+        "rs": null,
+        "be": null,
+        "gewicht": "1 Stein",
+        "preis": "unterschiedlich",
+        "komp": "unterschiedlich",
+        "abzuege": [],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/normale-kleidung-felle-nackt.html"
+    },
+    {
+        "name": "Plattenrüstung",
+        "rs": 6,
+        "be": 3,
+        "gewicht": "25 Stein",
+        "preis": "750 S",
+        "komp": "einf",
+        "abzuege": [],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/plattenruestung.html"
+    },
+    {
+        "name": "Schwere Kleidung/Winterkleidung",
+        "rs": 1,
+        "be": null,
+        "gewicht": "2 Stein",
+        "preis": "unterschiedlich",
+        "komp": "unterschiedlich",
+        "abzuege": [
+            {
+                "was": "GS",
+                "wieviel": -1
+            },
+            {
+                "was": "INI",
+                "wieviel": -1
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/schwere-kleidung-winterkleidung.html"
+    },
+    {
+        "name": "Schuppenrüstung",
+        "rs": 5,
+        "be": 2,
+        "gewicht": "18 Stein",
+        "preis": "400 S",
+        "komp": "einf",
+        "abzuege": [
+            {
+                "was": "GS",
+                "wieviel": -1
+            },
+            {
+                "was": "INI",
+                "wieviel": -1
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/schuppenruestung.html"
+    },
+    {
+        "name": "Stoffrüstung",
+        "rs": 2,
+        "be": 1,
+        "gewicht": "3 Stein",
+        "preis": "75 S",
+        "komp": "einf",
+        "abzuege": [],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/stoffruestung.html"
+    },
+    {
+        "name": "Turnierrüstung",
+        "rs": 8,
+        "be": 5,
+        "gewicht": "40 Stein",
+        "preis": "3.000+ S",
+        "komp": "komp (5 AP)",
+        "abzuege": [],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/turnierruestung.html"
+    },
+    {
+        "name": "Schlingerrüstung",
+        "rs": 3,
+        "be": 0,
+        "gewicht": "6 Stein",
+        "preis": "150 S",
+        "komp": "einf",
+        "abzuege": [
+            {
+                "was": "GS",
+                "wieviel": -1
+            },
+            {
+                "was": "INI",
+                "wieviel": -1
+            }
+        ],
+        "alias": [],
+        "url": "https://ulisses-regelwiki.de/Best_Schlinger.html"
+    },
+    {
+        "name": "Kr'Thon'Chh Knochen",
+        "rs": 7,
+        "be": 0,
+        "gewicht": "6 Stein",
+        "preis": "150 S",
+        "komp": "einf",
+        "abzuege": [
+            {
+                "was": "GS",
+                "wieviel": -1
+            },
+            {
+                "was": "INI",
+                "wieviel": -2
+            }
+        ],
+        "alias": []
+    }
+]

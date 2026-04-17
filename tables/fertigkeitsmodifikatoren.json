@@ -1,0 +1,38 @@
+{
+    "title": "Fertigkeitsmodifikation",
+    "key": "qs",
+    "table": [
+        [
+            "Modifikator",
+            "Bewertung"
+        ],
+        [
+            "+5",
+            "extream leichte Probe"
+        ],
+        [
+            "+3",
+            "sehr leichte Probe"
+        ],
+        [
+            "+1",
+            "leichte Probe"
+        ],
+        [
+            "+/-0",
+            "anspruchsvolle Probe"
+        ],
+        [
+            "-1",
+            "schwere Probe"
+        ],
+        [
+            "-3",
+            "sehr schwere Probe"
+        ],
+        [
+            "-5",
+            "extrem schwere Probe"
+        ]
+    ]
+}

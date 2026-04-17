@@ -1,0 +1,28 @@
+services:
+  dsa-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dsa-bot-v2
+    env_file:
+      - .env
+    restart: unless-stopped
+    volumes:
+      # Charakter-JSON-Dateien (lesen + schreiben für persistCharacter)
+      - ./chars:/app/chars
+      # Event-History
+      - ./storage:/app/storage
+      # Konfiguration (read-only reicht aus)
+      - ./config.json:/app/config.json:ro
+
+  deploy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./config.json:/app/config.json:ro
+    command: ["deploy-commands.js"]
+    profiles:
+      - deploy

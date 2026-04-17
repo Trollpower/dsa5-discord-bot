@@ -1,0 +1,337 @@
+{
+    "name": "Lasse",
+    "displayName": "Lasse Raskirsson",
+    "zk": 2,
+    "sk": 1,
+    "gs": 8,
+    "eigenschaften": {
+        "MU": 15,
+        "KL": 10,
+        "IN": 14,
+        "CH": 12,
+        "FF": 8,
+        "GE": 15,
+        "KO": 15,
+        "KK": 17
+    },
+    "lep": {
+        "aktuell": 47,
+        "max": 47
+    },
+    "kampftechniken": [
+        {
+            "name": "Dolche",
+            "ktw": 10
+        },
+        {
+            "name": "Hiebwaffen",
+            "ktw": 19,
+            "pa": 12,
+            "paBrutto": 11
+        },
+        {
+            "name": "Raufen",
+            "ktw": 14
+        },
+        {
+            "name": "Schilde",
+            "ktw": 17
+        },
+        {
+            "name": "Schwerter",
+            "ktw": 12
+        },
+        {
+            "name": "Wurfwaffen",
+            "ktw": 10
+        },
+        {
+            "name": "Zweihandhiebwaffen",
+            "ktw": 11
+        }
+    ],
+    "talente": [
+        {
+            "name": "Alchimie",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Bekehren & Überzeugen",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Betören",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Boote & Schiffe",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Einschüchtern",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Etikette",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Fährtensuchen",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Fischen & Angeln",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Gassenwissen",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Geographie",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Geschichtswissen",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Götter & Kulte",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Heilkunde Krankheiten",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Heilkunde Wunden",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Holzbearbeitung",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Klettern",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Körperbeherrschung",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Kraftakt",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Kriegskunst",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Magiekunde",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Menschenkenntnis",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Orientierung",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Rechnen",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Rechtskunde",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Reiten",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Sagen & Legenden",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Schwimmen",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Selbstbeherrschung",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Sinnesschärfe",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Sphärenkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Sternkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Tierkunde",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Überreden",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Wildnisleben",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Willenskraft",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Zechen",
+            "fertigkeitswert": 8
+        }
+    ],
+    "zauber": [],
+    "liturgien": [],
+    "flueche": [],
+    "elfenlieder": [],
+    "rituale": [],
+    "segnungen": [],
+    "melodien": [],
+    "waffen": [
+        "Sturmspalter",
+        "Thorwalerschild",
+        "Uddahjaler Kriegsbeil (Skraja)"
+    ],
+    "sonderfertigkeiten": [
+        {
+            "name": "Beidhändiger Kampf I"
+        },
+        {
+            "name": "Beidhändiger Kampf II"
+        },
+        {
+            "name": "Belastungsgewöhnung I"
+        },
+        {
+            "name": "Belastungsgewöhnung II"
+        },
+        {
+            "name": "Beschützer"
+        },
+        {
+            "name": "Finte I"
+        },
+        {
+            "name": "Finte II"
+        },
+        {
+            "name": "Formation"
+        },
+        {
+            "name": "Hammerschlag"
+        },
+        {
+            "name": "Kampf im Wasser"
+        },
+        {
+            "name": "Ortskenntnis"
+        },
+        {
+            "name": "Schildstoß"
+        },
+        {
+            "name": "Sturmangriff"
+        },
+        {
+            "name": "Verteidigungshaltung"
+        },
+        {
+            "name": "Vorstoß"
+        },
+        {
+            "name": "Wuchtschlag I"
+        },
+        {
+            "name": "Wuchtschlag II"
+        },
+        {
+            "name": "Wuchtschlag III"
+        }
+    ],
+    "angelegteWaffen": [
+        "Sturmspalter",
+        "Uddahjaler Kriegsbeil (Skraja)"
+    ],
+    "angelegteRuestung": "Kettenrüstung",
+    "ruestungen": [
+        "Kettenrüstung"
+    ],
+    "vorteile": [
+        {
+            "name": "Adel I"
+        },
+        {
+            "name": "Adel II"
+        },
+        {
+            "name": "Beidhändig"
+        },
+        {
+            "name": "Glück I"
+        },
+        {
+            "name": "Herausragende Kampftechnik",
+            "category": "Schilde"
+        },
+        {
+            "name": "Hohe Lebenskraft I"
+        },
+        {
+            "name": "Verbesserte Regeneration I",
+            "category": "Lebensenergie"
+        },
+        {
+            "name": "Verbesserte Regeneration II",
+            "category": "Lebensenergie"
+        },
+        {
+            "name": "Zäher Hund"
+        }
+    ],
+    "nachteile": [
+        {
+            "name": "Angst vor Höhe I"
+        },
+        {
+            "name": "Persönlichkeitsschwäche",
+            "category": "Streitsucht"
+        },
+        {
+            "name": "Prinzipientreue I",
+            "category": "Ehrenhaftigkeit, Loyalität, Schutz der Schwachen"
+        },
+        {
+            "name": "Prinzipientreue II",
+            "category": "Ehrenhaftigkeit, Loyalität, Schutz der Schwachen"
+        }
+    ],
+    "initiative": 16,
+    "quickProbeFavorites": [
+        {
+            "category": "talente",
+            "name": "Sinnesschärfe",
+            "label": "waslos"
+        },
+        null,
+        null
+    ],
+    "cheating": {
+        "general": 20
+    }
+}

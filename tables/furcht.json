@@ -1,0 +1,26 @@
+{
+    "title": "Furcht",
+    "key": "furcht",
+    "table": [
+        [
+            "Furchtstufe",
+            "Auswirkung"
+        ],
+        [
+            "Stufe I",
+            "beunruhigt, alle Proben -1"
+        ],
+        [
+            "Stufe II",
+            "verängstigt, alle Proben -2"
+        ],
+        [
+            "Stufe III",
+            "in Panik, alle Proben -3"
+        ],
+        [
+            "Stufe IV",
+            "katatonisch, handlungsunfähig"
+        ]
+    ]
+}

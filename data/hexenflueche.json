@@ -1,0 +1,218 @@
+[
+    {
+        "name": "Beiß auf Granit!",
+        "probe": "KL/IN/FF",
+        "wirkung": "Feste Nahrungsmittel, die das Opfer berührt, werden zu Stein oder einer anderen Substanz, die die Hexe im Fluch benannt hat. Üblich sind neben Stein auch Holz, Mist oder Schleim. Edelmetalle oder Ähnliches sind nicht möglich. Die Lebensmittel verwandeln sich nach fünf Minuten wieder zurück, insofern das Opfer sie nicht berührt. Der Versuch, Lebensmittel mit Zangen oder Trichtern in den Mund zu führen, kann dazu führen, dass das Opfer an einem Stein im Hals erstickt. Für Suppen, Milch und andere Flüssigkeiten gilt der Fluch nicht.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 in Tagen",
+        "merkmal": "Objekt",
+        "alias": []
+    },
+    {
+        "name": "Fellwechsel",
+        "probe": "MU/IN/KO",
+        "wirkung": "Das Opfer dieses Fluchs wird für die Wirkungsdauer in ein Tier oder eine Pflanze der Größenkategorie klein oderwinzig verwandelt. Es behält einen kleinen Teil seiner geistigen Fähigkeiten und Erinnerungen, übernimmt jedoch die körperlichen Fähigkeiten der neuen Gestalt. Das verwandelte Tier oder die Pflanze besitzt keine magischen oder übernatürlichen Fähigkeiten oder Eigenschaften, überträgt keine Krankheiten und ist nicht giftig. Ausrüstung und Kleidung werden nicht mitverwandelt. Verwandelte können sich nach dem Ende der Wirkungsdauer bruchstückhaft an die Zeit als Tier oder Pflanze erinnern.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 Tage",
+        "merkmal": "Verwandlung",
+        "alias": []
+    },
+    {
+        "name": "Beute!",
+        "probe": "KL/IN/CH",
+        "wirkung": "Der Geruch des Opfers lockt alle Arten von fleischfressenden Wirbeltieren an. Diese sehen das Opfer als leichte Beute an. Während domestizierte Tiere mit einer um die Fertigkeitspunkte des Fluches erschwerten Tierkundeprobe beruhigt werden können, lassen sich wilde Tiere hiervon nicht abbringen. Der nur für die Tiere wahrnehmbare Geruch ist so stark, dass Wildtiere das Opfer bereits aus mehreren Meilen Entfernung wahrnehmen können.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 in Tagen",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Hagelschlag",
+        "probe": "MU/IN/CH",
+        "wirkung": "Auf einer Fläche von bis zu (QS x 20.000) Rechtschritt geht ein schwerer Hagelsturm nieder. Je nach Region kann auch ein Schnee- oder Sandsturm die Fläche verheeren. Solche Stürme können Ernten zerstören, Dächer abdecken und bei ungeschützten Tieren und Personen 2W6 TP Schaden pro 5 Minuten verursachen.",
+        "kosten": "21 AsP",
+        "wirkungsdauer": "QS x 15 Minuten",
+        "merkmal": "Elementar",
+        "alias": []
+    },
+    {
+        "name": "Gestank anheften",
+        "probe": "MU/IN/CH",
+        "wirkung": "Das Opfer des Fluchs erleidet den Status Übler Geruch bis zum Ende der Wirkungsdauer.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 Tage",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Hunger wecken",
+        "probe": "MU/CH/KO",
+        "wirkung": "Während der Wirkungsdauer ist das Opfer von einem nahezu unstillbaren Drang beseelt, Nahrung zu essen. Je süßer und fettiger die Speisen sind, desto lieber wird es sie verschlingen. Pro Tag, den der Fluch währt, nimmt das Opfer 1 Stein zu, sofern es nicht irgendwie am Essen gehindert wird oder die Nahrungsmittel ausgehen. Das Opfer ist auch bereit, das Essen von anderen Menschen zu vertilgen. Gerade, wenn das Fluchopfer lange nichts mehr gegessen hat, schaufelt es die Nahrung förmlich in sich hinein, was sehr unappetitlich aussehen kann. Nach einem solchen Gelage erleidet das Fluchopfer 1 Stufe Betäubung.",
+        "kosten": "7 AsP",
+        "wirkungsdauer": "QS x 3 Tage",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Hexenschuss",
+        "probe": "IN/FF/KO",
+        "wirkung": "Das Opfer erleidet plötzlich einen starken Schmerz im Rücken oder im Kopf, je nach Wahl der Hexe. Durch den Hexenschuss erleidet das Opfer eine Stufe des Zustands Schmerz.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 in Stunden",
+        "merkmal": "Verwandlung",
+        "alias": []
+    },
+    {
+        "name": "Geschmackssinn nehmen",
+        "probe": "IN/CH/KO",
+        "wirkung": "Der Fluch raubt dem Opfer seinen Geschmackssinn, sodass es, gleich welche Speise es zu sich nimmt, nichts schmeckt. Proben auf Sinnesschärfe (Suchen oder Wahrnehmen) misslingen automatisch, wenn sie den Geschmack betreffen.",
+        "kosten": "7 AsP",
+        "wirkungsdauer": "QS x 3 Wochen",
+        "merkmal": "Verwandlung",
+        "alias": []
+    },
+    {
+        "name": "Juckreiz verursachen",
+        "probe": "MU/KL/IN",
+        "wirkung": "Das Opfer des Fluchs ist von einem ständigen Juckreiz betroffen. Dadurch erhält es 1 Stufe Verwirrung. Zudem ist seine Regeneration halbiert, sofern diese anfängt, während der Fluch noch wirkt.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 Stunden",
+        "merkmal": "Illusion",
+        "alias": []
+    },
+    {
+        "name": "Kornfäule",
+        "probe": "KL/IN/KO",
+        "wirkung": "Die Hexe kann mit diesem Fluch ein Feldvon 10 x 100 Rechtschritt durch Schädlinge wie Heuschrecken oder durch Pflanzenkrankheiten wie Mehltau zerstören. Die Hexe kann dabei die Art der Zerstörung nicht auswählen. Die Ernte ist binnen 7- QS Stunden vollständig zerstört. Einzelne Pflanzenlassen sich durch Umpflanzen auf ein nicht verfluchtes Gebiet retten. Auf dem Boden lassen sich QS Wochen lange keine Lebensmittel mehr anbauen. Alle Versuche innerhalb dieser Zeit sind zum Scheitern verurteilt.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "sofort",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Krötenkuss",
+        "probe": "MU/CH/CH",
+        "wirkung": "Das Opfer ist von einer Aura umgeben, die es abstoßend für andere Kulturschaffende mach, und auch das Opfer empfindet Ekel vor sich selbst. Alle CH-Teilproben bei Fertigkeiten (beispielsweise auch Zauber und Liturgien) sind um 2 erschwert.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 Stunden",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Mit Blindheit schlagen",
+        "probe": "KL/IN/CH",
+        "wirkung": "Das Opfer verliert schlagartig die Fähigkeit, seine Umgebung optisch wahrzunehmen, und erhält dadurch den Status Blind.",
+        "kosten": "21 AsP",
+        "wirkungsdauer": "QS x 30 Minuten",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Pech an den Hals wünschen",
+        "probe": "KL/IN/CH",
+        "wirkung": "Neben der 20 gilt nun auch die 19 als Patzer. Für Patzer bei Fertigkeitsproben reicht es so, wenn zwei Würfel eine 19 oder mehr zeigen. Außerdem zerbricht das Opfer aus Versehen Gegenstände, stolpert über Hindernisse, vergisst Verabredungen oder tritt bei Gesprächen in Fettnäpfchen. Details entscheidet der Meister.",
+        "kosten": "7 AsP",
+        "wirkungsdauer": "QS x 3 in Tagen",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Miese Laune",
+        "probe": "MU/IN/CH",
+        "wirkung": "Durch diesen Fluch ist das Opfer ständig schlecht gelaunt. Es empfindet keine Freude oder Begeisterung mehr und regt sich schon über Kleinigkeiten auf. Proben auf Gesellschaftstalente (außer Einschüchtern, Menschenkenntnis und Willenskraft) sind um 2 erschwert.",
+        "kosten": "7 AsP",
+        "wirkungsdauer": "QS x 3 Stunden",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Pestilenz",
+        "probe": "MU/CH/GE",
+        "wirkung": "Das Opfer wird von der Hexe mit einer ihr bekannten Krankheit infiziert, maximal jedoch mit einer Krankheitsstufe gleich dem Fertigkeitswert des Fluches. Ab der Infektion verläuft die Krankheit wie normal, ist allerdings nicht ansteckend. Nicht wählbar sind magische Erkrankungen wie Duglumspest.",
+        "kosten": "Stufe der Krankheit in AsP",
+        "wirkungsdauer": "bis zum Ende der Krankheit, maximal aber QS x 3 in Tagen",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Todesfluch",
+        "probe": "MU/IN/CH",
+        "wirkung": "Dieser Fluch wirkt gegen Kulturschaffende. Jeden Tag bei Sonnenaufgang verliert das Opfer 1W3+2 LeP. Während der Regenerationsphasen kann das Opfer keine LeP regenerieren. Auch Proben auf Heilkunde Wunden u. Ä. verschaffen keine zusätzlichen LeP. Heiltränke, Heilkräuter oder andere übernatürliche Wirkungen wie Zauber und Liturgien können aber verlorene Punkte regenerieren.",
+        "kosten": "21 AsP",
+        "wirkungsdauer": "QS x 3 Tage",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Unfruchtbarkeit",
+        "probe": "IN/FF/KO",
+        "wirkung": "Das Opfer, Person oder Tier, ist nicht mehr in der Lage, Nachkommen zu zeugen oder zu gebären. Schwangere Wesen erleiden oft eine Miss- oder Totgeburt.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 in Wochen",
+        "merkmal": "Verwandlung",
+        "alias": []
+    },
+    {
+        "name": "Schlaf rauben",
+        "probe": "KL/IN/CH",
+        "wirkung": "Das Opfer kann nicht schlafen. Wenn es doch für einige Sekunden einschläft, wird es von Alpträumen wieder aufgeschreckt. Regeneration ist in diesem Zustand nicht möglich. Es reagiert genauso wie andere Menschen, die lange Zeit wach gehalten werden, wird also fahrig, reizbar und erleidet nach einigen Tagen Sinnestäuschungen. Pro zwei Tagen ohne Schlaf erhält das Opfer eine Stufe Verwirrung, die erst abklingt, wenn es wieder schlafen kann.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 in Tagen",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Viehverstümmelung",
+        "probe": "IN/IN/KO",
+        "wirkung": "Dieser Fluch kann nur auf ein Tier angewendet werden. Nicht betroffen davon sind magische Tiere wie Vertraute. Ein ausgewählter Körperteil des Tiers beginnt zu verdorren. Der Kopf oder der Rumpf können nicht gewählt werden. Das Tier überlebt den Fluch, ist danach aber verstümmelt.",
+        "kosten": "7 AsP",
+        "wirkungsdauer": "QS Tage",
+        "merkmal": "Dämonisch",
+        "alias": []
+    },
+    {
+        "name": "Wollust verursachen",
+        "probe": "IN/CH/KO",
+        "wirkung": "Während der Wirkungsdauer ist das Opfer brünstig und versucht, mindestens einmal stündlich einen geeigneten Sexualpartner zu finden. Das Aussehen des Sexualpartners spielt keine Rolle, nur ob der Verfluchte an dessen Geschlecht und Spezies interessiert ist. Während der Wirkungsdauer erhält das Fluchopfer die Schlechte Eigenschaft Brünstig, sodass im Zweifelsfalle der Spielleiter eine Probe auf Willenskraft (mindestens um 3 erschwert) verlangen sollte, damit das Opfer seine Wollust für die nächste Stunde unterdrücken kann. Das Verhalten des Verfluchten ist so aufdringlich und unbeherrscht, dass alle Gesellschaftstalente (außer Einschüchtern, Menschenkenntnis und Willenskraft) um 2 erschwert sind.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 Stunden",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Zunge lähmen",
+        "probe": "KL/IN/CH",
+        "wirkung": "Zunge und Lippen des Opfers sind gelähmt. Es kann daher nicht mehr artikuliert sprechen. Dies beeinflusst auch Zaubersprüche. Außerdem neigen so Verfluchte zu Speichelfluss. Der Verfluchte erhält den Status Stumm.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 in Stunden",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Ängste mehren",
+        "probe": "MU/IN/CH",
+        "wirkung": "Die Hexe kann mit diesem Fluch ihrem Opferden Nachteil Angst vor … I anhexen. Sie kann dabei wählen, wovor das Opfer Angst haben soll. Sollte das Opfer bereits über diese Angst verfügen, erhöht sich die Stufe des Nachteils um 1. Bei einer Stufe, die über III liegt, erhält das Opfer bis zum Ende der Wirkung den Status Handlungsunfähig.",
+        "kosten": "14 AsP",
+        "wirkungsdauer": "QS x 3 Tage",
+        "merkmal": "Einfluss",
+        "alias": []
+    },
+    {
+        "name": "Warzen sprießen",
+        "probe": "IN/FF/KO",
+        "wirkung": "Dem Opfer wachsen innerhalb einiger Minuten dicke Warzen im Gesicht und an den Händen und verleihen ihm so eine Stufe des Nachteils Hässlich. Der Vorteil Gutaussehend wird hierdurch zeitweise Hässlich.",
+        "kosten": "7 AsP",
+        "wirkungsdauer": "QS x 3 in Tagen",
+        "merkmal": "Verwandlung",
+        "alias": []
+    },
+    {
+        "name": "Zwei linke Hände",
+        "probe": "MU/IN/FF",
+        "wirkung": "Durch diesen Fluch ist das Opfer kaum noch in der Lage, seine handwerklichen Fähigkeiten einzusetzen. Seine rechte Hand verwandelt sich während der Dauer des Fluchs in eine linke (bei Linkshändern: in eine rechte, bei Beidhändigkeit werden beide Hände ausgetauscht). Alle Proben auf Handwerkstalente sind dadurch um 2 erschwert und jede gewürfelte 19 wird als 20 gewertet.",
+        "kosten": "7 AsP",
+        "wirkungsdauer": "QS x 3 Stunden",
+        "merkmal": "Verwandlung",
+        "alias": []
+    }
+]

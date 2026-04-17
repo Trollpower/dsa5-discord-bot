@@ -1,0 +1,26 @@
+{
+    "title": "Schmerz",
+    "key": "schmerz",
+    "table": [
+        [
+            "Schmerzstufe",
+            "Auswirkung"
+        ],
+        [
+            "Stufe I",
+            "leichte Schmerzen, alle Proben -1, GS -1"
+        ],
+        [
+            "Stufe II",
+            "ablenkende Schmerzen, alle Probe -2, GS -2"
+        ],
+        [
+            "Stufe III",
+            "starke Schmerzen, alle Probe -3, GS -3"
+        ],
+        [
+            "Stufe IV",
+            "handlungsunfähig, ansonsten alle Probe -4"
+        ]
+    ]
+}

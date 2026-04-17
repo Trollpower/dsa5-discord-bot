@@ -1,0 +1,1082 @@
+[
+    {
+        "name": "Abilacht",
+        "region": "Albernia: Abagund",
+        "ew": "1200"
+    },
+    {
+        "name": "Ackbar",
+        "region": "Herz des Kontinents",
+        "ew": "1300"
+    },
+    {
+        "name": "Aguaduron",
+        "region": "Dere: verschiedene Meere",
+        "ew": "1500"
+    },
+    {
+        "name": "Al'Ahabad",
+        "region": "Tulamidenlande: Gorien",
+        "ew": "1000"
+    },
+    {
+        "name": "Al'Muktur",
+        "region": "Almada: Yaquirtal",
+        "ew": "1500"
+    },
+    {
+        "name": "Albenhus",
+        "region": "Nordmarken: Großer Fluss",
+        "ew": "3550"
+    },
+    {
+        "name": "Alcimara",
+        "region": "Myranor: Meer der Schwimmenden Inseln",
+        "ew": "1000"
+    },
+    {
+        "name": "Aldenia",
+        "region": "Meridiana: Askanien",
+        "ew": "3000"
+    },
+    {
+        "name": "Alpura",
+        "region": "Lande der Bansumiter: Archipel von Shindrabar: Maryakatra",
+        "ew": "4000"
+    },
+    {
+        "name": "Alrurdan",
+        "region": "Maraskan: Ebene von Alrurdan",
+        "ew": "1400"
+    },
+    {
+        "name": "Altzoll",
+        "region": "Darpatien: Ostdarpatien/Warunkei",
+        "ew": "1400"
+    },
+    {
+        "name": "Amhallah",
+        "region": "Almada: Nash'Yaquim",
+        "ew": "2600"
+    },
+    {
+        "name": "Anchopal",
+        "region": "Tulamidenlande: Gorien",
+        "ew": "2500"
+    },
+    {
+        "name": "Ankram",
+        "region": "Liebliches Feld",
+        "ew": "2300"
+    },
+    {
+        "name": "Arenkis",
+        "region": "Liebliches Feld",
+        "ew": "1200"
+    },
+    {
+        "name": "Arinken",
+        "region": "Liebliches Feld",
+        "ew": "1200"
+    },
+    {
+        "name": "Artésa",
+        "region": "Almada: Madahöhen",
+        "ew": "1000"
+    },
+    {
+        "name": "Asboran",
+        "region": "Tulamidenlande: Raschtulswall",
+        "ew": "2000"
+    },
+    {
+        "name": "Asdarba",
+        "region": "Uthuria: nördlicher Teil",
+        "ew": "1000"
+    },
+    {
+        "name": "Ashavau",
+        "region": "Uthuria: nördlicher Teil",
+        "ew": "2000"
+    },
+    {
+        "name": "Auen",
+        "region": "Weiden",
+        "ew": "1100"
+    },
+    {
+        "name": "Baghtiar",
+        "region": "Tulamidenlande: Mhanadistan",
+        "ew": "1000"
+    },
+    {
+        "name": "Bahín",
+        "region": "Liebliches Feld: Wilder Süden: Chababien",
+        "ew": "1000"
+    },
+    {
+        "name": "Baliho",
+        "region": "Weiden",
+        "ew": "3500"
+    },
+    {
+        "name": "Baliiri",
+        "region": "Liebliches Feld: Yaquirien",
+        "ew": "1000"
+    },
+    {
+        "name": "Barbrück",
+        "region": "Tulamidenlande: Aranien: Zentral-Aranien",
+        "ew": "3500"
+    },
+    {
+        "name": "Belenya",
+        "region": "Ostküste am Thalassion",
+        "ew": "3100"
+    },
+    {
+        "name": "Benivilla",
+        "region": "Meridiana: Askanien",
+        "ew": "1530"
+    },
+    {
+        "name": "Bjaldorn",
+        "region": "Nivesenlande: Nornja, Nordwalser Höhen",
+        "ew": "1050"
+    },
+    {
+        "name": "Bomed (Siedlung)",
+        "region": "Liebliches Feld: Yaquirbruch",
+        "ew": "2500"
+    },
+    {
+        "name": "Brabak",
+        "region": "Meridiana: Mysobien",
+        "ew": "4000"
+    },
+    {
+        "name": "Chalukand",
+        "region": "Tulamidenlande: Chalukistan",
+        "ew": "1100"
+    },
+    {
+        "name": "Charypso",
+        "region": "Meridiana: Altoum, Charyptik",
+        "ew": "2000,"
+    },
+    {
+        "name": "Chetoba",
+        "region": "Liebliches Feld",
+        "ew": "2300"
+    },
+    {
+        "name": "Chorhop",
+        "region": "Meridiana: Askanien",
+        "ew": "1500"
+    },
+    {
+        "name": "Clameth",
+        "region": "Liebliches Feld",
+        "ew": "1000"
+    },
+    {
+        "name": "Cuoris",
+        "region": "Meridiana: Askanien",
+        "ew": "3250"
+    },
+    {
+        "name": "Danguru",
+        "region": "Lande der Bansumiter: Archipel von Shindrabar: Inseln hinter dem Wind: Sengabaru",
+        "ew": "3000"
+    },
+    {
+        "name": "Dergelmund",
+        "region": "Darpatien: Perricum: Nordperricum",
+        "ew": "1100"
+    },
+    {
+        "name": "Despiona",
+        "region": "Liebliches Feld",
+        "ew": "1300"
+    },
+    {
+        "name": "Donnerbach (Siedlung)",
+        "region": "Elfenlande",
+        "ew": "3000"
+    },
+    {
+        "name": "Dujar",
+        "region": "Meridiana: Askanien",
+        "ew": "3250"
+    },
+    {
+        "name": "Eestiva",
+        "region": "Nivesenlande: Brydia",
+        "ew": "1000"
+    },
+    {
+        "name": "Efferdas",
+        "region": "Liebliches Feld, Coverna",
+        "ew": "3000"
+    },
+    {
+        "name": "El'Halem",
+        "region": "Meridiana: Askanien",
+        "ew": "1950"
+    },
+    {
+        "name": "Eldoret",
+        "region": "Liebliches Feld, Halbinsel von Eldoret",
+        "ew": "1700"
+    },
+    {
+        "name": "Elemsfurt",
+        "region": "Tulamidenlande: Szintotal",
+        "ew": "1200"
+    },
+    {
+        "name": "Enqui",
+        "region": "Svellttal: Brinasker Marschen",
+        "ew": "4000"
+    },
+    {
+        "name": "Erkenstein",
+        "region": "Tulamidenlande: Mhanadistan",
+        "ew": "1500"
+    },
+    {
+        "name": "Eslamsbrück",
+        "region": "Tobrien",
+        "ew": "3500"
+    },
+    {
+        "name": "Eslamsgrund",
+        "region": "Almada: Caldaia",
+        "ew": "1600"
+    },
+    {
+        "name": "Eslamsroden",
+        "region": "Mittelaventurien: Greifenfurt: Altenau",
+        "ew": "1500"
+    },
+    {
+        "name": "Falkenstein",
+        "region": "Almada: Caldaia, Raschtulswall",
+        "ew": "1100"
+    },
+    {
+        "name": "Farsid (Siedlung)",
+        "region": "Liebliches Feld: Septimana",
+        "ew": "1400"
+    },
+    {
+        "name": "Ferdok",
+        "region": "Kosch",
+        "ew": "2800"
+    },
+    {
+        "name": "Firunen",
+        "region": "Bornland (an der Grenze von allen drei Landesteilen)",
+        "ew": "1600"
+    },
+    {
+        "name": "Floeszern",
+        "region": "Tulamidenlande: Mhanadistan",
+        "ew": "1000"
+    },
+    {
+        "name": "Floßstadt",
+        "region": "Uthuria: nördlicher Teil: Schildkröteninseln",
+        "ew": "1300"
+    },
+    {
+        "name": "Franfeld",
+        "region": "Almada: Caldaia",
+        "ew": "1000"
+    },
+    {
+        "name": "Garèn",
+        "region": "Zyklopeninseln: Hylailos",
+        "ew": "1100"
+    },
+    {
+        "name": "Gebein",
+        "region": "Liebliches Feld",
+        "ew": "1000"
+    },
+    {
+        "name": "Ghurenia (Siedlung)",
+        "region": "Südmeer: Efferds Tränen: Ghurenia",
+        "ew": "2000"
+    },
+    {
+        "name": "Goldsholmr",
+        "region": "Nordaventurien: Thorwal: Olportsteine: Gandar",
+        "ew": "1000"
+    },
+    {
+        "name": "Gratenfels",
+        "region": "Nordmarken: Gratenfelser Becken",
+        "ew": "1860"
+    },
+    {
+        "name": "H'Rabaal",
+        "region": "Meridiana: Hochland von H'Rabaal",
+        "ew": "1100"
+    },
+    {
+        "name": "Harben",
+        "region": "Windhag: Windhagberge",
+        "ew": "2000"
+    },
+    {
+        "name": "Hartsteen",
+        "region": "Herz des Kontinents",
+        "ew": "1300"
+    },
+    {
+        "name": "Hemandu",
+        "region": "Maraskan/Schwarze Lande: Schwarzmaraskan",
+        "ew": "1000"
+    },
+    {
+        "name": "Hirschfurt",
+        "region": "Herz des Kontinents: Reichsforst",
+        "ew": "1000"
+    },
+    {
+        "name": "Honingen",
+        "region": "Albernia: Abagund",
+        "ew": "2800"
+    },
+    {
+        "name": "Horasia",
+        "region": "Liebliches Feld",
+        "ew": "3000"
+    },
+    {
+        "name": "Hôt-Alem",
+        "region": "Meridiana",
+        "ew": "2100"
+    },
+    {
+        "name": "Ilsur",
+        "region": "Tobrien",
+        "ew": "1200"
+    },
+    {
+        "name": "Imachora",
+        "region": "Orismanilande: Berge von Xarxaron",
+        "ew": "1000"
+    },
+    {
+        "name": "Inostal",
+        "region": "Almada: Wacht, Yaquirbruch",
+        "ew": "1120"
+    },
+    {
+        "name": "Istina",
+        "region": "Meridiana: Askanien",
+        "ew": "2700"
+    },
+    {
+        "name": "Jassafheim",
+        "region": "Almada: Yaquirtal",
+        "ew": "1000"
+    },
+    {
+        "name": "Je'Tár",
+        "region": "Lande der Bansumiter: Narkramar",
+        "ew": "2000"
+    },
+    {
+        "name": "Jindir",
+        "region": "Tulamidenlande: Mhanadistan",
+        "ew": "1000"
+    },
+    {
+        "name": "Joborn",
+        "region": "Streitende Königreiche: Ingvaltal",
+        "ew": "1000"
+    },
+    {
+        "name": "Kannemünde",
+        "region": "Tulamidenlande",
+        "ew": "1850"
+    },
+    {
+        "name": "Karsina",
+        "region": "Liebliches Feld",
+        "ew": "1000"
+    },
+    {
+        "name": "Keft",
+        "region": "Tulamidenlande: Khôm",
+        "ew": "1500"
+    },
+    {
+        "name": "Kendrar",
+        "region": "Streitende Königreiche: Südthorwal",
+        "ew": "1100"
+    },
+    {
+        "name": "Kharkush",
+        "region": "Orkland: Firunswall",
+        "ew": "1500"
+    },
+    {
+        "name": "Khefu",
+        "region": "Meridiana: Kemi",
+        "ew": "1300"
+    },
+    {
+        "name": "Klippag",
+        "region": "Nordmarken",
+        "ew": "1800"
+    },
+    {
+        "name": "Komra",
+        "region": "Tulamidenlande: Mhanadistan",
+        "ew": "1000"
+    },
+    {
+        "name": "Kronling",
+        "region": "Herz des Kontinents: Goldene Au",
+        "ew": "1000"
+    },
+    {
+        "name": "Krytzdorf",
+        "region": "Tobrien: Warunkei",
+        "ew": "1000"
+    },
+    {
+        "name": "Kusmarina",
+        "region": "Liebliches Feld",
+        "ew": "1000"
+    },
+    {
+        "name": "Kyndoch",
+        "region": "Windhag",
+        "ew": "1400"
+    },
+    {
+        "name": "Lhasor",
+        "region": "Meridiana: Askanien",
+        "ew": "1950"
+    },
+    {
+        "name": "Llanka",
+        "region": "Tulamidenlande: Elburische Halbinsel",
+        "ew": "2500"
+    },
+    {
+        "name": "Luring",
+        "region": "Herz des Kontinents",
+        "ew": "1500"
+    },
+    {
+        "name": "Lyrgach",
+        "region": "Gjalskerland",
+        "ew": "1200"
+    },
+    {
+        "name": "M'iiku'on",
+        "region": "Ostküste am Thalassion: Bucht von Cranarenius",
+        "ew": "2000"
+    },
+    {
+        "name": "Madasee (Siedlung)",
+        "region": "Almada: Yaquirtal",
+        "ew": "1500"
+    },
+    {
+        "name": "Malur",
+        "region": "Liebliches Feld",
+        "ew": "1900"
+    },
+    {
+        "name": "Marmelund",
+        "region": "Tulamidenlande: Aranien: Baburien",
+        "ew": "1000"
+    },
+    {
+        "name": "Marudret",
+        "region": "Liebliches Feld",
+        "ew": "1400"
+    },
+    {
+        "name": "Marvinko (Siedlung)",
+        "region": "Liebliches Feld",
+        "ew": "1500"
+    },
+    {
+        "name": "Meneresh",
+        "region": "Lande der Bansumiter: Te'Sumurru: Meneru-Ebene",
+        "ew": "2000"
+    },
+    {
+        "name": "Menzheim",
+        "region": "Weiden",
+        "ew": "1000"
+    },
+    {
+        "name": "Mhoremis",
+        "region": "Liebliches Feld",
+        "ew": "1000"
+    },
+    {
+        "name": "Mirham",
+        "region": "Meridiana",
+        "ew": "2200"
+    },
+    {
+        "name": "Morbal",
+        "region": "Liebliches Feld: Wilder Süden: Chababien",
+        "ew": "1500"
+    },
+    {
+        "name": "Murolosch",
+        "region": "Kosch: Ambossgebirge",
+        "ew": "1000"
+    },
+    {
+        "name": "Muryt",
+        "region": "Nordaventurien: Thorwal: Nordwestthorwal",
+        "ew": "1300"
+    },
+    {
+        "name": "Nasir Malkid",
+        "region": "Tulamidenlande: Gorien, Zentral-Aranien",
+        "ew": "2000"
+    },
+    {
+        "name": "Neersand",
+        "region": "Bornland: Festenland",
+        "ew": "2100"
+    },
+    {
+        "name": "Nervuk",
+        "region": "Liebliches Feld: Septimana",
+        "ew": "1700"
+    },
+    {
+        "name": "Nesaquatul",
+        "region": "Myranor: Thalassion",
+        "ew": "3000"
+    },
+    {
+        "name": "Nevorten",
+        "region": "Liebliches Feld",
+        "ew": "2500"
+    },
+    {
+        "name": "Niellyn",
+        "region": "Gjalskerland",
+        "ew": "1500"
+    },
+    {
+        "name": "Norburg",
+        "region": "Bornland: Sewerien",
+        "ew": "3000"
+    },
+    {
+        "name": "Notmark",
+        "region": "Bornland: Sewerien",
+        "ew": "1600"
+    },
+    {
+        "name": "O'Habin",
+        "region": "Tulamidenlande: Mhanadistan",
+        "ew": "1000"
+    },
+    {
+        "name": "Oberbomed",
+        "region": "Liebliches Feld: Yaquirbruch, Tikalen",
+        "ew": "1000"
+    },
+    {
+        "name": "Oberfels",
+        "region": "Liebliches Feld",
+        "ew": "2100"
+    },
+    {
+        "name": "Ohort",
+        "region": "Orkland",
+        "ew": "1100"
+    },
+    {
+        "name": "Ohzara",
+        "region": "Meridiana: Askanien",
+        "ew": "1850"
+    },
+    {
+        "name": "Olport",
+        "region": "Nordaventurien: Thorwal: Nordthorwal",
+        "ew": "2700"
+    },
+    {
+        "name": "Omlad",
+        "region": "Almada: Nash'Yaquim, Yaquirtal",
+        "ew": "1050"
+    },
+    {
+        "name": "Onjaro",
+        "region": "Liebliches Feld",
+        "ew": "1800"
+    },
+    {
+        "name": "Orkbrand",
+        "region": "Nordaventurien: Thorwal: Bodirtal",
+        "ew": "1000"
+    },
+    {
+        "name": "Orrakhar",
+        "region": "Orkland, Blutzinnen",
+        "ew": "1000"
+    },
+    {
+        "name": "Ouvenmas",
+        "region": "Bornland: Sewerien",
+        "ew": "1700"
+    },
+    {
+        "name": "Paavi",
+        "region": "Nivesenlande: Brydia",
+        "ew": "4000"
+    },
+    {
+        "name": "Palmyrabad",
+        "region": "Tulamidenlande: Aranien: Palmyramis",
+        "ew": "2000"
+    },
+    {
+        "name": "Perainefurten",
+        "region": "Tobrien",
+        "ew": "4000"
+    },
+    {
+        "name": "Perainidal",
+        "region": "Liebliches Feld",
+        "ew": "1300"
+    },
+    {
+        "name": "Pertakis",
+        "region": "Liebliches Feld",
+        "ew": "4000"
+    },
+    {
+        "name": "Phexcaer",
+        "region": "Orkland",
+        "ew": "1500"
+    },
+    {
+        "name": "Pildek",
+        "region": "Almada: Culminger Land",
+        "ew": "1000"
+    },
+    {
+        "name": "Port Corrad",
+        "region": "Meridiana: Bucht von Port Corrad",
+        "ew": "2500"
+    },
+    {
+        "name": "Port Rulat",
+        "region": "Tobrien, Perlenmeer",
+        "ew": "2900"
+    },
+    {
+        "name": "Port Stoerrebrandt",
+        "region": "Meridiana: Iltoken, Gewürzinseln, Waldinseln",
+        "ew": "1000"
+    },
+    {
+        "name": "Port Visar",
+        "region": "Meridiana: Halbinsel von Al'Anfa",
+        "ew": "1300"
+    },
+    {
+        "name": "Prathna",
+        "region": "Lande der Bansumiter: Tharpura-Dschungel",
+        "ew": "1000"
+    },
+    {
+        "name": "Prem",
+        "region": "Nordaventurien: Thorwal: Premer Halbinsel",
+        "ew": "3200"
+    },
+    {
+        "name": "Puancha'var",
+        "region": "Ostküste am Thalassion: Era'Sumu: Hügel von Telsun: Velkaris-Tal",
+        "ew": "1000"
+    },
+    {
+        "name": "Radoleth",
+        "region": "Liebliches Feld, Aurelat",
+        "ew": "1300"
+    },
+    {
+        "name": "Ragath",
+        "region": "Almada: Ragatien",
+        "ew": "3500"
+    },
+    {
+        "name": "Ramaúd",
+        "region": "Liebliches Feld",
+        "ew": "1000"
+    },
+    {
+        "name": "Rankaraliretena",
+        "region": "Darpatien",
+        "ew": "1100"
+    },
+    {
+        "name": "Ras El'Bir",
+        "region": "Tulamidenlande: Mhanadistan",
+        "ew": "1000"
+    },
+    {
+        "name": "RauMadang",
+        "region": "Lande der Bansumiter: Archipel von Shindrabar: Inseln am Winde: Doluwan",
+        "ew": "1200"
+    },
+    {
+        "name": "Rethis",
+        "region": "Zyklopeninseln: Hylailos",
+        "ew": "3000"
+    },
+    {
+        "name": "Rigalento",
+        "region": "Liebliches Feld",
+        "ew": "1000"
+    },
+    {
+        "name": "Riva",
+        "region": "Elfenlande (und Nivesenlande: Westliches Nivesenland)",
+        "ew": "4000"
+    },
+    {
+        "name": "Rodebrannt",
+        "region": "Bornland: Sewerien",
+        "ew": "1400"
+    },
+    {
+        "name": "Ronishagen",
+        "region": "Tulamidenlande: Thalusien",
+        "ew": "1000"
+    },
+    {
+        "name": "Ruthor",
+        "region": "Liebliches Feld",
+        "ew": "3000"
+    },
+    {
+        "name": "Ryl'Arc",
+        "region": "Ewiges Eis: Gletschermeer unter der Klirrfrostwüste",
+        "ew": "1000"
+    },
+    {
+        "name": "Salza",
+        "region": "Streitende Königreiche: Nostrische Küste",
+        "ew": "4000"
+    },
+    {
+        "name": "Salzerhaven",
+        "region": "Streitende Königreiche: Nostrische Küste",
+        "ew": "4000"
+    },
+    {
+        "name": "Sarab Hamur",
+        "region": "Tharun: Hamur",
+        "ew": "1400"
+    },
+    {
+        "name": "Schelf",
+        "region": "Liebliches Feld",
+        "ew": "1000"
+    },
+    {
+        "name": "Schradok",
+        "region": "Liebliches Feld",
+        "ew": "1250"
+    },
+    {
+        "name": "Selem",
+        "region": "Tulamidenlande: Szintotal, Echsensümpfe, Selemgrund",
+        "ew": "3500"
+    },
+    {
+        "name": "Selshed",
+        "region": "Liebliches Feld",
+        "ew": "1900"
+    },
+    {
+        "name": "Serillio",
+        "region": "Liebliches Feld",
+        "ew": "1000"
+    },
+    {
+        "name": "Sewamund",
+        "region": "Liebliches Feld: Grangorien",
+        "ew": "3300"
+    },
+    {
+        "name": "Shamaham",
+        "region": "Tobrien: Beilunkei, Osttobrisches Hügelland",
+        "ew": "1400"
+    },
+    {
+        "name": "Shenilo",
+        "region": "Liebliches Feld",
+        "ew": "2500"
+    },
+    {
+        "name": "Shumir",
+        "region": "Liebliches Feld, Yaquirien",
+        "ew": "2200"
+    },
+    {
+        "name": "Sibur",
+        "region": "Liebliches Feld: Aurelat",
+        "ew": "2100"
+    },
+    {
+        "name": "Simiador",
+        "region": "Tulamidenlande: Raschtulswall",
+        "ew": "2000"
+    },
+    {
+        "name": "Skorpsky",
+        "region": "Bornland: Mark",
+        "ew": "1100"
+    },
+    {
+        "name": "Sorbik",
+        "region": "Liebliches Feld",
+        "ew": "1600"
+    },
+    {
+        "name": "Sumnea Velkaris",
+        "region": "Ostküste am Thalassion: Era'Sumu: Hügel von Telsun: Velkaris-Tal",
+        "ew": "3000"
+    },
+    {
+        "name": "Sylla",
+        "region": "Meridiana",
+        "ew": "2800"
+    },
+    {
+        "name": "Syrrenholt",
+        "region": "Herz des Kontinents",
+        "ew": "1100"
+    },
+    {
+        "name": "Taladur",
+        "region": "Almada: Valquirsenke",
+        "ew": "3000"
+    },
+    {
+        "name": "Temphis",
+        "region": "Tulamidenlande: Balash",
+        "ew": "1500"
+    },
+    {
+        "name": "Teralkira",
+        "region": "Tulamidenlande: Aranien: Baburien",
+        "ew": "1100"
+    },
+    {
+        "name": "Teremon",
+        "region": "Zyklopeninseln: Pailos",
+        "ew": "2000"
+    },
+    {
+        "name": "Terubis",
+        "region": "Liebliches Feld",
+        "ew": "2000"
+    },
+    {
+        "name": "Thegûn",
+        "region": "Liebliches Feld",
+        "ew": "2100"
+    },
+    {
+        "name": "Thuar Habis",
+        "region": "Tharun: Thuara",
+        "ew": "3500"
+    },
+    {
+        "name": "Tiefhusen (historisch)",
+        "region": "Svellttal",
+        "ew": "2300"
+    },
+    {
+        "name": "Tipoxatl",
+        "region": "Uthuria: nördlicher Teil",
+        "ew": "3000"
+    },
+    {
+        "name": "Tjolmar",
+        "region": "Svellttal",
+        "ew": "1400"
+    },
+    {
+        "name": "Toricum",
+        "region": "Liebliches Feld",
+        "ew": "1500"
+    },
+    {
+        "name": "Tovenkis",
+        "region": "Liebliches Feld: Wilder Süden: Chababien",
+        "ew": "1000"
+    },
+    {
+        "name": "Twergenhausen",
+        "region": "Nordmarken",
+        "ew": "1190"
+    },
+    {
+        "name": "Uhdenberg",
+        "region": "Elfenlande: Rote Sichel",
+        "ew": "2500"
+    },
+    {
+        "name": "Unterfels",
+        "region": "Liebliches Feld, Yaquirbruch",
+        "ew": "2500"
+    },
+    {
+        "name": "Urbasi",
+        "region": "Liebliches Feld: Aurelat",
+        "ew": "2000"
+    },
+    {
+        "name": "Urbet",
+        "region": "Liebliches Feld",
+        "ew": "2600"
+    },
+    {
+        "name": "Usnadamm",
+        "region": "Bornland: Mark: Niedermark",
+        "ew": "1000"
+    },
+    {
+        "name": "Va'Ahak",
+        "region": "Meridiana: Halbinsel von Al'Anfa",
+        "ew": "2500"
+    },
+    {
+        "name": "Valantaria",
+        "region": "Myranor: Meer der Schwimmenden Inseln, Valantisches Meer",
+        "ew": "2000"
+    },
+    {
+        "name": "Vallusa (Siedlung)",
+        "region": "Bornland/Tobrien",
+        "ew": "4000"
+    },
+    {
+        "name": "Veharis",
+        "region": "Tulamidenlande: Aranien: Baburien",
+        "ew": "1100"
+    },
+    {
+        "name": "Veliris",
+        "region": "Liebliches Feld",
+        "ew": "2000"
+    },
+    {
+        "name": "Venga",
+        "region": "Liebliches Feld",
+        "ew": "1500"
+    },
+    {
+        "name": "Vierok (Siedlung)",
+        "region": "Herz des Kontinents: Goldene Au",
+        "ew": "1500"
+    },
+    {
+        "name": "Wandleth",
+        "region": "Herz des Kontinents",
+        "ew": "1750"
+    },
+    {
+        "name": "Warunk",
+        "region": "Tobrien: Warunkei",
+        "ew": "3500"
+    },
+    {
+        "name": "Waskir",
+        "region": "Nordaventurien: Thorwal: Waskirer Hochland",
+        "ew": "2400"
+    },
+    {
+        "name": "Wasserburg (Siedlung)",
+        "region": "Darpatien: Perricum",
+        "ew": "1300"
+    },
+    {
+        "name": "Weinbergen",
+        "region": "Almada: Yaquirtal",
+        "ew": "1500"
+    },
+    {
+        "name": "Westenende",
+        "region": "Liebliches Feld",
+        "ew": "1500"
+    },
+    {
+        "name": "Westfar",
+        "region": "Liebliches Feld: Gerondrata",
+        "ew": "1500"
+    },
+    {
+        "name": "Weyring",
+        "region": "Herz des Kontinents: Goldene Au",
+        "ew": "1400"
+    },
+    {
+        "name": "Wieha",
+        "region": "Herz des Kontinents",
+        "ew": "1000"
+    },
+    {
+        "name": "Winhall",
+        "region": "Albernia: Winhaller Land: Tommeltal",
+        "ew": "1200"
+    },
+    {
+        "name": "Wobran",
+        "region": "Liebliches Feld: Wilder Süden: Harodien",
+        "ew": "1900"
+    },
+    {
+        "name": "Xorlosch",
+        "region": "Nordmarken: Ingrakuppen",
+        "ew": "1600"
+    },
+    {
+        "name": "Yaisirabad",
+        "region": "Tulamidenlande: Aranien: Elburische Halbinsel",
+        "ew": "1500"
+    },
+    {
+        "name": "Yal-Zoggot",
+        "region": "Aventurien: Selemgrund, Meer der Finsternis",
+        "ew": "2000"
+    },
+    {
+        "name": "Yerkesh",
+        "region": "Tulamidenlande: Aranien: Baburien",
+        "ew": "1400"
+    },
+    {
+        "name": "Ysilia",
+        "region": "Tobrien",
+        "ew": "1950"
+    },
+    {
+        "name": "Zwerch",
+        "region": "Darpatien: Ochsenwasser",
+        "ew": "1600"
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "title": "Betäubung",
+    "key": "bet",
+    "table": [
+        [
+            "Betäubungsstufe",
+            "Auswirkung"
+        ],
+        [
+            "Stufe I",
+            "leicht angeschlagen, alle Proben -1"
+        ],
+        [
+            "Stufe II",
+            "angeschlagen, alle Proben -2"
+        ],
+        [
+            "Stufe III",
+            "schwer angeschlagen, alle Proben -3"
+        ],
+        [
+            "Stufe IV",
+            "handlungsunfähig"
+        ]
+    ]
+}
