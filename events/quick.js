@@ -180,6 +180,16 @@ const encodeAusweichenPayload = ({ bonusMalus }) => {
 	return bonusMalus && bonusMalus !== 0 ? `${bonusMalus}` : '';
 };
 
+const probeEmojiByCategory = (category) => {
+	switch (category) {
+		case 'zauber': return '🪄';
+		case 'elfenlieder': return '🧝';
+		case 'liturgien': return '😇';
+		case 'rituale': return '🔯';
+		default: return '💪';
+	}
+};
+
 const createQuickButtonRows = async (character, client) => {
 	if (!isQuickButtonsEnabled()) {
 		return [];
@@ -225,7 +235,7 @@ const createQuickButtonRows = async (character, client) => {
 			recentRow.addComponents(
 				new ButtonBuilder()
 					.setCustomId(`${QUICK_PROBE_CUSTOM_ID_PREFIX}recent:${encodeQuickProbePayload(candidate)}`)
-					.setEmoji('💪')
+					.setEmoji(probeEmojiByCategory(candidate.category))
 					.setLabel(label)
 					.setStyle(ButtonStyle.Success),
 			);
@@ -312,7 +322,7 @@ const createQuickButtonRows = async (character, client) => {
 				favRow.addComponents(
 					new ButtonBuilder()
 						.setCustomId(`${QUICK_PROBE_CUSTOM_ID_PREFIX}favorites:${encodeQuickProbePayload(resolved)}`)
-						.setEmoji('💪')
+						.setEmoji(probeEmojiByCategory(resolved.category))
 						.setLabel(label)
 						.setStyle(ButtonStyle.Primary),
 				);
@@ -340,7 +350,7 @@ const createQuickButtonRows = async (character, client) => {
 				topRow.addComponents(
 					new ButtonBuilder()
 						.setCustomId(`${QUICK_PROBE_CUSTOM_ID_PREFIX}top:${encodeQuickProbePayload(candidate)}`)
-						.setEmoji('💪')
+						.setEmoji(probeEmojiByCategory(candidate.category))
 						.setLabel(label)
 						.setStyle(ButtonStyle.Secondary),
 				);
