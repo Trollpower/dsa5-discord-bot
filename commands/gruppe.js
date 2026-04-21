@@ -64,5 +64,26 @@ export default {
 						.setName('name')
 						.setDescription('Name der Gruppe (leer = alle Gruppen)')
 						.setRequired(false)
-						.setAutocomplete(true))),
+						.setAutocomplete(true)))
+		.addSubcommand(subcommand =>
+			subcommand
+				.setName('probe')
+				.setDescription('Probe für alle Charaktere einer Gruppe durchführen')
+				.addStringOption(option =>
+					option
+						.setName('name')
+						.setDescription('Name der Gruppe')
+						.setRequired(true)
+						.setAutocomplete(true))
+				.addStringOption(option =>
+					option
+						.setName('fertigkeitsname')
+						.setDescription('Name der Fertigkeit')
+						.setRequired(true)
+						.setAutocomplete(true))
+				.addIntegerOption(option =>
+					option
+						.setName('bonus-malus')
+						.setDescription('Bonus oder Malus auf die Probe')
+						.setRequired(false))),
 };

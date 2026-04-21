@@ -38,13 +38,13 @@ const decodeQuickProbePayload = (payload) => {
 	};
 };
 
-const resolveFertigkeit = (fertigkeitsName, client) => client.Utils.highestSimilarity(
+export const resolveFertigkeit = (fertigkeitsName, client) => client.Utils.highestSimilarity(
 	fertigkeitsName,
 	(fert) => ({ name: fert.name, aliases: fert.alias }),
 	[...fertigkeitenData, ...liturgienData, ...ritualeData, ...zaubermelodienData, ...elfenliederData, ...zauberData],
 );
 
-const executeProbeAndBuildResponse = async ({ fertigkeit, character, bonusMalus, interaction, client }) => {
+export const executeProbeAndBuildResponse = async ({ fertigkeit, character, bonusMalus, interaction, client }) => {
 	const event = talentProbe({ character, fertigkeit, bonusMalus, interaction });
 	const icon = event.kritischBestanden === true ? '⭐'
 		: event.kritischFehlschlag === true ? '💩'

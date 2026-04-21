@@ -2,6 +2,8 @@ import { InteractionType, Events, MessageFlags } from 'discord.js';
 import path from 'path';
 import config from '../config.json' with { type: 'json' };
 import { persistConfig } from '../common/persistence.js';
+import { resolveFertigkeit, executeProbeAndBuildResponse } from './probe.js';
+import logger from '../common/logger.js';
 
 const getGroups = () => {
 	if (!config.gruppen) {
@@ -43,6 +45,10 @@ export default {
 			return handleAutocomplete(interaction, client);
 		}
 		if (!interaction.isChatInputCommand()) return;
+
+		if (!interaction.isMeister()) {
+			return interaction.reply({ content: 'Du bist nicht der Meister.', flags: MessageFlags.Ephemeral });
+		}
 
 		const subcommand = interaction.options.getSubcommand();
 		const groups = getGroups();
@@ -118,6 +124,50 @@ export default {
 				return `**${g}**: ${members}`;
 			});
 			return interaction.reply({ content: lines.join('\n'), flags: MessageFlags.Ephemeral });
+		}
+
+		if (subcommand === 'probe') {
+			const name = interaction.options.getString('name').trim();
+			const fertigkeitsName = interaction.options.getString('fertigkeitsname');
+			const bonusMalus = interaction.options.getInteger('bonus-malus') ?? 0;
+
+			if (!groups[name]) {
+				return interaction.reply({ content: `Gruppe **${name}** existiert nicht.`, flags: MessageFlags.Ephemeral });
+			}
+			if (groups[name].length === 0) {
+				return interaction.reply({ content: `Gruppe **${name}** hat keine Mitglieder.`, flags: MessageFlags.Ephemeral });
+			}
+
+			const fertigkeit = resolveFertigkeit(fertigkeitsName, client);
+			if (!fertigkeit) {
+				return interaction.reply({ content: `Fertigkeit **${fertigkeitsName}** wurde nicht gefunden.`, flags: MessageFlags.Ephemeral });
+			}
+
+			const embeds = [];
+			const allEvents = [];
+			for (const charName of groups[name]) {
+				const character = client.characters.find(c => c.name.toLowerCase() === charName.toLowerCase());
+				if (!character) {
+					embeds.push({ title: `❌ ${charName} nicht gefunden`, color: 0xff0000 });
+					continue;
+				}
+
+				if (fertigkeit.kategorie !== 'talente') {
+					const characterTalent = (character[fertigkeit.kategorie] ?? []).find(f => f.name === fertigkeit.name);
+					if (!characterTalent) {
+						embeds.push({ title: `❌ ${character.displayName ?? character.name}: **${fertigkeit.name}** ist nicht aktiviert`, color: 0xff0000 });
+						continue;
+					}
+				}
+
+				const { event, embed } = await executeProbeAndBuildResponse({ fertigkeit, character, bonusMalus, interaction, client });
+				embeds.push(embed);
+				allEvents.push(event);
+				client.Persistence.persistCharacter(character).catch(err => logger.error('gruppe.probe.persist.failed', { error: err, character: charName }));
+			}
+
+			await interaction.reply({ embeds: embeds.slice(0, 10), flags: MessageFlags.Ephemeral });
+			return allEvents;
 		}
 	},
 };
