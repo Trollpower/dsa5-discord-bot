@@ -11,3 +11,8 @@ export async function retrieveCharacter(filename) {
 	const data = fs.readFileSync(path.join(path.resolve('chars'), `${filename}`));
 	return JSON.parse(data);
 }
+
+export function persistConfig(config) {
+	logger.debug('config.persist');
+	fs.writeFileSync(path.resolve('config.json'), JSON.stringify(config, null, 4), 'utf8');
+}

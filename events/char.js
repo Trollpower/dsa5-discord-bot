@@ -255,6 +255,20 @@ const genericHandlers = {
 		const currentSlots = [...character.quickProbeFavorites];
 		currentSlots[slotIndex] = newSlot;
 
+		const slotKey = (slot) => slot.type === 'ksf'
+			? `ksf|${slot.subcommand}|${slot.stufe ?? ''}|${slot.basismanoever ?? ''}`
+			: slot.type === 'angriff'
+				? `angriff|${slot.waffenName}`
+				: `${slot.category}|${slot.name}`;
+
+		// Clear old duplicates of the new slot at other positions first
+		const newKey = slotKey(newSlot);
+		for (let index = 0; index < currentSlots.length; index++) {
+			if (index !== slotIndex && currentSlots[index] && slotKey(currentSlots[index]) === newKey) {
+				currentSlots[index] = null;
+			}
+		}
+
 		const seen = new Set();
 		const normalized = [null, null, null];
 		for (let index = 0; index < currentSlots.length; index++) {
@@ -262,11 +276,7 @@ const genericHandlers = {
 			if (!slot) {
 				continue;
 			}
-			const key = slot.type === 'ksf'
-				? `ksf|${slot.subcommand}|${slot.stufe ?? ''}|${slot.basismanoever ?? ''}`
-				: slot.type === 'angriff'
-					? `angriff|${slot.waffenName}`
-					: `${slot.category}|${slot.name}`;
+			const key = slotKey(slot);
 			if (seen.has(key)) {
 				normalized[index] = null;
 				continue;
