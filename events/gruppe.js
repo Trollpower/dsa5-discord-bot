@@ -148,25 +148,30 @@ export default {
 			for (const charName of groups[name]) {
 				const character = client.characters.find(c => c.name.toLowerCase() === charName.toLowerCase());
 				if (!character) {
-					embeds.push({ title: `❌ ${charName} nicht gefunden`, color: 0xff0000 });
+					embeds.push({ embed: { title: `❌ ${charName} nicht gefunden`, color: 0xff0000 }, event: null });
 					continue;
 				}
 
 				if (fertigkeit.kategorie !== 'talente') {
 					const characterTalent = (character[fertigkeit.kategorie] ?? []).find(f => f.name === fertigkeit.name);
 					if (!characterTalent) {
-						embeds.push({ title: `❌ ${character.displayName ?? character.name}: **${fertigkeit.name}** ist nicht aktiviert`, color: 0xff0000 });
+						embeds.push({ embed: { title: `❌ ${character.displayName ?? character.name}: **${fertigkeit.name}** ist nicht aktiviert`, color: 0xff0000 }, event: null });
 						continue;
 					}
 				}
 
 				const { event, embed } = await executeProbeAndBuildResponse({ fertigkeit, character, bonusMalus, interaction, client });
-				embeds.push(embed);
+				embeds.push({ embed, event });
 				allEvents.push(event);
 				client.Persistence.persistCharacter(character).catch(err => logger.error('gruppe.probe.persist.failed', { error: err, character: charName }));
 			}
-
-			await interaction.reply({ embeds: embeds.slice(0, 10), flags: MessageFlags.Ephemeral });
+			const sortedEmbeds = embeds.sort((a, b) => {
+				const aKrit = a.event?.kritischBestanden ? 1 : 0;
+				const bKrit = b.event?.kritischBestanden ? 1 : 0;
+				if (bKrit !== aKrit) return bKrit - aKrit;
+				return (b.embed.fields?.find(f => f.name === "QS")?.value ?? -1) - (a.embed.fields?.find(f => f.name === "QS")?.value ?? -1);
+			}).map(e => e.embed);
+			await interaction.reply({ embeds: sortedEmbeds.slice(0, 10), flags: MessageFlags.Ephemeral });
 			return allEvents;
 		}
 	},
