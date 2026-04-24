@@ -92,11 +92,11 @@ export default {
 		};
 
 		for (const command of commands) {
-			const isGm = command.name === 'gm';
+			const isMeisterOnly = command.name === 'gm' || command.name === 'gruppe';
 			const isMeister = interaction.isMeister();
 
 			let aufrufe;
-			if (isGm && !isMeister) {
+			if (isMeisterOnly && !isMeister) {
 				aufrufe = '*(Nur für Meister sichtbar)*';
 			}
 			else {

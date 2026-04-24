@@ -26,6 +26,7 @@ Ein Discord-Bot für **Das Schwarze Auge 5. Edition (DSA5)** Rollenspielsitzunge
       - [`/show`](#show)
     - [**GM-Befehl (nur Meister)**](#gm-befehl-nur-meister)
       - [`/gm`](#gm)
+      - [`/gruppe`](#gruppe)
     - [**Schnellzugriff**](#schnellzugriff)
       - [`/quick`](#quick)
     - [**Charakter-Management**](#charakter-management)
@@ -273,6 +274,17 @@ docker compose run --rm deploy
   - `meister` – Temporäre Meister-Berechtigungen via Button-Grid vergeben/entziehen (grün = hinzufügen, rot = entfernen); Berechtigungen gelten nur bis zum nächsten Neustart
   - `pc benutzer charactername` – Spielercharakter für einen Discord-Benutzer festlegen (Autocomplete)
 
+#### `/gruppe`
+- **Beschreibung**: Gruppen von Charakteren verwalten – nur für Benutzer mit Meister-Berechtigung
+- **Subcommands**:
+  - `erstellen name:<Name>` – Neue Gruppe erstellen
+  - `löschen name:<Name>` – Gruppe löschen (Autocomplete)
+  - `hinzufügen name:<Gruppe> charakter:<Charakter>` – Charakter zu einer Gruppe hinzufügen (Autocomplete)
+  - `entfernen name:<Gruppe> charakter:<Charakter>` – Charakter aus einer Gruppe entfernen (Autocomplete)
+  - `anzeigen [name:<Gruppe>]` – Gruppe(n) anzeigen; ohne Name werden alle Gruppen aufgelistet (Autocomplete)
+  - `probe name:<Gruppe> fertigkeitsname:<Fertigkeit> [bonus-malus]` – Probe für alle Charaktere einer Gruppe durchführen; Ergebnisse werden nach QS sortiert als Embeds angezeigt (Autocomplete)
+- **Hinweis**: Gruppen werden in `config.json` unter `gruppen` persistiert
+
 ### **Schnellzugriff**
 
 #### `/quick`
@@ -489,7 +501,8 @@ Der `/schip`-Befehl nutzt ebenfalls das letzte passende Event des Charakters aus
 - `/gm char proben` – Probe-Verlauf über alle oder einen bestimmten Charakter
 - `/gm user pc` – Spielercharakter für einen Discord-Benutzer festlegen (ersetzt `/config pc`)
 - `/config` entfernt; Funktionalität vollständig in `/gm` integriert
-- `/help` zeigt `/gm`-Subcommands nur für Meister an; andere Benutzer sehen nur den Hinweis
+- `/help` zeigt `/gm`- und `/gruppe`-Subcommands nur für Meister an; andere Benutzer sehen nur den Hinweis
+- `/gruppe` – neuer Meister-Befehl zur Gruppenverwaltung: Gruppen erstellen/löschen, Charaktere hinzufügen/entfernen, Gruppen anzeigen und Sammelproben für alle Gruppenmitglieder durchführen
 - Probe-Tracking über Event-History (`storage/event-history.ndjson`) und `quickProbeFavorites` integriert
 
 
