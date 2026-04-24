@@ -514,4 +514,4 @@ Dieses Projekt verwendet Begriffe, Mechaniken und Inhalte aus dem Rollenspiel **
 
 **DSA5 ist ein eingetragenes Warenzeichen der Ulisses Medien & Spiel Distribution GmbH.**
 
-Alle Rechte an DSA5, den Regelwerken, Namen, Begriffen und Inhalten liegen bei Ulisses Spiele. Dieses Projekt steht in keiner Verbindung zu Ulisses Spiele und dient ausschließlich privaten, nicht-kommerziellen Zwecken.
+Alle Rechte an DSA5, den Regelwerken, Namen, Begriffen und Inhalten liegen bei Ulisses Spiele. Die Veröffentlichung dieses Bots wurde freundlicherweise von der Ulisses Medien & Spiel Distribution GmbH genehmigt. Dieses Projekt steht dennoch in keiner offiziellen Verbindung zu Ulisses Spiele und dient ausschließlich privaten, nicht-kommerziellen Zwecken.
