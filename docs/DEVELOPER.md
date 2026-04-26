@@ -59,6 +59,6 @@ Die Dokumentation ist absichtlich nach Aufgabenbereichen getrennt:
 
 ## Hinweise zum aktuellen Stand
 
-Die Dokumentationsstruktur unter `docs/` ist bewusst modular aufgebaut. Einige verlinkte Dateien sind bereits als erste Platzhalter angelegt und können schrittweise ausgebaut werden.
+Die Dokumentationsstruktur unter `docs/` ist bewusst modular aufgebaut. Die verlinkten Kerndokumente sind als erste inhaltliche Versionen ausgearbeitet und können bei künftigen Änderungen des Bots schrittweise erweitert oder präzisiert werden.
 
 Das Repository enthält sowohl aktuelle als auch ältere Strukturspuren, insbesondere durch `index.js` neben `bot.js`. Für neue Entwicklungsarbeit sollte `bot.js` als primäre Referenz betrachtet werden.
