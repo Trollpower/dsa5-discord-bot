@@ -272,6 +272,9 @@
         },
         "category": {
           "type": "string"
+        },
+        "referenz": {
+          "type": "string"
         }
       },
       "additionalProperties": false
