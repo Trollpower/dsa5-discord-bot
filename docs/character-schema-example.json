@@ -1,0 +1,75 @@
+{
+  "$schema": "../schemas/character.schema.json",
+  "name": "Belasca",
+  "displayName": "Belasca Jannerloff",
+  "gs": 8,
+  "zk": 0,
+  "sk": 3,
+  "alwaysReload": true,
+  "cheating": {
+    "general": 59,
+    "crit": 21
+  },
+  "eigenschaften": {
+    "MU": 14,
+    "KL": 14,
+    "IN": 16,
+    "CH": 11,
+    "FF": 12,
+    "GE": 14,
+    "KO": 12,
+    "KK": 10
+  },
+  "lep": {
+    "aktuell": 39,
+    "max": 39
+  },
+  "asp": {
+    "aktuell": 40,
+    "max": 40
+  },
+  "kampftechniken": [
+    {
+      "name": "Stab",
+      "ktw": 11
+    }
+  ],
+  "talente": [
+    {
+      "name": "Magiekunde",
+      "fertigkeitswert": 8
+    }
+  ],
+  "zauber": [
+    {
+      "name": "Horriphobus",
+      "fertigkeitswert": 16,
+      "erweiterungen": [
+        "Größere Reichweite",
+        "Zwei Ziele"
+      ]
+    }
+  ],
+  "sonderfertigkeiten": [
+    {
+      "name": "Ortskenntnis"
+    }
+  ],
+  "waffen": [
+    "Elfenbogen",
+    "Schwerer Dolch"
+  ],
+  "angelegteWaffen": [
+    "Schwerer Dolch"
+  ],
+  "quickProbeFavorites": [
+    {
+      "category": "zauber",
+      "name": "Horriphobus",
+      "label": "Furcht",
+      "bonusMalus": 0
+    },
+    null,
+    null
+  ]
+}
