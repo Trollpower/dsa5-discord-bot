@@ -4,7 +4,7 @@ import path from 'path';
 export default {
 	data: new SlashCommandBuilder()
 		.setName(path.basename(import.meta.url, '.js'))
-		.setDescription('Schip-Kommando')
+		.setDescription('Schicksalspunkt-Kommando')
 		.addStringOption(option => option
 			.setName('maske')
 			.setDescription('Maske für die drei Würfe, z. B. 010 für nur den zweiten Wurf')
