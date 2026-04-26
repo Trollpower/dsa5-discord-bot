@@ -1,0 +1,373 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./schemas/character.schema.json",
+  "title": "DSA-Bot Character",
+  "description": "Pragmatisches JSON Schema für Character-Dateien des DSA-Bot-Projekts.",
+  "type": "object",
+  "required": [
+    "name",
+    "eigenschaften",
+    "kampftechniken",
+    "talente"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "spieler": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gs": {
+      "type": "integer"
+    },
+    "zk": {
+      "type": "integer"
+    },
+    "sk": {
+      "type": "integer"
+    },
+    "initiative": {
+      "type": "integer"
+    },
+    "alwaysReload": {
+      "type": "boolean"
+    },
+    "cheating": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "general": {
+          "type": "number"
+        },
+        "crit": {
+          "type": "number"
+        }
+      }
+    },
+    "eigenschaften": {
+      "type": "object",
+      "required": [
+        "MU",
+        "KL",
+        "IN",
+        "CH",
+        "FF",
+        "GE",
+        "KO",
+        "KK"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "MU": {
+          "type": "integer"
+        },
+        "KL": {
+          "type": "integer"
+        },
+        "IN": {
+          "type": "integer"
+        },
+        "CH": {
+          "type": "integer"
+        },
+        "FF": {
+          "type": "integer"
+        },
+        "GE": {
+          "type": "integer"
+        },
+        "KO": {
+          "type": "integer"
+        },
+        "KK": {
+          "type": "integer"
+        }
+      }
+    },
+    "lep": {
+      "$ref": "#/$defs/resourceValue"
+    },
+    "asp": {
+      "$ref": "#/$defs/resourceValue"
+    },
+    "kampftechniken": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/kampftechnik"
+      }
+    },
+    "talente": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fertigkeitsEintrag"
+      }
+    },
+    "zauber": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/erweiterbareFertigkeit"
+      }
+    },
+    "liturgien": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/erweiterbareFertigkeit"
+      }
+    },
+    "rituale": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/erweiterbareFertigkeit"
+      }
+    },
+    "elfenlieder": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/erweiterbareFertigkeit"
+      }
+    },
+    "zaubermelodien": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/erweiterbareFertigkeit"
+      }
+    },
+    "sonderfertigkeiten": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/namedCategoryEntry"
+      }
+    },
+    "vorteile": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/namedCategoryEntry"
+      }
+    },
+    "nachteile": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/namedCategoryEntry"
+      }
+    },
+    "waffen": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "angelegteWaffen": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ruestungen": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "angelegteRuestung": {
+      "type": "string"
+    },
+    "quickProbeFavorites": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/quickProbeFavorite"
+      }
+    }
+  },
+  "$defs": {
+    "resourceValue": {
+      "type": "object",
+      "required": [
+        "aktuell",
+        "max"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "aktuell": {
+          "type": "integer"
+        },
+        "max": {
+          "type": "integer"
+        }
+      }
+    },
+    "kampftechnik": {
+      "type": "object",
+      "required": [
+        "name",
+        "ktw"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ktw": {
+          "type": "integer"
+        }
+      }
+    },
+    "fertigkeitsEintrag": {
+      "type": "object",
+      "required": [
+        "name",
+        "fertigkeitswert"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fertigkeitswert": {
+          "type": "integer"
+        }
+      }
+    },
+    "erweiterbareFertigkeit": {
+      "type": "object",
+      "required": [
+        "name",
+        "fertigkeitswert"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fertigkeitswert": {
+          "type": "integer"
+        },
+        "erweiterungen": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "namedCategoryEntry": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "quickProbeFavorite": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/quickProbeFavoriteProbe"
+        },
+        {
+          "$ref": "#/$defs/quickProbeFavoriteAngriff"
+        },
+        {
+          "$ref": "#/$defs/quickProbeFavoriteKsf"
+        }
+      ]
+    },
+    "quickProbeFavoriteProbe": {
+      "type": "object",
+      "required": [
+        "category",
+        "name"
+      ],
+      "properties": {
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string"
+        },
+        "bonusMalus": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "quickProbeFavoriteAngriff": {
+      "type": "object",
+      "required": [
+        "type",
+        "waffenName"
+      ],
+      "properties": {
+        "type": {
+          "const": "angriff"
+        },
+        "waffenName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string"
+        },
+        "bonusMalus": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "quickProbeFavoriteKsf": {
+      "type": "object",
+      "required": [
+        "type",
+        "subcommand"
+      ],
+      "properties": {
+        "type": {
+          "const": "ksf"
+        },
+        "subcommand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stufe": {
+          "type": "integer"
+        },
+        "basismanoever": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "bonusMalus": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
