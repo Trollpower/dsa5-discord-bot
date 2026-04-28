@@ -1,6 +1,7 @@
 import { fertigkeitenData, zauberData, liturgienData, ritualeData, zaubermelodienData, elfenliederData } from '../data/index.js';
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, Events, MessageFlags } from 'discord.js';
 import config from '../config.json' with { type: 'json' };
+import { getQuickProbeEmoji } from '../common/quickButtonIcons.js';
 import { KSF_QUICK_CUSTOM_ID_PREFIX } from './ksf.js';
 import { ANGRIFF_QUICK_CUSTOM_ID_PREFIX } from './angriff.js';
 import { PARADE_QUICK_CUSTOM_ID_PREFIX } from './parade.js';
@@ -180,16 +181,6 @@ const encodeAusweichenPayload = ({ bonusMalus }) => {
 	return bonusMalus && bonusMalus !== 0 ? `${bonusMalus}` : '';
 };
 
-const probeEmojiByCategory = (category) => {
-	switch (category) {
-		case 'zauber': return '🪄';
-		case 'elfenlieder': return '🧝';
-		case 'liturgien': return '😇';
-		case 'rituale': return '🔯';
-		default: return '💪';
-	}
-};
-
 const createQuickButtonRows = async (character, client) => {
 	if (!isQuickButtonsEnabled()) {
 		return [];
@@ -235,7 +226,7 @@ const createQuickButtonRows = async (character, client) => {
 			recentRow.addComponents(
 				new ButtonBuilder()
 					.setCustomId(`${QUICK_PROBE_CUSTOM_ID_PREFIX}recent:${encodeQuickProbePayload(candidate)}`)
-					.setEmoji(probeEmojiByCategory(candidate.category))
+					.setEmoji(getQuickProbeEmoji(candidate))
 					.setLabel(label)
 					.setStyle(ButtonStyle.Success),
 			);
@@ -322,7 +313,7 @@ const createQuickButtonRows = async (character, client) => {
 				favRow.addComponents(
 					new ButtonBuilder()
 						.setCustomId(`${QUICK_PROBE_CUSTOM_ID_PREFIX}favorites:${encodeQuickProbePayload(resolved)}`)
-						.setEmoji(probeEmojiByCategory(resolved.category))
+						.setEmoji(getQuickProbeEmoji(resolved))
 						.setLabel(label)
 						.setStyle(ButtonStyle.Primary),
 				);
@@ -350,7 +341,7 @@ const createQuickButtonRows = async (character, client) => {
 				topRow.addComponents(
 					new ButtonBuilder()
 						.setCustomId(`${QUICK_PROBE_CUSTOM_ID_PREFIX}top:${encodeQuickProbePayload(candidate)}`)
-						.setEmoji(probeEmojiByCategory(candidate.category))
+						.setEmoji(getQuickProbeEmoji(candidate))
 						.setLabel(label)
 						.setStyle(ButtonStyle.Secondary),
 				);
