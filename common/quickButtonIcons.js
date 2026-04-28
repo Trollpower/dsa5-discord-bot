@@ -60,6 +60,112 @@ const TALENT_QUICK_BUTTON_ICONS = Object.freeze({
 	'Zechen': '🍺',
 });
 
+const ZAUBER_QUICK_BUTTON_ICONS = Object.freeze({
+	Ablativum: '🛡️',
+	Affenarme: '🐒',
+	Affenruf: '🐒',
+	Adlerschwinge: '🦅',
+	Abvenenum: '🧪',
+	Adlerauge: '👁️',
+	Aeolito: '🌪️',
+	Alpgestalt: '😈',
+	Altisonus: '📣',
+	'Analys Arkanstruktur': '🔍',
+	'Angst auslösen': '😨',
+	Aquafaxius: '💧',
+	Aquasphaero: '🫧',
+	Arachnea: '🕸️',
+	Archofaxius: '💥',
+	Archosphaero: '☄️',
+	Armatrutz: '🛡️',
+	'Aromatis Illusionis': '🌸',
+	Atemnot: '😮‍💨',
+	'Attributo (Körperkraft)': '💪',
+	'Attributo (Charisma)': '✨',
+	'Attributo (Fingerfertigkeit)': '🤏',
+	'Attributo (Gewandtheit)': '🤸',
+	'Attributo (Intuition)': '🧠',
+	'Attributo (Klugheit)': '📘',
+	'Attributo (Konstitution)': '🫀',
+	'Attributo (Mut)': '🦁',
+	Aufwecken: '⏰',
+	'Auge des Limbus': '🌀',
+	'Aura der Erschöpfung': '🪫',
+	'Auris Illusionis': '🎧',
+	Avilea: '🕊️',
+	Axxeleratus: '⚡',
+	Balsam: '💚',
+	'Balsam Salabunde': '💚',
+	'Band und Fessel': '⛓️',
+	Basaltleib: '🪨',
+	Aureolus: '💫',
+	Bannbaladin: '💞',
+	'Blick aufs Wesen': '🧿',
+	'Blick in die Gedanken': '🧠',
+	Blindheit: '🙈',
+	'Blitz dich find': '⚡',
+	Blitzball: '🔆',
+	'Böser Blick': '😈',
+	'Brazoraghs Hieb': '🪓',
+	Brandungsleib: '🌊',
+	'Brennender Hass': '😡',
+	Chamaelioni: '🦎',
+	Claudibus: '🚪',
+	Corpofrigo: '🥶',
+	Corpofesso: '🥴',
+	Debilitatio: '📉',
+	Desintegratus: '💥',
+	Disruptivo: '💣',
+	Dornenwand: '🌵',
+	Drachenleib: '🐉',
+	Duplicatus: '🪞',
+	Dunkelheit: '🌑',
+	Dämonenbann: '⛔',
+	Dämonenschild: '🔰',
+	'Dämonisches Vergessen': '🫥',
+	Ecliptifactus: '🌘',
+	Eichenleib: '🌳',
+	'Einflussbann': '🚫',
+	Eisenrost: '⛓️',
+	'Eigene Dummheit': '🙃',
+	'Eigene Ängste': '😰',
+	Eispfeil: '🧊',
+	Firnlauf: '🛷',
+	Feuerpfeil: '🔥',
+	'Flim Flam': '🕯️',
+	Flammenwand: '🚧',
+	Foramen: '🕳️',
+	Fortifex: '🧱',
+	Frigifaxius: '❄️',
+	Fulminictus: '🌩️',
+	Gardianum: '🫧',
+	Himmelslauf: '☁️',
+	Horriphobus: '😱',
+	Ignifaxius: '🔥',
+	Katzenaugen: '🐈',
+	'Klarum Purum': '✨',
+	Krötensprung: '🐸',
+	Motoricus: '🫳',
+	'Odem Arcanum': '👃',
+	Paralysis: '🫸',
+	Penetrizzel: '🧿',
+	Plumbumbarum: '🪨',
+	Respondami: '🗨️',
+	Schlachtlied: '🎺',
+	Silentium: '🤫',
+	Somnigravis: '💤',
+	Spinnenlauf: '🕷️',
+	Transversalis: '🌀',
+	Visibili: '👻',
+	Wasseratem: '🌊',
+	Wellenlauf: '🏄',
+});
+
+const PROBE_SPECIFIC_EMOJI_MAPPINGS = Object.freeze({
+	talente: TALENT_QUICK_BUTTON_ICONS,
+	zauber: ZAUBER_QUICK_BUTTON_ICONS,
+});
+
 const PROBE_CATEGORY_EMOJIS = Object.freeze({
 	zauber: '🪄',
 	elfenlieder: '🧝',
@@ -69,11 +175,12 @@ const PROBE_CATEGORY_EMOJIS = Object.freeze({
 });
 
 export const getQuickProbeEmoji = ({ category, name }) => {
-	if (category === 'talente' && name && TALENT_QUICK_BUTTON_ICONS[name]) {
-		return TALENT_QUICK_BUTTON_ICONS[name];
+	const categoryMapping = PROBE_SPECIFIC_EMOJI_MAPPINGS[category];
+	if (name && categoryMapping?.[name]) {
+		return categoryMapping[name];
 	}
 
 	return PROBE_CATEGORY_EMOJIS[category] ?? '💪';
 };
 
-export { TALENT_QUICK_BUTTON_ICONS };
+export { TALENT_QUICK_BUTTON_ICONS, ZAUBER_QUICK_BUTTON_ICONS, PROBE_CATEGORY_EMOJIS };
