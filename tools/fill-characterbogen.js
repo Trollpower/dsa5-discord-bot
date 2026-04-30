@@ -582,6 +582,7 @@ const fillMagicPages = ({ character, fieldValues }) => {
 
 	magicEntries.filter(entry => entry.kind === 'zauber').slice(0, 21).forEach((entry, index) => {
 		const row = index + 1;
+		setFieldValue(fieldValues, `Zauber_${row}`, entry.name);
 		setFieldValue(fieldValues, `Z_FW_${row}`, entry.fw);
 		setFieldValue(fieldValues, `Z_Merkmal_${row}`, entry.aspekt);
 		setFieldValue(fieldValues, `Z_AsP_${row}`, entry.asp);
@@ -596,6 +597,7 @@ const fillMagicPages = ({ character, fieldValues }) => {
 
 	magicEntries.filter(entry => entry.kind === 'liturgie').slice(0, 21).forEach((entry, index) => {
 		const row = index + 1;
+		setFieldValue(fieldValues, `Liturgie_${row}`, entry.name);
 		setFieldValue(fieldValues, `L_FW_${row}`, entry.fw);
 		setFieldValue(fieldValues, `L_Aspekt_${row}`, entry.aspekt);
 		setFieldValue(fieldValues, `L_KaP_${row}`, entry.kap);
