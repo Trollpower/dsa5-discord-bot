@@ -41,6 +41,9 @@ const KT_PA_MAPPING = [
 	{ fieldSuffix: 14, technique: 'Zweihandschwerter' },
 ];
 const RANGED_TECHNIQUES = new Set(['Armbrüste', 'Bögen', 'Wurfwaffen']);
+const FIXED_FONT_TEXT_FIELDS = new Set(['Held_SF_allgemein', 'Held_SF_Kampf', 'Held_Vorteile', 'Held_Nachteile']);
+const FIXED_FONT_TEXT_FIELD_SIZE = 8;
+const hasFixedFontSize = (fieldName) => FIXED_FONT_TEXT_FIELDS.has(fieldName) || /^SF_Kampf_\d+$/.test(fieldName);
 
 const normalizeText = (value) => String(value ?? '')
 	.normalize('NFD')
@@ -674,13 +677,20 @@ const buildFieldValues = (character) => {
 
 const applyFieldValue = (field, value) => {
 	if (field instanceof PDFTextField) {
-		field.setText(asText(value));
+		const textValue = asText(value);
+		if (hasFixedFontSize(field.getName())) {
+			field.setFontSize(FIXED_FONT_TEXT_FIELD_SIZE);
+		}
+		field.setText(textValue);
 		return true;
 	}
 
 	if (field instanceof PDFDropdown || field instanceof PDFOptionList) {
 		if (!value) return false;
 		const textValue = asText(value);
+		if (hasFixedFontSize(field.getName())) {
+			field.setFontSize(FIXED_FONT_TEXT_FIELD_SIZE);
+		}
 		const options = typeof field.getOptions === 'function' ? field.getOptions() : [];
 		if (!options.includes(textValue) && typeof field.addOptions === 'function') {
 			field.addOptions([textValue]);
