@@ -123,3 +123,4 @@ config.json
 .env.production
 storage/event-history.ndjson
 /tmp
+/output
