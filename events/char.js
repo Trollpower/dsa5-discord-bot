@@ -1,8 +1,9 @@
-import { ButtonBuilder, ActionRowBuilder, ButtonStyle, Events, MessageFlags } from 'discord.js';
+import { AttachmentBuilder, ButtonBuilder, ActionRowBuilder, ButtonStyle, Events, MessageFlags } from 'discord.js';
 import path from 'path';
 import { waffenData, ruestungenData, fertigkeitenData, liturgienData, ritualeData, zaubermelodienData, elfenliederData, zauberData, segnungenData, hexenfluecheData } from '../data/index.js';
 import Utils from '../common/utils.js';
 import { getQS } from '../common/common.js';
+import { fillCharacterbogen } from '../tools/fill-characterbogen.js';
 
 const ALL_PROBE_OPTIONS = [
 	...fertigkeitenData,
@@ -172,6 +173,20 @@ const genericHandlers = {
 	info: async ({ interaction, character }) => {
 		const result = Utils.createEmbedFromCharacter(character);
 		return interaction.reply({ embeds: result, flags: MessageFlags.Ephemeral });
+	},
+	export: async ({ interaction, character }) => {
+		await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+		const result = await fillCharacterbogen({ characterInput: character });
+		const attachment = new AttachmentBuilder(result.outputPath, {
+			name: path.basename(result.outputPath),
+		});
+		const skippedText = result.skipped.length > 0
+			? ` Übersprungene Felder: ${result.skipped.length}.`
+			: '';
+		return interaction.editReply({
+			content: `PDF-Export für ${character.displayName ?? character.name} erstellt. Gesetzte Felder: ${result.appliedCount}.${skippedText}`,
+			files: [attachment],
+		});
 	},
 	favorit: async ({ interaction, character, client, persistCharacter, slotIndex }) => {
 		const fertigkeitValue = interaction.options.getString('fertigkeit');
