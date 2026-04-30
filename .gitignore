@@ -122,3 +122,4 @@ config.json
 .env.local
 .env.production
 storage/event-history.ndjson
+/tmp
