@@ -56,6 +56,10 @@ export default {
 			subcommand
 				.setName('info')
 				.setDescription('Charakterinfo'))
+		.addSubcommand(subcommand =>
+			subcommand
+				.setName('export')
+				.setDescription('Charakter als ausgefülltes PDF exportieren'))
 		.addSubcommand(sub => addFavoritSubcommand(sub, 1))
 		.addSubcommand(sub => addFavoritSubcommand(sub, 2))
 		.addSubcommand(sub => addFavoritSubcommand(sub, 3))
