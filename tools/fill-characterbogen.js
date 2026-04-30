@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { PDFCheckBox, PDFDocument, PDFDropdown, PDFOptionList, PDFRadioGroup, PDFTextField } from 'pdf-lib';
+import { PDFCheckBox, PDFDocument, PDFDropdown, PDFOptionList, PDFRadioGroup, PDFTextField, StandardFonts } from 'pdf-lib';
 
 import { Character } from '../common/character.js';
 import {
@@ -44,6 +44,7 @@ const RANGED_TECHNIQUES = new Set(['Armbrüste', 'Bögen', 'Wurfwaffen']);
 const FIXED_FONT_TEXT_FIELDS = new Set(['Held_SF_allgemein', 'Held_SF_Kampf', 'Held_Vorteile', 'Held_Nachteile']);
 const FIXED_FONT_TEXT_FIELD_SIZE = 8;
 const hasFixedFontSize = (fieldName) => FIXED_FONT_TEXT_FIELDS.has(fieldName) || /^SF_Kampf_\d+$/.test(fieldName);
+const FLOW_LAYOUT_SUMMARY_FIELDS = new Set(['Held_SF_allgemein', 'Held_SF_Kampf', 'Held_Vorteile', 'Held_Nachteile']);
 
 const normalizeText = (value) => String(value ?? '')
 	.normalize('NFD')
@@ -143,12 +144,103 @@ const toSignedText = (value) => {
 
 const formatNamedEntry = (entry) => {
 	if (!entry?.name) return '';
-	return entry.category ? `${entry.name} (${entry.category})` : entry.name;
+	const suffixes = [entry.category, entry.referenz].filter(Boolean);
+	return suffixes.length > 0 ? `${entry.name} (${suffixes.join(', ')})` : entry.name;
 };
 
-const joinNamedEntries = (entries) => {
+const joinNamedEntries = (entries, separator = '\n') => {
 	if (!Array.isArray(entries) || entries.length === 0) return '';
-	return entries.map(formatNamedEntry).filter(Boolean).join('\n');
+	return entries.map(formatNamedEntry).filter(Boolean).join(separator);
+};
+
+const createNamedEntriesValue = (entries) => {
+	if (!Array.isArray(entries) || entries.length === 0) return '';
+	return {
+		kind: 'named-entries',
+		lineText: joinNamedEntries(entries, '\n'),
+		inlineText: joinNamedEntries(entries, ', '),
+	};
+};
+
+const getFieldRectangle = (field) => {
+	const widgets = field?.acroField?.getWidgets?.() ?? [];
+	const rectangle = widgets[0]?.getRectangle?.();
+	if (!rectangle) return null;
+	return rectangle;
+};
+
+const estimateWrappedLineCount = (text, { font, fontSize, width }) => {
+	if (!text) return 0;
+	const paragraphs = String(text).split('\n');
+	let lineCount = 0;
+
+	for (const paragraph of paragraphs) {
+		if (!paragraph) {
+			lineCount += 1;
+			continue;
+		}
+
+		const words = paragraph.split(/\s+/).filter(Boolean);
+		let currentLine = '';
+
+		for (const word of words) {
+			const candidate = currentLine ? `${currentLine} ${word}` : word;
+			if (font.widthOfTextAtSize(candidate, fontSize) <= width) {
+				currentLine = candidate;
+				continue;
+			}
+
+			if (currentLine) {
+				lineCount += 1;
+				currentLine = '';
+			}
+
+			const wordWidth = font.widthOfTextAtSize(word, fontSize);
+			if (wordWidth <= width) {
+				currentLine = word;
+				continue;
+			}
+
+			lineCount += Math.ceil(wordWidth / width);
+		}
+
+		if (currentLine) {
+			lineCount += 1;
+		}
+	}
+
+	return lineCount;
+};
+
+const resolveSummaryFieldText = (field, value, layoutContext) => {
+	if (!value || typeof value !== 'object' || value.kind !== 'named-entries') {
+		return asText(value);
+	}
+
+	if (!FLOW_LAYOUT_SUMMARY_FIELDS.has(field.getName())) {
+		return value.lineText;
+	}
+
+	const rectangle = getFieldRectangle(field);
+	if (!rectangle || !layoutContext?.summaryFont) {
+		return value.lineText;
+	}
+
+	const availableWidth = Math.max(rectangle.width - 6, 1);
+	const availableHeight = Math.max(rectangle.height - 6, 1);
+	const lineHeight = FIXED_FONT_TEXT_FIELD_SIZE * 1.2;
+	const maxLines = Math.max(Math.floor(availableHeight / lineHeight), 1);
+	const lineBasedLines = estimateWrappedLineCount(value.lineText, {
+		font: layoutContext.summaryFont,
+		fontSize: FIXED_FONT_TEXT_FIELD_SIZE,
+		width: availableWidth,
+	});
+
+	if (lineBasedLines <= maxLines) {
+		return value.lineText;
+	}
+
+	return value.inlineText;
 };
 
 const splitCharacterName = (character) => {
@@ -301,10 +393,27 @@ const classifyWeapon = (weapon) => {
 
 const classifySpecialAbility = (entry) => {
 	const group = normalizeText(entry?.gruppe);
-	if (group.includes('kampf')) return 'kampf';
+	if (group === normalizeText('Kampfsonderfertigkeiten')) return 'kampf';
 	if (group.includes('mag')) return 'mag';
 	if (group.includes('karm')) return 'karm';
 	return 'allg';
+};
+
+const groupSpecialAbilities = (character) => {
+	const grouped = {
+		allg: [],
+		kampf: [],
+		mag: [],
+		karm: [],
+	};
+
+	for (const entry of character.sonderfertigkeiten ?? []) {
+		const ruleEntry = findRuleEntry(sonderfertigkeitenData, entry.name);
+		const group = classifySpecialAbility(ruleEntry);
+		grouped[group].push({ entry, ruleEntry });
+	}
+
+	return grouped;
 };
 
 const setFieldValue = (fieldValues, fieldName, value) => {
@@ -476,19 +585,8 @@ const fillAdvantagesAndDisadvantages = ({ character, fieldValues }) => {
 	});
 };
 
-const fillSpecialAbilities = ({ character, fieldValues }) => {
-	const grouped = {
-		allg: [],
-		kampf: [],
-		mag: [],
-		karm: [],
-	};
-
-	for (const entry of character.sonderfertigkeiten ?? []) {
-		const ruleEntry = findRuleEntry(sonderfertigkeitenData, entry.name);
-		const group = classifySpecialAbility(ruleEntry);
-		grouped[group].push({ entry, ruleEntry });
-	}
+const fillSpecialAbilities = ({ groupedSpecialAbilities, fieldValues }) => {
+	const grouped = groupedSpecialAbilities;
 
 	grouped.allg.slice(0, 46).forEach(({ entry, ruleEntry }, index) => {
 		const row = index + 1;
@@ -617,6 +715,7 @@ const fillMagicPages = ({ character, fieldValues }) => {
 const buildFieldValues = (character) => {
 	const fieldValues = new Map();
 	const { firstName, familyName } = splitCharacterName(character);
+	const groupedSpecialAbilities = groupSpecialAbilities(character);
 	const belastung = character.getBelastungsmalus();
 	const ruestungsschutz = character.getRuestungsschutz();
 	const ausweichenBasiswert = Math.round((character.eigenschaften?.GE ?? 0) / 2);
@@ -631,9 +730,10 @@ const buildFieldValues = (character) => {
 	setFieldValue(fieldValues, 'Held_Name', firstName);
 	setFieldValue(fieldValues, 'Held_Familie', familyName);
 	setFieldValue(fieldValues, 'Held_Sozialstatus', getAdelStatus(character));
-	setFieldValue(fieldValues, 'Held_Vorteile', joinNamedEntries(character.vorteile));
-	setFieldValue(fieldValues, 'Held_Nachteile', joinNamedEntries(character.nachteile));
-	setFieldValue(fieldValues, 'Held_SF_allgemein', joinNamedEntries(character.sonderfertigkeiten));
+	setFieldValue(fieldValues, 'Held_Vorteile', createNamedEntriesValue(character.vorteile));
+	setFieldValue(fieldValues, 'Held_Nachteile', createNamedEntriesValue(character.nachteile));
+	setFieldValue(fieldValues, 'Held_SF_allgemein', createNamedEntriesValue(groupedSpecialAbilities.allg.map(({ entry }) => entry)));
+	setFieldValue(fieldValues, 'Held_SF_Kampf', createNamedEntriesValue(groupedSpecialAbilities.kampf.map(({ entry }) => entry)));
 	setFieldValue(fieldValues, 'GW_LE', character.lep?.max);
 	setFieldValue(fieldValues, 'GW_SK', character.sk);
 	setFieldValue(fieldValues, 'GW_ZK', character.zk);
@@ -669,15 +769,15 @@ const buildFieldValues = (character) => {
 	fillMagicPages({ character, fieldValues });
 	fillPossessionsPage({ character, fieldValues });
 	fillAdvantagesAndDisadvantages({ character, fieldValues });
-	fillSpecialAbilities({ character, fieldValues });
+	fillSpecialAbilities({ groupedSpecialAbilities, fieldValues });
 	fillBlessingsAndTricks({ character, fieldValues });
 
 	return fieldValues;
 };
 
-const applyFieldValue = (field, value) => {
+const applyFieldValue = (field, value, layoutContext) => {
 	if (field instanceof PDFTextField) {
-		const textValue = asText(value);
+		const textValue = resolveSummaryFieldText(field, value, layoutContext);
 		if (hasFixedFontSize(field.getName())) {
 			field.setFontSize(FIXED_FONT_TEXT_FIELD_SIZE);
 		}
@@ -770,6 +870,7 @@ const fillCharacterbogen = async ({ characterInput, characterPath, pdfPath = def
 	const resolvedOutputPath = resolveOutputPath(character, outputPath);
 	const pdfBytes = await fs.readFile(resolvedPdfPath);
 	const pdfDoc = await PDFDocument.load(pdfBytes);
+	const summaryFont = await pdfDoc.embedFont(StandardFonts.Helvetica);
 	const form = pdfDoc.getForm();
 	const fieldsByName = new Map(form.getFields().map(field => [field.getName(), field]));
 	const fieldValues = buildFieldValues(character);
@@ -788,7 +889,7 @@ const fillCharacterbogen = async ({ characterInput, characterPath, pdfPath = def
 			continue;
 		}
 
-		if (!applyFieldValue(field, value)) {
+		if (!applyFieldValue(field, value, { summaryFont })) {
 			skipped.push({ fieldName, reason: 'unsupported-or-invalid-option', value });
 			continue;
 		}
