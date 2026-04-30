@@ -148,6 +148,23 @@ const formatNamedEntry = (entry) => {
 	return suffixes.length > 0 ? `${entry.name} (${suffixes.join(', ')})` : entry.name;
 };
 
+const splitEntryName = (entry) => {
+	const rawName = String(entry?.name ?? '').trim();
+	if (!rawName) {
+		return { baseName: '', inlineDetail: '' };
+	}
+
+	const match = rawName.match(/^(.*)\s\(([^()]+)\)$/);
+	if (!match) {
+		return { baseName: rawName, inlineDetail: '' };
+	}
+
+	return {
+		baseName: match[1].trim(),
+		inlineDetail: match[2].trim(),
+	};
+};
+
 const joinNamedEntries = (entries, separator = '\n') => {
 	if (!Array.isArray(entries) || entries.length === 0) return '';
 	return entries.map(formatNamedEntry).filter(Boolean).join(separator);
@@ -324,7 +341,9 @@ const cleanApText = (entry, characterEntryName) => {
 	return compact;
 };
 
-const getEntryNote = (entry) => entry?.category ?? '';
+const getEntryNote = (entry) => [splitEntryName(entry).inlineDetail, entry?.referenz, entry?.category]
+	.filter(Boolean)
+	.join(', ');
 
 const getSortedCharacterWeapons = (character) => {
 	const equipped = character.angelegteWaffen ?? [];
@@ -408,7 +427,8 @@ const groupSpecialAbilities = (character) => {
 	};
 
 	for (const entry of character.sonderfertigkeiten ?? []) {
-		const ruleEntry = findRuleEntry(sonderfertigkeitenData, entry.name);
+		const { baseName } = splitEntryName(entry);
+		const ruleEntry = findRuleEntry(sonderfertigkeitenData, baseName);
 		const group = classifySpecialAbility(ruleEntry);
 		grouped[group].push({ entry, ruleEntry });
 	}
@@ -559,14 +579,20 @@ const fillPossessionsPage = ({ character, fieldValues }) => {
 
 const fillAdvantagesAndDisadvantages = ({ character, fieldValues }) => {
 	(character.vorteile ?? []).slice(0, 22).forEach((entry, index) => {
-		setFieldValue(fieldValues, `Vorteil_${index + 1}`, formatNamedEntry(entry));
+		const { baseName } = splitEntryName(entry);
+		const ruleEntry = findRuleEntry(vorteileData, baseName);
+		const row = index + 1;
+		setFieldValue(fieldValues, `Vorteil_${row}`, baseName);
+		setFieldValue(fieldValues, `Vorteil_AP_${row}`, cleanApText(ruleEntry, baseName));
+		setFieldValue(fieldValues, `Vorteil_Er_${row}`, getEntryNote(entry));
 	});
 
 	(character.nachteile ?? []).slice(0, 22).forEach((entry, index) => {
-		const ruleEntry = findRuleEntry(nachteileData, entry.name);
+		const { baseName } = splitEntryName(entry);
+		const ruleEntry = findRuleEntry(nachteileData, baseName);
 		const row = index + 1;
-		setFieldValue(fieldValues, `Nachteil_${row}`, formatNamedEntry(entry));
-		setFieldValue(fieldValues, `Nachteil_AP_${row}`, cleanApText(ruleEntry, entry.name));
+		setFieldValue(fieldValues, `Nachteil_${row}`, baseName);
+		setFieldValue(fieldValues, `Nachteil_AP_${row}`, cleanApText(ruleEntry, baseName));
 		setFieldValue(fieldValues, `Nachteil_Er_${row}`, getEntryNote(entry));
 	});
 
@@ -589,30 +615,34 @@ const fillSpecialAbilities = ({ groupedSpecialAbilities, fieldValues }) => {
 	const grouped = groupedSpecialAbilities;
 
 	grouped.allg.slice(0, 46).forEach(({ entry, ruleEntry }, index) => {
+		const { baseName } = splitEntryName(entry);
 		const row = index + 1;
-		setFieldValue(fieldValues, `SF_allg_${row}`, formatNamedEntry(entry));
-		setFieldValue(fieldValues, `SF_allg_AP_${row}`, cleanApText(ruleEntry, entry.name));
+		setFieldValue(fieldValues, `SF_allg_${row}`, baseName);
+		setFieldValue(fieldValues, `SF_allg_AP_${row}`, cleanApText(ruleEntry, baseName));
 		setFieldValue(fieldValues, `SF_allg_Er_${row}`, getEntryNote(entry));
 	});
 
 	grouped.kampf.slice(0, 46).forEach(({ entry, ruleEntry }, index) => {
+		const { baseName } = splitEntryName(entry);
 		const row = index + 1;
-		setFieldValue(fieldValues, `SF_Kampf_${row}`, formatNamedEntry(entry));
-		setFieldValue(fieldValues, `SF_Kampf_AP_${row}`, cleanApText(ruleEntry, entry.name));
+		setFieldValue(fieldValues, `SF_Kampf_${row}`, baseName);
+		setFieldValue(fieldValues, `SF_Kampf_AP_${row}`, cleanApText(ruleEntry, baseName));
 		setFieldValue(fieldValues, `SF_Kampf_Er_${row}`, getEntryNote(entry));
 	});
 
 	grouped.mag.slice(0, 22).forEach(({ entry, ruleEntry }, index) => {
+		const { baseName } = splitEntryName(entry);
 		const row = index + 1;
-		setFieldValue(fieldValues, `SF_mag_${row}`, formatNamedEntry(entry));
-		setFieldValue(fieldValues, `SF_mag_AP_${row}`, cleanApText(ruleEntry, entry.name));
+		setFieldValue(fieldValues, `SF_mag_${row}`, baseName);
+		setFieldValue(fieldValues, `SF_mag_AP_${row}`, cleanApText(ruleEntry, baseName));
 		setFieldValue(fieldValues, `SF_mag_Er_${row}`, getEntryNote(entry));
 	});
 
 	grouped.karm.slice(0, 22).forEach(({ entry, ruleEntry }, index) => {
+		const { baseName } = splitEntryName(entry);
 		const row = index + 1;
-		setFieldValue(fieldValues, `SF_karm_${row}`, formatNamedEntry(entry));
-		setFieldValue(fieldValues, `SF_karm_AP_${row}`, cleanApText(ruleEntry, entry.name));
+		setFieldValue(fieldValues, `SF_karm_${row}`, baseName);
+		setFieldValue(fieldValues, `SF_karm_AP_${row}`, cleanApText(ruleEntry, baseName));
 		setFieldValue(fieldValues, `SF_karm_Er_${row}`, getEntryNote(entry));
 	});
 };
