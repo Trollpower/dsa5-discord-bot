@@ -246,6 +246,7 @@ docker compose run --rm deploy
 - **Beschreibung**: Ping-Pong Test
 - **Subcommands**:
   - `user` - Info über einen Benutzer
+  - `server` - Info über den Server
 
 #### `/roll`
 - **Beschreibung**: Allgemeine Würfelwürfe
@@ -302,6 +303,7 @@ docker compose run --rm deploy
 - **Beschreibung**: Charakterverwaltung
 - **Subcommands**:
   - `info` - Charakterinformationen anzeigen
+  - `export` - Charakter als ausgefülltes PDF exportieren
   - `favorit1` / `favorit2` / `favorit3` - Favoriten für die `/quick`-Buttonleiste setzen
     - **Probe-Favorit**: `fertigkeit` (Autocomplete) + optional `name`, `bonus-malus`
     - **KSF-Favorit**: `ksf` (Auswahl) + optional `stufe` (1-3, nur Wuchtschlag/Finte), `basismanoever` (Autocomplete, nur Sturmangriff/Todesstoß/Vorstoß/Entwaffnen/Zu Fall bringen), `name`, `bonus-malus`
@@ -310,8 +312,16 @@ docker compose run --rm deploy
     - Duplikate über Slots hinweg werden automatisch entfernt
   - `proben` - die letzten 50 Proben des Charakters als Embed anzeigen (QS, FP, Datum, Uhrzeit)
 - **Subcommand Groups**:
+  - `waffe` - Waffenverwaltung
+    - `hinzufügen` - Waffe ins Inventar hinzufügen (Autocomplete)
+    - `ziehen` - Waffe ziehen (Button-basierte Auswahl)
+    - `ablegen` - Waffe wegstecken (Button-basierte Auswahl)
+    - `entfernen` - Waffe aus dem Inventar entfernen (Button-basierte Auswahl)
   - `rüstung` - Rüstungsverwaltung
-    - `hinzufügen` - Rüstung ins Inventar hinzufügen
+    - `hinzufügen` - Rüstung ins Inventar hinzufügen (Autocomplete)
+    - `anlegen` - Rüstung anlegen (Button-basierte Auswahl)
+    - `ablegen` - Rüstung ausziehen (Button-basierte Auswahl)
+    - `entfernen` - Rüstung aus dem Inventar entfernen (Button-basierte Auswahl)
 
 ### **Eigenschaften & Fertigkeiten**
 
@@ -368,21 +378,32 @@ docker compose run --rm deploy
 
 #### `/parade`
 - **Beschreibung**: Paradeversuche
-- **Parameter**: *(siehe Implementierung)*
+- **Parameter**:
+  - `bonus-malus` (optional) - Modifikator für die Parade
+  - `charwaffenname` (optional) - Waffenname (Autocomplete)
 
 #### `/ausweichen`
 - **Beschreibung**: Ausweichmanöver
-- **Parameter**: *(siehe Implementierung)*
+- **Parameter**:
+  - `bonus-malus` (optional) - Modifikator für das Ausweichen
 
 #### `/initiative`
-- **Beschreibung**: Initiativewürfe
-- **Parameter**: *(siehe Implementierung)*
+- **Beschreibung**: Initiative verwalten
+- **Subcommands**:
+  - `würfeln` - Initiative würfeln
+  - `set wert:<Zahl> [charaktername]` - Initiativewert für einen Charakter festlegen
+  - `reset` - Initiativewerte für alle zurücksetzen
+  - `list` - Alle Initiativewerte anzeigen
 
 ### **Ressourcen-Management**
 
 #### `/lep`
 - **Beschreibung**: Lebenspunkte verwalten
-- **Parameter**: *(siehe Implementierung)*
+- **Subcommands**:
+  - `plus wieviel:<Wert>` - Lebenspunkte erhalten
+  - `minus wieviel:<Wert>` - Lebenspunkte abziehen
+  - `setzen wert:<Zahl>` - Lebenspunkte auf einen bestimmten Wert setzen
+  - `tp wieviel:<Wert>` - Trefferpunkte abziehen (berücksichtigt Rüstung)
 
 #### `/asp`
 - **Beschreibung**: Astralpunkte verwalten
@@ -409,15 +430,22 @@ docker compose run --rm deploy
 
 #### `/persist`
 - **Beschreibung**: Datenpersistierung
-- **Parameter**: *(siehe Implementierung)*
+- **Parameter**:
+  - `character-name` (optional) - Name des Charakters
+  - `reload-from-disc` (optional) - Von Festplatte neu laden statt zu speichern
 
 #### `/server`
 - **Beschreibung**: Server-Informationen
-- **Parameter**: *(siehe Implementierung)*
 
 #### `/tables`
 - **Beschreibung**: DSA-Tabellen anzeigen
-- **Parameter**: *(siehe Implementierung)*
+- **Subcommands** (dynamisch aus `tables/`-Verzeichnis):
+  - `betäubung` - Betäubungs-Stufen
+  - `entrueckung` - Entrückungs-Stufen
+  - `fertigkeitsmodifikatoren` - Modifikatoren für Fertigkeitsproben
+  - `furcht` - Furcht-Stufen
+  - `qualitaetsstufen` - Qualitätsstufen-Tabelle
+  - `schmerz` - Schmerz-Stufen
 
 ## 🎮 Spieler-Alias System
 
@@ -503,6 +531,12 @@ Der `/schip`-Befehl nutzt ebenfalls das letzte passende Event des Charakters aus
 - `/config` entfernt; Funktionalität vollständig in `/gm` integriert
 - `/help` zeigt `/gm`- und `/gruppe`-Subcommands nur für Meister an; andere Benutzer sehen nur den Hinweis
 - `/gruppe` – neuer Meister-Befehl zur Gruppenverwaltung: Gruppen erstellen/löschen, Charaktere hinzufügen/entfernen, Gruppen anzeigen und Sammelproben für alle Gruppenmitglieder durchführen
+- `/char export` – Charakter als ausgefülltes PDF exportieren
+- `/char waffe` – Waffenverwaltung: Waffen hinzufügen, ziehen, ablegen und entfernen (Button-basierte Auswahl)
+- `/char rüstung` – erweitert um `anlegen`, `ablegen` und `entfernen` (Button-basierte Auswahl)
+- `/lep tp` – Trefferpunkte abziehen (berücksichtigt Rüstung)
+- `/lep setzen` – Lebenspunkte auf bestimmten Wert setzen
+- `/initiative` – erweitert um `set`, `reset` und `list` Subcommands
 - Probe-Tracking über Event-History (`storage/event-history.ndjson`) und `quickProbeFavorites` integriert
 
 
