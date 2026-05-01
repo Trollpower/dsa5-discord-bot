@@ -177,8 +177,9 @@ const genericHandlers = {
 	export: async ({ interaction, character }) => {
 		await interaction.deferReply({ flags: MessageFlags.Ephemeral });
 		const result = await fillCharacterbogen({ characterInput: character });
+		const displayName = character.displayName ?? character.name ?? 'character';
 		const attachment = new AttachmentBuilder(result.outputPath, {
-			name: path.basename(result.outputPath),
+			name: `${displayName}-Charakterbogen.pdf`,
 		});
 		const skippedText = result.skipped.length > 0
 			? ` Übersprungene Felder: ${result.skipped.length}.`
