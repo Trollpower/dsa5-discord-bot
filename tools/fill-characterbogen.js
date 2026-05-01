@@ -41,10 +41,10 @@ const KT_PA_MAPPING = [
 	{ fieldSuffix: 14, technique: 'Zweihandschwerter' },
 ];
 const RANGED_TECHNIQUES = new Set(['Armbrüste', 'Bögen', 'Wurfwaffen']);
-const FIXED_FONT_TEXT_FIELDS = new Set(['Held_SF_allgemein', 'Held_SF_Kampf', 'Held_Vorteile', 'Held_Nachteile']);
+const FIXED_FONT_TEXT_FIELDS = new Set(['Held_SF_allgemein', 'Held_SF_Kampf', 'Held_SF_Mag', 'Held_SF_Karm', 'Held_Vorteile', 'Held_Nachteile']);
 const FIXED_FONT_TEXT_FIELD_SIZE = 8;
 const hasFixedFontSize = (fieldName) => FIXED_FONT_TEXT_FIELDS.has(fieldName) || /^SF_Kampf_\d+$/.test(fieldName);
-const FLOW_LAYOUT_SUMMARY_FIELDS = new Set(['Held_SF_allgemein', 'Held_SF_Kampf', 'Held_Vorteile', 'Held_Nachteile']);
+const FLOW_LAYOUT_SUMMARY_FIELDS = new Set(['Held_SF_allgemein', 'Held_SF_Kampf', 'Held_SF_Mag', 'Held_SF_Karm', 'Held_Vorteile', 'Held_Nachteile']);
 
 const normalizeText = (value) => String(value ?? '')
 	.normalize('NFD')
@@ -764,6 +764,8 @@ const buildFieldValues = (character) => {
 	setFieldValue(fieldValues, 'Held_Nachteile', createNamedEntriesValue(character.nachteile));
 	setFieldValue(fieldValues, 'Held_SF_allgemein', createNamedEntriesValue(groupedSpecialAbilities.allg.map(({ entry }) => entry)));
 	setFieldValue(fieldValues, 'Held_SF_Kampf', createNamedEntriesValue(groupedSpecialAbilities.kampf.map(({ entry }) => entry)));
+	setFieldValue(fieldValues, 'Held_SF_Mag', createNamedEntriesValue(groupedSpecialAbilities.mag.map(({ entry }) => entry)));
+	setFieldValue(fieldValues, 'Held_SF_Karm', createNamedEntriesValue(groupedSpecialAbilities.karm.map(({ entry }) => entry)));
 	setFieldValue(fieldValues, 'GW_LE', character.lep?.max);
 	setFieldValue(fieldValues, 'GW_SK', character.sk);
 	setFieldValue(fieldValues, 'GW_ZK', character.zk);
@@ -876,7 +878,8 @@ const resolveCharacterPath = async (rawArg) => {
 const resolveOutputPath = (character, rawArg) => {
 	if (rawArg) return path.resolve(projectRoot, rawArg);
 	const baseName = sanitizeFileName(character.displayName ?? character.name ?? 'character');
-	return path.join(projectRoot, 'output', `${baseName}-Charakterbogen.pdf`);
+	const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+	return path.join(projectRoot, 'output', `${baseName}-Charakterbogen_${timestamp}.pdf`);
 };
 
 const ensureCharacter = (characterInput) => {
