@@ -124,4 +124,5 @@ config.json
 storage/event-history.ndjson
 /tmp
 /output
+/scraping
 .tmp*
