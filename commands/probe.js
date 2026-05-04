@@ -8,7 +8,7 @@ export default {
 		.addStringOption(option => option
 			.setName('fertigkeitsname')
 			.setDescription('Der Name der Fertigkeit')
-			.setRequired(false)
+			.setRequired(true)
 			.setAutocomplete(true))
 		.addIntegerOption(option => option.setName('bonus-malus')
 			.setDescription('Der Bonus oder Malus der Fertigkeitsprobe')
