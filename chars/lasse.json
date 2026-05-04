@@ -321,12 +321,13 @@
             "category": "Ehrenhaftigkeit, Loyalität, Schutz der Schwachen"
         }
     ],
-    "initiative": 16,
+    "initiative": 21,
     "quickProbeFavorites": [
         {
-            "category": "talente",
-            "name": "Sinnesschärfe",
-            "label": "waslos"
+            "type": "ksf",
+            "subcommand": "wuchtschlag",
+            "stufe": 3,
+            "label": "Wuchtschlag III"
         },
         null,
         null
