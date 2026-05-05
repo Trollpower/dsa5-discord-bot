@@ -46,6 +46,7 @@ const ensureQuickProbeFavoritesDefaults = (character) => {
 class Character {
 	constructor(json) {
 		Object.assign(this, json);
+		this.wesenszug = this.wesenszug || '';
 		ensureQuickProbeFavoritesDefaults(this);
 	}
 

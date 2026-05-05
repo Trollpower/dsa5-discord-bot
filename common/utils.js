@@ -65,6 +65,7 @@ export default {
 		const embed = {
 			color: 0x0099ff,
 			title: `__**${character.displayName ?? character.name}**__`,
+			...(character.wesenszug ? { description: `> ${character.wesenszug}` } : {}),
 			fields: [],
 		};
 		embed.fields.push(createField(

@@ -1,99 +1,100 @@
 {
-  "name": "Sohn des Krieges",
-  "displayName": "Sohn des Krieges",
-  "gs": 12,
-  "zk": 5,
-  "sk": -2,
-  "cheating": {
-    "general": 59,
-    "crit": 15
-  },
-  "eigenschaften": {
-    "MU": 18,
-    "KL": 8,
-    "IN": 13,
-    "CH": 13,
-    "FF": 10,
-    "GE": 12,
-    "KO": 20,
-    "KK": 26
-  },
-  "lep": {
-    "aktuell": 200,
-    "max": 200
-  },
-  "kampftechniken": [
-    {
-      "name": "Biss",
-      "ktw": 14
-    },
-    {
-      "name": "Schwanz",
-      "ktw": 10
-    }
-  ],
-  "talente": [
-    {
-      "name": "Körperbeherrschung",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Kraftakt",
-      "fertigkeitswert": 14
-    },
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Sinnesschärfe",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Einschüchtern",
-      "fertigkeitswert": 12
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 4
-    }
-  ],
-  "zauber": [],
-  "liturgien": [],
-  "sonderfertigkeiten": [
-    {
-      "name": "Mächtiger Schlag"
-    },
-    {
-      "name": "Schildspalter"
-    },
-    {
-      "name": "Schwanzschwung"
-    },
-    {
-      "name": "Wuchtschlag I"
-    },
-    {
-      "name": "Wuchtschlag II"
-    },
-    {
-      "name": "Wuchtschlag III"
-    }
-  ],
-  "ruestungen": [
-    "Kr'Thon'Chh Knochen"
-  ],
-  "angelegteWaffen": [
-    "Schlingerbiss",
-    "Stacheln des Kr'Thon'Chh"
-  ],
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "Sohn des Krieges",
+   "displayName": "Sohn des Krieges",
+   "wesenszug": "",
+   "gs": 12,
+   "zk": 5,
+   "sk": -2,
+   "cheating": {
+      "general": 59,
+      "crit": 15
+   },
+   "eigenschaften": {
+      "MU": 18,
+      "KL": 8,
+      "IN": 13,
+      "CH": 13,
+      "FF": 10,
+      "GE": 12,
+      "KO": 20,
+      "KK": 26
+   },
+   "lep": {
+      "aktuell": 200,
+      "max": 200
+   },
+   "kampftechniken": [
+      {
+         "name": "Biss",
+         "ktw": 14
+      },
+      {
+         "name": "Schwanz",
+         "ktw": 10
+      }
+   ],
+   "talente": [
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Kraftakt",
+         "fertigkeitswert": 14
+      },
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Einschüchtern",
+         "fertigkeitswert": 12
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 4
+      }
+   ],
+   "zauber": [],
+   "liturgien": [],
+   "sonderfertigkeiten": [
+      {
+         "name": "Mächtiger Schlag"
+      },
+      {
+         "name": "Schildspalter"
+      },
+      {
+         "name": "Schwanzschwung"
+      },
+      {
+         "name": "Wuchtschlag I"
+      },
+      {
+         "name": "Wuchtschlag II"
+      },
+      {
+         "name": "Wuchtschlag III"
+      }
+   ],
+   "ruestungen": [
+      "Kr'Thon'Chh Knochen"
+   ],
+   "angelegteWaffen": [
+      "Schlingerbiss",
+      "Stacheln des Kr'Thon'Chh"
+   ],
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }

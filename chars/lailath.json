@@ -1,284 +1,285 @@
 {
-  "name": "Lailath",
-  "gs": 8,
-  "zk": 0,
-  "sk": 3,
-  "cheating": {
-    "general": 59,
-    "crit": 21
-  },
-  "eigenschaften": {
-    "MU": 14,
-    "KL": 13,
-    "IN": 15,
-    "CH": 13,
-    "FF": 15,
-    "GE": 14,
-    "KO": 12,
-    "KK": 10
-  },
-  "lep": {
-    "aktuell": 32,
-    "max": 32
-  },
-  "asp": {
-    "aktuell": 36,
-    "max": 36
-  },
-  "kampftechniken": [
-    {
-      "name": "Bögen",
-      "ktw": 14
-    },
-    {
-      "name": "Dolche",
-      "ktw": 13
-    },
-    {
-      "name": "Fechtwaffen",
-      "ktw": 15
-    }
-  ],
-  "talente": [
-    {
-      "name": "Bekehren & Überzeugen",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Boote & Schiffe",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Fährtensuchen",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Gassenwissen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Geschichtswissen",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Götter & Kulte",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Handel",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Heilkunde Wunden",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Holzbearbeitung",
-      "fertigkeitswert": 12
-    },
-    {
-      "name": "Klettern",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Körperbeherrschung",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Kriegskunst",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Magiekunde",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Mechanik",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Menschenkenntnis",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Musizieren",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Orientierung",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Pflanzenkunde",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Rechnen",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Rechtskunde",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Reiten",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Sagen & Legenden",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Schlösserknacken",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Schwimmen",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Singen",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Sinnesschärfe",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Sphärenkunde",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Tierkunde",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Überreden",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Wildnisleben",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 6
-    }
-  ],
-  "zauber": [
-    {
-      "name": "Axxeleratus",
-      "fertigkeitswert": 12
-    },
-    {
-      "name": "Blick in die Gedanken",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Balsam",
-      "fertigkeitswert": 9
-    },
-    {
-      "name": "Silentium",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Somnigravis",
-      "fertigkeitswert": 13
-    }
-  ],
-  "liturgien": [],
-  "elfenlieder": [],
-  "sonderfertigkeiten": [
-    {
-      "name": "Ortskenntnis"
-    },
-    {
-      "name": "Fallen entschärfen"
-    },
-    {
-      "name": "Präziser Stich I"
-    },
-    {
-      "name": "Präziser Stich II"
-    },
-    {
-      "name": "Präziser Stich III"
-    },
-    {
-      "name": "Finte I"
-    },
-    {
-      "name": "Schnellziehen"
-    },
-    {
-      "name": "Verbessertes Ausweichen I"
-    },
-    {
-      "name": "Verbessertes Ausweichen II"
-    },
-    {
-      "name": "Schnellladen (Bögen)"
-    },
-    {
-      "name": "Todesstoß"
-    }
-  ],
-  "waffen": [
-    "Elfenbogen",
-    "Schwerer Dolch"
-  ],
-  "ruestungen": [],
-  "angelegteWaffen": [
-    "Schwerer Dolch"
-  ],
-  "nachteile": [
-    {
-      "name": "Wilde Magie"
-    },
-    {
-      "name": "Persönlichkeitsschwäche",
-      "category": "Unheimlich"
-    },
-    {
-      "name": "Schlechte Angewohnheit",
-      "category": "Duzer"
-    },
-    {
-      "name": "Schlechte Angewohnheit",
-      "category": "Erster"
-    },
-    {
-      "name": "Persönlichkeitsschwäche",
-      "category": "Arroganz"
-    },
-    {
-      "name": "Stigma",
-      "category": "Katzenhafte Augen"
-    }
-  ],
-  "vorteile": [
-    {
-      "name": "Begabung",
-      "category": "Sinnesschärfe"
-    },
-    {
-      "name": "Begabung",
-      "category": "Verbergen"
-    }
-  ],
-  "initiative": 20,
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "Lailath",
+   "wesenszug": "",
+   "gs": 8,
+   "zk": 0,
+   "sk": 3,
+   "cheating": {
+      "general": 59,
+      "crit": 21
+   },
+   "eigenschaften": {
+      "MU": 14,
+      "KL": 13,
+      "IN": 15,
+      "CH": 13,
+      "FF": 15,
+      "GE": 14,
+      "KO": 12,
+      "KK": 10
+   },
+   "lep": {
+      "aktuell": 32,
+      "max": 32
+   },
+   "asp": {
+      "aktuell": 36,
+      "max": 36
+   },
+   "kampftechniken": [
+      {
+         "name": "Bögen",
+         "ktw": 14
+      },
+      {
+         "name": "Dolche",
+         "ktw": 13
+      },
+      {
+         "name": "Fechtwaffen",
+         "ktw": 15
+      }
+   ],
+   "talente": [
+      {
+         "name": "Bekehren & Überzeugen",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Boote & Schiffe",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Fährtensuchen",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Gassenwissen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Geschichtswissen",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Götter & Kulte",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Handel",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Heilkunde Wunden",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Holzbearbeitung",
+         "fertigkeitswert": 12
+      },
+      {
+         "name": "Klettern",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Kriegskunst",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Magiekunde",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Mechanik",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Menschenkenntnis",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Musizieren",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Orientierung",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Pflanzenkunde",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Rechnen",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Rechtskunde",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Reiten",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Sagen & Legenden",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Schlösserknacken",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Schwimmen",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Singen",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Sphärenkunde",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Tierkunde",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Überreden",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Wildnisleben",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 6
+      }
+   ],
+   "zauber": [
+      {
+         "name": "Axxeleratus",
+         "fertigkeitswert": 12
+      },
+      {
+         "name": "Blick in die Gedanken",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Balsam",
+         "fertigkeitswert": 9
+      },
+      {
+         "name": "Silentium",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Somnigravis",
+         "fertigkeitswert": 13
+      }
+   ],
+   "liturgien": [],
+   "elfenlieder": [],
+   "sonderfertigkeiten": [
+      {
+         "name": "Ortskenntnis"
+      },
+      {
+         "name": "Fallen entschärfen"
+      },
+      {
+         "name": "Präziser Stich I"
+      },
+      {
+         "name": "Präziser Stich II"
+      },
+      {
+         "name": "Präziser Stich III"
+      },
+      {
+         "name": "Finte I"
+      },
+      {
+         "name": "Schnellziehen"
+      },
+      {
+         "name": "Verbessertes Ausweichen I"
+      },
+      {
+         "name": "Verbessertes Ausweichen II"
+      },
+      {
+         "name": "Schnellladen (Bögen)"
+      },
+      {
+         "name": "Todesstoß"
+      }
+   ],
+   "waffen": [
+      "Elfenbogen",
+      "Schwerer Dolch"
+   ],
+   "ruestungen": [],
+   "angelegteWaffen": [
+      "Schwerer Dolch"
+   ],
+   "nachteile": [
+      {
+         "name": "Wilde Magie"
+      },
+      {
+         "name": "Persönlichkeitsschwäche",
+         "category": "Unheimlich"
+      },
+      {
+         "name": "Schlechte Angewohnheit",
+         "category": "Duzer"
+      },
+      {
+         "name": "Schlechte Angewohnheit",
+         "category": "Erster"
+      },
+      {
+         "name": "Persönlichkeitsschwäche",
+         "category": "Arroganz"
+      },
+      {
+         "name": "Stigma",
+         "category": "Katzenhafte Augen"
+      }
+   ],
+   "vorteile": [
+      {
+         "name": "Begabung",
+         "category": "Sinnesschärfe"
+      },
+      {
+         "name": "Begabung",
+         "category": "Verbergen"
+      }
+   ],
+   "initiative": 20,
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }
