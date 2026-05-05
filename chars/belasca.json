@@ -1,223 +1,224 @@
 {
-  "name": "Belasca",
-  "displayName": "Belasca Jannerloff",
-  "gs": 8,
-  "zk": 0,
-  "sk": 3,
-  "cheating": {
-    "general": 59,
-    "crit": 21
-  },
-  "alwaysReload": true,
-  "eigenschaften": {
-    "MU": 14,
-    "KL": 14,
-    "IN": 16,
-    "CH": 11,
-    "FF": 12,
-    "GE": 14,
-    "KO": 12,
-    "KK": 10
-  },
-  "lep": {
-    "aktuell": 39,
-    "max": 39
-  },
-  "asp": {
-    "aktuell": 40,
-    "max": 40
-  },
-  "kampftechniken": [
-    {
-      "name": "Stab",
-      "ktw": 11
-    },
-    {
-      "name": "Flammenschwert",
-      "ktw": 13
-    }
-  ],
-  "talente": [
-    {
-      "name": "Bekehren & Überzeugen",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Boote & Schiffe",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Fährtensuchen",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Gassenwissen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Geschichtswissen",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Götter & Kulte",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Handel",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Heilkunde Wunden",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Holzbearbeitung",
-      "fertigkeitswert": 12
-    },
-    {
-      "name": "Klettern",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Körperbeherrschung",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Kriegskunst",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Magiekunde",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Mechanik",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Menschenkenntnis",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Musizieren",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Orientierung",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Pflanzenkunde",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Rechnen",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Rechtskunde",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Reiten",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Sagen & Legenden",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Schlösserknacken",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Schwimmen",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Singen",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Sinnesschärfe",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Sphärenkunde",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Tierkunde",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Überreden",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Wildnisleben",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 6
-    }
-  ],
-  "zauber": [
-    {
-      "name": "Horriphobus",
-      "fertigkeitswert": 16,
-      "erweiterungen": [
-        "Größere Reichweite",
-        "Zwei Ziele"
-      ]
-    },
-    {
-      "name": "Plumbumbarum",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Armatrutz",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Somnigravis",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Desintegratus",
-      "fertigkeitswert": 8,
-      "erweiterungen": [
-        "Höhere Zerstörungskraft"
-      ]
-    }
-  ],
-  "liturgien": [],
-  "elfenlieder": [],
-  "sonderfertigkeiten": [
-    {
-      "name": "Ortskenntnis"
-    }
-  ],
-  "waffen": [
-    "Elfenbogen",
-    "Schwerer Dolch"
-  ],
-  "ruestungen": [],
-  "angelegteWaffen": [
-    "Schwerer Dolch"
-  ],
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "Belasca",
+   "displayName": "Belasca Jannerloff",
+   "wesenszug": "",
+   "gs": 8,
+   "zk": 0,
+   "sk": 3,
+   "cheating": {
+      "general": 59,
+      "crit": 21
+   },
+   "alwaysReload": true,
+   "eigenschaften": {
+      "MU": 14,
+      "KL": 14,
+      "IN": 16,
+      "CH": 11,
+      "FF": 12,
+      "GE": 14,
+      "KO": 12,
+      "KK": 10
+   },
+   "lep": {
+      "aktuell": 39,
+      "max": 39
+   },
+   "asp": {
+      "aktuell": 40,
+      "max": 40
+   },
+   "kampftechniken": [
+      {
+         "name": "Stab",
+         "ktw": 11
+      },
+      {
+         "name": "Flammenschwert",
+         "ktw": 13
+      }
+   ],
+   "talente": [
+      {
+         "name": "Bekehren & Überzeugen",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Boote & Schiffe",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Fährtensuchen",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Gassenwissen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Geschichtswissen",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Götter & Kulte",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Handel",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Heilkunde Wunden",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Holzbearbeitung",
+         "fertigkeitswert": 12
+      },
+      {
+         "name": "Klettern",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Kriegskunst",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Magiekunde",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Mechanik",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Menschenkenntnis",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Musizieren",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Orientierung",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Pflanzenkunde",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Rechnen",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Rechtskunde",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Reiten",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Sagen & Legenden",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Schlösserknacken",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Schwimmen",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Singen",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Sphärenkunde",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Tierkunde",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Überreden",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Wildnisleben",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 6
+      }
+   ],
+   "zauber": [
+      {
+         "name": "Horriphobus",
+         "fertigkeitswert": 16,
+         "erweiterungen": [
+            "Größere Reichweite",
+            "Zwei Ziele"
+         ]
+      },
+      {
+         "name": "Plumbumbarum",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Armatrutz",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Somnigravis",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Desintegratus",
+         "fertigkeitswert": 8,
+         "erweiterungen": [
+            "Höhere Zerstörungskraft"
+         ]
+      }
+   ],
+   "liturgien": [],
+   "elfenlieder": [],
+   "sonderfertigkeiten": [
+      {
+         "name": "Ortskenntnis"
+      }
+   ],
+   "waffen": [
+      "Elfenbogen",
+      "Schwerer Dolch"
+   ],
+   "ruestungen": [],
+   "angelegteWaffen": [
+      "Schwerer Dolch"
+   ],
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }

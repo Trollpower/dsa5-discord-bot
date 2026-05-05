@@ -1,182 +1,183 @@
 {
-  "name": "Jalinka",
-  "gs": 8,
-  "eigenschaften": {
-    "MU": 13,
-    "KL": 12,
-    "IN": 14,
-    "CH": 11,
-    "FF": 14,
-    "GE": 15,
-    "KO": 10,
-    "KK": 12
-  },
-  "kampftechniken": [
-    {
-      "name": "Dolche",
-      "ktw": 13
-    },
-    {
-      "name": "Raufen",
-      "ktw": 13
-    },
-    {
-      "name": "Schwerter",
-      "ktw": 12
-    },
-    {
-      "name": "Wurfwaffen",
-      "ktw": 12
-    }
-  ],
-  "talente": [
-    {
-      "name": "Gaukeleien",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Klettern",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Körperbeherrschung",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Kraftakt",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Reiten",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Schwimmen",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Sinnesschärfe",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Taschendiebstahl",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Zechen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Betören",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Gassenwissen",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Menschenkenntnis",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Überreden",
-      "fertigkeitswert": 9
-    },
-    {
-      "name": "Verkleiden",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Fesseln",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Fischen & Angeln",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Orientierung",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Wildnisleben",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Brett- & Glücksspiel",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Geographie",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Götter & Kulte",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Mechanik",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Rechnen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Rechtskunde",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Sagen & Legenden",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Sternkunde",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Fahrzeuge",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Handel",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Lebensmittelbearbeitung",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Malen & Zeichnen",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Musizieren",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Schlösserknacken",
-      "fertigkeitswert": 10
-    }
-  ],
-  "zauber": [],
-  "liturgien": [],
-  "sonderfertigkeiten": [],
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "Jalinka",
+   "wesenszug": "",
+   "gs": 8,
+   "eigenschaften": {
+      "MU": 13,
+      "KL": 12,
+      "IN": 14,
+      "CH": 11,
+      "FF": 14,
+      "GE": 15,
+      "KO": 10,
+      "KK": 12
+   },
+   "kampftechniken": [
+      {
+         "name": "Dolche",
+         "ktw": 13
+      },
+      {
+         "name": "Raufen",
+         "ktw": 13
+      },
+      {
+         "name": "Schwerter",
+         "ktw": 12
+      },
+      {
+         "name": "Wurfwaffen",
+         "ktw": 12
+      }
+   ],
+   "talente": [
+      {
+         "name": "Gaukeleien",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Klettern",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Kraftakt",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Reiten",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Schwimmen",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Taschendiebstahl",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Zechen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Betören",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Gassenwissen",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Menschenkenntnis",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Überreden",
+         "fertigkeitswert": 9
+      },
+      {
+         "name": "Verkleiden",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Fesseln",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Fischen & Angeln",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Orientierung",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Wildnisleben",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Brett- & Glücksspiel",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Geographie",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Götter & Kulte",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Mechanik",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Rechnen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Rechtskunde",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Sagen & Legenden",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Sternkunde",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Fahrzeuge",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Handel",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Lebensmittelbearbeitung",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Malen & Zeichnen",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Musizieren",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Schlösserknacken",
+         "fertigkeitswert": 10
+      }
+   ],
+   "zauber": [],
+   "liturgien": [],
+   "sonderfertigkeiten": [],
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }

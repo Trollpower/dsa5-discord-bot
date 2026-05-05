@@ -1,149 +1,150 @@
 {
-  "name": "Shakagra",
-  "displayName": "Shakagra",
-  "zk": -1,
-  "sk": 3,
-  "gs": 8,
-  "eigenschaften": {
-    "MU": 14,
-    "KL": 11,
-    "IN": 15,
-    "CH": 10,
-    "FF": 12,
-    "GE": 15,
-    "KO": 10,
-    "KK": 13
-  },
-  "lep": {
-    "aktuell": 36,
-    "max": 36
-  },
-  "asp": {
-    "aktuell": 42,
-    "max": 42
-  },
-  "kampftechniken": [
-    {
-      "name": "Bögen",
-      "ktw": 17
-    },
-    {
-      "name": "Schwerter",
-      "ktw": 14
-    }
-  ],
-  "talente": [
-    {
-      "name": "Klettern",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Körperbeherrschung",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Kraftakt",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Schwimmen",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 9
-    },
-    {
-      "name": "Sinnesschärfe",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Einschüchtern",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Menschenkenntnis",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Überreden",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 3
-    }
-  ],
-  "zauber": [
-    {
-      "name": "Attributo (Körperkraft)",
-      "fertigkeitswert": 9
-    },
-    {
-      "name": "Axxeleratus",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Corpofrigo",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Fulminictus",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Horriphobus",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Schlachtlied",
-      "fertigkeitswert": 6
-    }
-  ],
-  "sonderfertigkeiten": [
-    {
-      "name": "Aufmerksamkeit"
-    },
-    {
-      "name": "Finte I"
-    },
-    {
-      "name": "Finte II"
-    },
-    {
-      "name": "Kampfreflexe I"
-    },
-    {
-      "name": "Kampfreflexe II"
-    },
-    {
-      "name": "Wuchtschlag I"
-    },
-    {
-      "name": "Todesstoß"
-    },
-    {
-      "name": "Vorstoß"
-    },
-    {
-      "name": "Sturmangriff"
-    }
-  ],
-  "waffen": [
-    "Shakagra-Schwert",
-    "Elfenbogen"
-  ],
-  "angelegteWaffen": [
-    "Shakagra-Schwert"
-  ],
-  "angelegteRuestung": "Kettenrüstung",
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "Shakagra",
+   "displayName": "Shakagra",
+   "wesenszug": "",
+   "zk": -1,
+   "sk": 3,
+   "gs": 8,
+   "eigenschaften": {
+      "MU": 14,
+      "KL": 11,
+      "IN": 15,
+      "CH": 10,
+      "FF": 12,
+      "GE": 15,
+      "KO": 10,
+      "KK": 13
+   },
+   "lep": {
+      "aktuell": 36,
+      "max": 36
+   },
+   "asp": {
+      "aktuell": 42,
+      "max": 42
+   },
+   "kampftechniken": [
+      {
+         "name": "Bögen",
+         "ktw": 17
+      },
+      {
+         "name": "Schwerter",
+         "ktw": 14
+      }
+   ],
+   "talente": [
+      {
+         "name": "Klettern",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Kraftakt",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Schwimmen",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 9
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Einschüchtern",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Menschenkenntnis",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Überreden",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 3
+      }
+   ],
+   "zauber": [
+      {
+         "name": "Attributo (Körperkraft)",
+         "fertigkeitswert": 9
+      },
+      {
+         "name": "Axxeleratus",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Corpofrigo",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Fulminictus",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Horriphobus",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Schlachtlied",
+         "fertigkeitswert": 6
+      }
+   ],
+   "sonderfertigkeiten": [
+      {
+         "name": "Aufmerksamkeit"
+      },
+      {
+         "name": "Finte I"
+      },
+      {
+         "name": "Finte II"
+      },
+      {
+         "name": "Kampfreflexe I"
+      },
+      {
+         "name": "Kampfreflexe II"
+      },
+      {
+         "name": "Wuchtschlag I"
+      },
+      {
+         "name": "Todesstoß"
+      },
+      {
+         "name": "Vorstoß"
+      },
+      {
+         "name": "Sturmangriff"
+      }
+   ],
+   "waffen": [
+      "Shakagra-Schwert",
+      "Elfenbogen"
+   ],
+   "angelegteWaffen": [
+      "Shakagra-Schwert"
+   ],
+   "angelegteRuestung": "Kettenrüstung",
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }
