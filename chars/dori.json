@@ -1,170 +1,171 @@
 {
-  "name": "Dori",
-  "gs": 6,
-  "eigenschaften": {
-    "MU": 14,
-    "KL": 11,
-    "IN": 13,
-    "CH": 11,
-    "FF": 11,
-    "GE": 13,
-    "KO": 15,
-    "KK": 15
-  },
-  "kampftechniken": [
-    {
-      "name": "Armbrüste",
-      "ktw": 12
-    },
-    {
-      "name": "Dolche",
-      "ktw": 10
-    },
-    {
-      "name": "Hiebwaffen",
-      "ktw": 8
-    },
-    {
-      "name": "Raufen",
-      "ktw": 10
-    },
-    {
-      "name": "Schilde",
-      "ktw": 10
-    },
-    {
-      "name": "Zweihandhiebwaffen",
-      "ktw": 15
-    }
-  ],
-  "talente": [
-    {
-      "name": "Klettern",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Körperbeherrschung",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Kraftakt",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Reiten",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Schwimmen",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Sinnesschärfe",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Zechen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Einschüchtern",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Etikette",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Gassenwissen",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Menschenkenntnis",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Überreden",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Fesseln",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Orientierung",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Wildnisleben",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Brett- & Glücksspiel",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Geographie",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Geschichtswissen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Götter & Kulte",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Kriegskunst",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Mechanik",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Rechnen",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Sagen & Legenden",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Metallbearbeitung",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Boote & Schiffe",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Holzbearbeitung",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Steinbearbeitung",
-      "fertigkeitswert": 4
-    }
-  ],
-  "zauber": [],
-  "liturgien": [],
-  "sonderfertigkeiten": [],
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "Dori",
+   "wesenszug": "",
+   "gs": 6,
+   "eigenschaften": {
+      "MU": 14,
+      "KL": 11,
+      "IN": 13,
+      "CH": 11,
+      "FF": 11,
+      "GE": 13,
+      "KO": 15,
+      "KK": 15
+   },
+   "kampftechniken": [
+      {
+         "name": "Armbrüste",
+         "ktw": 12
+      },
+      {
+         "name": "Dolche",
+         "ktw": 10
+      },
+      {
+         "name": "Hiebwaffen",
+         "ktw": 8
+      },
+      {
+         "name": "Raufen",
+         "ktw": 10
+      },
+      {
+         "name": "Schilde",
+         "ktw": 10
+      },
+      {
+         "name": "Zweihandhiebwaffen",
+         "ktw": 15
+      }
+   ],
+   "talente": [
+      {
+         "name": "Klettern",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Kraftakt",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Reiten",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Schwimmen",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Zechen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Einschüchtern",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Etikette",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Gassenwissen",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Menschenkenntnis",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Überreden",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Fesseln",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Orientierung",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Wildnisleben",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Brett- & Glücksspiel",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Geographie",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Geschichtswissen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Götter & Kulte",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Kriegskunst",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Mechanik",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Rechnen",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Sagen & Legenden",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Metallbearbeitung",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Boote & Schiffe",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Holzbearbeitung",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Steinbearbeitung",
+         "fertigkeitswert": 4
+      }
+   ],
+   "zauber": [],
+   "liturgien": [],
+   "sonderfertigkeiten": [],
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }

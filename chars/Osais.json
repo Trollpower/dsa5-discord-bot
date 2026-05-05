@@ -1,182 +1,183 @@
 {
-  "name": "Osais",
-  "displayName": "Bruder Osais",
-  "zk": 1,
-  "sk": 2,
-  "gs": 8,
-  "cheating": {
-    "general": 59,
-    "crit": 21
-  },
-  "eigenschaften": {
-    "MU": 11,
-    "KL": 14,
-    "IN": 16,
-    "CH": 14,
-    "FF": 13,
-    "GE": 9,
-    "KO": 14,
-    "KK": 10
-  },
-  "lep": {
-    "aktuell": 40,
-    "max": 40
-  },
-  "kap": {
-    "aktuell": 40,
-    "max": 40
-  },
-  "kampftechniken": [
-    {
-      "name": "Hiebwaffen",
-      "ktw": 8
-    }
-  ],
-  "talente": [
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Bekehren & Überzeugen",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Betören",
-      "fertigkeitswert": 1
-    },
-    {
-      "name": "Etikette",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Gassenwissen",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Menschenkenntnis",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Überreden",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Pflanzenkunde",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Tierkunde",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Brett- & Glücksspiel",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Geschichtswissen",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Pflanzenkunde",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Götter & Kulte",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Rechnen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Rechtskunde",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Sagen & Legenden",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Alchimie",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Handel",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Heilkunde Gift",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Heilkunde Wunden",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Heilkunde Krankheiten",
-      "fertigkeitswert": 12
-    },
-    {
-      "name": "Heilkunde Seele",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Stoffbearbeitung",
-      "fertigkeitswert": 1
-    }
-  ],
-  "liturgien": [
-    {
-      "name": "Friedvolle Aura",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Giftbann",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Heilsegen",
-      "fertigkeitswert": 10
-    },
-    {
-      "name": "Objektsegen",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Krankheitsbann",
-      "fertigkeitswert": 16
-    },
-    {
-      "name": "Pflanzenwuchs",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Krankheiten vorbeugen",
-      "fertigkeitswert": 16
-    }
-  ],
-  "sonderfertigkeiten": [
-    {
-      "name": "Ortskenntnis"
-    },
-    {
-      "name": "Verteidigungshaltung"
-    }
-  ],
-  "waffen": [],
-  "angelegteWaffen": [],
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "Osais",
+   "displayName": "Bruder Osais",
+   "wesenszug": "",
+   "zk": 1,
+   "sk": 2,
+   "gs": 8,
+   "cheating": {
+      "general": 59,
+      "crit": 21
+   },
+   "eigenschaften": {
+      "MU": 11,
+      "KL": 14,
+      "IN": 16,
+      "CH": 14,
+      "FF": 13,
+      "GE": 9,
+      "KO": 14,
+      "KK": 10
+   },
+   "lep": {
+      "aktuell": 40,
+      "max": 40
+   },
+   "kap": {
+      "aktuell": 40,
+      "max": 40
+   },
+   "kampftechniken": [
+      {
+         "name": "Hiebwaffen",
+         "ktw": 8
+      }
+   ],
+   "talente": [
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Bekehren & Überzeugen",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Betören",
+         "fertigkeitswert": 1
+      },
+      {
+         "name": "Etikette",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Gassenwissen",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Menschenkenntnis",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Überreden",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Pflanzenkunde",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Tierkunde",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Brett- & Glücksspiel",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Geschichtswissen",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Pflanzenkunde",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Götter & Kulte",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Rechnen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Rechtskunde",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Sagen & Legenden",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Alchimie",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Handel",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Heilkunde Gift",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Heilkunde Wunden",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Heilkunde Krankheiten",
+         "fertigkeitswert": 12
+      },
+      {
+         "name": "Heilkunde Seele",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Stoffbearbeitung",
+         "fertigkeitswert": 1
+      }
+   ],
+   "liturgien": [
+      {
+         "name": "Friedvolle Aura",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Giftbann",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Heilsegen",
+         "fertigkeitswert": 10
+      },
+      {
+         "name": "Objektsegen",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Krankheitsbann",
+         "fertigkeitswert": 16
+      },
+      {
+         "name": "Pflanzenwuchs",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Krankheiten vorbeugen",
+         "fertigkeitswert": 16
+      }
+   ],
+   "sonderfertigkeiten": [
+      {
+         "name": "Ortskenntnis"
+      },
+      {
+         "name": "Verteidigungshaltung"
+      }
+   ],
+   "waffen": [],
+   "angelegteWaffen": [],
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }

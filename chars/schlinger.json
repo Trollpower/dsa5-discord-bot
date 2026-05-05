@@ -1,97 +1,98 @@
 {
-  "name": "Schlinger",
-  "displayName": "Schlinger",
-  "spieler": [],
-  "eigenschaften": {
-    "MU": 18,
-    "KL": 8,
-    "IN": 13,
-    "CH": 13,
-    "FF": 10,
-    "GE": 12,
-    "KO": 20,
-    "KK": 26
-  },
-  "lep": {
-    "aktuell": 200,
-    "max": 200
-  },
-  "asp": {
-    "aktuell": 0,
-    "max": 0
-  },
-  "kampftechniken": [
-    {
-      "name": "Biss",
-      "ktw": 14
-    },
-    {
-      "name": "Schwanz",
-      "ktw": 10
-    }
-  ],
-  "talente": [
-    {
-      "name": "Körperbeherrschung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Kraftakt",
-      "fertigkeitswert": 14
-    },
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Sinnesschärfe",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 5
-    },
-    {
-      "name": "Einschüchtern",
-      "fertigkeitswert": 12
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 4
-    }
-  ],
-  "zauber": [],
-  "liturgien": [],
-  "sonderfertigkeiten": [
-    {
-      "name": "Mächtiger Schlag"
-    },
-    {
-      "name": "Schildspalter"
-    },
-    {
-      "name": "Schwanzschwung"
-    },
-    {
-      "name": "Wuchtschlag I"
-    },
-    {
-      "name": "Wuchtschlag II"
-    },
-    {
-      "name": "Wuchtschlag III"
-    }
-  ],
-  "ruestungen": [
-    "Schlingerrüstung"
-  ],
-  "angelegteWaffen": [
-    "Schlingerbiss",
-    "Schlingerschwanz"
-  ],
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "Schlinger",
+   "displayName": "Schlinger",
+   "wesenszug": "",
+   "spieler": [],
+   "eigenschaften": {
+      "MU": 18,
+      "KL": 8,
+      "IN": 13,
+      "CH": 13,
+      "FF": 10,
+      "GE": 12,
+      "KO": 20,
+      "KK": 26
+   },
+   "lep": {
+      "aktuell": 200,
+      "max": 200
+   },
+   "asp": {
+      "aktuell": 0,
+      "max": 0
+   },
+   "kampftechniken": [
+      {
+         "name": "Biss",
+         "ktw": 14
+      },
+      {
+         "name": "Schwanz",
+         "ktw": 10
+      }
+   ],
+   "talente": [
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Kraftakt",
+         "fertigkeitswert": 14
+      },
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 5
+      },
+      {
+         "name": "Einschüchtern",
+         "fertigkeitswert": 12
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 4
+      }
+   ],
+   "zauber": [],
+   "liturgien": [],
+   "sonderfertigkeiten": [
+      {
+         "name": "Mächtiger Schlag"
+      },
+      {
+         "name": "Schildspalter"
+      },
+      {
+         "name": "Schwanzschwung"
+      },
+      {
+         "name": "Wuchtschlag I"
+      },
+      {
+         "name": "Wuchtschlag II"
+      },
+      {
+         "name": "Wuchtschlag III"
+      }
+   ],
+   "ruestungen": [
+      "Schlingerrüstung"
+   ],
+   "angelegteWaffen": [
+      "Schlingerbiss",
+      "Schlingerschwanz"
+   ],
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }

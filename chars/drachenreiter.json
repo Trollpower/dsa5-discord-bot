@@ -1,368 +1,369 @@
 {
-  "name": "drachenreiter",
-  "displayName": "Drachenreiter",
-  "spieler": [],
-  "eigenschaften": {
-    "MU": 17,
-    "KL": 10,
-    "IN": 13,
-    "CH": 11,
-    "FF": 10,
-    "GE": 17,
-    "KO": 13,
-    "KK": 14
-  },
-  "kampftechniken": [
-    {
-      "name": "Armbrüste",
-      "ktw": 9
-    },
-    {
-      "name": "Bögen",
-      "ktw": 6
-    },
-    {
-      "name": "Dolche",
-      "ktw": 6
-    },
-    {
-      "name": "Fechtwaffen",
-      "ktw": 6
-    },
-    {
-      "name": "Hiebwaffen",
-      "ktw": 16
-    },
-    {
-      "name": "Kettenwaffen",
-      "ktw": 6
-    },
-    {
-      "name": "Raufen",
-      "ktw": 9
-    },
-    {
-      "name": "Schilde",
-      "ktw": 6
-    },
-    {
-      "name": "Schwerter",
-      "ktw": 11
-    },
-    {
-      "name": "Stangenwaffen",
-      "ktw": 6
-    },
-    {
-      "name": "Wurfwaffen",
-      "ktw": 6
-    },
-    {
-      "name": "Zweihandhiebwaffen",
-      "ktw": 6
-    },
-    {
-      "name": "Zweihandschwerter",
-      "ktw": 9
-    },
-    {
-      "name": "Lanzen",
-      "ktw": 13
-    }
-  ],
-  "talente": [
-    {
-      "name": "Alchimie",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Bekehren & Überzeugen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Betören",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Boote & Schiffe",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Brett- & Glücksspiel",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Einschüchtern",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Etikette",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Fahrzeuge",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Fesseln",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Fischen & Angeln",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Fliegen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Fährtensuchen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Gassenwissen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Gaukeleien",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Geographie",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Geschichtswissen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Götter & Kulte",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Handel",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Heilkunde Gift",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Heilkunde Krankheiten",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Heilkunde Seele",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Heilkunde Wunden",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Holzbearbeitung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Klettern",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Kraftakt",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Kriegskunst",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Körperbeherrschung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Lebensmittelbearbeitung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Lederbearbeitung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Magiekunde",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Malen & Zeichnen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Mechanik",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Menschenkenntnis",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Metallbearbeitung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Musizieren",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Orientierung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Pflanzenkunde",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Rechnen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Rechtskunde",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Reiten",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Sagen & Legenden",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Schlösserknacken",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Schwimmen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Singen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Sinnesschärfe",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Sphärenkunde",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Steinbearbeitung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Sternkunde",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Stoffbearbeitung",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Tanzen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Taschendiebstahl",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Tierkunde",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Verkleiden",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Wildnisleben",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Zechen",
-      "fertigkeitswert": 0
-    },
-    {
-      "name": "Überreden",
-      "fertigkeitswert": 0
-    }
-  ],
-  "zauber": [
-    {
-      "name": "Analys Arkanstruktur",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Balsam Salabunde",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Blick in die Gedanken",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Blitz dich find",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Flim Flam",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Gardianum",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Ignifaxius",
-      "fertigkeitswert": 15
-    },
-    {
-      "name": "Motoricus",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Odem Arcanum",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Paralysis",
-      "fertigkeitswert": 2
-    },
-    {
-      "name": "Visibili",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Respondami",
-      "fertigkeitswert": 0
-    }
-  ],
-  "liturgien": [],
-  "sonderfertigkeiten": [],
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "drachenreiter",
+   "displayName": "Drachenreiter",
+   "wesenszug": "",
+   "spieler": [],
+   "eigenschaften": {
+      "MU": 17,
+      "KL": 10,
+      "IN": 13,
+      "CH": 11,
+      "FF": 10,
+      "GE": 17,
+      "KO": 13,
+      "KK": 14
+   },
+   "kampftechniken": [
+      {
+         "name": "Armbrüste",
+         "ktw": 9
+      },
+      {
+         "name": "Bögen",
+         "ktw": 6
+      },
+      {
+         "name": "Dolche",
+         "ktw": 6
+      },
+      {
+         "name": "Fechtwaffen",
+         "ktw": 6
+      },
+      {
+         "name": "Hiebwaffen",
+         "ktw": 16
+      },
+      {
+         "name": "Kettenwaffen",
+         "ktw": 6
+      },
+      {
+         "name": "Raufen",
+         "ktw": 9
+      },
+      {
+         "name": "Schilde",
+         "ktw": 6
+      },
+      {
+         "name": "Schwerter",
+         "ktw": 11
+      },
+      {
+         "name": "Stangenwaffen",
+         "ktw": 6
+      },
+      {
+         "name": "Wurfwaffen",
+         "ktw": 6
+      },
+      {
+         "name": "Zweihandhiebwaffen",
+         "ktw": 6
+      },
+      {
+         "name": "Zweihandschwerter",
+         "ktw": 9
+      },
+      {
+         "name": "Lanzen",
+         "ktw": 13
+      }
+   ],
+   "talente": [
+      {
+         "name": "Alchimie",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Bekehren & Überzeugen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Betören",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Boote & Schiffe",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Brett- & Glücksspiel",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Einschüchtern",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Etikette",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Fahrzeuge",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Fesseln",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Fischen & Angeln",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Fliegen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Fährtensuchen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Gassenwissen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Gaukeleien",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Geographie",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Geschichtswissen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Götter & Kulte",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Handel",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Heilkunde Gift",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Heilkunde Krankheiten",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Heilkunde Seele",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Heilkunde Wunden",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Holzbearbeitung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Klettern",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Kraftakt",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Kriegskunst",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Lebensmittelbearbeitung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Lederbearbeitung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Magiekunde",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Malen & Zeichnen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Mechanik",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Menschenkenntnis",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Metallbearbeitung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Musizieren",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Orientierung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Pflanzenkunde",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Rechnen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Rechtskunde",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Reiten",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Sagen & Legenden",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Schlösserknacken",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Schwimmen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Singen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Sphärenkunde",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Steinbearbeitung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Sternkunde",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Stoffbearbeitung",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Tanzen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Taschendiebstahl",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Tierkunde",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Verkleiden",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Wildnisleben",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Zechen",
+         "fertigkeitswert": 0
+      },
+      {
+         "name": "Überreden",
+         "fertigkeitswert": 0
+      }
+   ],
+   "zauber": [
+      {
+         "name": "Analys Arkanstruktur",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Balsam Salabunde",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Blick in die Gedanken",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Blitz dich find",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Flim Flam",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Gardianum",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Ignifaxius",
+         "fertigkeitswert": 15
+      },
+      {
+         "name": "Motoricus",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Odem Arcanum",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Paralysis",
+         "fertigkeitswert": 2
+      },
+      {
+         "name": "Visibili",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Respondami",
+         "fertigkeitswert": 0
+      }
+   ],
+   "liturgien": [],
+   "sonderfertigkeiten": [],
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }

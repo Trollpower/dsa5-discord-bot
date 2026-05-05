@@ -1,139 +1,140 @@
 {
-  "name": "Wächter-Shakagra",
-  "displayName": "Shakagra Wächter",
-  "zk": -1,
-  "sk": 3,
-  "gs": 8,
-  "cheating": {
-    "general": 59,
-    "crit": 25
-  },
-  "eigenschaften": {
-    "MU": 15,
-    "KL": 8,
-    "IN": 10,
-    "CH": 16,
-    "FF": 8,
-    "GE": 10,
-    "KO": 17,
-    "KK": 19
-  },
-  "lep": {
-    "aktuell": 75,
-    "max": 75
-  },
-  "asp": {
-    "aktuell": 42,
-    "max": 42
-  },
-  "kampftechniken": [
-    {
-      "name": "Raufen",
-      "ktw": 17
-    },
-    {
-      "name": "Zweihandhiebwaffen",
-      "ktw": 17
-    },
-    {
-      "name": "Peitschen",
-      "ktw": 16
-    }
-  ],
-  "talente": [
-    {
-      "name": "Klettern",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Körperbeherrschung",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Kraftakt",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Schwimmen",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Selbstbeherrschung",
-      "fertigkeitswert": 9
-    },
-    {
-      "name": "Sinnesschärfe",
-      "fertigkeitswert": 8
-    },
-    {
-      "name": "Verbergen",
-      "fertigkeitswert": 4
-    },
-    {
-      "name": "Einschüchtern",
-      "fertigkeitswert": 6
-    },
-    {
-      "name": "Menschenkenntnis",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Überreden",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Willenskraft",
-      "fertigkeitswert": 3
-    }
-  ],
-  "zauber": [
-    {
-      "name": "Attributo (Körperkraft)",
-      "fertigkeitswert": 7
-    },
-    {
-      "name": "Axxeleratus",
-      "fertigkeitswert": 3
-    },
-    {
-      "name": "Fulminictus",
-      "fertigkeitswert": 6
-    }
-  ],
-  "sonderfertigkeiten": [
-    {
-      "name": "Kampfreflexe I"
-    },
-    {
-      "name": "Kampfreflexe II"
-    },
-    {
-      "name": "Wuchtschlag I"
-    },
-    {
-      "name": "Wuchtschlag II"
-    },
-    {
-      "name": "Wuchtschlag III"
-    },
-    {
-      "name": "Vorstoß"
-    },
-    {
-      "name": "Hammerschlag"
-    }
-  ],
-  "waffen": [
-    "Hummerschere",
-    "Shakagra-Tentakel"
-  ],
-  "angelegteWaffen": [
-    "Hummerschere",
-    "Shakagra-Tentakel"
-  ],
-  "quickProbeFavorites": [
-    null,
-    null,
-    null
-  ]
+   "name": "Wächter-Shakagra",
+   "displayName": "Shakagra Wächter",
+   "wesenszug": "",
+   "zk": -1,
+   "sk": 3,
+   "gs": 8,
+   "cheating": {
+      "general": 59,
+      "crit": 25
+   },
+   "eigenschaften": {
+      "MU": 15,
+      "KL": 8,
+      "IN": 10,
+      "CH": 16,
+      "FF": 8,
+      "GE": 10,
+      "KO": 17,
+      "KK": 19
+   },
+   "lep": {
+      "aktuell": 75,
+      "max": 75
+   },
+   "asp": {
+      "aktuell": 42,
+      "max": 42
+   },
+   "kampftechniken": [
+      {
+         "name": "Raufen",
+         "ktw": 17
+      },
+      {
+         "name": "Zweihandhiebwaffen",
+         "ktw": 17
+      },
+      {
+         "name": "Peitschen",
+         "ktw": 16
+      }
+   ],
+   "talente": [
+      {
+         "name": "Klettern",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Kraftakt",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Schwimmen",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Selbstbeherrschung",
+         "fertigkeitswert": 9
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 8
+      },
+      {
+         "name": "Verbergen",
+         "fertigkeitswert": 4
+      },
+      {
+         "name": "Einschüchtern",
+         "fertigkeitswert": 6
+      },
+      {
+         "name": "Menschenkenntnis",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Überreden",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Willenskraft",
+         "fertigkeitswert": 3
+      }
+   ],
+   "zauber": [
+      {
+         "name": "Attributo (Körperkraft)",
+         "fertigkeitswert": 7
+      },
+      {
+         "name": "Axxeleratus",
+         "fertigkeitswert": 3
+      },
+      {
+         "name": "Fulminictus",
+         "fertigkeitswert": 6
+      }
+   ],
+   "sonderfertigkeiten": [
+      {
+         "name": "Kampfreflexe I"
+      },
+      {
+         "name": "Kampfreflexe II"
+      },
+      {
+         "name": "Wuchtschlag I"
+      },
+      {
+         "name": "Wuchtschlag II"
+      },
+      {
+         "name": "Wuchtschlag III"
+      },
+      {
+         "name": "Vorstoß"
+      },
+      {
+         "name": "Hammerschlag"
+      }
+   ],
+   "waffen": [
+      "Hummerschere",
+      "Shakagra-Tentakel"
+   ],
+   "angelegteWaffen": [
+      "Hummerschere",
+      "Shakagra-Tentakel"
+   ],
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
 }
