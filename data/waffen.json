@@ -4844,5 +4844,19 @@
         "pa": "0",
         "technik": "Biss",
         "_hinweis": "Verursacht bei einem erfolgreichen Treffer 1 Stufe Paralyse (kumulativ), entzieht Opfer ASP in Höhe der verursachten TP"
+    },
+    {
+        "name": "Maru-Schwanz",
+        "tp": "1W6+2",
+        "at/pa-mod": "2/0",
+        "rw": "kurz",
+        "gewicht": "1 Stein",
+        "länge": "40 HF",
+        "preis": "60 S",
+        "komplexität": "einf",
+        "gattung": "Raufen",
+        "at": "2",
+        "pa": "0",
+        "technik": "Raufen"
     }
 ]
