@@ -5905,12 +5905,12 @@
     },
     {
         "name": "Rundumschlag I-II",
-        "regel": "Die angegriffenen Gegner dürfen auf den Angriff getrennt reagieren. Die erste Attacke ist um 2, die zweite um 6 und die dritte um 10 erschwert. Wenn die Verteidigung der Gegner misslingt, wird für jeden Gegner einzeln Schaden ausgewürfelt. Rundumschlag I erlaubt den Angriff auf zwei Gegner, Rundumschlag II den Angriff auf drei Gegner. Ein Patzer bei einem der Angriffe bedeutet, dass keine weiteren Attacken des Rundumschlags in dieser KR ausgeführt werden können.",
+        "regel": "Die angegriffenen Gegner dürfen auf den Angriffgetrennt reagieren. Die erste Attacke ist um -2, die zweite um -4 und die dritte um -10 erschwert. Wenn die Verteidigung der Gegner misslingt, wird für jeden Gegner einzeln der Schaden ausgewürfelt. Rundumschlag I erlaubt den Angriff auf zwei Gegner, Rundumschlag II den Angriff auf drei Gegner. Wird eine AT bei einem Rundumschlag mit einem Basismanöver kombiniert, so profitiert immer nur diese einzelne AT davon. Ein Patzer bei einem der Angriffe bedeutet, dass keine weiteren Attacken des Rundumschlags in dieser KR ausgeführt werden können. Pro Angriff sinken die TP um jeweils -1 (also -1/-2/-3 TP beim ersten/zweiten/dritten Angriff). Das ausgewürfelte Minimum beträgt aber mindestens jeweils 1 TP.",
         "voraussetzungen": "Stufe I: GE 15; Stufe II: GE 17, Rundumschlag I",
         "apWert": "Stufe I/II: 25/35 Abenteuerpunkte",
         "manoeverart": "Spezialmanöver",
         "erschwernis": "-2 (erste Attacke); -6 (zweite Attacke); -10 (dritte Attacke)",
-        "kampftechniken": "Hiebwaffen, Kettenwaffen, Schilde, Schwerter, Stangenwaffen, Zweihandhiebwaffen, Zweihandschwerter",
+        "kampftechniken": "Hiebwaffen, Kettenwaffen, Schilde, Schwerter, Stangenwaffen, Zweihandhiebwaffen, Zweihandschwerter, Schwanz",
         "gruppe": "Kampfsonderfertigkeiten"
     },
     {

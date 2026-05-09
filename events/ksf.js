@@ -136,6 +136,31 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		content = bm ? `***${sfName}*** mit ***${waffe.name}*** und ***${bm.name}***` : `***${sfName}*** mit ***${waffe.name}***`;
 		break;
 	}
+	case 'rundumschlag': {
+		sfName = `Rundumschlag ${numToRoman[stufe]}`;
+		if (!character.sonderfertigkeiten.some(d => d.name === sfName)) {
+			return await interaction.reply({ content: `${sfName} hast du nicht`, flags: MessageFlags.Ephemeral });
+		}
+		const sf = sonderfertigkeiten.find(x => x.name === 'Rundumschlag I-II');
+		if (sf?.kampftechniken && !sf.kampftechniken.includes(waffe.technik)) {
+			return await interaction.reply({ content: `***${sfName}*** kann mit ${waffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
+		}
+		const attackCount = stufe === 1 ? 2 : 3;
+		const erschwernis = [-2, -6, -10];
+		const results = [];
+		const embeds = [];
+		for (let i = 0; i < attackCount; i++) {
+			const data = utils.attack({ character, waffenName: waffe.name, bonusMalusAngriff: erschwernis[i], interaction });
+			data.ksfSubcommand = 'rundumschlag'; data.ksfStufe = stufe;
+			data.ksfLabel = sfName;
+			const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
+			embed.title = `[${i + 1}/${attackCount}] ${embed.title}`;
+			embeds.push(embed);
+			results.push(data);
+		}
+		await interaction.reply({ content: `***${sfName}*** mit ***${waffe.name}***`, embeds });
+		return results;
+	}
 	default:
 		return await interaction.reply({ content: 'Unbekannte Kampfsonderfertigkeit.', flags: MessageFlags.Ephemeral });
 	}
@@ -434,6 +459,37 @@ export default {
 				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
 				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
 				return [data];
+			}
+			else if (interaction.options.getSubcommand() === 'rundumschlag') {
+				const bonusMalus = interaction.options.getInteger('bonus-malus') ?? 0;
+				const stufe = interaction.options.getInteger('stufe') ?? 1;
+				const rundumschlag = `Rundumschlag ${numToRoman[stufe]}`;
+				if (!character.sonderfertigkeiten.some(d => d.name === rundumschlag)) {
+					return await interaction.reply({ content: `${rundumschlag} hast du nicht` });
+				}
+				const waffenName = interaction.options.getString('waffenname') ?? character.angelegteWaffen[0] ?? 'Waffenlos';
+				const sf = sonderfertigkeiten.find(x => x.name === 'Rundumschlag I-II');
+				if (sf?.kampftechniken && !sf.kampftechniken.includes(waffen.find(x => x.name === waffenName)?.technik)) {
+					return await interaction.reply({ content: `***${rundumschlag}*** kann mit ${waffenName} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
+				}
+
+				const attackCount = stufe === 1 ? 2 : 3;
+				const erschwernis = [-2, -6, -10];
+				const results = [];
+				const embeds = [];
+
+				for (let i = 0; i < attackCount; i++) {
+					const data = utils.attack({ character, waffenName, bonusMalusAngriff: bonusMalus + erschwernis[i], interaction });
+					data.ksfSubcommand = 'rundumschlag'; data.ksfStufe = stufe;
+					data.ksfLabel = rundumschlag;
+					const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
+					embed.title = `[${i + 1}/${attackCount}] ${embed.title}`;
+					embeds.push(embed);
+					results.push(data);
+				}
+
+				await interaction.reply({ content: `***${rundumschlag}*** mit ***${waffenName}***`, embeds });
+				return results;
 			}
 		}
 	},

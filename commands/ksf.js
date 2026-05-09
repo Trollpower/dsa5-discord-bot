@@ -128,5 +128,22 @@ export default {
 				.addIntegerOption(option => option.setName('bonus-malus')
 					.setDescription('Der Bonus oder Malus des Angriffs')
 					.setRequired(false)),
+		)
+		.addSubcommand(subcommand =>
+			subcommand
+				.setName('rundumschlag')
+				.setDescription('Rundumschlag')
+				.addIntegerOption(option => option.setName('stufe')
+					.setDescription('Die Stufe des Rundumschlags')
+					.setRequired(true)
+					.addChoices({ name: 'Stufe 1', value: 1 }, { name: 'Stufe 2', value: 2 }))
+				.addStringOption(option => option
+					.setName('waffenname')
+					.setDescription('Der Name der verwendeten Waffe')
+					.setRequired(true)
+					.setAutocomplete(true))
+				.addIntegerOption(option => option.setName('bonus-malus')
+					.setDescription('Der Bonus oder Malus des Angriffs')
+					.setRequired(false)),
 		),
 };
