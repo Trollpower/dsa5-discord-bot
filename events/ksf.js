@@ -146,11 +146,13 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 			return await interaction.reply({ content: `***${sfName}*** kann mit ${waffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
 		}
 		const attackCount = stufe === 1 ? 2 : 3;
-		const erschwernis = [-2, -6, -10];
+		const erschwernis = [-2, -4, -10];
+		const tpMalus = [-1, -2, -3];
 		const results = [];
 		const embeds = [];
 		for (let i = 0; i < attackCount; i++) {
-			const data = utils.attack({ character, waffenName: waffe.name, bonusMalusAngriff: erschwernis[i], interaction });
+			const data = utils.attack({ character, waffenName: waffe.name, bonusMalusAngriff: erschwernis[i], bonusMalusSchaden: tpMalus[i], interaction });
+			if (data.schaden.value < 1) data.schaden.value = 1;
 			data.ksfSubcommand = 'rundumschlag'; data.ksfStufe = stufe;
 			data.ksfLabel = sfName;
 			const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
@@ -474,12 +476,14 @@ export default {
 				}
 
 				const attackCount = stufe === 1 ? 2 : 3;
-				const erschwernis = [-2, -6, -10];
+				const erschwernis = [-2, -4, -10];
+				const tpMalus = [-1, -2, -3];
 				const results = [];
 				const embeds = [];
 
 				for (let i = 0; i < attackCount; i++) {
-					const data = utils.attack({ character, waffenName, bonusMalusAngriff: bonusMalus + erschwernis[i], interaction });
+					const data = utils.attack({ character, waffenName, bonusMalusAngriff: bonusMalus + erschwernis[i], bonusMalusSchaden: tpMalus[i], interaction });
+					if (data.schaden.value < 1) data.schaden.value = 1;
 					data.ksfSubcommand = 'rundumschlag'; data.ksfStufe = stufe;
 					data.ksfLabel = rundumschlag;
 					const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
