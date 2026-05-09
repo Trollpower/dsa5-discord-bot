@@ -4705,7 +4705,7 @@
     },
     {
         "name": "Mächtiger Rundumschlag",
-        "regel": "Wer über den Mächtigen Rundumschlag verfügt, bekommt folgende Boni bei der Ausführung eines gewöhnlichen Rundumschlags dazu: Bei der ersten Attacke",
+        "regel": "Wer über den Mächtigen Rundumschlag verfügt, bekommt folgende Boni bei der Ausführung eines gewöhnlichen Rundumschlags dazu: Jede Attacke richtet +1 TP an (und muss mit den Abzügen des gewöhnlichen Rundumschlags verrechnet werden); bei der dritten Attacke gilt nur noch eine Erschwernis von -8.",
         "voraussetzungen": ": KK 15, Rundumschlag I, passende Kampfstilsonderfertigkeit",
         "apWert": "10 Abenteuerpunkte",
         "gruppe": "Profane Sonderfertigkeiten",
