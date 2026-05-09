@@ -5,13 +5,17 @@
     "zk": 3,
     "sk": 1,
     "gs": 8,
+   "cheating": {
+      "general": 51,
+      "crit": 10
+   },
     "eigenschaften": {
         "MU": 15,
         "KL": 11,
         "IN": 13,
         "CH": 10,
         "FF": 8,
-        "GE": 13,
+        "GE": 17,
         "KO": 16,
         "KK": 16
     },
@@ -22,7 +26,7 @@
     "kampftechniken": [
         {
             "name": "Raufen",
-            "ktw": 14
+            "ktw": 16
         },
         {
             "name": "Schwerter",
@@ -107,11 +111,24 @@
             "name": "Kampfreflexe I"
         },
         {
+            "name": "Rundumschlag I"
+        },
+        {
+            "name": "Rundumschlag II"
+        },
+        {
             "name": "Wuchtschlag I"
+        },
+        {
+            "name": "Wuchtschlag II"
+        },
+        {
+            "name": "Wuchtschlag III"
         }
     ],
     "angelegteWaffen": [
-        "Säbel"
+        "Säbel",
+        "Maru-Schwanz"
     ],
     "angelegteRuestung": "",
     "ruestungen": [],
@@ -128,6 +145,10 @@
         },
         {
             "name": "Zäher Hund"
+        },
+        {
+            "name": "Natürliche Waffe",
+            "category": "Maru-Schwanz"
         }
     ],
     "nachteile": [
