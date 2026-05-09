@@ -1,0 +1,151 @@
+{
+    "name": "Maru",
+    "displayName": "Maru (Kompetent)",
+    "wesenszug": "",
+    "zk": 3,
+    "sk": 1,
+    "gs": 8,
+    "eigenschaften": {
+        "MU": 15,
+        "KL": 11,
+        "IN": 13,
+        "CH": 10,
+        "FF": 8,
+        "GE": 13,
+        "KO": 16,
+        "KK": 16
+    },
+    "lep": {
+        "aktuell": 43,
+        "max": 43
+    },
+    "kampftechniken": [
+        {
+            "name": "Raufen",
+            "ktw": 14
+        },
+        {
+            "name": "Schwerter",
+            "ktw": 14
+        }
+    ],
+    "talente": [
+        {
+            "name": "Einschüchtern",
+            "fertigkeitswert": 13
+        },
+        {
+            "name": "Handel",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Klettern",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Körperbeherrschung",
+            "fertigkeitswert": 11
+        },
+        {
+            "name": "Kraftakt",
+            "fertigkeitswert": 13
+        },
+        {
+            "name": "Kriegskunst",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Menschenkenntnis",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Schwimmen",
+            "fertigkeitswert": 12
+        },
+        {
+            "name": "Selbstbeherrschung",
+            "fertigkeitswert": 15
+        },
+        {
+            "name": "Sinnesschärfe",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Überreden",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Verbergen",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Willenskraft",
+            "fertigkeitswert": 8
+        }
+    ],
+    "zauber": [],
+    "liturgien": [],
+    "flueche": [],
+    "elfenlieder": [],
+    "rituale": [],
+    "segnungen": [],
+    "melodien": [],
+    "waffen": [
+        "Säbel"
+    ],
+    "sonderfertigkeiten": [
+        {
+            "name": "Belastungsgewöhnung I"
+        },
+        {
+            "name": "Beidhändiger Kampf I"
+        },
+        {
+            "name": "Finte I"
+        },
+        {
+            "name": "Kampfreflexe I"
+        },
+        {
+            "name": "Wuchtschlag I"
+        }
+    ],
+    "angelegteWaffen": [
+        "Säbel"
+    ],
+    "angelegteRuestung": "",
+    "ruestungen": [],
+    "vorteile": [
+        {
+            "name": "Beidhändig"
+        },
+        {
+            "name": "Dunkelsicht II"
+        },
+        {
+            "name": "Verbesserte Regeneration II",
+            "category": "Lebensenergie"
+        },
+        {
+            "name": "Zäher Hund"
+        }
+    ],
+    "nachteile": [
+        {
+            "name": "Blutrausch"
+        },
+        {
+            "name": "Kälteempfindlich"
+        },
+        {
+            "name": "Schlechte Eigenschaft",
+            "category": "Jähzorn"
+        }
+    ],
+    "initiative": 14,
+    "quickProbeFavorites": [
+        null,
+        null,
+        null
+    ]
+}
