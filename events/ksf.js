@@ -145,9 +145,10 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		if (sf?.kampftechniken && !sf.kampftechniken.includes(waffe.technik)) {
 			return await interaction.reply({ content: `***${sfName}*** kann mit ${waffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
 		}
+		const hasMaechtiger = character.sonderfertigkeiten.some(d => d.name === 'Mächtiger Rundumschlag');
 		const attackCount = stufe === 1 ? 2 : 3;
-		const erschwernis = [-2, -4, -10];
-		const tpMalus = [-1, -2, -3];
+		const erschwernis = hasMaechtiger ? [-2, -4, -8] : [-2, -4, -10];
+		const tpMalus = hasMaechtiger ? [0, -1, -2] : [-1, -2, -3];
 		const results = [];
 		const embeds = [];
 		for (let i = 0; i < attackCount; i++) {
@@ -157,6 +158,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 			data.ksfLabel = sfName;
 			const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 			embed.title = `[${i + 1}/${attackCount}] ${embed.title}`;
+			if (hasMaechtiger) embed.fields.push({ name: 'Hinweis', value: 'Mächtiger Rundumschlag' });
 			embeds.push(embed);
 			results.push(data);
 		}
@@ -475,9 +477,10 @@ export default {
 					return await interaction.reply({ content: `***${rundumschlag}*** kann mit ${waffenName} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
 				}
 
+				const hasMaechtiger = character.sonderfertigkeiten.some(d => d.name === 'Mächtiger Rundumschlag');
 				const attackCount = stufe === 1 ? 2 : 3;
-				const erschwernis = [-2, -4, -10];
-				const tpMalus = [-1, -2, -3];
+				const erschwernis = hasMaechtiger ? [-2, -4, -8] : [-2, -4, -10];
+				const tpMalus = hasMaechtiger ? [0, -1, -2] : [-1, -2, -3];
 				const results = [];
 				const embeds = [];
 
@@ -488,6 +491,7 @@ export default {
 					data.ksfLabel = rundumschlag;
 					const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 					embed.title = `[${i + 1}/${attackCount}] ${embed.title}`;
+					if (hasMaechtiger) embed.fields.push({ name: 'Hinweis', value: 'Mächtiger Rundumschlag' });
 					embeds.push(embed);
 					results.push(data);
 				}
