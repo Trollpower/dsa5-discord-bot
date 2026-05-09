@@ -26,11 +26,15 @@
     "kampftechniken": [
         {
             "name": "Raufen",
-            "ktw": 16
+            "ktw": 14
         },
         {
             "name": "Schwerter",
             "ktw": 14
+        },
+        {
+            "name": "Schwanz",
+            "ktw": 16
         }
     ],
     "talente": [
