@@ -315,7 +315,6 @@
     ],
     "ruestungen": [],
     "angelegteWaffen": [
-        "Elfenbogen",
         "Herzsucher"
     ],
     "nachteile": [
@@ -373,7 +372,7 @@
             "name": "Zweistimmiger Gesang"
         }
     ],
-    "initiative": 22,
+    "initiative": 17,
     "quickProbeFavorites": [
         {
             "category": "talente",
