@@ -8,6 +8,12 @@ const KSF_QUICK_CUSTOM_ID_PREFIX = 'ksf:quick:';
 
 const numToRoman = { 1: 'I', 2: 'II', 3: 'III' };
 
+const formatKsfContent = (sfLabel, waffenName, { bmName, nebenhandName } = {}) => {
+	if (nebenhandName) return `# __**${sfLabel}** mit **${waffenName}** / **${nebenhandName}**__`;
+	if (bmName) return `# __**${sfLabel}** mit **${waffenName}** und **${bmName}**__`;
+	return `# __**${sfLabel}** mit **${waffenName}**__`;
+};
+
 export { KSF_QUICK_CUSTOM_ID_PREFIX };
 
 const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, client, interaction }) => {
@@ -34,7 +40,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		}
 		atMod = -(2 * stufe);
 		tpMod = 2 * stufe;
-		content = `Wuchtschlag mit ${waffenName}`;
+		content = formatKsfContent('Wuchtschlag', waffenName);
 		break;
 	}
 	case 'finte': {
@@ -44,7 +50,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		}
 		atMod = -stufe;
 		tpMod = 0;
-		content = `Finte mit ${waffenName}`;
+		content = formatKsfContent('Finte', waffenName);
 		break;
 	}
 	case 'ps': {
@@ -58,7 +64,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		}
 		atMod = -(2 * stufe);
 		tpMod = 2 * stufe;
-		content = `Präziser Schuss/Wurf mit ${waffenName}`;
+		content = formatKsfContent('Präziser Schuss/Wurf', waffenName);
 		break;
 	}
 	case 'sturmangriff': {
@@ -79,7 +85,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		const belastung = character.getBelastungsmalus();
 		atMod = -2 - (bm?.at ?? 0);
 		tpMod = Math.round((character.gs - belastung) / 2) + (bm?.tp ?? 0);
-		content = bm ? `***${sfName}*** mit ***${waffe.name}*** und ***${bm.name}***` : `***${sfName}*** mit ***${waffe.name}***`;
+		content = formatKsfContent(sfName, waffe.name, { bmName: bm?.name });
 		break;
 	}
 	case 'todesstoß': {
@@ -96,7 +102,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		}
 		atMod = -2 - (bm?.at ?? 0);
 		tpMod = rollDice(6) + (bm?.tp ?? 0);
-		content = bm ? `***${sfName}*** mit ***${waffe.name}*** und ***${bm.name}***` : `***${sfName}*** mit ***${waffe.name}***`;
+		content = formatKsfContent(sfName, waffe.name, { bmName: bm?.name });
 		break;
 	}
 	case 'vorstoß': {
@@ -113,7 +119,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		}
 		atMod = 2 - (bm?.at ?? 0);
 		tpMod = 0 + (bm?.tp ?? 0);
-		content = bm ? `***${sfName}*** mit ***${waffe.name}*** und ***${bm.name}***` : `***${sfName}*** mit ***${waffe.name}***`;
+		content = formatKsfContent(sfName, waffe.name, { bmName: bm?.name });
 		break;
 	}
 	case 'entwaffnen': {
@@ -130,7 +136,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		}
 		atMod = sf.erschwernis - (bm?.at ?? 0);
 		tpMod = 0 + (bm?.tp ?? 0);
-		content = bm ? `***${sfName}*** mit ***${waffe.name}*** und ***${bm.name}***` : `***${sfName}*** mit ***${waffe.name}***`;
+		content = formatKsfContent(sfName, waffe.name, { bmName: bm?.name });
 		break;
 	}
 	case 'zufallbringen': {
@@ -147,7 +153,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		}
 		atMod = sf.erschwernis - (bm?.at ?? 0);
 		tpMod = 0 + (bm?.tp ?? 0);
-		content = bm ? `***${sfName}*** mit ***${waffe.name}*** und ***${bm.name}***` : `***${sfName}*** mit ***${waffe.name}***`;
+		content = formatKsfContent(sfName, waffe.name, { bmName: bm?.name });
 		break;
 	}
 	case 'bk': {
@@ -207,7 +213,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		if (hasBkII) embed2.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf II (keine Grunderschwernis)' });
 		bkEmbeds.push(embed2);
 		bkResults.push(data2);
-		await interaction.reply({ content: `***Beidhändiger Kampf*** mit ***${haupthandWaffe.name}*** / ***${nebenhandWaffe.name}***`, embeds: bkEmbeds });
+		await interaction.reply({ content: formatKsfContent('Beidhändiger Kampf', haupthandWaffe.name, { nebenhandName: nebenhandWaffe.name }), embeds: bkEmbeds });
 		return bkResults;
 	}
 	case 'rundumschlag': {
@@ -236,7 +242,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 			embeds.push(embed);
 			results.push(data);
 		}
-		await interaction.reply({ content: `***${sfName}*** mit ***${waffe.name}***`, embeds });
+		await interaction.reply({ content: formatKsfContent(sfName, waffe.name), embeds });
 		return results;
 	}
 	default:
@@ -284,7 +290,7 @@ export default {
 					data.ksfLabel = wuchtschlag;
 					const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 
-					await interaction.reply({ content: 'Wuchtschlag mit ' + waffenName, embeds: [embed] });
+					await interaction.reply({ content: formatKsfContent('Wuchtschlag', waffenName), embeds: [embed] });
 					return [data];
 				}
 				return await interaction.reply({ content: wuchtschlag + ' hast du nicht' });
@@ -300,7 +306,7 @@ export default {
 					data.ksfLabel = finte;
 					const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 
-					await interaction.reply({ content: 'Finte mit ' + waffenName, embeds: [embed] });
+					await interaction.reply({ content: formatKsfContent('Finte', waffenName), embeds: [embed] });
 					return [data];
 				}
 				return await interaction.reply({ content: finte + ' hast du nicht' });
@@ -322,7 +328,7 @@ export default {
 				data.ksfLabel = ps;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 
-				await interaction.reply({ content: 'Präziser Schuss/Wurf mit ' + waffenName, embeds: [embed] });
+				await interaction.reply({ content: formatKsfContent('Präziser Schuss/Wurf', waffenName), embeds: [embed] });
 				return [data];
 			}
 			// Sturmangriff kann nicht mit Finte kombiniert werden
@@ -388,8 +394,7 @@ export default {
 				data.ksfLabel = sf.name;
 				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
-				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
-				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
+				await interaction.reply({ content: formatKsfContent(sf.name, waffe.name, { bmName: bm?.name }), embeds: [embed] });
 				return [data];
 			}
 			else if (interaction.options.getSubcommand() === 'todesstoß') {
@@ -425,8 +430,7 @@ export default {
 				data.ksfLabel = sf.name;
 				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
-				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
-				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
+				await interaction.reply({ content: formatKsfContent(sf.name, waffe.name, { bmName: bm?.name }), embeds: [embed] });
 				return [data];
 			}
 			else if (interaction.options.getSubcommand() === 'vorstoß') {
@@ -468,8 +472,7 @@ export default {
 				data.ksfLabel = sf.name;
 				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
-				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
-				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
+				await interaction.reply({ content: formatKsfContent(sf.name, waffe.name, { bmName: bm?.name }), embeds: [embed] });
 				return [data];
 			}
 			else if (interaction.options.getSubcommand() === 'entwaffnen') {
@@ -510,8 +513,7 @@ export default {
 				data.ksfLabel = sf.name;
 				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
-				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
-				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
+				await interaction.reply({ content: formatKsfContent(sf.name, waffe.name, { bmName: bm?.name }), embeds: [embed] });
 				return [data];
 			}
 			else if (interaction.options.getSubcommand() === 'zufallbringen') {
@@ -560,8 +562,7 @@ export default {
 				data.ksfLabel = sf.name;
 				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
-				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
-				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
+				await interaction.reply({ content: formatKsfContent(sf.name, waffe.name, { bmName: bm?.name }), embeds: [embed] });
 				return [data];
 			}
 			else if (interaction.options.getSubcommand() === 'rundumschlag') {
@@ -596,7 +597,7 @@ export default {
 					results.push(data);
 				}
 
-				await interaction.reply({ content: `***${rundumschlag}*** mit ***${waffenName}***`, embeds });
+				await interaction.reply({ content: formatKsfContent(rundumschlag, waffenName), embeds });
 				return results;
 			}
 			else if (interaction.options.getSubcommand() === 'bk') {
@@ -684,7 +685,7 @@ export default {
 				embeds.push(embed2);
 				results.push(data2);
 
-				await interaction.reply({ content: `***Beidhändiger Kampf*** mit ***${haupthandWaffe.name}*** / ***${nebenhandWaffe.name}***`, embeds });
+				await interaction.reply({ content: formatKsfContent('Beidhändiger Kampf', haupthandWaffe.name, { nebenhandName: nebenhandWaffe.name }), embeds });
 				return results;
 			}
 		}
