@@ -96,6 +96,7 @@ export default {
 				options = zeremonienData;
 				break;
 			case 'waffenname':
+			case 'nebenhand':
 				options = waffenData;
 				break;
 			case 'ruestungname':

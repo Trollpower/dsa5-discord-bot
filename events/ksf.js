@@ -150,6 +150,56 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		content = bm ? `***${sfName}*** mit ***${waffe.name}*** und ***${bm.name}***` : `***${sfName}*** mit ***${waffe.name}***`;
 		break;
 	}
+	case 'bk': {
+		sfName = 'Beidhändiger Kampf I';
+		if (!character.sonderfertigkeiten.some(d => d.name === sfName)) {
+			return await interaction.reply({ content: `${sfName} hast du nicht`, flags: MessageFlags.Ephemeral });
+		}
+		const haupthandName = character.angelegteWaffen?.[0];
+		const nebenhandName = character.angelegteWaffen?.[1];
+		if (!haupthandName || !nebenhandName) {
+			return await interaction.reply({ content: 'Du hast nicht genug Waffen angelegt (benötigt: 2).', flags: MessageFlags.Ephemeral });
+		}
+		const haupthandWaffe = waffen.find(x => x.name === haupthandName);
+		const nebenhandWaffe = waffen.find(x => x.name === nebenhandName);
+		if (!haupthandWaffe) {
+			return await interaction.reply({ content: `Waffe ***${haupthandName}*** nicht gefunden.`, flags: MessageFlags.Ephemeral });
+		}
+		if (!nebenhandWaffe) {
+			return await interaction.reply({ content: `Waffe ***${nebenhandName}*** nicht gefunden.`, flags: MessageFlags.Ephemeral });
+		}
+		const bkSf = sonderfertigkeiten.find(x => x.name === 'Beidhändiger Kampf I-II');
+		if (bkSf?.kampftechniken && !bkSf.kampftechniken.includes(haupthandWaffe.technik)) {
+			return await interaction.reply({ content: `***Beidhändiger Kampf*** kann mit ${haupthandWaffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
+		}
+		if (bkSf?.kampftechniken && !bkSf.kampftechniken.includes(nebenhandWaffe.technik)) {
+			return await interaction.reply({ content: `***Beidhändiger Kampf*** kann mit ${nebenhandWaffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
+		}
+		const hasBeidhändig = character.vorteile?.some(v => v.name === 'Beidhändig');
+		const hasBkII = character.sonderfertigkeiten.some(d => d.name === 'Beidhändiger Kampf II');
+		const baseErschwernis = hasBkII ? 0 : character.sonderfertigkeiten.some(d => d.name === 'Beidhändiger Kampf I') ? -1 : -2;
+		const offhandErschwernis = hasBeidhändig ? 0 : -4;
+		const bkResults = [];
+		const bkEmbeds = [];
+		const atMod1 = baseErschwernis;
+		const atMod2 = baseErschwernis + offhandErschwernis;
+		const data1 = utils.attack({ character, waffenName: haupthandWaffe.name, bonusMalusAngriff: atMod1, bonusMalusSchaden: 0, interaction });
+		data1.ksfSubcommand = 'bk'; data1.ksfStufe = null; data1.ksfLabel = 'Beidhändiger Kampf';
+		const embed1 = utils.createResultEmbedFromAttack({ character, data: data1, interaction, client });
+		embed1.title = `[1/2] ${embed1.title}`;
+		bkEmbeds.push(embed1);
+		bkResults.push(data1);
+		const data2 = utils.attack({ character, waffenName: nebenhandWaffe.name, bonusMalusAngriff: atMod2, bonusMalusSchaden: 0, interaction });
+		data2.ksfSubcommand = 'bk'; data2.ksfStufe = null; data2.ksfLabel = 'Beidhändiger Kampf';
+		const embed2 = utils.createResultEmbedFromAttack({ character, data: data2, interaction, client });
+		embed2.title = `[2/2] ${embed2.title}`;
+		if (hasBeidhändig) embed2.fields.push({ name: 'Hinweis', value: 'Vorteil Beidhändig (keine Abzüge für falsche Hand)' });
+		if (hasBkII) embed2.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf II (keine Grunderschwernis)' });
+		bkEmbeds.push(embed2);
+		bkResults.push(data2);
+		await interaction.reply({ content: `***Beidhändiger Kampf*** mit ***${haupthandWaffe.name}*** / ***${nebenhandWaffe.name}***`, embeds: bkEmbeds });
+		return bkResults;
+	}
 	case 'rundumschlag': {
 		sfName = `Rundumschlag ${numToRoman[stufe]}`;
 		if (!character.sonderfertigkeiten.some(d => d.name === sfName)) {
@@ -531,6 +581,68 @@ export default {
 				}
 
 				await interaction.reply({ content: `***${rundumschlag}*** mit ***${waffenName}***`, embeds });
+				return results;
+			}
+			else if (interaction.options.getSubcommand() === 'bk') {
+				const bonusMalus = interaction.options.getInteger('bonus-malus') ?? 0;
+				const haupthandName = interaction.options.getString('waffenname') ?? character.angelegteWaffen?.[0];
+				const nebenhandName = interaction.options.getString('nebenhand') ?? character.angelegteWaffen?.[1];
+
+				if (!haupthandName || !nebenhandName) {
+					return await interaction.reply({ content: 'Du hast nicht genug Waffen angelegt (benötigt: 2). Gib Haupthand und Nebenhand an.', flags: MessageFlags.Ephemeral });
+				}
+
+				const haupthandWaffe = waffen.find(x => x.name === haupthandName);
+				const nebenhandWaffe = waffen.find(x => x.name === nebenhandName);
+
+				if (!haupthandWaffe) {
+					return await interaction.reply({ content: `Waffe ***${haupthandName}*** nicht gefunden.`, flags: MessageFlags.Ephemeral });
+				}
+				if (!nebenhandWaffe) {
+					return await interaction.reply({ content: `Waffe ***${nebenhandName}*** nicht gefunden.`, flags: MessageFlags.Ephemeral });
+				}
+
+				// Hat der Charakter Beidhändiger Kampf I?
+				if (!character.sonderfertigkeiten.some(d => d.name === 'Beidhändiger Kampf I')) {
+					return await interaction.reply({ content: 'Beidhändiger Kampf I hast du nicht' });
+				}
+
+				// Kann Beidhändiger Kampf mit den Waffen gemacht werden?
+				const sf = sonderfertigkeiten.find(x => x.name === 'Beidhändiger Kampf I-II');
+				if (sf?.kampftechniken && !sf.kampftechniken.includes(haupthandWaffe.technik)) {
+					return await interaction.reply({ content: `***Beidhändiger Kampf*** kann mit ${haupthandWaffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
+				}
+				if (sf?.kampftechniken && !sf.kampftechniken.includes(nebenhandWaffe.technik)) {
+					return await interaction.reply({ content: `***Beidhändiger Kampf*** kann mit ${nebenhandWaffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
+				}
+
+				const hasBeidhändig = character.vorteile?.some(v => v.name === 'Beidhändig');
+				const hasBkII = character.sonderfertigkeiten.some(d => d.name === 'Beidhändiger Kampf II');
+				const baseErschwernis = hasBkII ? 0 : character.sonderfertigkeiten.some(d => d.name === 'Beidhändiger Kampf I') ? -1 : -2;
+				const offhandErschwernis = hasBeidhändig ? 0 : -4;
+
+				const results = [];
+				const embeds = [];
+
+				// Erster Angriff (Haupthand)
+				const data1 = utils.attack({ character, waffenName: haupthandWaffe.name, bonusMalusAngriff: bonusMalus + baseErschwernis, bonusMalusSchaden: 0, interaction });
+				data1.ksfSubcommand = 'bk'; data1.ksfStufe = null; data1.ksfLabel = 'Beidhändiger Kampf';
+				const embed1 = utils.createResultEmbedFromAttack({ character, data: data1, interaction, client });
+				embed1.title = `[1/2] ${embed1.title}`;
+				embeds.push(embed1);
+				results.push(data1);
+
+				// Zweiter Angriff (Nebenhand)
+				const data2 = utils.attack({ character, waffenName: nebenhandWaffe.name, bonusMalusAngriff: bonusMalus + baseErschwernis + offhandErschwernis, bonusMalusSchaden: 0, interaction });
+				data2.ksfSubcommand = 'bk'; data2.ksfStufe = null; data2.ksfLabel = 'Beidhändiger Kampf';
+				const embed2 = utils.createResultEmbedFromAttack({ character, data: data2, interaction, client });
+				embed2.title = `[2/2] ${embed2.title}`;
+				if (hasBeidhändig) embed2.fields.push({ name: 'Hinweis', value: 'Vorteil Beidhändig (keine Abzüge für falsche Hand)' });
+				if (hasBkII) embed2.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf II (keine Grunderschwernis)' });
+				embeds.push(embed2);
+				results.push(data2);
+
+				await interaction.reply({ content: `***Beidhändiger Kampf*** mit ***${haupthandWaffe.name}*** / ***${nebenhandWaffe.name}***`, embeds });
 				return results;
 			}
 		}
