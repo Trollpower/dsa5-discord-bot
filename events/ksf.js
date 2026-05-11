@@ -175,26 +175,34 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		if (bkSf?.kampftechniken && !bkSf.kampftechniken.includes(nebenhandWaffe.technik)) {
 			return await interaction.reply({ content: `***Beidhändiger Kampf*** kann mit ${nebenhandWaffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
 		}
+		// Basismanöver aus kombiniertem String extrahieren (Format: "bm1;bm2")
+		const [bmName1, bmName2] = basismanoever ? basismanoever.split(';') : [null, null];
+		const bm1 = bmName1 ? utils.basismanoever().find(x => x.name === bmName1) : null;
+		const bm2 = bmName2 ? utils.basismanoever().find(x => x.name === bmName2) : null;
 		const hasBeidhändig = character.vorteile?.some(v => v.name === 'Beidhändig');
 		const hasBkII = character.sonderfertigkeiten.some(d => d.name === 'Beidhändiger Kampf II');
 		const baseErschwernis = hasBkII ? 0 : character.sonderfertigkeiten.some(d => d.name === 'Beidhändiger Kampf I') ? -1 : -2;
 		const offhandErschwernis = hasBeidhändig ? 0 : -4;
 		const bkResults = [];
 		const bkEmbeds = [];
-		const atMod1 = baseErschwernis;
-		const atMod2 = baseErschwernis + offhandErschwernis;
-		const data1 = utils.attack({ character, waffenName: haupthandWaffe.name, bonusMalusAngriff: atMod1, bonusMalusSchaden: 0, interaction });
+		const atMod1 = baseErschwernis - (bm1?.at ?? 0);
+		const atMod2 = baseErschwernis + offhandErschwernis - (bm2?.at ?? 0);
+		const data1 = utils.attack({ character, waffenName: haupthandWaffe.name, bonusMalusAngriff: atMod1, bonusMalusSchaden: (bm1?.tp ?? 0), interaction });
 		data1.ksfSubcommand = 'bk'; data1.ksfStufe = null; data1.ksfLabel = 'Beidhändiger Kampf';
+		data1.basismanoever = bm1?.name ?? null;
 		const embed1 = utils.createResultEmbedFromAttack({ character, data: data1, interaction, client });
 		embed1.title = `[1/2] ${embed1.title}`;
 		if (hasBkII) embed1.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf II (keine Grunderschwernis)' });
 		else embed1.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf I (Erschwernis -1 statt -2)' });
+		if (bm1) embed1.fields.push({ name: 'Basismanöver', value: bm1.name });
 		bkEmbeds.push(embed1);
 		bkResults.push(data1);
-		const data2 = utils.attack({ character, waffenName: nebenhandWaffe.name, bonusMalusAngriff: atMod2, bonusMalusSchaden: 0, interaction });
+		const data2 = utils.attack({ character, waffenName: nebenhandWaffe.name, bonusMalusAngriff: atMod2, bonusMalusSchaden: (bm2?.tp ?? 0), interaction });
 		data2.ksfSubcommand = 'bk'; data2.ksfStufe = null; data2.ksfLabel = 'Beidhändiger Kampf';
+		data2.basismanoever = bm2?.name ?? null;
 		const embed2 = utils.createResultEmbedFromAttack({ character, data: data2, interaction, client });
 		embed2.title = `[2/2] ${embed2.title}`;
+		if (bm2) embed2.fields.push({ name: 'Basismanöver', value: bm2.name });
 		if (hasBeidhändig) embed2.fields.push({ name: 'Hinweis', value: 'Vorteil Beidhändig (keine Abzüge für falsche Hand)' });
 		if (hasBkII) embed2.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf II (keine Grunderschwernis)' });
 		bkEmbeds.push(embed2);
@@ -239,6 +247,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 	data.ksfSubcommand = subcommand;
 	data.ksfStufe = stufe;
 	data.ksfLabel = sfName;
+	data.basismanoever = basismanoever ?? null;
 	const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 	await interaction.reply({ content, embeds: [embed] });
 	return [data];
@@ -377,6 +386,7 @@ export default {
 				const data = utils.attack({ character, waffenName: waffe.name, bonusMalusAngriff: bonusMalus - 2 - (bm?.at ?? 0), bonusMalusSchaden: Math.round((character.gs - belastung) / 2) + (bm?.tp ?? 0), interaction });
 				data.ksfSubcommand = 'sturmangriff'; data.ksfStufe = null;
 				data.ksfLabel = sf.name;
+				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
 				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
@@ -413,6 +423,7 @@ export default {
 				const data = utils.attack({ character, waffenName: waffe.name, bonusMalusAngriff: bonusMalus - 2 - (bm?.at ?? 0), bonusMalusSchaden: rollDice(6) + (bm?.tp ?? 0), interaction });
 				data.ksfSubcommand = 'todesstoß'; data.ksfStufe = null;
 				data.ksfLabel = sf.name;
+				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
 				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
@@ -455,6 +466,7 @@ export default {
 					});
 				data.ksfSubcommand = 'vorstoß'; data.ksfStufe = null;
 				data.ksfLabel = sf.name;
+				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
 				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
@@ -496,6 +508,7 @@ export default {
 					});
 				data.ksfSubcommand = 'entwaffnen'; data.ksfStufe = null;
 				data.ksfLabel = sf.name;
+				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
 				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
@@ -545,6 +558,7 @@ export default {
 					});
 				data.ksfSubcommand = 'zufallbringen'; data.ksfStufe = null;
 				data.ksfLabel = sf.name;
+				data.basismanoever = bm?.name ?? null;
 				const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
 				if (bm) {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}*** und ***${bm.name}***`, embeds: [embed] });}
 				else {await interaction.reply({ content: `***${sf.name}*** mit ***${waffe.name}***`, embeds: [embed] });}
@@ -649,6 +663,7 @@ export default {
 				// Erster Angriff (Haupthand)
 				const data1 = utils.attack({ character, waffenName: haupthandWaffe.name, bonusMalusAngriff: bonusMalus + baseErschwernis - (bm1?.at ?? 0), bonusMalusSchaden: (bm1?.tp ?? 0), interaction });
 				data1.ksfSubcommand = 'bk'; data1.ksfStufe = null; data1.ksfLabel = 'Beidhändiger Kampf';
+				data1.basismanoever = bm1?.name ?? null;
 				const embed1 = utils.createResultEmbedFromAttack({ character, data: data1, interaction, client });
 				embed1.title = `[1/2] ${embed1.title}`;
 				if (hasBkII) embed1.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf II (keine Grunderschwernis)' });
@@ -660,6 +675,7 @@ export default {
 				// Zweiter Angriff (Nebenhand)
 				const data2 = utils.attack({ character, waffenName: nebenhandWaffe.name, bonusMalusAngriff: bonusMalus + baseErschwernis + offhandErschwernis - (bm2?.at ?? 0), bonusMalusSchaden: (bm2?.tp ?? 0), interaction });
 				data2.ksfSubcommand = 'bk'; data2.ksfStufe = null; data2.ksfLabel = 'Beidhändiger Kampf';
+				data2.basismanoever = bm2?.name ?? null;
 				const embed2 = utils.createResultEmbedFromAttack({ character, data: data2, interaction, client });
 				embed2.title = `[2/2] ${embed2.title}`;
 				if (bm2) embed2.fields.push({ name: 'Basismanöver', value: bm2.name });
