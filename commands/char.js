@@ -9,6 +9,7 @@ const KSF_CHOICES = [
 	{ name: 'Vorstoß', value: 'vorstoß' },
 	{ name: 'Entwaffnen', value: 'entwaffnen' },
 	{ name: 'Zu Fall bringen', value: 'zufallbringen' },
+	{ name: 'Beidhändiger Kampf', value: 'bk' },
 ];
 
 const addFavoritSubcommand = (builder, num) => builder
@@ -40,7 +41,12 @@ const addFavoritSubcommand = (builder, num) => builder
 		.setRequired(false))
 	.addStringOption(option => option
 		.setName('basismanoever')
-		.setDescription('Basismanöver kombinieren (nur Sturmangriff, Todesstoß, Vorstoß, Entwaffnen, Zu Fall bringen)')
+		.setDescription('Basismanöver für Haupthand (BK) oder allgemein')
+		.setRequired(false)
+		.setAutocomplete(true))
+	.addStringOption(option => option
+		.setName('basismanoever2')
+		.setDescription('Basismanöver für Nebenhand (nur Beidhändiger Kampf)')
 		.setRequired(false)
 		.setAutocomplete(true))
 	.addIntegerOption(option => option
