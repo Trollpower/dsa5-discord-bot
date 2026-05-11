@@ -1,4 +1,5 @@
-import { Events } from 'discord.js';
+import { Events, MessageFlags } from 'discord.js';
+
 import path from 'path';
 import fs from 'node:fs';
 import { pathToFileURL } from 'node:url';
@@ -114,6 +115,6 @@ export default {
 			}));
 		}
 
-		return await interaction.reply({ embeds: [embed] });
+		return await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
 	},
 };
