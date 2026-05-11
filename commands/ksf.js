@@ -177,6 +177,16 @@ export default {
 					.setDescription('Der Name der Nebenhand-Waffe')
 					.setRequired(false)
 					.setAutocomplete(true))
+				.addStringOption(option => option
+					.setName('basismanoever1')
+					.setDescription('Basismanöver für den ersten Angriff (Haupthand)')
+					.setRequired(false)
+					.setAutocomplete(true))
+				.addStringOption(option => option
+					.setName('basismanoever2')
+					.setDescription('Basismanöver für den zweiten Angriff (Nebenhand)')
+					.setRequired(false)
+					.setAutocomplete(true))
 				.addIntegerOption(option => option.setName('bonus-malus')
 					.setDescription('Der Bonus oder Malus des Angriffs')
 					.setRequired(false)),
