@@ -331,7 +331,12 @@
             "label": "Wuchtschlag III"
         },
         null,
-        null
+        {
+            "type": "ksf",
+            "subcommand": "bk",
+            "basismanoever": "Wuchtschlag III;Finte II",
+            "label": "Iiiiieee Yaaah"
+        }
     ],
     "cheating": {
         "general": 20
