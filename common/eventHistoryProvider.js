@@ -164,6 +164,15 @@ class NdjsonEventHistoryProvider {
 		fs.mkdirSync(dir, { recursive: true });
 	}
 
+	_extractKsfBasismanoever(payload) {
+		if (!Array.isArray(payload)) return payload?.basismanoever ?? null;
+		if (payload.length <= 1) return payload[0]?.basismanoever ?? null;
+		const bm1 = payload[0]?.basismanoever ?? null;
+		const bm2 = payload[1]?.basismanoever ?? null;
+		if (!bm1 && !bm2) return null;
+		return `${bm1 ?? ''};${bm2 ?? ''}`;
+	}
+
 	async appendEvents(input) {
 		if (input?.events == null) {
 			return;
@@ -398,10 +407,11 @@ class NdjsonEventHistoryProvider {
 			const subcommand = payload?.ksfSubcommand;
 			if (!subcommand) continue;
 			const stufe = payload?.ksfStufe ?? null;
-			const key = `${subcommand}|${stufe ?? ''}`;
+			const basismanoever = this._extractKsfBasismanoever(record.payload);
+			const key = `${subcommand}|${stufe ?? ''}|${basismanoever ?? ''}`;
 			if (seen.has(key)) continue;
 			seen.add(key);
-			result.push({ subcommand, stufe, label: payload?.ksfLabel ?? subcommand });
+			result.push({ subcommand, stufe, label: payload?.ksfLabel ?? subcommand, basismanoever });
 		}
 		return result;
 	}
@@ -414,6 +424,7 @@ class NdjsonEventHistoryProvider {
 		const lines = raw.split('\n').filter(Boolean);
 		const counts = new Map();
 		const labels = new Map();
+		const bmMap = new Map();
 		for (const line of lines) {
 			let record;
 			try {
@@ -428,16 +439,19 @@ class NdjsonEventHistoryProvider {
 			const subcommand = payload?.ksfSubcommand;
 			if (!subcommand) continue;
 			const stufe = payload?.ksfStufe ?? null;
-			const key = `${subcommand}|${stufe ?? ''}`;
+			const basismanoever = this._extractKsfBasismanoever(record.payload);
+			const key = `${subcommand}|${stufe ?? ''}|${basismanoever ?? ''}`;
 			counts.set(key, (counts.get(key) ?? 0) + 1);
 			if (!labels.has(key)) labels.set(key, payload?.ksfLabel ?? subcommand);
+			if (!bmMap.has(key)) bmMap.set(key, basismanoever);
 		}
 		return [...counts.entries()]
 			.map(([key, noOfExecutions]) => {
-				const sep = key.indexOf('|');
-				const subcommand = key.slice(0, sep);
-				const stufeRaw = key.slice(sep + 1);
-				return { subcommand, stufe: stufeRaw ? Number(stufeRaw) : null, label: labels.get(key), noOfExecutions };
+				const parts = key.split('|');
+				const subcommand = parts[0];
+				const stufeRaw = parts[1];
+				const basismanoever = bmMap.get(key);
+				return { subcommand, stufe: stufeRaw ? Number(stufeRaw) : null, label: labels.get(key), basismanoever, noOfExecutions };
 			})
 			.sort((a, b) => b.noOfExecutions - a.noOfExecutions || a.label.localeCompare(b.label));
 	}
@@ -473,10 +487,11 @@ class NdjsonEventHistoryProvider {
 				const subcommand = payload?.ksfSubcommand;
 				if (!subcommand) continue;
 				const stufe = payload?.ksfStufe ?? null;
-				const key = `ksf|${subcommand}|${stufe ?? ''}`;
+				const basismanoever = this._extractKsfBasismanoever(record.payload);
+				const key = `ksf|${subcommand}|${stufe ?? ''}|${basismanoever ?? ''}`;
 				if (seen.has(key)) continue;
 				seen.add(key);
-				result.push({ type: 'ksf', subcommand, stufe, label: payload?.ksfLabel ?? subcommand });
+				result.push({ type: 'ksf', subcommand, stufe, label: payload?.ksfLabel ?? subcommand, basismanoever });
 			}
 			else if (record.eventName === 'angriff') {
 				const waffenName = payload?.waffe?.name;
@@ -536,9 +551,10 @@ class NdjsonEventHistoryProvider {
 				const subcommand = payload?.ksfSubcommand;
 				if (!subcommand) continue;
 				const stufe = payload?.ksfStufe ?? null;
-				const key = `ksf|${subcommand}|${stufe ?? ''}`;
+				const basismanoever = this._extractKsfBasismanoever(record.payload);
+				const key = `ksf|${subcommand}|${stufe ?? ''}|${basismanoever ?? ''}`;
 				counts.set(key, (counts.get(key) ?? 0) + 1);
-				if (!meta.has(key)) meta.set(key, { type: 'ksf', subcommand, stufe, label: payload?.ksfLabel ?? subcommand });
+				if (!meta.has(key)) meta.set(key, { type: 'ksf', subcommand, stufe, label: payload?.ksfLabel ?? subcommand, basismanoever });
 			}
 			else if (record.eventName === 'angriff') {
 				const waffenName = payload?.waffe?.name;
