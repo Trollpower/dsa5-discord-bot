@@ -162,5 +162,23 @@ export default {
 				.addIntegerOption(option => option.setName('bonus-malus')
 					.setDescription('Der Bonus oder Malus des Angriffs')
 					.setRequired(false)),
+		)
+		.addSubcommand(subcommand =>
+			subcommand
+				.setName('bk')
+				.setDescription('Beidhändiger Kampf')
+				.addStringOption(option => option
+					.setName('waffenname')
+					.setDescription('Der Name der Haupthand-Waffe')
+					.setRequired(false)
+					.setAutocomplete(true))
+				.addStringOption(option => option
+					.setName('nebenhand')
+					.setDescription('Der Name der Nebenhand-Waffe')
+					.setRequired(false)
+					.setAutocomplete(true))
+				.addIntegerOption(option => option.setName('bonus-malus')
+					.setDescription('Der Bonus oder Malus des Angriffs')
+					.setRequired(false)),
 		),
 };
