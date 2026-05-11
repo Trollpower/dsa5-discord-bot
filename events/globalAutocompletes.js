@@ -34,7 +34,7 @@ export default {
 			const isFavoriteSlot = ['favorit1', 'favorit2', 'favorit3'].includes(subcommand);
 			const isProbeFavoriteSlot = focusedOption.name === 'fertigkeit' && isFavoriteSlot;
 
-			if (focusedOption.name === 'basismanoever' && isFavoriteSlot) {
+			if ((focusedOption.name === 'basismanoever' || focusedOption.name === 'basismanoever2') && isFavoriteSlot) {
 				const bmList = client.Utils.basismanoever()
 					.filter(bm => character.sonderfertigkeiten.some(x => x.name === bm.name))
 					.filter(bm => bm.name.toLowerCase().startsWith(focusedOption.value.toLowerCase()));
