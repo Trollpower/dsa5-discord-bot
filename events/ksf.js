@@ -187,6 +187,8 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		data1.ksfSubcommand = 'bk'; data1.ksfStufe = null; data1.ksfLabel = 'Beidhändiger Kampf';
 		const embed1 = utils.createResultEmbedFromAttack({ character, data: data1, interaction, client });
 		embed1.title = `[1/2] ${embed1.title}`;
+		if (hasBkII) embed1.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf II (keine Grunderschwernis)' });
+		else embed1.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf I (Erschwernis -1 statt -2)' });
 		bkEmbeds.push(embed1);
 		bkResults.push(data1);
 		const data2 = utils.attack({ character, waffenName: nebenhandWaffe.name, bonusMalusAngriff: atMod2, bonusMalusSchaden: 0, interaction });
@@ -329,7 +331,7 @@ export default {
 			}
 			else if (interaction.type === InteractionType.ApplicationCommandAutocomplete) {
 				const focusedOption = interaction.options.getFocused(true);
-				if (focusedOption.name === 'basismanoever') {
+				if (focusedOption.name === 'basismanoever' || focusedOption.name === 'basismanoever1' || focusedOption.name === 'basismanoever2') {
 					const filtered = utils.basismanoever()
 						.filter(bm => character.sonderfertigkeiten.some(x => x.name === bm.name))
 						.filter(bm => bm.name.toLowerCase().startsWith(focusedOption.value.toLowerCase()));
@@ -587,6 +589,8 @@ export default {
 				const bonusMalus = interaction.options.getInteger('bonus-malus') ?? 0;
 				const haupthandName = interaction.options.getString('waffenname') ?? character.angelegteWaffen?.[0];
 				const nebenhandName = interaction.options.getString('nebenhand') ?? character.angelegteWaffen?.[1];
+				const basisManoever1 = interaction.options.getString('basismanoever1');
+				const basisManoever2 = interaction.options.getString('basismanoever2');
 
 				if (!haupthandName || !nebenhandName) {
 					return await interaction.reply({ content: 'Du hast nicht genug Waffen angelegt (benötigt: 2). Gib Haupthand und Nebenhand an.', flags: MessageFlags.Ephemeral });
@@ -616,6 +620,24 @@ export default {
 					return await interaction.reply({ content: `***Beidhändiger Kampf*** kann mit ${nebenhandWaffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
 				}
 
+				// Basismanöver 1 (Haupthand) validieren
+				const bm1 = basisManoever1 ? utils.basismanoever().find(x => x.name === basisManoever1) : null;
+				if (bm1 && !character.sonderfertigkeiten.some(x => x.name === bm1.name)) {
+					return await interaction.reply({ content: `***${bm1.name}*** hast du nicht` });
+				}
+				if (bm1 && !sonderfertigkeiten.find(x => x.name === bm1.sfName).kampftechniken.includes(haupthandWaffe.technik)) {
+					return await interaction.reply({ content: `***${bm1.name}*** kann mit ***${haupthandWaffe.name}*** nicht verwendet werden` });
+				}
+
+				// Basismanöver 2 (Nebenhand) validieren
+				const bm2 = basisManoever2 ? utils.basismanoever().find(x => x.name === basisManoever2) : null;
+				if (bm2 && !character.sonderfertigkeiten.some(x => x.name === bm2.name)) {
+					return await interaction.reply({ content: `***${bm2.name}*** hast du nicht` });
+				}
+				if (bm2 && !sonderfertigkeiten.find(x => x.name === bm2.sfName).kampftechniken.includes(nebenhandWaffe.technik)) {
+					return await interaction.reply({ content: `***${bm2.name}*** kann mit ***${nebenhandWaffe.name}*** nicht verwendet werden` });
+				}
+
 				const hasBeidhändig = character.vorteile?.some(v => v.name === 'Beidhändig');
 				const hasBkII = character.sonderfertigkeiten.some(d => d.name === 'Beidhändiger Kampf II');
 				const baseErschwernis = hasBkII ? 0 : character.sonderfertigkeiten.some(d => d.name === 'Beidhändiger Kampf I') ? -1 : -2;
@@ -625,18 +647,22 @@ export default {
 				const embeds = [];
 
 				// Erster Angriff (Haupthand)
-				const data1 = utils.attack({ character, waffenName: haupthandWaffe.name, bonusMalusAngriff: bonusMalus + baseErschwernis, bonusMalusSchaden: 0, interaction });
+				const data1 = utils.attack({ character, waffenName: haupthandWaffe.name, bonusMalusAngriff: bonusMalus + baseErschwernis - (bm1?.at ?? 0), bonusMalusSchaden: (bm1?.tp ?? 0), interaction });
 				data1.ksfSubcommand = 'bk'; data1.ksfStufe = null; data1.ksfLabel = 'Beidhändiger Kampf';
 				const embed1 = utils.createResultEmbedFromAttack({ character, data: data1, interaction, client });
 				embed1.title = `[1/2] ${embed1.title}`;
+				if (hasBkII) embed1.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf II (keine Grunderschwernis)' });
+				else embed1.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf I (Erschwernis -1 statt -2)' });
+				if (bm1) embed1.fields.push({ name: 'Basismanöver', value: bm1.name });
 				embeds.push(embed1);
 				results.push(data1);
 
 				// Zweiter Angriff (Nebenhand)
-				const data2 = utils.attack({ character, waffenName: nebenhandWaffe.name, bonusMalusAngriff: bonusMalus + baseErschwernis + offhandErschwernis, bonusMalusSchaden: 0, interaction });
+				const data2 = utils.attack({ character, waffenName: nebenhandWaffe.name, bonusMalusAngriff: bonusMalus + baseErschwernis + offhandErschwernis - (bm2?.at ?? 0), bonusMalusSchaden: (bm2?.tp ?? 0), interaction });
 				data2.ksfSubcommand = 'bk'; data2.ksfStufe = null; data2.ksfLabel = 'Beidhändiger Kampf';
 				const embed2 = utils.createResultEmbedFromAttack({ character, data: data2, interaction, client });
 				embed2.title = `[2/2] ${embed2.title}`;
+				if (bm2) embed2.fields.push({ name: 'Basismanöver', value: bm2.name });
 				if (hasBeidhändig) embed2.fields.push({ name: 'Hinweis', value: 'Vorteil Beidhändig (keine Abzüge für falsche Hand)' });
 				if (hasBkII) embed2.fields.push({ name: 'Hinweis', value: 'Beidhändiger Kampf II (keine Grunderschwernis)' });
 				embeds.push(embed2);
