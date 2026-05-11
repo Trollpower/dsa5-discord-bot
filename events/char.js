@@ -53,10 +53,11 @@ const KSF_LABEL_MAP = {
 	'vorstoß': 'Vorstoß',
 	entwaffnen: 'Entwaffnen',
 	zufallbringen: 'Zu Fall bringen',
+	bk: 'Beidhändiger Kampf',
 };
 
 const KSF_HAS_STUFE = new Set(['wuchtschlag', 'finte']);
-const KSF_HAS_BASISMANOEVER = new Set(['sturmangriff', 'todesstoß', 'vorstoß', 'entwaffnen', 'zufallbringen']);
+const KSF_HAS_BASISMANOEVER = new Set(['sturmangriff', 'todesstoß', 'vorstoß', 'entwaffnen', 'zufallbringen', 'bk']);
 
 const numToRoman = { 1: 'I', 2: 'II', 3: 'III' };
 
@@ -227,15 +228,24 @@ const genericHandlers = {
 				return interaction.reply({ content: `${baseName} hat keine Stufen.`, flags: MessageFlags.Ephemeral });
 			}
 			const basismanoever = interaction.options.getString('basismanoever')?.trim() || null;
+			const basismanoever2 = interaction.options.getString('basismanoever2')?.trim() || null;
 			if (basismanoever && !KSF_HAS_BASISMANOEVER.has(subcommand)) {
 				return interaction.reply({ content: `${baseName} kann nicht mit einem Basismanöver kombiniert werden.`, flags: MessageFlags.Ephemeral });
+			}
+			if (basismanoever2 && subcommand !== 'bk') {
+				return interaction.reply({ content: 'Basismanöver 2 (Nebenhand) ist nur für Beidhändiger Kampf verfügbar.', flags: MessageFlags.Ephemeral });
+			}
+			// Für BK: Basismanöver als kombiniertes Format "bm1;bm2" speichern
+			let combinedBm = basismanoever || undefined;
+			if (subcommand === 'bk' && (basismanoever || basismanoever2)) {
+				combinedBm = `${basismanoever ?? ''};${basismanoever2 ?? ''}`;
 			}
 			const defaultLabel = stufe ? `${baseName} ${numToRoman[stufe]}` : baseName;
 			newSlot = {
 				type: 'ksf',
 				subcommand,
 				stufe: stufe || undefined,
-				basismanoever: basismanoever || undefined,
+				basismanoever: combinedBm,
 				label: label || defaultLabel,
 				bonusMalus: bonusMalus || undefined,
 			};
