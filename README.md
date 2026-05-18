@@ -38,6 +38,7 @@ Ein Discord-Bot für **Das Schwarze Auge 5. Edition (DSA5)** Rollenspielsitzunge
       - [`/angriff`](#angriff)
       - [`/parade`](#parade)
       - [`/ausweichen`](#ausweichen)
+      - [`/passierschlag`](#passierschlag)
       - [`/initiative`](#initiative)
     - [**Ressourcen-Management**](#ressourcen-management)
       - [`/lep`](#lep)
@@ -306,7 +307,7 @@ docker compose run --rm deploy
   - `export` - Charakter als ausgefülltes PDF exportieren
   - `favorit1` / `favorit2` / `favorit3` - Favoriten für die `/quick`-Buttonleiste setzen
     - **Probe-Favorit**: `fertigkeit` (Autocomplete) + optional `name`, `bonus-malus`
-    - **KSF-Favorit**: `ksf` (Auswahl) + optional `stufe` (1-3, nur Wuchtschlag/Finte), `basismanoever` (Autocomplete, nur Sturmangriff/Todesstoß/Vorstoß/Entwaffnen/Zu Fall bringen), `name`, `bonus-malus`
+    - **KSF-Favorit**: `ksf` (Auswahl: Wuchtschlag, Finte, Sturmangriff, Todesstoß, Vorstoß, Entwaffnen, Zu Fall bringen, Rundumschlag, Präziser Schuss/Wurf, Beidhändiger Kampf) + optional `stufe` (1-3 bzw. 1-2), `basismanoever` (Autocomplete), `basismanoever2` (nur BK, für Nebenhand), `name`, `bonus-malus`
     - **Angriff-Favorit**: `angriff` (Autocomplete, angelegte Waffen) + optional `name`, `bonus-malus`
     - Es kann pro Slot nur **eine** der drei Optionen angegeben werden
     - Duplikate über Slots hinweg werden automatisch entfernt
@@ -387,6 +388,13 @@ docker compose run --rm deploy
 - **Parameter**:
   - `bonus-malus` (optional) - Modifikator für das Ausweichen
 
+#### `/passierschlag`
+- **Beschreibung**: Passierschlag (Nahkampfangriff mit -4, keine Patzer/Krits)
+- **Parameter**:
+  - `waffenname` (optional) - Waffe (Autocomplete)
+  - `bonus-malus` (optional) - Angriffsmodifikator
+- **Hinweis**: Bei einer 1 oder 20 wird kein Krit/Patzer bestätigt; es zählt nur der Basiswurf
+
 #### `/initiative`
 - **Beschreibung**: Initiative verwalten
 - **Subcommands**:
@@ -415,12 +423,25 @@ docker compose run --rm deploy
 
 #### `/ksf`
 - **Beschreibung**: Kampfsonderfertigkeiten ausführen
-- **Subcommands**: `wuchtschlag`, `finte`, `sturmangriff`, `todesstoß`, `vorstoß`, `entwaffnen`, `zufallbringen`
+- **Subcommands**: `wuchtschlag`, `finte`, `sturmangriff`, `todesstoß`, `vorstoß`, `entwaffnen`, `zufallbringen`, `rundumschlag`, `ps`, `bk`
 - **Parameter** (je nach Subcommand):
-  - `stufe` (nur Wuchtschlag/Finte) - Stufe 1-3
-  - `waffenname` (optional) - Waffe (Autocomplete)
-  - `basismanoever` (optional, nicht bei Wuchtschlag/Finte) - Basismanöver kombinieren (Autocomplete)
+  - `stufe` (Wuchtschlag/Finte: 1-3, Rundumschlag: 1-2, Präziser Schuss/Wurf: 1-3) - Stufe der KSF
+  - `waffenname` (optional/erforderlich) - Waffe (Autocomplete); bei `rundumschlag` und `ps` erforderlich
+  - `basismanoever` (optional, nur Sturmangriff/Todesstoß/Vorstoß/Entwaffnen/Zu Fall bringen) - Basismanöver kombinieren (Autocomplete)
   - `bonus-malus` (optional) - Modifikator
+- **Subcommand `bk` (Beidhändiger Kampf)**:
+  - `waffenname` (optional) - Haupthand-Waffe (Autocomplete, Standard: erste angelegte Waffe)
+  - `nebenhand` (optional) - Nebenhand-Waffe (Autocomplete, Standard: zweite angelegte Waffe)
+  - `basismanoever1` (optional) - Basismanöver für den Haupthand-Angriff (Autocomplete)
+  - `basismanoever2` (optional) - Basismanöver für den Nebenhand-Angriff (Autocomplete)
+  - `bonus-malus` (optional) - Modifikator
+  - Ergebnis: 2 Embeds (Haupthand + Nebenhand), Erschwernis abhängig von BK I/II und Vorteil Beidhändig
+- **Subcommand `rundumschlag`**:
+  - Stufe 1: 2 Angriffe, Stufe 2: 3 Angriffe
+  - Berücksichtigt "Mächtiger Rundumschlag" SF automatisch
+  - Mindestschaden: 1 TP pro Angriff
+- **Subcommand `ps` (Präziser Schuss/Wurf)**:
+  - Nur für Fernkampf-Waffen (Kampftechnik-Prüfung)
 
 #### `/schip`
 - **Beschreibung**: Schicksalspunkte
@@ -537,6 +558,12 @@ Der `/schip`-Befehl nutzt ebenfalls das letzte passende Event des Charakters aus
 - `/lep tp` – Trefferpunkte abziehen (berücksichtigt Rüstung)
 - `/lep setzen` – Lebenspunkte auf bestimmten Wert setzen
 - `/initiative` – erweitert um `set`, `reset` und `list` Subcommands
+- `/ksf rundumschlag` – Rundumschlag I/II mit automatischem Multi-Angriff (2 oder 3 Embeds), Berücksichtigung von "Mächtiger Rundumschlag"
+- `/ksf ps` – Präziser Schuss/Wurf I-III für Fernkampf-Waffen
+- `/ksf bk` – Beidhändiger Kampf mit Haupthand/Nebenhand, separaten Basismanövern pro Angriff, BK I/II und Vorteil Beidhändig-Berechnung
+- `/passierschlag` – Neuer eigenständiger Command für Passierschlag (AT -4, keine Patzer/Krits)
+- `/char favorit1/2/3` – Beidhändiger Kampf als KSF-Auswahl hinzugefügt, `basismanoever2` Option für Nebenhand
+- KSF-Content-Formatierung über zentrale `formatKsfContent`-Template-Funktion (einheitliches Discord-Markdown)
 - Probe-Tracking über Event-History (`storage/event-history.ndjson`) und `quickProbeFavorites` integriert
 
 
