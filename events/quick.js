@@ -394,6 +394,8 @@ const createQuickButtonRows = async (character, client) => {
 	return rows;
 };
 
+export { createQuickButtonRows };
+
 export default {
 	type: Events.InteractionCreate,
 	name: 'quick',

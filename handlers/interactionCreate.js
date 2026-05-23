@@ -1,6 +1,10 @@
 export const name = 'interactionCreate';
 import { MessageFlags } from 'discord.js';
 import logger from '../common/logger.js';
+import { createQuickButtonRows } from '../events/quick.js';
+import config from '../config.json' with { type: 'json' };
+
+const QUICK_FOLLOWUP_COMMANDS = new Set(['probe', 'angriff', 'ksf', 'parade', 'ausweichen', 'passierschlag']);
 
 const matchesInteractionEvent = (event, interaction) => {
 	const commandMatch = event.type === 'interactionCreate'
@@ -94,6 +98,27 @@ export async function execute(interaction, DiscordClient) {
 					traceId,
 					fallbackEventName: event.name,
 				});
+			}
+
+			// Quick-Button Follow-Up (ephemeral) nach Probe/Angriff/KSF/Parade/Ausweichen
+			if (config.quickFollowupEnabled !== false
+				&& events != null
+				&& char
+				&& QUICK_FOLLOWUP_COMMANDS.has(interaction.commandName ?? event.name)
+				&& (interaction.isChatInputCommand() || interaction.isButton())
+			) {
+				try {
+					const rows = await createQuickButtonRows(char, DiscordClient);
+					if (rows.length > 0) {
+						await interaction.followUp({
+							components: rows.slice(0, 5),
+							flags: MessageFlags.Ephemeral,
+						});
+					}
+				}
+				catch (followUpError) {
+					logger.debug('interaction.handler.quick-followup.error', { traceId, error: followUpError });
+				}
 			}
 		}
 		catch (error) {
