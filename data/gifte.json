@@ -8,7 +8,8 @@
         "beginn": "sofort",
         "dauer": "5 Minuten",
         "kosten": "60 Silbertaler pro Stufe",
-        "gruppe": "Alchimistische Gifte"
+        "gruppe": "Alchimistische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_angstgift.html"
     },
     {
         "name": "Betäubungsgift",
@@ -19,7 +20,8 @@
         "beginn": "sofort",
         "dauer": "5 Minuten",
         "kosten": "150 Silbertaler pro Stufe",
-        "gruppe": "Alchimistische Gifte"
+        "gruppe": "Alchimistische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_betaeubungsgift.html"
     },
     {
         "name": "Drachenspeichel",
@@ -30,7 +32,8 @@
         "beginn": "sofort",
         "dauer": "20 Minuten / 10 Minuten",
         "kosten": "80 Silbertaler pro Stufe / 120 Silbertaler pro Stufe",
-        "gruppe": "Alchimistische Gifte"
+        "gruppe": "Alchimistische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Drachenspeichel.html"
     },
     {
         "name": "Freundfeind",
@@ -41,7 +44,8 @@
         "beginn": "5 KR",
         "dauer": "20 KR / 25 KR",
         "kosten": "120 Silbertaler pro Stufe",
-        "gruppe": "Alchimistische Gifte"
+        "gruppe": "Alchimistische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_freundfeind.html"
     },
     {
         "name": "Halbgift",
@@ -52,7 +56,8 @@
         "beginn": "2 KR",
         "dauer": "5 KR",
         "kosten": "100 Silbertaler pro Stufe",
-        "gruppe": "Alchimistische Gifte"
+        "gruppe": "Alchimistische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_halbgift.html"
     },
     {
         "name": "Lotosöl",
@@ -63,7 +68,8 @@
         "beginn": "sofort",
         "dauer": "einmalig",
         "kosten": "60 Silbertaler pro Stufe",
-        "gruppe": "Alchimistische Gifte"
+        "gruppe": "Alchimistische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_lotosoel.html"
     },
     {
         "name": "Merach-Extrakt",
@@ -74,7 +80,8 @@
         "beginn": "5 Minuten",
         "dauer": "6W6 KR / 3W6 KR",
         "kosten": "60 Silbertaler pro Stufe",
-        "gruppe": "Alchimistische Gifte"
+        "gruppe": "Alchimistische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_merach_extrakt.html"
     },
     {
         "name": "Purpurblitz",
@@ -85,7 +92,8 @@
         "beginn": "sofort",
         "dauer": "100 KR / 50 KR",
         "kosten": "200 Silbertaler pro Stufe",
-        "gruppe": "Alchimistische Gifte"
+        "gruppe": "Alchimistische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_purpurblitz.html"
     },
     {
         "name": "Schlafgift",
@@ -96,7 +104,8 @@
         "beginn": "10 KR",
         "dauer": "5 Minuten",
         "kosten": "60 Silbertaler pro Stufe",
-        "gruppe": "Alchimistische Gifte"
+        "gruppe": "Alchimistische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_schlafgift.html"
     },
     {
         "name": "Marbos Ruhe",
@@ -107,7 +116,8 @@
         "beginn": "10 KR",
         "dauer": "10 Minuten",
         "kosten": ": 600 Silbertaler",
-        "gruppe": "Mineralische Gifte"
+        "gruppe": "Mineralische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/MarbosRuhe.html"
     },
     {
         "name": "Tulmadron",
@@ -118,7 +128,8 @@
         "beginn": "20 KR",
         "dauer": "50 KR / 25 KR",
         "kosten": "1.250 Silbertaler",
-        "gruppe": "Mineralische Gifte"
+        "gruppe": "Mineralische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Tulamdron.html"
     },
     {
         "name": "Urkaritgift",
@@ -129,7 +140,8 @@
         "beginn": "2 KR",
         "dauer": "3 KR",
         "kosten": "300 Silbertaler",
-        "gruppe": "Mineralische Gifte"
+        "gruppe": "Mineralische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Urkaritgift.html"
     },
     {
         "name": "Visarnetgift",
@@ -140,7 +152,8 @@
         "beginn": "sofort",
         "dauer": "5 KR",
         "kosten": "500 Silbertaler",
-        "gruppe": "Mineralische Gifte"
+        "gruppe": "Mineralische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Visarnetgift.html"
     },
     {
         "name": "Alkohol",
@@ -151,7 +164,8 @@
         "beginn": "nach dem Genuss einer Grundeinheit Alkohol",
         "dauer": "abgebaut ist",
         "kosten": "unterschiedlich",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Alkohol.html"
     },
     {
         "name": "Boabungaha",
@@ -162,7 +176,8 @@
         "beginn": "sofort",
         "dauer": "50 KR",
         "kosten": "1.200 Silbertaler",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Boabungaha.html"
     },
     {
         "name": "Gardistenkeuche",
@@ -173,7 +188,8 @@
         "beginn": "sofort",
         "dauer": "5 KR",
         "kosten": "",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Gardistenkeuche.html"
     },
     {
         "name": "Goldleim",
@@ -184,7 +200,8 @@
         "beginn": "sofort",
         "dauer": "8 KR / 4 KR",
         "kosten": "",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Goldleim.html"
     },
     {
         "name": "Hollbeerenbrechmittel",
@@ -195,7 +212,8 @@
         "beginn": "1 Minute",
         "dauer": "5 Minuten (Brechen), bis zum Ende der nächsten Regenerationsphase",
         "kosten": "100 Silbertaler",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Hollbeere.html"
     },
     {
         "name": "Höhlenbovistgift",
@@ -206,7 +224,8 @@
         "beginn": "5 Minuten",
         "dauer": "2 Stunden / 15 Minuten",
         "kosten": "",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/H%C3%B6hlenbovistgift.html"
     },
     {
         "name": "Kelmon",
@@ -217,7 +236,8 @@
         "beginn": "5 KR",
         "dauer": "30 Minuten / 15 Minuten",
         "kosten": "300 Silbertaler",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Kelmon.html"
     },
     {
         "name": "Krötenschemelgift",
@@ -228,7 +248,8 @@
         "beginn": "1 Stunde",
         "dauer": "4 Stunden / 2 Stunden",
         "kosten": "",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Kr%C3%B6tenschemelgift.html"
     },
     {
         "name": "Kukris",
@@ -239,7 +260,8 @@
         "beginn": "10 KR (Schaden und Juckreiz), 15 (Krämpfe)",
         "dauer": "bis zum Tod / 50 KR",
         "kosten": "350 Silbertaler",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Kukris.html"
     },
     {
         "name": "Mandragora",
@@ -250,7 +272,8 @@
         "beginn": "5 KR",
         "dauer": "30 KR",
         "kosten": "125 Silbertaler",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Mandragora.html"
     },
     {
         "name": "Margolaschabführmittel",
@@ -261,7 +284,8 @@
         "beginn": "1 Stunde",
         "dauer": "30 Minuten",
         "kosten": "",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Margolaschabf%C3%BChrmittel.html"
     },
     {
         "name": "Purpurner Lotosstaub",
@@ -272,7 +296,8 @@
         "beginn": "5 KR",
         "dauer": "5 Minuten",
         "kosten": "",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Purpurner_Lotosstaub.html"
     },
     {
         "name": "Rattenpilzgift",
@@ -283,7 +308,8 @@
         "beginn": "5 Minuten",
         "dauer": "7 Tage / 13 Stunden",
         "kosten": "",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Rattenpilzgift.html"
     },
     {
         "name": "Schattenneblergift",
@@ -294,7 +320,8 @@
         "beginn": "sofort",
         "dauer": "5 Minuten",
         "kosten": "- (kann nicht als Gift gewonnen werden; Wirkung verflüchtig sich nach 5 Minuten)",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Schattenneblergift.html"
     },
     {
         "name": "Schwarzer Lotos",
@@ -305,7 +332,8 @@
         "beginn": "sofort",
         "dauer": "1 Stunde",
         "kosten": "2.000 Silbertaler",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Schwarzer_Lotos.html"
     },
     {
         "name": "Schwarzkorn",
@@ -316,7 +344,8 @@
         "beginn": "2 Wochen",
         "dauer": "bis Schwarzkorn abgesetzt wird, danach 2 Wochen für 1 Stufe Betäubung / bis Schwarzkorn abgesetzt wird, danach 1 Woche für 1 Stufe Betäubung",
         "kosten": "in Yol-Ghurmak und den Schattenlanden ca. 3 Heller, anderorts ein etwa 3 Silbertaler",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Schwarzkorn.html"
     },
     {
         "name": "Wurara",
@@ -327,7 +356,8 @@
         "beginn": "3 Kampfrunden",
         "dauer": "4 Stunden / 2 Stunden",
         "kosten": "100 Silbertaler",
-        "gruppe": "Pflanzliche Gifte"
+        "gruppe": "Pflanzliche Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Wurara.html"
     },
     {
         "name": "Arachnae",
@@ -338,7 +368,8 @@
         "beginn": "2 KR",
         "dauer": "1 Stunde / 30 Minuten",
         "kosten": "50 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Arachnae.html"
     },
     {
         "name": "Arax",
@@ -349,7 +380,8 @@
         "beginn": "10 Minuten",
         "dauer": "1 Tag / 12 Stunden",
         "kosten": "100 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Arax.html"
     },
     {
         "name": "Brabacudagift",
@@ -360,10 +392,11 @@
         "beginn": "sofort",
         "dauer": "einmalig",
         "kosten": "wertlos",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/brba.html"
     },
     {
-        "name": "Charyb’Yzz’ Traum",
+        "name": "Charyb'Yzz' Traum",
         "stufe": "4",
         "art": "Einnahmegift, tierisch",
         "widerstand": "Zähigkeit",
@@ -371,7 +404,8 @@
         "beginn": "5 Minuten",
         "dauer": "1 Stunde / 30 Minuten",
         "kosten": "50 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Charyb_Yzz_Traum.html"
     },
     {
         "name": "Feuerzunge",
@@ -382,7 +416,8 @@
         "beginn": "30 Minuten",
         "dauer": "6 Stunden / 3 Stunden",
         "kosten": "150 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Feuerzunge.html"
     },
     {
         "name": "Gelbschwanzskorpiongift",
@@ -393,7 +428,8 @@
         "beginn": "sofort",
         "dauer": "Der Schaden entsteht in der 1., 4. und 10. KR nach dem Stich.",
         "kosten": "600 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gelbsch.html"
     },
     {
         "name": "Ghulgift",
@@ -404,7 +440,8 @@
         "beginn": "sofort",
         "dauer": "permanent / 12 Stunden",
         "kosten": "nicht extrahierbar, deshalb auch kein Preis",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Ghulgift.html"
     },
     {
         "name": "Gonede",
@@ -415,7 +452,8 @@
         "beginn": "sofort",
         "dauer": "30 Minuten / 15 Minuten",
         "kosten": "750 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Gonede.html"
     },
     {
         "name": "Hautgift",
@@ -426,7 +464,8 @@
         "beginn": "sofort",
         "dauer": "Die entstandene Betäubung baut sich pro Stunde um 1 Stufe ab.",
         "kosten": "",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/best_hautgift.html"
     },
     {
         "name": "Hexenhornissengift",
@@ -437,7 +476,8 @@
         "beginn": "sofort",
         "dauer": "sofort",
         "kosten": "",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_hexenhornissengift.html"
     },
     {
         "name": "Hexenschlangengift",
@@ -448,7 +488,8 @@
         "beginn": ": sofort",
         "dauer": ": sofort",
         "kosten": "",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_hexenschlangengift.html"
     },
     {
         "name": "Hexenspinnengift",
@@ -459,7 +500,8 @@
         "beginn": "sofort",
         "dauer": "sofort",
         "kosten": "",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_hexenspinnengift.html"
     },
     {
         "name": "Höhlenspinnengift",
@@ -470,7 +512,8 @@
         "beginn": "3 KR",
         "dauer": "24 Stunden / -",
         "kosten": "(Kauf/Verkauf): 300 Silbertaler / 75 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Hoehlenspin.html"
     },
     {
         "name": "Krötengift",
@@ -481,7 +524,8 @@
         "beginn": "5 KR",
         "dauer": "30 Minuten/-",
         "kosten": "",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/kroeten.html"
     },
     {
         "name": "Kvillottergift",
@@ -492,7 +536,8 @@
         "beginn": "sofort",
         "dauer": "Die entstandenen Stufen der Paralyse bauen sich pro Stunde um 1 Stufe wieder ab.",
         "kosten": "600 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Kvillo.html"
     },
     {
         "name": "Königsskorpiongift",
@@ -503,7 +548,8 @@
         "beginn": "sofort",
         "dauer": "2 Stunden / -",
         "kosten": "300 Silbertaler / 75 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Koenigsskorpiongift.html"
     },
     {
         "name": "Mantikorgift",
@@ -514,7 +560,8 @@
         "beginn": "sofort",
         "dauer": "4W6 KR / 2W6 KR",
         "kosten": "1.000 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Mantigift.html"
     },
     {
         "name": "Morfugift",
@@ -525,7 +572,8 @@
         "beginn": "sofort",
         "dauer": "einmalig",
         "kosten": "300 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Morfuguft.html"
     },
     {
         "name": "Muränenbiss",
@@ -536,7 +584,8 @@
         "beginn": "2 KR",
         "dauer": "3W6 KR / 2W6 KR",
         "kosten": "200 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Muraenenbiss.html"
     },
     {
         "name": "Omrais",
@@ -547,7 +596,8 @@
         "beginn": "5 Minuten",
         "dauer": "30 KR / 15 KR",
         "kosten": "250 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Omrais.html"
     },
     {
         "name": "Quallengift",
@@ -558,7 +608,8 @@
         "beginn": "sofort",
         "dauer": "bis zum Ende der lähmenden Wirkung (eine halbe Stunde pro Stufe des Zustands Paralyse)",
         "kosten": "100 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Quallengift.html"
     },
     {
         "name": "Schattenrochengift",
@@ -569,7 +620,8 @@
         "beginn": "sofort",
         "dauer": ": bis zum Ende der lähmenden Wirkung (3 Stunden pro Stufe des Zustands Betäubung)",
         "kosten": "200 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Schattenrochengift.html"
     },
     {
         "name": "Seilschlangengift",
@@ -580,7 +632,8 @@
         "beginn": "2 KR",
         "dauer": "sofort",
         "kosten": "keine, Gift kann nicht extrahiert werden",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Seilschlangengift.html"
     },
     {
         "name": "Serpentialisgift",
@@ -591,7 +644,8 @@
         "beginn": "sofort",
         "dauer": "bauen sich pro Stunde um 1 Stufe ab.",
         "kosten": "",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/gift_serpentialisgift.html"
     },
     {
         "name": "Speikobragift",
@@ -602,7 +656,8 @@
         "beginn": "sofort",
         "dauer": "2W6 KR / 1W6 KR",
         "kosten": "400 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Speikobragift.html"
     },
     {
         "name": "Sunsura",
@@ -613,7 +668,8 @@
         "beginn": "5 Minuten",
         "dauer": "30 KR / 15 KR",
         "kosten": "300 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Sunsura.html"
     },
     {
         "name": "Tinzal",
@@ -624,7 +680,8 @@
         "beginn": "5 Minuten",
         "dauer": "30 Minuten / 15 Minuten",
         "kosten": "450 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Gift_Tinzal.html"
     },
     {
         "name": "Totenbleiche",
@@ -635,7 +692,8 @@
         "beginn": "ein Tag",
         "dauer": "bis zum Tod bzw. bis keine weitere Einnahme erfolgt",
         "kosten": "10 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Totenbleiche.html"
     },
     {
         "name": "Vogelspinnengift",
@@ -646,6 +704,7 @@
         "beginn": "sofort",
         "dauer": "sofort",
         "kosten": "100 Silbertaler",
-        "gruppe": "Tierische Gifte"
+        "gruppe": "Tierische Gifte",
+        "url": "https://dsa.ulisses-regelwiki.de/Vogelspin.html"
     }
 ]

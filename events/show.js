@@ -123,7 +123,7 @@ export default {
 					{ name: 'Stufe', value: '\u200b' + detail.stufe, inline: true },
 					{ name: 'Art', value: '\u200b' + detail.art, inline: true },
 					{ name: 'Widerstand', value: '\u200b' + detail.widerstand, inline: true },
-					{ name: 'Begin', value: '\u200b' + detail.begin, inline: true },
+					{ name: 'Beginn', value: '\u200b' + detail.beginn, inline: true },
 					{ name: 'Dauer', value: '\u200b' + detail.dauer, inline: true },
 					{ name: 'Kosten', value: '\u200b' + detail.kosten, inline: true },
 					{ name: 'Gruppe', value: '\u200b' + detail.gruppe, inline: true },
