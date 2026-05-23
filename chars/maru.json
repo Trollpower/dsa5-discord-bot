@@ -5,10 +5,10 @@
     "zk": 3,
     "sk": 1,
     "gs": 8,
-   "cheating": {
-      "general": 51,
-      "crit": 10
-   },
+    "cheating": {
+        "general": 51,
+        "crit": 10
+    },
     "eigenschaften": {
         "MU": 15,
         "KL": 11,
