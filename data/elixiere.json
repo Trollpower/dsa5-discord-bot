@@ -148,43 +148,6 @@
         "url": "https://dsa.ulisses-regelwiki.de/Bannstaub.html"
     },
     {
-        "name": "Angstgift",
-        "typischeIngredenzien": "Alraune, Bärenfett, Haifischzähne, Hasenohren, Höllenkraut, Speichel eines Berserkers, Staub aus einer Gruft, Vitriol",
-        "kostenProIngredienzstufe": "60 Silbertaler pro Stufe",
-        "labor": "Hexenküche",
-        "brauschwierigkeit": "-2",
-        "voraussetzungen": "keine",
-        "apWert": "4 AP",
-        "qualitaetsStufen": [
-            {
-                "qs": 1,
-                "text": ""
-            },
-            {
-                "qs": 2,
-                "text": "gstgift"
-            },
-            {
-                "qs": 3,
-                "text": "e der Name bereits sagt, löst dieses Gift große Panik bei demjenigen aus, der mit einer vergifteten Waffe getroffen wird. Die Wirkung des Angstgifts ist dabei allerdings nicht kumulativ. Wer durch das Gift Zustandsstufen Furcht erlitten hat, kann erst wieder am Ende der Wirkungsdauer davon betroffen sein."
-            },
-            {
-                "qs": 4,
-                "text": "ufe: QS"
-            },
-            {
-                "qs": 5,
-                "text": "t: Waffengift, alchimistisch"
-            },
-            {
-                "qs": 6,
-                "text": "derstand: Seelenkraft"
-            }
-        ],
-        "alias": [],
-        "url": "https://dsa.ulisses-regelwiki.de/gift_angstgift.html"
-    },
-    {
         "name": "Antidot",
         "typischeIngredenzien": "Alicorn, Belmartblätter, geharzter Wein, Giftzahn einer Sandviper, Menchalsaft, Schwarzer Lotus, Storchen- oder Ibiseier, Tulmadron, Turmalin, Zinnober",
         "kostenProIngredienzstufe": "40 Silbertaler pro Stufe",
