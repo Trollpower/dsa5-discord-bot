@@ -34,7 +34,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/grgrtg.html"
+        "url": "https://dsa.ulisses-regelwiki.de/her_a_alchimistensaeure.html"
     },
     {
         "name": "Berserkerelixier",
@@ -71,7 +71,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/rerfreg.html"
+        "url": "https://dsa.ulisses-regelwiki.de/rerfreg.html"
     },
     {
         "name": "Eulentränen",
@@ -108,7 +108,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Eulentr%C3%A4nen.html"
+        "url": "https://dsa.ulisses-regelwiki.de/her_a_eulentraenen.html"
     },
     {
         "name": "Bannstaub",
@@ -145,7 +145,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Bannstaub.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Bannstaub.html"
     },
     {
         "name": "Angstgift",
@@ -182,7 +182,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/grtgrtgrtgt.html"
+        "url": "https://dsa.ulisses-regelwiki.de/gift_angstgift.html"
     },
     {
         "name": "Antidot",
@@ -219,7 +219,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Antidot.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Antidot.html"
     },
     {
         "name": "Heiltrank",
@@ -256,7 +256,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Heiktrank.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Heiltrank.html"
     },
     {
         "name": "Hylailer Feuer",
@@ -265,7 +265,8 @@
         "labor": "alchimistisches Labor",
         "brauschwierigkeit": "-4",
         "voraussetzungen": "luftdicht",
-        "apWert": "10 AP"
+        "apWert": "10 AP",
+        "url": "https://dsa.ulisses-regelwiki.de/her_a_hylailer_feuer.html"
     },
     {
         "name": "Pastillen gegen Schmerzen",
@@ -302,7 +303,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Pastillen.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Pastillen.html"
     },
     {
         "name": "Kaltes Licht",
@@ -339,7 +340,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/KaltesLicht.html"
+        "url": "https://dsa.ulisses-regelwiki.de/KaltesLicht.html"
     },
     {
         "name": "Leuchtkreide",
@@ -376,7 +377,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Leuchtkreide.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Leuchtkreide.html"
     },
     {
         "name": "Liebestrunk",
@@ -413,7 +414,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Liebestrunk.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Liebestrunk.html"
     },
     {
         "name": "Pyrophor",
@@ -425,7 +426,7 @@
         "apWert": "",
         "qualitaetsStufen": [],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Pyrophor.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Pyrophor.html"
     },
     {
         "name": "Schlaftrunk",
@@ -462,7 +463,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Schlaftrunk.html"
+        "url": "https://dsa.ulisses-regelwiki.de/her_a_schlaftrunk.html"
     },
     {
         "name": "Stinktöpfchen",
@@ -499,7 +500,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/bgbttrt.html"
+        "url": "https://dsa.ulisses-regelwiki.de/bgbttrt.html"
     },
     {
         "name": "Schwadenbeutel",
@@ -536,7 +537,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/bfgbgfbgb.html"
+        "url": "https://dsa.ulisses-regelwiki.de/bfgbgfbgb.html"
     },
     {
         "name": "Trunk der ruhigen Hand",
@@ -573,7 +574,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Trunk_der_ruhigen_Hand.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Trunk_der_ruhigen_Hand.html"
     },
     {
         "name": "Unsichtbarkeitselixier",
@@ -610,7 +611,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Unsichtbar.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Unsichtbar.html"
     },
     {
         "name": "Verwandlungselixier",
@@ -647,7 +648,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Verwandlung.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Verwandlung.html"
     },
     {
         "name": "Wasserodem",
@@ -684,7 +685,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Wasserodem.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Wasserodem.html"
     },
     {
         "name": "Waffenbalsam",
@@ -721,7 +722,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Waffenbalsam.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Waffenbalsam.html"
     },
     {
         "name": "Willenstrank",
@@ -758,7 +759,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Willenstrank.html"
+        "url": "https://dsa.ulisses-regelwiki.de/her_a_elixiere/willenstrunk.html"
     },
     {
         "name": "Zaubertrank",
@@ -795,7 +796,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Zaubertrank.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Zaubertrank.html"
     },
     {
         "name": "Zielwasser",
@@ -832,7 +833,7 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/bgvfdgr.html"
+        "url": "https://dsa.ulisses-regelwiki.de/bgvfdgr.html"
     },
     {
         "name": "Zähigkeitstrunk",
@@ -869,6 +870,6 @@
             }
         ],
         "alias": [],
-        "url": "https://ulisses-regelwiki.de/Z%C3%A4higkeitstrunk.html"
+        "url": "https://dsa.ulisses-regelwiki.de/Z%C3%A4higkeitstrunk.html"
     }
 ]
