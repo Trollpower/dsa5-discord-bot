@@ -110,10 +110,18 @@ export async function execute(interaction, DiscordClient) {
 				try {
 					const rows = await createQuickButtonRows(char, DiscordClient);
 					if (rows.length > 0) {
-						await interaction.followUp({
+						const charKey = char.name ?? char.displayName;
+						const prevFollowup = DiscordClient.lastQuickFollowups[charKey];
+						if (prevFollowup) {
+							try {
+								await prevFollowup.interaction.webhook.deleteMessage(prevFollowup.messageId);
+							} catch { /* Token abgelaufen oder bereits gelöscht */ }
+						}
+						const followupMsg = await interaction.followUp({
 							components: rows.slice(0, 5),
 							flags: MessageFlags.Ephemeral,
 						});
+						DiscordClient.lastQuickFollowups[charKey] = { interaction, messageId: followupMsg.id };
 					}
 				}
 				catch (followUpError) {

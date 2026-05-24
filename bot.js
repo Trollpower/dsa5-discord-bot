@@ -46,6 +46,7 @@ for (const envVar of requiredEnvVars) {
 	};
 
 	DiscordClient.histories = {};
+	DiscordClient.lastQuickFollowups = {};
 	DiscordClient.limitCommandUses = new Collection();
 	DiscordClient.expireAfter = new Collection();
 	DiscordClient.messageCommands = new Collection();
@@ -67,7 +68,6 @@ for (const envVar of requiredEnvVars) {
 	// Make credentials available to other parts.
 	DiscordClient.credentials = credentials;
 	DiscordClient.characters = new Collection();
-	DiscordClient.histories = {};
 
 	try {
 		await EventManager(DiscordClient, DirPath);
