@@ -40,7 +40,7 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		}
 		atMod = -(2 * stufe);
 		tpMod = 2 * stufe;
-		content = formatKsfContent('Wuchtschlag', waffenName);
+		content = formatKsfContent(sfName, waffenName);
 		break;
 	}
 	case 'finte': {
@@ -289,8 +289,8 @@ export default {
 					data.ksfSubcommand = 'wuchtschlag'; data.ksfStufe = stufe;
 					data.ksfLabel = wuchtschlag;
 					const embed = utils.createResultEmbedFromAttack({ character, data, interaction, client });
-
-					await interaction.reply({ content: formatKsfContent('Wuchtschlag', waffenName), embeds: [embed] });
+					
+					await interaction.reply({ content: formatKsfContent(wuchtschlag, waffenName), embeds: [embed] });
 					return [data];
 				}
 				return await interaction.reply({ content: wuchtschlag + ' hast du nicht' });
