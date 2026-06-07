@@ -491,16 +491,30 @@ Der `/schip`-Befehl nutzt ebenfalls das letzte passende Event des Charakters aus
 ## 📁 Projektstruktur
 
 ```
-├── bot.js                 # Hauptbot-Datei
-├── config.json           # Spielkonfiguration (Aliase, Meister)
-├── deploy-commands.js    # Command-Deployment
-├── .env                  # Environment Variables (nicht in Git!)
-├── commands/            # Discord Slash Commands
-├── events/              # Event Handler
-├── chars/               # Charakterdateien (JSON)
-├── data/                # Spieldaten (Waffen, Zauber, etc.)
-├── tables/              # DSA-Tabellen
-└── common/              # Gemeinsame Funktionen
+├── bot.js                 # Einstiegspunkt, Client-Initialisierung
+├── index.js               # Alternativer Einstiegspunkt (nodemon)
+├── deploy-commands.js     # Slash-Commands bei Discord registrieren
+├── config.json            # Spielkonfiguration (Aliase, Meister, Gruppen)
+├── config.example.json    # Vorlage für config.json
+├── .env                   # Environment Variables (nicht in Git!)
+├── .env.example           # Vorlage für .env
+├── Dockerfile             # Multi-Stage Docker Build (node:20 / distroless)
+├── docker-compose.yml     # Docker Compose: bot + deploy-Service
+├── eslint.config.js       # ESLint-Konfiguration
+├── nodemon.json           # nodemon-Konfiguration für lokale Entwicklung
+├── commands/              # Slash-Command-Definitionen (SlashCommandBuilder)
+├── events/                # Event-Handler (ein Handler pro Command)
+├── handlers/              # Discord-Interaktions-Dispatcher
+├── managers/              # Initialisierung (CharacterManager, EventManager)
+├── common/                # Gemeinsame Hilfsklassen und Funktionen
+├── data/                  # Spielregelwerks-Daten (Waffen, Zauber, SF, etc.)
+├── chars/                 # Charakterdateien (JSON, per Volume gemountet)
+├── storage/               # Event-History (NDJSON, per Volume gemountet)
+├── tables/                # DSA-Tabellen (Betäubung, Entrückung, etc.)
+├── schemas/               # JSON-Schema für Charakterdateien
+├── docs/                  # Entwicklerdokumentation
+├── tools/                 # Hilfsskripte (z. B. PDF-Export)
+└── output/                # Ausgabeverzeichnis (z. B. exportierte PDFs)
 ```
 
 ## 🚀 Development
