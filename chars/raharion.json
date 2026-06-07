@@ -315,7 +315,7 @@
     ],
     "ruestungen": [],
     "angelegteWaffen": [
-        "Herzsucher"
+        "Elfenbogen"
     ],
     "nachteile": [
         {
@@ -372,14 +372,17 @@
             "name": "Zweistimmiger Gesang"
         }
     ],
-    "initiative": 17,
+    "initiative": 19,
     "quickProbeFavorites": [
         {
             "category": "talente",
             "name": "Sinnesschärfe",
             "label": "Sinn"
         },
-        null,
+        {
+            "type": "angriff",
+            "waffenName": "Elfenbogen"
+        },
         null
     ]
 }
