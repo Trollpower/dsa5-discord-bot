@@ -26,8 +26,7 @@ Die wichtigsten Werte sind:
 
 - `DISCORD_TOKEN`: Bot-Token für den Login bei Discord
 - `CLIENT_ID`: Discord Application Client ID
-- `GUILD_ID_TESTSERVER`: Guild-ID für Testserver-Deployment von Slash-Commands
-- `GUILD_ID_PINKY`: Guild-ID für das zweite konfigurierte Deploymentziel
+- `GUILD_IDS`: Kommaseparierte Liste der Guild-IDs für das Deployment von Slash-Commands (z. B. `123456789,987654321`)
 - `LOG_LEVEL`: gewünschte Logstufe
 - `LOG_FORMAT`: gewünschtes Logformat
 
@@ -42,12 +41,15 @@ Wenn eine dieser Variablen fehlt, wird der Bot mit einem Fehlerlog beendet. Dadu
 
 ### Rolle der Guild-IDs
 
-Die Guild-IDs sind vor allem für `deploy-commands.js` relevant. Dort werden Slash-Commands gezielt in die konfigurierten Guilds geschrieben.
+Die Guild-IDs sind ausschließlich für `deploy-commands.js` relevant. Dort werden Slash-Commands gezielt in alle konfigurierten Guilds geschrieben.
+
+`GUILD_IDS` enthält eine kommaseparierte Liste beliebig vieler Server-IDs. `deploy-commands.js` iteriert über alle Einträge und registriert die Commands in jedem Server.
 
 Das bedeutet:
 
-- fehlende Guild-IDs verhindern nicht zwingend den Start des Bots
-- sie sind aber für das erwartete Deployment-Verhalten wichtig
+- fehlende `GUILD_IDS` verhindert nicht den Start des Bots
+- `deploy-commands.js` bricht ab, wenn `GUILD_IDS` leer oder nicht gesetzt ist
+- beliebig viele Server können durch Erweiterung der Liste hinzugefügt werden
 
 ## Projektkonfiguration in `config.json`
 
