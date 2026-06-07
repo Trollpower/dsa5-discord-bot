@@ -6,8 +6,8 @@
     "sk": 1,
     "gs": 8,
     "cheating": {
-        "general": 51,
-        "crit": 10
+        "general": 20,
+        "crit": 5
     },
     "eigenschaften": {
         "MU": 15,
@@ -166,7 +166,7 @@
             "category": "Jähzorn"
         }
     ],
-    "initiative": 14,
+    "initiative": 21,
     "quickProbeFavorites": [
         null,
         null,
