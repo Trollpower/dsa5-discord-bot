@@ -13,8 +13,7 @@ const __dirname = path.dirname(__filename);
 // Load credentials from environment variables
 const credentials = {
 	clientId: process.env.CLIENT_ID,
-	guildId_testserver: process.env.GUILD_ID_TESTSERVER,
-	guildId_pinky: process.env.GUILD_ID_PINKY,
+	guildIds: process.env.GUILD_IDS ? process.env.GUILD_IDS.split(',').map(id => id.trim()).filter(Boolean) : [],
 	token: process.env.DISCORD_TOKEN,
 };
 
@@ -32,18 +31,14 @@ for (const file of commandFiles) {
 }
 
 const rest = new REST({ version: '10' }).setToken(credentials.token);
-rest.put(Routes.applicationGuildCommands(credentials.clientId, credentials.guildId_testserver), { body: commands })
-	.then(() => console.log('Successfully registered application commands at Testserver.'))
-	.catch(console.error);
-rest.put(Routes.applicationGuildCommands(credentials.clientId, credentials.guildId_pinky), { body: commands })
-	.then(() => console.log('Successfully registered application commands at Pinky & Brain.'))
-	.catch(console.error);
-// rest.put(Routes.applicationGuildCommands(credentials.clientId, credentials.guildId_testserver), { body: [] })
-// 	.then(() => console.log('Successfully deleted application commands at Testserver.'))
-// 	.catch(console.error);
-// rest.put(Routes.applicationGuildCommands(credentials.clientId, credentials.guildId_pinky), { body: [] })
-// 	.then(() => console.log('Successfully deleted application commands at Pinky & Brain.'))
-// 	.catch(console.error);
-// rest.put(Routes.applicationCommands(credentials.clientId), { body: [] })
-// 	.then(() => console.log('Successfully deleted all application commands.'))
-// 	.catch(console.error);
+
+if (credentials.guildIds.length === 0) {
+	console.error('No guild IDs configured. Set GUILD_IDS in your .env file (comma-separated).');
+	process.exit(1);
+}
+
+for (const guildId of credentials.guildIds) {
+	rest.put(Routes.applicationGuildCommands(credentials.clientId, guildId), { body: commands })
+		.then(() => console.log(`Successfully registered application commands at guild ${guildId}.`))
+		.catch(console.error);
+}

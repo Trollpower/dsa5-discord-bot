@@ -17,8 +17,7 @@ import { createEventHistoryProvider } from './common/eventHistoryProvider.js';
 // Create credentials object from environment variables
 const credentials = {
 	clientId: process.env.CLIENT_ID,
-	guildId_testserver: process.env.GUILD_ID_TESTSERVER,
-	guildId_pinky: process.env.GUILD_ID_PINKY,
+	guildIds: process.env.GUILD_IDS ? process.env.GUILD_IDS.split(',').map(id => id.trim()).filter(Boolean) : [],
 	token: process.env.DISCORD_TOKEN,
 };
 

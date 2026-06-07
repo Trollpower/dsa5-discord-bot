@@ -31,6 +31,7 @@ COPY --from=build /app/managers ./managers
 COPY --from=build /app/handlers ./handlers
 COPY --from=build /app/data ./data
 COPY --from=build /app/tables ./tables
+COPY --from=build /app/tools ./tools
 COPY --from=build /app/package.json ./package.json
 # Leere Verzeichnisse für Volume-Mounts
 COPY --from=build /app/storage ./storage
