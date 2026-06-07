@@ -29,12 +29,12 @@
             "ktw": 14
         },
         {
-            "name": "Schwerter",
-            "ktw": 14
-        },
-        {
             "name": "Schwanz",
             "ktw": 16
+        },
+        {
+            "name": "Schwerter",
+            "ktw": 14
         }
     ],
     "talente": [
@@ -103,10 +103,10 @@
     ],
     "sonderfertigkeiten": [
         {
-            "name": "Belastungsgewöhnung I"
+            "name": "Beidhändiger Kampf I"
         },
         {
-            "name": "Beidhändiger Kampf I"
+            "name": "Belastungsgewöhnung I"
         },
         {
             "name": "Finte I"
@@ -115,13 +115,13 @@
             "name": "Kampfreflexe I"
         },
         {
+            "name": "Mächtiger Rundumschlag"
+        },
+        {
             "name": "Rundumschlag I"
         },
         {
             "name": "Rundumschlag II"
-        },
-        {
-            "name": "Mächtiger Rundumschlag"
         },
         {
             "name": "Wuchtschlag I"
@@ -166,7 +166,7 @@
             "category": "Jähzorn"
         }
     ],
-    "initiative": 21,
+    "initiative": 19,
     "quickProbeFavorites": [
         null,
         null,
