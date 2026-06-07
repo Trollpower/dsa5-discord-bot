@@ -12,26 +12,25 @@ export default {
 			const persistCharacter = client.Persistence.persistCharacter;
 			const charName = interaction.options.getString('character-name');
 			const reloadFromDisc = interaction.options.getBoolean('reload-from-disc') ?? false;
-			// console.log(`Persist arguments ${persistCharacter}, ${charName}, ${reloadFromDisc}`);
 			if (reloadFromDisc && !charName) {
-				const charsPath = path.join(__dirname, '../chars');
+				const charsPath = path.resolve('chars');
 				const charsFiles = fs.readdirSync(charsPath).filter(file => file.endsWith('.json') && file !== 'config.json');
 
 				for (const file of charsFiles) {
 					const filePath = path.join(charsPath, file);
-					const loadedCharacter = require(filePath);
-					persistCharacter(loadedCharacter);
+					const char = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+					char.angelegteWaffen = char.angelegteWaffen ?? [];
+					client.characters.set(char.name, new Character(char));
 				}
-				await interaction.reply({ content: 'Alle Charaktere wurden neu von der Platte eingelesen', flags: MessageFlags.Ephemeral });
+				await interaction.reply({ content: `${charsFiles.length} Charaktere wurden neu von der Platte eingelesen`, flags: MessageFlags.Ephemeral });
 			}
 			else if (reloadFromDisc) {
-				const charsPath = path.join(__dirname, '../chars');
+				const charsPath = path.resolve('chars');
 				const charsFiles = fs.readdirSync(charsPath).filter(file => file.endsWith('.json') && file !== 'config.json');
-				// console.log("Persisting: ", charsFiles, charName);
-				const charFile = client.Utils.highestSimilarity(charName, (char) => ({ name: char, aliases: [] }), charsFiles);
+				const charFile = client.Utils.highestSimilarity(charName, (file) => ({ name: path.basename(file, '.json'), aliases: [] }), charsFiles);
 				const filePath = path.join(charsPath, charFile);
-				const char = require(filePath);
-				persistCharacter(char);
+				const char = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+				char.angelegteWaffen = char.angelegteWaffen ?? [];
 				client.characters.set(char.name, new Character(char));
 				await interaction.reply({ content: `${char.name} wurde von der Platte neu geladen`, flags: MessageFlags.Ephemeral });
 			}
