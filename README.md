@@ -85,7 +85,7 @@ Ein Discord-Bot für **Das Schwarze Auge 5. Edition (DSA5)** Rollenspielsitzunge
 ## 🔧 Installation & Konfiguration
 
 ### 1. Voraussetzungen
-- Node.js 18.0.0 oder höher
+- Node.js 20.0.0 oder höher
 - Discord Bot Token
 
 ### 2. Environment Variables (.env Datei)
@@ -96,8 +96,8 @@ Erstelle eine `.env` Datei im Projektverzeichnis:
 # Discord Bot Configuration
 DISCORD_TOKEN=dein_discord_bot_token_hier
 CLIENT_ID=deine_discord_client_id_hier
-GUILD_ID_TESTSERVER=deine_test_guild_id_hier
-GUILD_ID_PINKY=deine_haupt_guild_id_hier
+# Kommaseparierte Liste der Guild-IDs für das Command-Deployment
+GUILD_IDS=deine_guild_id_hier,weitere_guild_id_hier
 
 # Logging (debug, info, warn, error)
 LOG_LEVEL=info
@@ -169,11 +169,7 @@ Das Image verwendet ein **Multi-Stage-Build**:
 
 Container mit Volumes manuell starten:
 ```powershell
-docker run --env-file .env \
-  -v ./chars:/app/chars \
-  -v ./storage:/app/storage \
-  -v ./config.json:/app/config.json:ro \
-  dsa-bot-v2
+docker run --env-file .env -v ./chars:/app/chars -v ./storage:/app/storage -v ./config.json:/app/config.json:ro dsa-bot-v2
 ```
 
 Slash-Commands manuell deployen (Einmalausführung):
@@ -565,6 +561,8 @@ Der `/schip`-Befehl nutzt ebenfalls das letzte passende Event des Charakters aus
 - `/char favorit1/2/3` – Beidhändiger Kampf als KSF-Auswahl hinzugefügt, `basismanoever2` Option für Nebenhand
 - KSF-Content-Formatierung über zentrale `formatKsfContent`-Template-Funktion (einheitliches Discord-Markdown)
 - Probe-Tracking über Event-History (`storage/event-history.ndjson`) und `quickProbeFavorites` integriert
+- `GUILD_IDS` in `.env` ersetzt die bisherigen einzelnen `GUILD_ID_TESTSERVER`/`GUILD_ID_PINKY`-Variablen; kommaseparierte Liste beliebig vieler Guild-IDs
+- Quick-Button-Followup wird beim nächsten Command automatisch gelöscht und neu erstellt (nur eine aktive Buttons-Nachricht pro Charakter)
 
 
 
