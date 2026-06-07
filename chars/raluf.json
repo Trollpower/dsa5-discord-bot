@@ -1,217 +1,218 @@
 {
-   "name": "Raluf",
-   "displayName": "Raluf der Kühne",
-   "wesenszug": "",
-   "zk": 2,
-   "sk": 1,
-   "gs": 8,
-   "eigenschaften": {
-      "MU": 17,
-      "KL": 8,
-      "IN": 12,
-      "CH": 12,
-      "FF": 9,
-      "GE": 14,
-      "KO": 19,
-      "KK": 19
-   },
-   "lep": {
-      "aktuell": 47,
-      "max": 47
-   },
-   "kampftechniken": [
-      {
-         "name": "Dolche",
-         "ktw": 10
-      },
-      {
-         "name": "Hiebwaffen",
-         "ktw": 17
-      },
-      {
-         "name": "Raufen",
-         "ktw": 14
-      },
-      {
-         "name": "Schilde",
-         "ktw": 15
-      },
-      {
-         "name": "Schwerter",
-         "ktw": 12
-      },
-      {
-         "name": "Wurfwaffen",
-         "ktw": 10
-      },
-      {
-         "name": "Zweihandhiebwaffen",
-         "ktw": 11
-      }
-   ],
-   "talente": [
-      {
-         "name": "Bekehren & Überzeugen",
-         "fertigkeitswert": 1
-      },
-      {
-         "name": "Betören",
-         "fertigkeitswert": 1
-      },
-      {
-         "name": "Boote & Schiffe",
-         "fertigkeitswert": 8
-      },
-      {
-         "name": "Einschüchtern",
-         "fertigkeitswert": 7
-      },
-      {
-         "name": "Etikette",
-         "fertigkeitswert": 5
-      },
-      {
-         "name": "Fischen & Angeln",
-         "fertigkeitswert": 2
-      },
-      {
-         "name": "Geographie",
-         "fertigkeitswert": 5
-      },
-      {
-         "name": "Geschichtswissen",
-         "fertigkeitswert": 4
-      },
-      {
-         "name": "Götter & Kulte",
-         "fertigkeitswert": 6
-      },
-      {
-         "name": "Heilkunde Wunden",
-         "fertigkeitswert": 5
-      },
-      {
-         "name": "Holzbearbeitung",
-         "fertigkeitswert": 3
-      },
-      {
-         "name": "Klettern",
-         "fertigkeitswert": 2
-      },
-      {
-         "name": "Körperbeherrschung",
-         "fertigkeitswert": 5
-      },
-      {
-         "name": "Kraftakt",
-         "fertigkeitswert": 9
-      },
-      {
-         "name": "Kriegskunst",
-         "fertigkeitswert": 5
-      },
-      {
-         "name": "Magiekunde",
-         "fertigkeitswert": 2
-      },
-      {
-         "name": "Menschenkenntnis",
-         "fertigkeitswert": 4
-      },
-      {
-         "name": "Orientierung",
-         "fertigkeitswert": 5
-      },
-      {
-         "name": "Rechnen",
-         "fertigkeitswert": 4
-      },
-      {
-         "name": "Rechtskunde",
-         "fertigkeitswert": 4
-      },
-      {
-         "name": "Sagen & Legenden",
-         "fertigkeitswert": 7
-      },
-      {
-         "name": "Schwimmen",
-         "fertigkeitswert": 5
-      },
-      {
-         "name": "Selbstbeherrschung",
-         "fertigkeitswert": 7
-      },
-      {
-         "name": "Sinnesschärfe",
-         "fertigkeitswert": 9
-      },
-      {
-         "name": "Sphärenkunde",
-         "fertigkeitswert": 1
-      },
-      {
-         "name": "Tierkunde",
-         "fertigkeitswert": 2
-      },
-      {
-         "name": "Überreden",
-         "fertigkeitswert": 3
-      },
-      {
-         "name": "Willenskraft",
-         "fertigkeitswert": 4
-      },
-      {
-         "name": "Zechen",
-         "fertigkeitswert": 8
-      }
-   ],
-   "zauber": [],
-   "liturgien": [],
-   "flueche": [],
-   "elfenlieder": [],
-   "rituale": [],
-   "segnungen": [],
-   "melodien": [],
-   "waffen": [
-      "Barbarenstreitaxt",
-      "Thorwalerschild",
-      "Uddahjaler Kriegsbeil (Skraja)"
-   ],
-   "sonderfertigkeiten": [
-      {
-         "name": "Sturmangriff"
-      },
-      {
-         "name": "Finte"
-      },
-      {
-         "name": "Wuchtschlag I"
-      },
-      {
-         "name": "Wuchtschlag II"
-      },
-      {
-         "name": "Hammerschlag"
-      },
-      {
-         "name": "Belastungsgewöhnung I"
-      },
-      {
-         "name": "Belastungsgewöhnung II"
-      }
-   ],
-   "angelegteWaffen": [
-      "Barbarenstreitaxt"
-   ],
-   "angelegteRuestung": "Kettenrüstung",
-   "ruestungen": [
-      "Kettenrüstung"
-   ],
-   "quickProbeFavorites": [
-      null,
-      null,
-      null
-   ]
+    "name": "Raluf",
+    "displayName": "Raluf der Kühne",
+    "wesenszug": "",
+    "zk": 2,
+    "sk": 1,
+    "gs": 8,
+    "eigenschaften": {
+        "MU": 17,
+        "KL": 8,
+        "IN": 12,
+        "CH": 12,
+        "FF": 9,
+        "GE": 14,
+        "KO": 19,
+        "KK": 19
+    },
+    "lep": {
+        "aktuell": 47,
+        "max": 47
+    },
+    "kampftechniken": [
+        {
+            "name": "Dolche",
+            "ktw": 10
+        },
+        {
+            "name": "Hiebwaffen",
+            "ktw": 17
+        },
+        {
+            "name": "Raufen",
+            "ktw": 14
+        },
+        {
+            "name": "Schilde",
+            "ktw": 15
+        },
+        {
+            "name": "Schwerter",
+            "ktw": 12
+        },
+        {
+            "name": "Wurfwaffen",
+            "ktw": 10
+        },
+        {
+            "name": "Zweihandhiebwaffen",
+            "ktw": 17
+        }
+    ],
+    "talente": [
+        {
+            "name": "Bekehren & Überzeugen",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Betören",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Boote & Schiffe",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Einschüchtern",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Etikette",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Fischen & Angeln",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Geographie",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Geschichtswissen",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Götter & Kulte",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Heilkunde Wunden",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Holzbearbeitung",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Klettern",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Körperbeherrschung",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Kraftakt",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Kriegskunst",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Magiekunde",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Menschenkenntnis",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Orientierung",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Rechnen",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Rechtskunde",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Sagen & Legenden",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Schwimmen",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Selbstbeherrschung",
+            "fertigkeitswert": 7
+        },
+        {
+            "name": "Sinnesschärfe",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Sphärenkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Tierkunde",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Überreden",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Willenskraft",
+            "fertigkeitswert": 4
+        },
+        {
+            "name": "Zechen",
+            "fertigkeitswert": 8
+        }
+    ],
+    "zauber": [],
+    "liturgien": [],
+    "flueche": [],
+    "elfenlieder": [],
+    "rituale": [],
+    "segnungen": [],
+    "melodien": [],
+    "waffen": [
+        "Barbarenstreitaxt",
+        "Thorwalerschild",
+        "Uddahjaler Kriegsbeil (Skraja)"
+    ],
+    "sonderfertigkeiten": [
+        {
+            "name": "Sturmangriff"
+        },
+        {
+            "name": "Finte"
+        },
+        {
+            "name": "Wuchtschlag I"
+        },
+        {
+            "name": "Wuchtschlag II"
+        },
+        {
+            "name": "Hammerschlag"
+        },
+        {
+            "name": "Belastungsgewöhnung I"
+        },
+        {
+            "name": "Belastungsgewöhnung II"
+        }
+    ],
+    "angelegteWaffen": [
+        "Barbarenstreitaxt"
+    ],
+    "angelegteRuestung": "Kettenrüstung",
+    "ruestungen": [
+        "Kettenrüstung"
+    ],
+    "quickProbeFavorites": [
+        null,
+        null,
+        null
+    ],
+    "initiative": 20
 }
