@@ -174,9 +174,7 @@ docker run --env-file .env -v ./chars:/app/chars -v ./storage:/app/storage -v ./
 
 Slash-Commands manuell deployen (Einmalausführung):
 ```powershell
-docker run --rm --env-file .env \
-  -v ./config.json:/app/config.json:ro \
-  dsa-bot-v2 deploy-commands.js
+docker run --rm --env-file .env -v ./config.json:/app/config.json:ro dsa-bot-v2 deploy-commands.js
 ```
 
 Hinweise:
