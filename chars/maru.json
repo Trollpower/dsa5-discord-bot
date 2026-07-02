@@ -34,7 +34,9 @@
         },
         {
             "name": "Schwerter",
-            "ktw": 14
+            "ktw": 14,
+            "pa": 10,
+            "paBrutto": 4
         }
     ],
     "talente": [
@@ -166,7 +168,7 @@
             "category": "Jähzorn"
         }
     ],
-    "initiative": 19,
+    "initiative": 20,
     "quickProbeFavorites": [
         null,
         null,

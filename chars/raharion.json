@@ -310,12 +310,12 @@
         }
     ],
     "waffen": [
-        "Elfenbogen",
+        "Milzenis` gekräuseltes Schamhaar",
         "Herzsucher"
     ],
     "ruestungen": [],
     "angelegteWaffen": [
-        "Elfenbogen"
+        "Milzenis` gekräuseltes Schamhaar"
     ],
     "nachteile": [
         {
@@ -381,7 +381,7 @@
         },
         {
             "type": "angriff",
-            "waffenName": "Elfenbogen"
+            "waffenName": "Milzenis` gekräuseltes Schamhaar"
         },
         null
     ]

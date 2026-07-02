@@ -16,7 +16,7 @@
         "KK": 19
     },
     "lep": {
-        "aktuell": 47,
+        "aktuell": 45,
         "max": 47
     },
     "kampftechniken": [
@@ -46,7 +46,9 @@
         },
         {
             "name": "Zweihandhiebwaffen",
-            "ktw": 17
+            "ktw": 17,
+            "pa": 12,
+            "paBrutto": 6
         }
     ],
     "talente": [
@@ -181,25 +183,25 @@
     ],
     "sonderfertigkeiten": [
         {
-            "name": "Sturmangriff"
+            "name": "Belastungsgewöhnung I"
+        },
+        {
+            "name": "Belastungsgewöhnung II"
         },
         {
             "name": "Finte"
+        },
+        {
+            "name": "Hammerschlag"
+        },
+        {
+            "name": "Sturmangriff"
         },
         {
             "name": "Wuchtschlag I"
         },
         {
             "name": "Wuchtschlag II"
-        },
-        {
-            "name": "Hammerschlag"
-        },
-        {
-            "name": "Belastungsgewöhnung I"
-        },
-        {
-            "name": "Belastungsgewöhnung II"
         }
     ],
     "angelegteWaffen": [
@@ -214,5 +216,5 @@
         null,
         null
     ],
-    "initiative": 20
+    "initiative": 19
 }
