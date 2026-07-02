@@ -2,6 +2,8 @@ import { Events } from 'discord.js';
 import path from 'path';
 import config from '../config.json' with { type: 'json' };
 const enableGMChanceImprovement = config.enableGMChanceImprovement;
+import { rollDice } from '../common/common.js';
+import { createField } from '../common/embeds.js';
 import logger from '../common/logger.js';
 
 const AUSWEICHEN_QUICK_CUSTOM_ID_PREFIX = 'ausweichen:quick:';
@@ -48,8 +50,8 @@ const executeAusweichen = async ({ bonusMalus, interaction, character, client })
 		};
 		event.infos.push(info);
 	}
-	let roll = client.Common.rollDice(20);
-	const critBestaetigt = client.Common.rollDice(20);
+	let roll = rollDice(20);
+	const critBestaetigt = rollDice(20);
 	let gmChanceImproved = false;
 	if (interaction?.isMeister()) {
 		logger.debug('combat.evade.cheat-state.initial', logger.traceMeta(interaction, {
@@ -138,7 +140,7 @@ const executeAusweichen = async ({ bonusMalus, interaction, character, client })
 	result.fields.push({ name: 'Belastung', value: `${event.belastung}`, inline: true });
 
 	if (verbessertesAusweichen.length > 0) {
-		result.fields.push(client.Utils.createField(
+		result.fields.push(createField(
 			{
 				fieldName: 'Verbesertes Ausweichen',
 				fieldValues: verbessertesAusweichen.sort((a, b) => a.name.localeCompare(b.name)).map(talent => ({ key: talent.name })),
@@ -148,7 +150,7 @@ const executeAusweichen = async ({ bonusMalus, interaction, character, client })
 	}
 
 	if (ausweichenBonusDurchMeisterlicherKlingenTaenzer > 0) {
-		result.fields.push(client.Utils.createField(
+		result.fields.push(createField(
 			{
 				fieldName: 'Meisterlicher Klingentänzer Bonus',
 				fieldValues: [{ key: ausweichenBonusDurchMeisterlicherKlingenTaenzer }],
@@ -182,7 +184,7 @@ export default {
 	},
 	async executeSchip(interaction, eventData, character, client) {
 		const data = { ...eventData };
-		data.roll = client.Common.rollDice(20);
+		data.roll = rollDice(20);
 
 		const result = {
 			fields: [],

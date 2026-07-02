@@ -1,5 +1,6 @@
 import { InteractionType, Events } from 'discord.js';
 import path from 'path';
+import { rollDice } from '../common/common.js';
 
 const createEmbed = (event, character) => {
 	const result = {
@@ -78,8 +79,8 @@ export default {
 		if (!interaction.isChatInputCommand() && interaction.type !== InteractionType.ApplicationCommandAutocomplete) return;
 		if (interaction.commandName === path.basename(import.meta.url, '.js')) {
 			const bonusMalus = interaction.options.getInteger('bonus-malus') ?? 0;
-			const roll = client.Common.rollDice(20);
-			const rollBestaetigung = client.Common.rollDice(20);
+			const roll = rollDice(20);
+			const rollBestaetigung = rollDice(20);
 			const eigenschaftData = handleSubcommandEigenschaft({ interaction, character, bonusMalus });
 			const event = {
 				type: 'event',
@@ -97,8 +98,8 @@ export default {
 	},
 	async executeSchip(interaction, eventData, character, client) {
 		const data = { ...eventData };
-		data.roll = client.Common.rollDice(20);
-		data.rollBestaetigung = client.Common.rollDice(20);
+		data.roll = rollDice(20);
+		data.rollBestaetigung = rollDice(20);
 		const embed = createEmbed(data, character);
 		embed.content = 'Schicksalspunkt für Eigenschaftsprobe';
 		await interaction.reply(embed);

@@ -1,5 +1,7 @@
 import { InteractionType, Events } from 'discord.js';
 import path from 'path';
+import { wuerfelWerfen } from '../common/common.js';
+import { persistCharacter } from '../common/persistence.js';
 
 const lepHandlers = {
 	plus: async ({ interaction, character, persistCharacter, result }) => {
@@ -43,8 +45,6 @@ export default {
 	async execute(interaction, character, client) {
 		if (!interaction.isChatInputCommand() && !interaction.type === InteractionType.ApplicationCommandAutocomplete) return;
 		if (interaction.commandName === path.basename(import.meta.url, '.js')) {
-			const wuerfelWerfen = client.Common.wuerfelWerfen;
-			const persistCharacter = client.Persistence.persistCharacter;
 			const wieviel = interaction.options.getString('wieviel')?.trim() ?? '0';
 			let result = 0;
 			if (wieviel && isNaN(wieviel)) {

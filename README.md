@@ -543,6 +543,9 @@ Der `/schip`-Befehl nutzt ebenfalls das letzte passende Event des Charakters aus
 - Modernisierte Codebase
 
 ### Aktueller Stand
+- Service-Locator-Muster (`DiscordClient.Utils`/`client.Utils`) entfernt, direkte Modulimporte etabliert
+- `common/` fachlich aufgeteilt: `search.js`, `embeds.js`, `interactionContext.js`, `effects.js`, `combat.js`, `arrayUtils.js`
+- Legacy-Kompatibilität bereinigt: `common/utils.js` und `common/index.js` entfernt, Architektur-/Lifecycle-/Domain-Doku auf neuen Stand gebracht
 - Logging auf strukturiertes Logger-System mit `LOG_LEVEL`, `LOG_FORMAT` und `traceId`
 - `deploy-commands.js` auf ESM umgestellt
 - `/probe` um Schnell-Buttonleiste (3 Reihen) erweitert; Button-Auswahldialog ist ephemeral

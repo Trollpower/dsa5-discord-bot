@@ -1,5 +1,6 @@
 export const name = 'interactionCreate';
 import { MessageFlags } from 'discord.js';
+import { getChar } from '../common/interactionContext.js';
 import logger from '../common/logger.js';
 import { createQuickButtonRows } from '../events/quick.js';
 import config from '../config.json' with { type: 'json' };
@@ -73,7 +74,7 @@ export async function execute(interaction, DiscordClient) {
 
 		try {
 			// console.log(`${event.name}`);
-			const char = DiscordClient.Utils.getChar(interaction, DiscordClient);
+			const char = getChar(interaction, DiscordClient);
 			logger.debug('interaction.handler.event.execute', {
 				traceId,
 				eventName: event.name,

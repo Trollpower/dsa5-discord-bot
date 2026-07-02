@@ -1,4 +1,5 @@
 import { Events, MessageFlags } from 'discord.js';
+import { createField } from '../common/embeds.js';
 
 import path from 'path';
 import fs from 'node:fs';
@@ -104,7 +105,7 @@ export default {
 				aufrufe = formatCommandDetails(command);
 			}
 
-			embed.fields.push(client.Utils.createField({
+			embed.fields.push(createField({
 				fieldName: `/${command.name}`,
 				fieldValues: [
 					{ key: 'Beschreibung', value: command.description ?? '-' },

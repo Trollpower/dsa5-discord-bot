@@ -252,7 +252,7 @@ Das Modell ist damit nicht nur ein Antwortobjekt für Discord, sondern eine voll
 
 ## Beispiel: Angriff-Event
 
-`events/angriff.js` nutzt Hilfslogik aus `common/utils.js` und erzeugt ein Event mit unter anderem folgenden Feldern:
+`events/angriff.js` nutzt Hilfslogik aus `common/combat.js` und erzeugt ein Event mit unter anderem folgenden Feldern:
 
 - `type: 'event'`
 - `name: 'angriff'`

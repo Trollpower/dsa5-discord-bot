@@ -116,6 +116,16 @@ export default {
 								.setName('charactername')
 								.setDescription('Name des Charakters')
 								.setRequired(true)
-								.setAutocomplete(true)))),
+								.setAutocomplete(true))))
+		.addSubcommand(subcommand =>
+			subcommand
+				.setName('talentwerte')
+				.setDescription('Talentwert einer Fertigkeit für alle Charaktere aus dem Alias anzeigen')
+				.addStringOption(option =>
+					option
+						.setName('fertigkeitsname')
+						.setDescription('Name der Fertigkeit / des Talents')
+						.setRequired(true)
+						.setAutocomplete(true))),
 };
 
