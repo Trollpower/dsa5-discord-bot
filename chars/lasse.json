@@ -36,7 +36,9 @@
         },
         {
             "name": "Schilde",
-            "ktw": 17
+            "ktw": 17,
+            "pa": 12,
+            "paBrutto": 12
         },
         {
             "name": "Schwerter",
@@ -267,7 +269,7 @@
     ],
     "angelegteWaffen": [
         "Sturmspalter",
-        "Uddahjaler Kriegsbeil (Skraja)"
+        "Thorwalerschild"
     ],
     "angelegteRuestung": "Kettenrüstung",
     "ruestungen": [
@@ -322,7 +324,7 @@
             "category": "Ehrenhaftigkeit, Loyalität, Schutz der Schwachen"
         }
     ],
-    "initiative": 19,
+    "initiative": 17,
     "quickProbeFavorites": [
         {
             "type": "ksf",
@@ -339,6 +341,6 @@
         }
     ],
     "cheating": {
-        "general": 20
+        "general": 10
     }
 }
