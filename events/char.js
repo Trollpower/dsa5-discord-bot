@@ -1,7 +1,9 @@
 import { AttachmentBuilder, ButtonBuilder, ActionRowBuilder, ButtonStyle, Events, MessageFlags } from 'discord.js';
 import path from 'path';
 import { waffenData, ruestungenData, fertigkeitenData, liturgienData, ritualeData, zaubermelodienData, elfenliederData, zauberData, segnungenData, hexenfluecheData } from '../data/index.js';
-import Utils from '../common/utils.js';
+import { createEmbedFromCharacter } from '../common/embeds.js';
+import { persistCharacter } from '../common/persistence.js';
+import { highestSimilarity } from '../common/search.js';
 import { getQS } from '../common/common.js';
 import { fillCharacterbogen } from '../tools/fill-characterbogen.js';
 
@@ -16,7 +18,7 @@ const ALL_PROBE_OPTIONS = [
 	...hexenfluecheData,
 ];
 
-const resolveProbeOption = (name, client) => client.Utils.highestSimilarity(
+const resolveProbeOption = (name, client) => highestSimilarity(
 	name,
 	(fert) => ({ name: fert.name, aliases: fert.alias }),
 	ALL_PROBE_OPTIONS,
@@ -94,7 +96,7 @@ const getFavoriteSlotIndex = (subcommand) => {
 const waffenHandlers = {
 	hinzufuegen: async ({ interaction, character, client, persistCharacter }) => {
 		const waffenname = interaction.options.getString('waffenname');
-		const waffe = client.Utils.highestSimilarity(waffenname, weapon => ({ name: weapon.name, aliases: [] }), waffenData);
+		const waffe = highestSimilarity(waffenname, weapon => ({ name: weapon.name, aliases: [] }), waffenData);
 		if (!waffe) return interaction.reply({ content: `Waffe ***${waffenname}*** wurde nicht gefunden` });
 		if (character.waffen.includes(waffe.name)) return interaction.reply({ content: `Du hast die Waffe ***${waffe.name}*** bereits im Inventar` });
 		character.waffen.push(waffe.name);
@@ -128,7 +130,7 @@ const waffenHandlers = {
 const ruestungHandlers = {
 	hinzufuegen: async ({ interaction, character, client, persistCharacter }) => {
 		const rüstungsname = interaction.options.getString('ruestungname');
-		const ruestung = client.Utils.highestSimilarity(rüstungsname, armor => ({ name: armor.name, aliases: [] }), ruestungenData);
+		const ruestung = highestSimilarity(rüstungsname, armor => ({ name: armor.name, aliases: [] }), ruestungenData);
 		if (!ruestung) return interaction.reply({ content: `***${rüstungsname}*** wurde nicht gefunden` });
 		if (character.ruestungen?.includes(ruestung.name)) return interaction.reply({ content: `Du hast die ***${ruestung.name}*** bereits im Inventar` });
 		character.ruestungen = character.ruestungen ?? [];
@@ -172,7 +174,7 @@ const genericHandlers = {
 		return interaction.reply({ content: 'Waffe oder Rüstung', components: [row], fetchReply: true, flags: MessageFlags.Ephemeral });
 	},
 	info: async ({ interaction, character }) => {
-		const result = Utils.createEmbedFromCharacter(character);
+		const result = createEmbedFromCharacter(character);
 		return interaction.reply({ embeds: result, flags: MessageFlags.Ephemeral });
 	},
 	export: async ({ interaction, character }) => {
@@ -251,7 +253,7 @@ const genericHandlers = {
 			};
 		}
 		else if (angriffValue) {
-			const waffenName = client.Utils.highestSimilarity(angriffValue, (weaponName) => ({ name: weaponName, aliases: [] }), character.angelegteWaffen);
+			const waffenName = highestSimilarity(angriffValue, (weaponName) => ({ name: weaponName, aliases: [] }), character.angelegteWaffen);
 			if (!waffenName) {
 				return interaction.reply({ content: `Du hast keine angelegte Waffe '${angriffValue}'.`, flags: MessageFlags.Ephemeral });
 			}
@@ -379,7 +381,6 @@ export default {
 	async execute(interaction, character, client) {
 		if (!interaction.isChatInputCommand()) return;
 		if (interaction.commandName === path.basename(import.meta.url, '.js')) {
-			const persistCharacter = client.Persistence.persistCharacter;
 			return handleSubcommand({ interaction, character, client, persistCharacter });
 		}
 	},

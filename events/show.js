@@ -1,5 +1,7 @@
 import { EmbedBuilder, Events } from 'discord.js';
 import path from 'path';
+import { createField } from '../common/embeds.js';
+import { highestSimilarity } from '../common/search.js';
 import {
 	fertigkeitenData,
 	liturgienData,
@@ -28,7 +30,6 @@ export default {
 	async execute(interaction, character, client) {
 		if (!interaction.isChatInputCommand()) return;
 		if (interaction.commandName === path.basename(import.meta.url, '.js')) {
-			const highestSimilarity = client.Utils.highestSimilarity;
 			const embed = new EmbedBuilder().setColor('#0099ff');
 			const ephemeral = true;
 			const detailName = interaction.options.getString('detailname') ?? 0;
@@ -278,7 +279,7 @@ export default {
 				embed.setTitle(detail.name).setDescription(detail.kategorie);
 				const bestiaryFields = [];
 				detail.typus && bestiaryFields.push({ name: '__**Typus**__', value: '\u200b' + detail.typus, inline: false });
-				bestiaryFields.push(client.Utils.createField(
+				bestiaryFields.push(createField(
 					{
 						fieldName: '🔢__**Eigenschaften**__',
 						fieldValues: [
@@ -295,7 +296,7 @@ export default {
 					},
 				));
 
-				bestiaryFields.push(client.Utils.createField(
+				bestiaryFields.push(createField(
 					{
 						fieldName: '🌡__**Werte**__',
 						fieldValues: [
@@ -312,7 +313,7 @@ export default {
 					},
 				));
 				detail.angriffe && bestiaryFields.push({ name: '__**Angriffe**__', value: '\u200b' });
-				detail.angriffe && bestiaryFields.push(...detail.angriffe.map((a) => client.Utils.createField(
+				detail.angriffe && bestiaryFields.push(...detail.angriffe.map((a) => createField(
 					{
 						fieldName: `${a.name}`,
 						fieldValues: [
@@ -324,28 +325,28 @@ export default {
 						],
 					},
 				), true));
-				detail.talente && bestiaryFields.push(client.Utils.createField(
+				detail.talente && bestiaryFields.push(createField(
 					{
 						fieldName: '💪 Talente',
 						fieldValues: detail.talente.sort((a, b) => a.name.localeCompare(b.name)).map(talent => ({ key: talent.name, value: talent.fertigkeitswert })),
 						isInline: true,
 					},
 				));
-				detail.vorteileNachteile && bestiaryFields.push(client.Utils.createField(
+				detail.vorteileNachteile && bestiaryFields.push(createField(
 					{
 						fieldName: 'Vorteile / Nachteile',
 						fieldValues: detail.vorteileNachteile.sort((a, b) => a.localeCompare(b)).map(vn => ({ key: vn, value: null })),
 						isInline: true,
 					},
 				));
-				detail.sonderfertigkeiten && bestiaryFields.push(client.Utils.createField(
+				detail.sonderfertigkeiten && bestiaryFields.push(createField(
 					{
 						fieldName: 'Sonderfertigkeiten',
 						fieldVaues: detail.sonderfertigkeiten.sort((a, b) => a.localeCompare(b)).map(vn => ({ key: vn, value: null })),
 						isInline: true,
 					},
 				));
-				detail.beute && bestiaryFields.push(client.Utils.createField(
+				detail.beute && bestiaryFields.push(createField(
 					{
 						fieldName: 'Beute',
 						fieldValues: detail.beute.sort((a, b) => a.localeCompare(b)).map(vn => ({ key: vn, value: null })),

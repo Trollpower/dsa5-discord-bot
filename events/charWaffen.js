@@ -1,5 +1,6 @@
 import { ButtonBuilder, ActionRowBuilder, ButtonStyle, Events, MessageFlags } from 'discord.js';
 import path from 'path';
+import { persistCharacter } from '../common/persistence.js';
 
 export default {
 	type: Events.InteractionCreate,
@@ -7,7 +8,6 @@ export default {
 	customIds: ['waffe+', 'waffe-', 'waffe!'],
 	async execute(interaction, character, client) {
 		if (!interaction.isButton()) return;
-		const persistCharacter = client.Persistence.persistCharacter;
 		if (interaction.customId === 'waffe') {
 			const row = new ActionRowBuilder();
 			const waffen = character.waffen ?? [];

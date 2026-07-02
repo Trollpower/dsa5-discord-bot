@@ -128,7 +128,6 @@ Dem Client werden unter anderem folgende Strukturen angehängt:
 - `activeCharactersByUser` für explizit aktivierte Charaktere
 - `temporaryMeisters` für temporäre Meisterrechte
 - `histories` als In-Memory-Ablage laufender Eventdaten
-- `Utils`, `Persistence` und `Common` als gemeinsame Laufzeitmodule
 - `characterConfig` aus `config.json`
 - `eventHistoryProvider` für persistierte Verlaufsdaten
 - `credentials` für späteren Zugriff aus anderen Modulen
@@ -209,7 +208,12 @@ Wichtige Rollen in diesem Verzeichnis:
 - `logger.js`: strukturierte Laufzeitlogs mit `traceId`
 - `persistence.js`: dateibasierte Character- und Konfigurationspersistenz
 - `eventHistoryProvider.js`: persistierte fachliche Verlaufsdaten
-- `utils.js`: Character-Auflösung, Embed-Helfer und wiederverwendete Ausführungslogik
+- `interactionContext.js`: Character-Auflösung aus der Interaction
+- `embeds.js`: wiederverwendete Embed- und Feld-Helfer
+- `search.js`: Similarity-Suche und Kandidatenranking
+- `combat.js`: Kampfnahe Hilfslogik für Angriff und Basismanöver
+- `effects.js`: Vor- und Nachbearbeitung von Proben/Kampfeffekten
+- `arrayUtils.js`: kleine strukturierte Array-Helfer
 - `character.js`: Character-Modell zur Laufzeit
 
 ## Laufzeitfluss
@@ -231,7 +235,7 @@ Ein Modul gilt als passend, wenn mindestens eine der folgenden Bedingungen zutri
 
 ### 3. Character-Auflösung
 
-Vor der fachlichen Ausführung wird über `DiscordClient.Utils.getChar(...)` der aktive Character bestimmt. Diese Auflösung nutzt entweder einen explizit gesetzten aktiven Character oder die Alias-Konfiguration in `config.json`.
+Vor der fachlichen Ausführung wird über `common/interactionContext.js` der aktive Character bestimmt. Diese Auflösung nutzt entweder einen explizit gesetzten aktiven Character oder die Alias-Konfiguration in `config.json`.
 
 ### 4. Fachliche Ausführung
 

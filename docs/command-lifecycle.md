@@ -21,7 +21,7 @@ sequenceDiagram
 	actor User as Discord-Benutzer
 	participant Discord as Discord API
 	participant Handler as handlers/interactionCreate.js
-	participant Utils as common/utils.js
+	participant InteractionContext as common/interactionContext.js
 	participant Event as events/*.js
 	participant Persist as common/persistence.js
 	participant History as eventHistoryProvider
@@ -30,8 +30,8 @@ sequenceDiagram
 	User->>Discord: Slash-Command oder Button auslösen
 	Discord->>Handler: interactionCreate
 	Handler->>Handler: passendes Event-Modul suchen
-	Handler->>Utils: getChar(interaction, client)
-	Utils-->>Handler: Character oder undefined
+	Handler->>InteractionContext: getChar(interaction, client)
+	InteractionContext-->>Handler: Character oder undefined
 	Handler->>Event: execute(interaction, character, client)
 	Event->>Discord: reply() oder followUp()
 	opt Character wurde geändert
@@ -87,7 +87,7 @@ Damit unterstützt das Projekt zwei zentrale Interaktionsarten mit derselben Eve
 
 ## Character-Auflösung
 
-Vor der fachlichen Ausführung löst der Handler den aktuellen Character über `DiscordClient.Utils.getChar(...)` auf.
+Vor der fachlichen Ausführung löst der Handler den aktuellen Character über `common/interactionContext.js` (`getChar`) auf.
 
 Die Reihenfolge ist:
 
@@ -178,7 +178,7 @@ Der konkrete Ablauf eines Probe-Commands ist typischerweise:
 3. Ein Benutzer ruft `/probe` auf.
 4. Discord löst `interactionCreate` aus.
 5. `handlers/interactionCreate.js` findet `events/probe.js`.
-6. `common/utils.js` löst den Character des Benutzers auf.
+6. `common/interactionContext.js` löst den Character des Benutzers auf.
 7. `events/probe.js` liest Optionen und sucht die Fertigkeit in den Regeldaten.
 8. Das Event-Modul erzeugt Embed und Event-Payload.
 9. Die Antwort wird an Discord gesendet.

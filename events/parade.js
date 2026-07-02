@@ -3,6 +3,9 @@ import { waffenData } from '../data/index.js';
 import config from '../config.json' with { type: 'json' };
 const enableGMChanceImprovement = config.enableGMChanceImprovement;
 import path from 'path';
+import { rollDice } from '../common/common.js';
+import { createField } from '../common/embeds.js';
+import { highestSimilarity } from '../common/search.js';
 import logger from '../common/logger.js';
 
 const PARADE_QUICK_CUSTOM_ID_PREFIX = 'parade:quick:';
@@ -10,8 +13,7 @@ const PARADE_QUICK_CUSTOM_ID_PREFIX = 'parade:quick:';
 export { PARADE_QUICK_CUSTOM_ID_PREFIX };
 
 const executeQuickParade = async ({ waffenName, bonusMalus, interaction, character, client }) => {
-	const utils = client.Common;
-	const data = parade(character, waffenName, bonusMalus, utils, client, interaction);
+	const data = parade(character, waffenName, bonusMalus, interaction);
 	const embed = createResultEmbedd(character, data, client);
 	await interaction.reply({ content: 'Parade mit ' + waffenName, embeds: [embed] });
 	return [data];
@@ -44,8 +46,8 @@ export default {
 	},
 	async executeSchip(interaction, eventData, character, client) {
 		const data = { ...eventData };
-		const paRoll = client.Common.rollDice(20);
-		const paRollBestaetigt = client.Common.rollDice(20);
+		const paRoll = rollDice(20);
+		const paRollBestaetigt = rollDice(20);
 		data.roll = paRoll;
 		data.rollBestaetigt = paRollBestaetigt;
 		const result = {
@@ -71,8 +73,8 @@ export default {
 	},
 };
 
-const parade = (character, waffenName, bonusMalus, utils, client, interaction) => {
-	const waffe = client.Utils.highestSimilarity(waffenName, weapon => ({ name: weapon.name, aliases: [] }), waffenData);
+const parade = (character, waffenName, bonusMalus, interaction) => {
+	const waffe = highestSimilarity(waffenName, weapon => ({ name: weapon.name, aliases: [] }), waffenData);
 	let kampffertigkeit = character.kampftechniken.find(k => k.name.toLowerCase() === waffe.technik.toLowerCase());
 	if (!kampffertigkeit) {
 		kampffertigkeit = {
@@ -88,8 +90,8 @@ const parade = (character, waffenName, bonusMalus, utils, client, interaction) =
 	let waffePa = parseInt(waffe.pa);
 	if (waffe.technik === 'Schilde') {waffePa = waffePa * 2;}
 	kampffertigkeit.paBrutto = kampffertigkeit.pa + bonusMalus + waffePa - belastung;
-	let paRoll = utils.rollDice(20);
-	let paRollBestaetigt = utils.rollDice(20);
+	let paRoll = rollDice(20);
+	let paRollBestaetigt = rollDice(20);
 	let gmChanceImproved = false;
 
 	if (enableGMChanceImprovement && interaction?.isMeister()) {
@@ -152,7 +154,7 @@ const createResultEmbedd = (character, data, client, waffe = { ...data }) => {
 	}
 	let waffePa = parseInt(waffe.pa);
 	if (waffe.technik === 'Schilde') {waffePa = waffePa * 2;}
-	const paradeWertField = client.Utils.createField(
+	const paradeWertField = createField(
 		{
 			fieldName: `Paradewert ${data.kampffertigkeit.paBrutto}`,
 			fieldValues: [

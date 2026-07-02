@@ -1,6 +1,7 @@
 import { InteractionType, Events, MessageFlags } from 'discord.js';
 import path from 'path';
 import config from '../config.json' with { type: 'json' };
+import { persistCharacter } from '../common/persistence.js';
 import { persistConfig } from '../common/persistence.js';
 import { resolveFertigkeit, executeProbeAndBuildResponse } from './probe.js';
 import logger from '../common/logger.js';
@@ -163,7 +164,7 @@ export default {
 				const { event, embed } = await executeProbeAndBuildResponse({ fertigkeit, character, bonusMalus, interaction, client });
 				embeds.push({ embed, event });
 				allEvents.push(event);
-				client.Persistence.persistCharacter(character).catch(err => logger.error('gruppe.probe.persist.failed', { error: err, character: charName }));
+				persistCharacter(character).catch(err => logger.error('gruppe.probe.persist.failed', { error: err, character: charName }));
 			}
 			const sortedEmbeds = embeds.sort((a, b) => {
 				const aKrit = a.event?.kritischBestanden ? 1 : 0;

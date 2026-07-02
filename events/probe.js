@@ -2,7 +2,11 @@ import { fertigkeitenData, zauberData, liturgienData, ritualeData, zaubermelodie
 import { Events, MessageFlags } from 'discord.js';
 import path from 'path';
 import { rollDice, getQS } from '../common/common.js';
-import { applyPre, applyPost, mapAtIndices } from '../common/utils.js';
+import { createField } from '../common/embeds.js';
+import { mapAtIndices } from '../common/arrayUtils.js';
+import { applyPre, applyPost } from '../common/effects.js';
+import { persistCharacter } from '../common/persistence.js';
+import { highestSimilarity } from '../common/search.js';
 import logger from '../common/logger.js';
 // import { applyPre, applyPost } from "../common/vorteileNachteileFunctions.js";
 
@@ -38,7 +42,7 @@ const decodeQuickProbePayload = (payload) => {
 	};
 };
 
-export const resolveFertigkeit = (fertigkeitsName, client) => client.Utils.highestSimilarity(
+export const resolveFertigkeit = (fertigkeitsName, client) => highestSimilarity(
 	fertigkeitsName,
 	(fert) => ({ name: fert.name, aliases: fert.alias }),
 	[...fertigkeitenData, ...liturgienData, ...ritualeData, ...zaubermelodienData, ...elfenliederData, ...zauberData],
@@ -66,9 +70,9 @@ export const executeProbeAndBuildResponse = async ({ fertigkeit, character, bonu
 	embed.fields = embed.fields.concat(renderEigenschaften({ event, client }));
 	embed.fields.push({ name: 'Fertigkeitswert', value: event.talent.fertigkeitswert, inline: true });
 	embed.fields.push({ name: 'Fertigkeitspunkte', value: event.fw, inline: true });
-	if (event.bestanden) {embed.fields.push({ name: 'QS', value: client.Common.getQS(event.fw), inline: true });}
+	if (event.bestanden) {embed.fields.push({ name: 'QS', value: getQS(event.fw), inline: true });}
 	if (event.infos) {
-		embed.fields.push(client.Utils.createField(
+		embed.fields.push(createField(
 			{
 				fieldName: 'Infos',
 				fieldValues: event.infos.map(info => ({ key: `**${info.id}**`, value: `\`\`\`${info.text}\`\`\`` })),
@@ -99,7 +103,7 @@ export default {
 			const bonusMalus = quickProbe.bonusMalus ?? 0;
 			const { event, embed } = await executeProbeAndBuildResponse({ fertigkeit, character, bonusMalus, interaction, client });
 			await interaction.reply({ embeds: [embed] });
-			client.Persistence.persistCharacter(character).catch(err => logger.error('probe.persist.failed', { error: err }));
+			persistCharacter(character).catch(err => logger.error('probe.persist.failed', { error: err }));
 			return [event];
 		}
 
@@ -137,7 +141,7 @@ export default {
 
 			const { event, embed } = await executeProbeAndBuildResponse({ fertigkeit, character, bonusMalus, interaction, client });
 			await interaction.reply({ embeds: [embed] });
-			client.Persistence.persistCharacter(character).catch(err => logger.error('probe.persist.failed', { error: err }));
+			persistCharacter(character).catch(err => logger.error('probe.persist.failed', { error: err }));
 			return [event];
 		}
 	},
@@ -190,7 +194,7 @@ export default {
 const renderEigenschaften = ({ event, client }) => {
 	const result = [];
 	event.data.forEach(eigenschaft => {
-		result.push(client.Utils.createField({
+		result.push(createField({
 			fieldName: `${eigenschaft.wurf > eigenschaft.wertbrutto ? '~~' : ''}${eigenschaft.name} ${eigenschaft.wertbrutto}${eigenschaft.wurf > eigenschaft.wertbrutto ? '~~' : ''}`, fieldValues: [
 				{ key: 'Grundwert', value: `${eigenschaft.wert}` },
 				{ key: 'Behinderung', value: `${event.belastung}` },

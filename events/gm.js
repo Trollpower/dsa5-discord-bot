@@ -1,6 +1,18 @@
 import { Events, ActionRowBuilder, ButtonBuilder, ButtonStyle, MessageFlags } from 'discord.js';
 import path from 'path';
 import { getQS } from '../common/common.js';
+import { persistCharacter } from '../common/persistence.js';
+import { highestSimilarity } from '../common/search.js';
+import { fertigkeitenData, liturgienData, ritualeData, zaubermelodienData, elfenliederData, zauberData } from '../data/index.js';
+
+const allFertigkeiten = [
+	...fertigkeitenData,
+	...liturgienData,
+	...ritualeData,
+	...zaubermelodienData,
+	...elfenliederData,
+	...zauberData,
+];
 
 export default {
 	type: Events.InteractionCreate,
@@ -67,8 +79,54 @@ export default {
 			return;
 		}
 
-		const group = interaction.options.getSubcommandGroup();
+		const group = interaction.options.getSubcommandGroup(false);
 		const subcommand = interaction.options.getSubcommand();
+
+		if (!group && subcommand === 'talentwerte') {
+			const fertigkeitsName = interaction.options.getString('fertigkeitsname');
+			const resolved = highestSimilarity(
+				fertigkeitsName,
+				(f) => ({ name: f.name, aliases: f.alias ?? [] }),
+				allFertigkeiten,
+			);
+			const resolvedName = resolved?.name ?? fertigkeitsName;
+
+			const aliasCharNames = [...new Set(Object.values(client.characterConfig.alias ?? {}))];
+			const rows = [];
+			for (const charName of aliasCharNames) {
+				const char = client.characters.find(
+					c => c.name.toLowerCase() === charName.toLowerCase()
+						|| (c.displayName ?? '').toLowerCase() === charName.toLowerCase(),
+				);
+				if (!char) continue;
+				const allCharFertigkeiten = [
+					...(char.talente ?? []),
+					...(char.zauber ?? []),
+					...(char.liturgien ?? []),
+					...(char.rituale ?? []),
+					...(char.zaubermelodien ?? []),
+					...(char.elfenlieder ?? []),
+				];
+				const entry = allCharFertigkeiten.find(
+					t => t.name.toLowerCase() === resolvedName.toLowerCase(),
+				);
+				const fw = entry?.fertigkeitswert;
+				const displayName = char.displayName ?? char.name;
+				rows.push(fw != null ? `**${displayName}**: ${fw}` : `**${displayName}**: –`);
+			}
+
+			if (rows.length === 0) {
+				await interaction.reply({ content: `Keine Alias-Charaktere gefunden.`, flags: MessageFlags.Ephemeral });
+				return;
+			}
+			const embed = {
+				title: `🎯 ${resolvedName}`,
+				description: rows.join('\n'),
+				color: 0x5865F2,
+			};
+			await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
+			return;
+		}
 
 		if (group === 'events') {
 			if (subcommand === 'count') {
@@ -190,7 +248,7 @@ export default {
 			if (subcommand === 'cheating-set') {
 				const wert = interaction.options.getInteger('wert');
 				character.cheating = { ...(character.cheating ?? {}), general: wert };
-				await client.Persistence.persistCharacter(character);
+				await persistCharacter(character);
 				await interaction.reply({
 					content: `**${character.displayName ?? character.name}**: cheating.general auf **${wert}%** gesetzt.`,
 					flags: MessageFlags.Ephemeral,
@@ -201,7 +259,7 @@ export default {
 			if (subcommand === 'cheating-set-crit') {
 				const wert = interaction.options.getInteger('wert');
 				character.cheating = { ...(character.cheating ?? {}), crit: wert };
-				await client.Persistence.persistCharacter(character);
+				await persistCharacter(character);
 				await interaction.reply({
 					content: `**${character.displayName ?? character.name}**: cheating.crit auf **${wert}%** gesetzt.`,
 					flags: MessageFlags.Ephemeral,

@@ -1,5 +1,6 @@
 import { Events, MessageFlags } from 'discord.js';
 import path from 'path';
+import { persistCharacter } from '../common/persistence.js';
 
 export default {
 	type: Events.InteractionCreate,
@@ -7,7 +8,6 @@ export default {
 	name: path.basename(import.meta.url, '.js'),
 	async execute(interaction, character, client) {
 		if (!interaction.isButton()) return;
-		const persistCharacter = client.Persistence.persistCharacter;
 		if (interaction.customId.startsWith('rüstung:')) {
 			const ruestungName = interaction.customId.split(':')[1];
 			character.angelegteRuestung = ruestungName;

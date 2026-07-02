@@ -4858,5 +4858,20 @@
         "at": "2",
         "pa": "0",
         "technik": "Schwanz"
+    },
+    {
+        "name": "Milzenis` gekräuseltes Schamhaar",
+        "tp": "1W6+7",
+        "lz": "1 Aktionen",
+        "rw": "50/100/200",
+        "munition": "Pfeile",
+        "gewicht": "0,5 Stein",
+        "länge": "180 HF",
+        "preis": "400 S",
+        "komplexität": "komp (5 AP)",
+        "gattung": "Bögen",
+        "technik": "Bögen",
+        "at": 2,
+        "hinweis": "Milzenis Haar gilt als magisch und ist somit unzerstörbar. Dies gilt auch für den Bogen den es spannt."
     }
 ]
