@@ -53,7 +53,7 @@ export default {
 				.addSubcommand(subcommand =>
 					subcommand
 						.setName('cheating-set')
-						.setDescription('cheating.general eines Charakters setzen')
+						.setDescription('cheating.general oder cheating.crit eines Charakters setzen')
 						.addStringOption(option =>
 							option
 								.setName('charactername')
@@ -63,9 +63,18 @@ export default {
 						.addIntegerOption(option =>
 							option
 								.setName('wert')
-								.setDescription('Neuer Wert für cheating.general (0–100)')
+								.setDescription('Neuer Wert für den gewählten Cheating-Wert (0–100)')
 								.setMinValue(0)
 								.setMaxValue(100)
+								.setRequired(true))
+						.addStringOption(option =>
+							option
+								.setName('feld')
+								.setDescription('Welcher Cheating-Wert soll gesetzt werden?')
+								.addChoices(
+									{ name: 'general', value: 'general' },
+									{ name: 'crit', value: 'crit' },
+								)
 								.setRequired(true)))
 				.addSubcommand(subcommand =>
 					subcommand

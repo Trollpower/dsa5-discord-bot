@@ -247,10 +247,11 @@ export default {
 
 			if (subcommand === 'cheating-set') {
 				const wert = interaction.options.getInteger('wert');
-				character.cheating = { ...(character.cheating ?? {}), general: wert };
+				const feld = interaction.options.getString('feld') ?? 'general';
+				character.cheating = { ...(character.cheating ?? {}), [feld]: wert };
 				await persistCharacter(character);
 				await interaction.reply({
-					content: `**${character.displayName ?? character.name}**: cheating.general auf **${wert}%** gesetzt.`,
+					content: `**${character.displayName ?? character.name}**: cheating.${feld} auf **${wert}%** gesetzt.`,
 					flags: MessageFlags.Ephemeral,
 				});
 				return;
