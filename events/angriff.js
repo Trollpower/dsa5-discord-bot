@@ -1,19 +1,22 @@
 import { Events, MessageFlags } from 'discord.js';
 import { waffenData } from '../data/index.js';
 import path from 'path';
+import { attack, createResultEmbedFromAttack } from '../common/combat.js';
+import { rollDice } from '../common/common.js';
+import { highestSimilarity } from '../common/search.js';
 
 const ANGRIFF_QUICK_CUSTOM_ID_PREFIX = 'angriff:quick:';
 
 export { ANGRIFF_QUICK_CUSTOM_ID_PREFIX };
 
 const executeQuickAngriff = async ({ waffenName, bonusMalus, interaction, character, client }) => {
-	const waffenNameChar = client.Utils.highestSimilarity(waffenName, (weaponName) => ({ name: weaponName, aliases: [] }), character.angelegteWaffen);
+	const waffenNameChar = highestSimilarity(waffenName, (weaponName) => ({ name: weaponName, aliases: [] }), character.angelegteWaffen);
 	if (!waffenNameChar) {
 		return await interaction.reply({ content: `Du hast keine Waffe mit einem Namen '**${waffenName}**' angelegt`, flags: MessageFlags.Ephemeral });
 	}
-	const waffe = client.Utils.highestSimilarity(waffenNameChar, weapon => ({ name: weapon.name, aliases: [] }), waffenData);
-	const data = client.Utils.attack({ character, waffenName: waffe.name, bonusMalusAngriff: bonusMalus, interaction });
-	const embed = client.Utils.createResultEmbedFromAttack({ character, data, interaction, client });
+	const waffe = highestSimilarity(waffenNameChar, weapon => ({ name: weapon.name, aliases: [] }), waffenData);
+	const data = attack({ character, waffenName: waffe.name, bonusMalusAngriff: bonusMalus, interaction });
+	const embed = createResultEmbedFromAttack({ character, data, interaction, client });
 	await interaction.reply({ content: `Angriff mit ${waffe.name}`, embeds: [embed] });
 	return [data];
 };
@@ -45,9 +48,9 @@ export default {
 	},
 	async executeSchip(interaction, eventData, character, client) {
 		const data = { ...eventData };
-		data.atRoll = client.Common.rollDice(20);
-		data.atBestaetigt = client.Common.rollDice(20);
-		const embed = client.Utils.createResultEmbedFromAttack({ character, data, interaction, client });
+		data.atRoll = rollDice(20);
+		data.atBestaetigt = rollDice(20);
+		const embed = createResultEmbedFromAttack({ character, data, interaction, client });
 		await interaction.reply({ content: 'Schicksalspunkt für Angriff', embeds: [embed] });
 		return [data];
 	},

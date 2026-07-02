@@ -10,7 +10,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 import { Client, GatewayIntentBits, Partials, Collection, BaseInteraction } from 'discord.js';
 import config from './config.json' with { type: 'json' };
 import { EventManager, CharacterManager } from './managers/managers.js';
-import { Utils, Persistence, Common } from './common/index.js';
 import logger from './common/logger.js';
 import { createEventHistoryProvider } from './common/eventHistoryProvider.js';
 
@@ -57,9 +56,6 @@ for (const envVar of requiredEnvVars) {
 	DiscordClient.selectMenus = new Collection();
 	DiscordClient.buttonCommands = new Collection();
 	DiscordClient.modalForms = new Collection();
-	DiscordClient.Utils = Utils;
-	DiscordClient.Persistence = Persistence;
-	DiscordClient.Common = Common;
 	DiscordClient.characterConfig = config;
 	DiscordClient.activeCharactersByUser = new Collection();
 	DiscordClient.temporaryMeisters = new Set();

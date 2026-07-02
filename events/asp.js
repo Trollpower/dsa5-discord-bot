@@ -1,5 +1,7 @@
 import { InteractionType, Events } from 'discord.js';
 import path from 'path';
+import { wuerfelWerfen } from '../common/common.js';
+import { persistCharacter } from '../common/persistence.js';
 
 export default {
 	type: Events.InteractionCreate,
@@ -14,7 +16,7 @@ export default {
 			wieviel = wieviel.trim();
 			let result = 0;
 			if (isNaN(wieviel)) {
-				const wuerfelResult = client.Common.wuerfelWerfen(wieviel);
+				const wuerfelResult = wuerfelWerfen(wieviel);
 				if (isNaN(wuerfelResult?.value)) {
 					return await interaction.reply({ content: `${wieviel} konnte nicht als Würfel oder fester Wert verarbeitet werden` });
 				}
@@ -30,13 +32,13 @@ export default {
 			if (interaction.options.getSubcommand() === 'plus') {
 				character.asp.aktuell += result;
 				if (character.asp.aktuell > character.asp.max) {character.asp.aktuell = character.asp.max;}
-				client.Persistence.persistCharacter(character);
+				persistCharacter(character);
 				return await interaction.reply({ content: `${result} AsP hinzugefügt, jetzt ${character.asp.aktuell}` });
 
 			}
 			else if (interaction.options.getSubcommand() === 'minus') {
 				character.asp.aktuell -= result;
-				client.Persistence.persistCharacter(character);
+				persistCharacter(character);
 				return await interaction.reply({ content: `${result} AsP abgezogen, jetzt ${character.asp.aktuell}` });
 			}
 		}

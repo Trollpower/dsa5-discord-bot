@@ -1,6 +1,10 @@
 import { Events } from 'discord.js';
 import path from 'path';
+import { rollDice } from '../common/common.js';
+import { createField } from '../common/embeds.js';
 import logger from '../common/logger.js';
+import { persistCharacter } from '../common/persistence.js';
+import { highestSimilarity } from '../common/search.js';
 
 const initiativeHandlers = {
 	set: async ({ interaction, client }) => {
@@ -9,12 +13,12 @@ const initiativeHandlers = {
 		}
 		const characterName = interaction.options.getString('charaktername') ?? 0;
 		const initiativeWert = interaction.options.getInteger('wert') ?? 0;
-		const character = client.Utils.highestSimilarity(characterName, (c) => ({ name: c.name, aliases: [] }), client.characters);
+		const character = highestSimilarity(characterName, (c) => ({ name: c.name, aliases: [] }), client.characters);
 		if (!character) {
 			return await interaction.reply({ content: `Charakter ${characterName} nicht gefunden` });
 		}
 		character.initiative = initiativeWert;
-		client.Persistence.persistCharacter(character);
+		persistCharacter(character);
 		await interaction.reply({ content: `Initiative für ${character.displayName ?? character.name} auf ${initiativeWert} gesetzt` });
 	},
 	reset: async ({ interaction, client }) => {
@@ -23,7 +27,7 @@ const initiativeHandlers = {
 		}
 		client.characters.forEach(x => {
 			x.initiative = 0;
-			client.Persistence.persistCharacter(x);
+			persistCharacter(x);
 		});
 		await interaction.reply({ content: 'Initiative für alle zurückgesetzt' });
 	},
@@ -42,7 +46,6 @@ const initiativeHandlers = {
 		await interaction.reply({ embeds: [embed] });
 	},
 	default: async ({ interaction, character, client }) => {
-		const rollDice = client.Common.rollDice;
 		const bonusMalus = interaction.options.getInteger('bonus-malus') ?? 0;
 		const belastung = character.getBelastungsmalus();
 		const mut = character.eigenschaften.MU;
@@ -58,7 +61,7 @@ const initiativeHandlers = {
 		}));
 		const initiative = iniBasiswert + wurf + klingenTaenzerWurf + bonusMalus - belastung;
 		character.initiative = initiative;
-		client.Persistence.persistCharacter(character);
+		persistCharacter(character);
 		const event = {
 			type: 'event',
 			name: 'initiative',
@@ -89,7 +92,7 @@ const initiativeHandlers = {
 		const kampfreflexe = character.sonderfertigkeiten.filter(x => x.name.toUpperCase().indexOf('KAMPFREFLEXE') >= 0);
 		if (kampfreflexe.length > 0) {
 			// if there are any "Verbessertes Ausweichen", render these in the embed
-			embed.fields.push(client.Utils.createField(
+			embed.fields.push(createField(
 				{
 					fieldName: 'Kampfreflexe',
 					fieldValues: kampfreflexe.sort((a, b) => a.name.localeCompare(b.name)).map(talent => ({ key: talent.name })),
@@ -121,11 +124,11 @@ export default {
 	},
 	async executeSchip(interaction, eventData, character, client) {
 		const data = { ...eventData };
-		data.wurf = client.Common.rollDice(6);
+		data.wurf = rollDice(6);
 		data.initiative = data.iniBasiswert + data.wurf + data.bonusMalus;
 
 		character.initiative = data.initiative;
-		client.Persistence.persistCharacter(character);
+		persistCharacter(character);
 
 		const embed = {
 			fields: [],

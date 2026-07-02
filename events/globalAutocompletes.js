@@ -20,7 +20,9 @@ import {
 	pflanzenData,
 	bestiariumData,
 } from '../data/index.js';
+import { basismanoever } from '../common/combat.js';
 import logger from '../common/logger.js';
+import { highestSimilarities } from '../common/search.js';
 
 export default {
 	type: Events.InteractionCreate,
@@ -35,7 +37,7 @@ export default {
 			const isProbeFavoriteSlot = focusedOption.name === 'fertigkeit' && isFavoriteSlot;
 
 			if ((focusedOption.name === 'basismanoever' || focusedOption.name === 'basismanoever2') && isFavoriteSlot) {
-				const bmList = client.Utils.basismanoever()
+				const bmList = basismanoever()
 					.filter(bm => character.sonderfertigkeiten.some(x => x.name === bm.name))
 					.filter(bm => bm.name.toLowerCase().startsWith(focusedOption.value.toLowerCase()));
 				return await interaction.respond(
@@ -148,7 +150,7 @@ export default {
 			}
 
 			if (options.length > 0) {
-				const filtered = client.Utils.highestSimilarities(focusedOption.value, (option) => ({ name: option.name, aliases: [] }), options);
+				const filtered = highestSimilarities(focusedOption.value, (option) => ({ name: option.name, aliases: [] }), options);
 				if (filtered.length > 25) {return;}
 				logger.debug('autocomplete.respond', logger.traceMeta(interaction, {
 					option: focusedOption.name,
