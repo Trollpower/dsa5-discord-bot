@@ -6,8 +6,8 @@
     "sk": 1,
     "gs": 8,
     "cheating": {
-        "general": 20,
-        "crit": 5
+        "general": 25,
+        "crit": 10
     },
     "eigenschaften": {
         "MU": 15,
