@@ -33,7 +33,9 @@
         },
         {
             "name": "Fechtwaffen",
-            "ktw": 15
+            "ktw": 15,
+            "pa": 10,
+            "paBrutto": 9
         }
     ],
     "talente": [
@@ -310,12 +312,12 @@
         }
     ],
     "waffen": [
-        "Milzenis` gekräuseltes Schamhaar",
-        "Herzsucher"
+        "Herzsucher",
+        "Milzenis` gekräuseltes Schamhaar"
     ],
     "ruestungen": [],
     "angelegteWaffen": [
-        "Milzenis` gekräuseltes Schamhaar"
+        "Herzsucher"
     ],
     "nachteile": [
         {
