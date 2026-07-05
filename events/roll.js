@@ -3,6 +3,7 @@ import config from '../config.json' with { type: 'json' };
 const enableGMChanceImprovement = config.enableGMChanceImprovement;
 import path from 'path';
 import logger from '../common/logger.js';
+import { parseWuerfel, wuerfelWerfen, rollDice } from '../common/common.js';
 
 export default {
 	type: Events.InteractionCreate,
@@ -10,11 +11,9 @@ export default {
 	async execute(interaction, character, client) {
 		if (!interaction.isChatInputCommand()) return;
 		if (interaction.commandName === path.basename(import.meta.url, '.js')) {
-			const utils = client.Common;
 			const wuerfel = interaction.options.getString('würfel') ?? 0;
-
-			const parsedRoll = utils.parseWuerfel(wuerfel);
-			const result = utils.wuerfelWerfen(wuerfel);
+			const parsedRoll = parseWuerfel(wuerfel);
+			const result = wuerfelWerfen(wuerfel);
 			logger.debug('roll.command.original-result', logger.traceMeta(interaction, {
 				character: character.displayName ?? character.name,
 				wuerfel,
