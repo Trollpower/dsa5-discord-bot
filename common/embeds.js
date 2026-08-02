@@ -22,6 +22,27 @@ const addSortedListField = (embed, list, fieldName, mapItem, isInline = true) =>
 	}));
 };
 
+const createEmbedFromCalendar = (calendar) => {
+	const embed = {
+		color: 0x0099ff,
+		title: '__**Kalender**__',
+		fields: [],
+	};
+
+	for (const month of calendar ?? []) {
+		embed.fields.push(createField({
+			fieldName: `${(calendar ?? []).indexOf(month) + 1}. ${month.name}`,
+			fieldValues: [
+				{ key: 'irdisch', value: month.irdischeEntsprechung ?? '-' },
+				{ key: 'Tage', value: month.tage ?? '-' },
+			],
+			isInline: true,
+		}));
+	}
+
+	return [embed];
+};
+
 const createEmbedFromCharacter = (character) => {
 	const embed = {
 		color: 0x0099ff,
@@ -90,4 +111,4 @@ const createEmbedFromCharacter = (character) => {
 	return [embed];
 };
 
-export { createField, createEmbedFromCharacter };
+export { createField, createEmbedFromCharacter, createEmbedFromCalendar };
