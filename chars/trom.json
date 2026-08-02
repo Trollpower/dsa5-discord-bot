@@ -13,7 +13,7 @@
         "FF": 14,
         "GE": 17,
         "KO": 14,
-        "KK": 12
+        "KK": 13
     },
     "lep": {
         "aktuell": 36,
@@ -30,7 +30,7 @@
         },
         {
             "name": "Stangenwaffen",
-            "ktw": 18
+            "ktw": 19
         }
     ],
     "talente": [
@@ -44,7 +44,7 @@
         },
         {
             "name": "Boote & Schiffe",
-            "fertigkeitswert": 8
+            "fertigkeitswert": 10
         },
         {
             "name": "Fährtensuchen",
@@ -64,11 +64,11 @@
         },
         {
             "name": "Geographie",
-            "fertigkeitswert": 6
+            "fertigkeitswert": 8
         },
         {
             "name": "Geschichtswissen",
-            "fertigkeitswert": 2
+            "fertigkeitswert": 4
         },
         {
             "name": "Götter & Kulte",
@@ -100,7 +100,7 @@
         },
         {
             "name": "Kriegskunst",
-            "fertigkeitswert": 4
+            "fertigkeitswert": 5
         },
         {
             "name": "Lebensmittelbearbeitung",
@@ -112,7 +112,11 @@
         },
         {
             "name": "Magiekunde",
-            "fertigkeitswert": 5
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Malen & Zeichnen",
+            "fertigkeitswert": 2
         },
         {
             "name": "Menschenkenntnis",
@@ -125,6 +129,10 @@
         {
             "name": "Pflanzenkunde",
             "fertigkeitswert": 10
+        },
+        {
+            "name": "Rechnen",
+            "fertigkeitswert": 2
         },
         {
             "name": "Rechtskunde",
@@ -152,7 +160,7 @@
         },
         {
             "name": "Sphärenkunde",
-            "fertigkeitswert": 1
+            "fertigkeitswert": 2
         },
         {
             "name": "Steinbearbeitung",
@@ -192,6 +200,9 @@
     "sonderfertigkeiten": [
         {
             "name": "Belastungsgewöhnung I"
+        },
+        {
+            "name": "Entwaffnen"
         },
         {
             "name": "Fertigkeitsspezialisierung",

@@ -10,10 +10,10 @@
         "KL": 16,
         "IN": 15,
         "CH": 14,
-        "FF": 12,
+        "FF": 13,
         "GE": 13,
-        "KO": 11,
-        "KK": 11
+        "KO": 13,
+        "KK": 12
     },
     "lep": {
         "aktuell": 30,
@@ -38,7 +38,7 @@
         },
         {
             "name": "Boote & Schiffe",
-            "fertigkeitswert": 3
+            "fertigkeitswert": 5
         },
         {
             "name": "Etikette",
@@ -54,15 +54,15 @@
         },
         {
             "name": "Geographie",
-            "fertigkeitswert": 8
+            "fertigkeitswert": 9
         },
         {
             "name": "Geschichtswissen",
-            "fertigkeitswert": 8
+            "fertigkeitswert": 10
         },
         {
             "name": "Götter & Kulte",
-            "fertigkeitswert": 7
+            "fertigkeitswert": 9
         },
         {
             "name": "Heilkunde Gift",
@@ -89,12 +89,20 @@
             "fertigkeitswert": 10
         },
         {
+            "name": "Kriegskunst",
+            "fertigkeitswert": 2
+        },
+        {
             "name": "Lebensmittelbearbeitung",
             "fertigkeitswert": 1
         },
         {
             "name": "Magiekunde",
             "fertigkeitswert": 13
+        },
+        {
+            "name": "Malen & Zeichnen",
+            "fertigkeitswert": 2
         },
         {
             "name": "Menschenkenntnis",
@@ -110,11 +118,7 @@
         },
         {
             "name": "Rechnen",
-            "fertigkeitswert": 4
-        },
-        {
-            "name": "Rechnen",
-            "fertigkeitswert": 4
+            "fertigkeitswert": 5
         },
         {
             "name": "Reiten",
@@ -122,7 +126,7 @@
         },
         {
             "name": "Sagen & Legenden",
-            "fertigkeitswert": 10
+            "fertigkeitswert": 11
         },
         {
             "name": "Schwimmen",
@@ -137,6 +141,10 @@
             "fertigkeitswert": 5
         },
         {
+            "name": "Sphärenkunde",
+            "fertigkeitswert": 1
+        },
+        {
             "name": "Sternkunde",
             "fertigkeitswert": 1
         },
@@ -147,6 +155,10 @@
         {
             "name": "Überreden",
             "fertigkeitswert": 10
+        },
+        {
+            "name": "Verbergen",
+            "fertigkeitswert": 1
         },
         {
             "name": "Wildnisleben",
@@ -215,8 +227,12 @@
             "fertigkeitswert": 12
         },
         {
+            "name": "Orientierung",
+            "fertigkeitswert": 1
+        },
+        {
             "name": "Paralysis",
-            "fertigkeitswert": 10
+            "fertigkeitswert": 14
         },
         {
             "name": "Respondami",
