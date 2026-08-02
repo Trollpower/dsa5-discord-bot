@@ -163,7 +163,7 @@ const basismanoever = () => {
 		{ name: 'Präziser Schuss/Wurf III', value: 'präziserschuss+3', sfName: 'Präziser Schuss/Wurf I-III', at: 6, tp: 6 },
 		{ name: 'Präziser Stich I', value: 'präziserstich+1', sfName: 'Präziser Stich I-III', at: 1, tp: 0 },
 		{ name: 'Präziser Stich II', value: 'präziserstich+2', sfName: 'Präziser Stich I-III', at: 1, tp: 0 },
-		{ name: 'Präziser SStich III', value: 'präziserstich+3', sfName: 'Präziser Stich I-III', at: 1, tp: 0 },
+		{ name: 'Präziser Stich III', value: 'präziserstich+3', sfName: 'Präziser Stich I-III', at: 1, tp: 0 },
 	];
 };
 

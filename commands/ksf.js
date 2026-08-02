@@ -165,6 +165,23 @@ export default {
 		)
 		.addSubcommand(subcommand =>
 			subcommand
+				.setName('präziserstich')
+				.setDescription('Präziser Stich')
+				.addIntegerOption(option => option.setName('stufe')
+					.setDescription('Die Stufe des Präzisen Stich')
+					.setRequired(true)
+					.addChoices({ name: 'Stufe 1', value: 1 }, { name: 'Stufe 2', value: 2 }, { name: 'Stufe 3', value: 3 }))
+				.addStringOption(option => option
+					.setName('waffenname')
+					.setDescription('Der Name der verwendeten Waffe')
+					.setRequired(true)
+					.setAutocomplete(true))
+				.addIntegerOption(option => option.setName('bonus-malus')
+					.setDescription('Der Bonus oder Malus des Angriffs')
+					.setRequired(false)),
+		)
+		.addSubcommand(subcommand =>
+			subcommand
 				.setName('bk')
 				.setDescription('Beidhändiger Kampf')
 				.addStringOption(option => option

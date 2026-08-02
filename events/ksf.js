@@ -67,6 +67,20 @@ const executeQuickKsf = async ({ subcommand, stufe, basismanoever, character, cl
 		content = formatKsfContent('Präziser Schuss/Wurf', waffenName);
 		break;
 	}
+	case 'präziserstich': {
+		sfName = `Präziser Stich ${numToRoman[stufe]}`;
+		if (!character.sonderfertigkeiten.some(d => d.name === sfName)) {
+			return await interaction.reply({ content: `${sfName} hast du nicht`, flags: MessageFlags.Ephemeral });
+		}
+		const psSf = sonderfertigkeiten.find(x => x.name === 'Präziser Stich I-III');
+		if (psSf?.kampftechniken && !psSf.kampftechniken.includes(waffe.technik)) {
+			return await interaction.reply({ content: `***${sfName}*** kann mit ${waffe.name} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
+		}
+		atMod = -(2 * stufe);
+		tpMod = 2 * stufe;
+		content = formatKsfContent('Präziser Stich', waffenName);
+		break;
+	}
 	case 'sturmangriff': {
 		sfName = 'Sturmangriff';
 		const sf = sonderfertigkeiten.find(x => x.name === sfName);
@@ -327,6 +341,26 @@ export default {
 				const embed = createResultEmbedFromAttack({ character, data, interaction, client });
 
 				await interaction.reply({ content: formatKsfContent('Präziser Schuss/Wurf', waffenName), embeds: [embed] });
+				return [data];
+			}
+			else if (interaction.options.getSubcommand() === 'präziserstich') {
+				const bonusMalus = interaction.options.getInteger('bonus-malus') ?? 0;
+				const stufe = interaction.options.getInteger('stufe') ?? 0;
+				const ps = 'Präziser Stich ' + (stufe === 1 ? 'I' : stufe === 2 ? 'II' : 'III');
+				if (!character.sonderfertigkeiten.some(d => d.name === ps)) {
+					return await interaction.reply({ content: ps + ' hast du nicht' });
+				}
+				const waffenName = interaction.options.getString('waffenname') ?? character.angelegteWaffen[0] ?? 'Waffenlos';
+				const sf = sonderfertigkeiten.find(x => x.name === 'Präziser Stich I-III');
+				if (sf?.kampftechniken && !sf.kampftechniken.includes(waffen.find(x => x.name === waffenName)?.technik)) {
+					return await interaction.reply({ content: `***${ps}*** kann mit ${waffenName} nicht verwendet werden`, flags: MessageFlags.Ephemeral });
+				}
+				const data = attack({ character, waffenName, bonusMalusAngriff: bonusMalus - (2 * stufe), bonusMalusSchaden: 2 * stufe, interaction });
+				data.ksfSubcommand = 'präziserstich'; data.ksfStufe = stufe;
+				data.ksfLabel = ps;
+				const embed = createResultEmbedFromAttack({ character, data, interaction, client });
+
+				await interaction.reply({ content: formatKsfContent('Präziser Stich', waffenName), embeds: [embed] });
 				return [data];
 			}
 			// Sturmangriff kann nicht mit Finte kombiniert werden
