@@ -25,7 +25,7 @@ const addSortedListField = (embed, list, fieldName, mapItem, isInline = true) =>
 const createEmbedFromCalendar = (calendar) => {
 	const embed = {
 		color: 0x0099ff,
-		title: '__**Kalender**__',
+		title: '__**Zwölfgöttlicher Kalender**__',
 		fields: [],
 	};
 
