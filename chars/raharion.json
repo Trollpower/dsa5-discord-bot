@@ -49,7 +49,7 @@
         },
         {
             "name": "Boote & Schiffe",
-            "fertigkeitswert": 8
+            "fertigkeitswert": 9
         },
         {
             "name": "Fährtensuchen",
@@ -61,11 +61,11 @@
         },
         {
             "name": "Geographie",
-            "fertigkeitswert": 6
+            "fertigkeitswert": 8
         },
         {
             "name": "Geschichtswissen",
-            "fertigkeitswert": 3
+            "fertigkeitswert": 5
         },
         {
             "name": "Götter & Kulte",
@@ -97,11 +97,11 @@
         },
         {
             "name": "Kriegskunst",
-            "fertigkeitswert": 2
+            "fertigkeitswert": 4
         },
         {
             "name": "Magiekunde",
-            "fertigkeitswert": 9
+            "fertigkeitswert": 10
         },
         {
             "name": "Mechanik",
@@ -117,7 +117,7 @@
         },
         {
             "name": "Orientierung",
-            "fertigkeitswert": 5
+            "fertigkeitswert": 7
         },
         {
             "name": "Pflanzenkunde",
@@ -125,7 +125,7 @@
         },
         {
             "name": "Rechnen",
-            "fertigkeitswert": 2
+            "fertigkeitswert": 4
         },
         {
             "name": "Rechtskunde",
@@ -137,7 +137,7 @@
         },
         {
             "name": "Sagen & Legenden",
-            "fertigkeitswert": 9
+            "fertigkeitswert": 10
         },
         {
             "name": "Schlösserknacken",
@@ -161,7 +161,7 @@
         },
         {
             "name": "Sphärenkunde",
-            "fertigkeitswert": 1
+            "fertigkeitswert": 2
         },
         {
             "name": "Sternkunde",
@@ -181,7 +181,7 @@
         },
         {
             "name": "Verbergen",
-            "fertigkeitswert": 4
+            "fertigkeitswert": 7
         },
         {
             "name": "Wildnisleben",
@@ -190,6 +190,10 @@
         {
             "name": "Willenskraft",
             "fertigkeitswert": 6
+        },
+        {
+            "name": "Malen & Zeichnen",
+            "fertigkeitswert": 4
         }
     ],
     "zauber": [
@@ -215,7 +219,7 @@
         },
         {
             "name": "Himmelslauf",
-            "fertigkeitswert": 13
+            "fertigkeitswert": 16
         },
         {
             "name": "Krötensprung",
@@ -309,6 +313,15 @@
         },
         {
             "name": "Zauberweber"
+        },
+        {
+            "name": "Kartographie"
+        },
+        {
+            "name": "Verteidigungshaltung"
+        },
+        {
+            "name": "Präziser Stich I"
         }
     ],
     "waffen": [
