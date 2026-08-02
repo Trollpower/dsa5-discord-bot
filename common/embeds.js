@@ -22,19 +22,62 @@ const addSortedListField = (embed, list, fieldName, mapItem, isInline = true) =>
 	}));
 };
 
+const createSpacerField = () => ({
+	name: '\u200b',
+	value: '\u200b',
+	inline: true,
+});
+
 const createEmbedFromCalendar = (calendar) => {
+	const months = Array.isArray(calendar?.monate) ? calendar.monate : [];
 	const embed = {
 		color: 0x0099ff,
-		title: '__**Zwölfgöttlicher Kalender**__',
+		title: '__**Götterlauf**__',
 		fields: [],
 	};
 
-	for (const month of calendar ?? []) {
+	for (const [index, month] of months.entries()) {
 		embed.fields.push(createField({
-			fieldName: `${(calendar ?? []).indexOf(month) + 1}. ${month.name}`,
+			fieldName: `${index + 1}. ${month.name}`,
 			fieldValues: [
 				{ key: 'irdisch', value: month.irdischeEntsprechung ?? '-' },
 				{ key: 'Tage', value: month.tage ?? '-' },
+			],
+			isInline: true,
+		}));
+
+		if (index % 2 === 1) {
+			embed.fields.push(createSpacerField());
+		}
+	}
+
+	const namesloseTage = months.at(-1)?.name === 'Namenlose Tage' ? months.at(-1) : months.find(month => month.name === 'Namenlose Tage');
+	if (namesloseTage) {
+		embed.fields.push(createField({
+			fieldName: '13. Namenlose Tage',
+			fieldValues: [
+				{ key: 'Tage', value: namesloseTage.tage ?? '-' },
+			],
+			isInline: false,
+		}));
+	}
+
+	return [embed];
+};
+
+const createEmbedFromWeekdays = (calendar) => {
+	const weekdays = Array.isArray(calendar?.wochentage) ? calendar.wochentage : [];
+	const embed = {
+		color: 0x0099ff,
+		title: '__**Wochentage**__',
+		fields: [],
+	};
+
+	for (const weekday of weekdays) {
+		embed.fields.push(createField({
+			fieldName: `${weekday.nummer}. ${weekday.name}`,
+			fieldValues: [
+				{ key: 'irdisch', value: weekday.irdischeEntsprechung ?? '-' },
 			],
 			isInline: true,
 		}));
@@ -111,4 +154,4 @@ const createEmbedFromCharacter = (character) => {
 	return [embed];
 };
 
-export { createField, createEmbedFromCharacter, createEmbedFromCalendar };
+export { createField, createEmbedFromCharacter, createEmbedFromCalendar, createEmbedFromWeekdays };

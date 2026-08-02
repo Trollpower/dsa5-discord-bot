@@ -1,66 +1,105 @@
-[
-  {
-    "name": "Praios",
-    "irdischeEntsprechung": "Juli",
-    "tage": 30
-  },
-  {
-    "name": "Rondra",
-    "irdischeEntsprechung": "August",
-    "tage": 30
-  },
-  {
-    "name": "Efferd",
-    "irdischeEntsprechung": "September",
-    "tage": 30
-  },
-  {
-    "name": "Travia",
-    "irdischeEntsprechung": "Oktober",
-    "tage": 30
-  },
-  {
-    "name": "Boron",
-    "irdischeEntsprechung": "November",
-    "tage": 30
-  },
-  {
-    "name": "Hesinde",
-    "irdischeEntsprechung": "Dezember",
-    "tage": 30
-  },
-  {
-    "name": "Firun",
-    "irdischeEntsprechung": "Januar",
-    "tage": 30
-  },
-  {
-    "name": "Tsa",
-    "irdischeEntsprechung": "Februar",
-    "tage": 30
-  },
-  {
-    "name": "Phex",
-    "irdischeEntsprechung": "März",
-    "tage": 30
-  },
-  {
-    "name": "Peraine",
-    "irdischeEntsprechung": "April",
-    "tage": 30
-  },
-  {
-    "name": "Ingerimm",
-    "irdischeEntsprechung": "Mai",
-    "tage": 30
-  },
-  {
-    "name": "Rahja",
-    "irdischeEntsprechung": "Juni",
-    "tage": 30
-  },
-  {
-    "name": "Namenlose Tage",
-    "tage": 5
-  }
-]
+{
+  "monate": [
+    {
+      "name": "Praios",
+      "irdischeEntsprechung": "Juli",
+      "tage": 30
+    },
+    {
+      "name": "Rondra",
+      "irdischeEntsprechung": "August",
+      "tage": 30
+    },
+    {
+      "name": "Efferd",
+      "irdischeEntsprechung": "September",
+      "tage": 30
+    },
+    {
+      "name": "Travia",
+      "irdischeEntsprechung": "Oktober",
+      "tage": 30
+    },
+    {
+      "name": "Boron",
+      "irdischeEntsprechung": "November",
+      "tage": 30
+    },
+    {
+      "name": "Hesinde",
+      "irdischeEntsprechung": "Dezember",
+      "tage": 30
+    },
+    {
+      "name": "Firun",
+      "irdischeEntsprechung": "Januar",
+      "tage": 30
+    },
+    {
+      "name": "Tsa",
+      "irdischeEntsprechung": "Februar",
+      "tage": 30
+    },
+    {
+      "name": "Phex",
+      "irdischeEntsprechung": "März",
+      "tage": 30
+    },
+    {
+      "name": "Peraine",
+      "irdischeEntsprechung": "April",
+      "tage": 30
+    },
+    {
+      "name": "Ingerimm",
+      "irdischeEntsprechung": "Mai",
+      "tage": 30
+    },
+    {
+      "name": "Rahja",
+      "irdischeEntsprechung": "Juni",
+      "tage": 30
+    },
+    {
+      "name": "Namenlose Tage",
+      "tage": 5
+    }
+  ],
+  "wochentage": [
+    {
+      "name": "Windstag",
+      "irdischeEntsprechung": "Dienstag",
+      "nummer": 1
+    },
+    {
+      "name": "Erdstag",
+      "irdischeEntsprechung": "Mittwoch",
+      "nummer": 2
+    },
+    {
+      "name": "Markttag",
+      "irdischeEntsprechung": "Donnerstag",
+      "nummer": 3
+    },
+    {
+      "name": "Praiostag",
+      "irdischeEntsprechung": "Freitag",
+      "nummer": 4
+    },
+    {
+      "name": "Rohalstag",
+      "irdischeEntsprechung": "Samstag",
+      "nummer": 5
+    },
+    {
+      "name": "Feuertag",
+      "irdischeEntsprechung": "Sonntag",
+      "nummer": 6
+    },
+    {
+      "name": "Wassertag",
+      "irdischeEntsprechung": "Montag",
+      "nummer": 7
+    }
+  ]
+}

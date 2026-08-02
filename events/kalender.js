@@ -1,21 +1,21 @@
 import { EmbedBuilder, Events, MessageFlags } from 'discord.js';
 import path from 'path';
-import { createEmbedFromCalendar } from '../common/embeds.js';
+import { createEmbedFromCalendar, createEmbedFromWeekdays } from '../common/embeds.js';
 import kalender from '../data/kalender.json' with { type: 'json' };
 
-const monthIndexByName = new Map(kalender.map((month, index) => [month.name, index]));
-const yearLength = kalender.reduce((sum, month) => sum + (month.tage ?? 0), 0);
+const monthIndexByName = new Map(kalender.monate.map((month, index) => [month.name, index]));
+const yearLength = kalender.monate.reduce((sum, month) => sum + (month.tage ?? 0), 0);
 
-const getMonthByName = (monthName) => kalender[monthIndexByName.get(monthName)];
+const getMonthByName = (monthName) => kalender.monate[monthIndexByName.get(monthName)];
 
 const getOrdinal = (day, monthName) => {
 	const monthIndex = monthIndexByName.get(monthName);
 	if (monthIndex === undefined) return null;
 
-	const month = kalender[monthIndex];
+	const month = kalender.monate[monthIndex];
 	if (!month?.tage || day < 1 || day > month.tage) return null;
 
-	const daysBeforeMonth = kalender
+	const daysBeforeMonth = kalender.monate
 		.slice(0, monthIndex)
 		.reduce((sum, currentMonth) => sum + (currentMonth.tage ?? 0), 0);
 
@@ -58,8 +58,13 @@ export default {
 		if (interaction.commandName !== path.basename(import.meta.url, '.js')) return;
 
 		const subcommand = interaction.options.getSubcommand();
-		if (subcommand === 'show') {
+		if (subcommand === 'monate') {
 			await interaction.reply({ embeds: createEmbedFromCalendar(kalender) });
+			return;
+		}
+
+		if (subcommand === 'woche') {
+			await interaction.reply({ embeds: createEmbedFromWeekdays(kalender) });
 			return;
 		}
 
