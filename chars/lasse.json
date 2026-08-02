@@ -68,7 +68,7 @@
         },
         {
             "name": "Boote & Schiffe",
-            "fertigkeitswert": 9
+            "fertigkeitswert": 11
         },
         {
             "name": "Einschüchtern",
@@ -92,11 +92,11 @@
         },
         {
             "name": "Geographie",
-            "fertigkeitswert": 7
+            "fertigkeitswert": 9
         },
         {
             "name": "Geschichtswissen",
-            "fertigkeitswert": 5
+            "fertigkeitswert": 7
         },
         {
             "name": "Götter & Kulte",
@@ -132,6 +132,10 @@
         },
         {
             "name": "Magiekunde",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Malen & Zeichnen",
             "fertigkeitswert": 4
         },
         {
@@ -140,11 +144,11 @@
         },
         {
             "name": "Orientierung",
-            "fertigkeitswert": 7
+            "fertigkeitswert": 8
         },
         {
             "name": "Rechnen",
-            "fertigkeitswert": 4
+            "fertigkeitswert": 5
         },
         {
             "name": "Rechtskunde",
@@ -156,7 +160,7 @@
         },
         {
             "name": "Sagen & Legenden",
-            "fertigkeitswert": 8
+            "fertigkeitswert": 11
         },
         {
             "name": "Schwimmen",
@@ -172,7 +176,7 @@
         },
         {
             "name": "Sphärenkunde",
-            "fertigkeitswert": 1
+            "fertigkeitswert": 2
         },
         {
             "name": "Sternkunde",
@@ -184,7 +188,11 @@
         },
         {
             "name": "Überreden",
-            "fertigkeitswert": 3
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Verbergen",
+            "fertigkeitswert": 1
         },
         {
             "name": "Wildnisleben",
@@ -241,6 +249,9 @@
         },
         {
             "name": "Kampf im Wasser"
+        },
+        {
+            "name": "Kartographie"
         },
         {
             "name": "Ortskenntnis"
