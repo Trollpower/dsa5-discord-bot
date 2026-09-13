@@ -13,7 +13,7 @@
         "FF": 13,
         "GE": 13,
         "KO": 13,
-        "KK": 12
+        "KK": 13
     },
     "lep": {
         "aktuell": 30,
@@ -162,6 +162,10 @@
         },
         {
             "name": "Wildnisleben",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Willenskraft",
             "fertigkeitswert": 3
         },
         {
