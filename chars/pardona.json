@@ -1,0 +1,398 @@
+{
+    "name": "Pardona",
+    "displayName": "Pardona",
+    "wesenszug": "Oberste Legatin des Namenlosen",
+    "zk": 0,
+    "sk": 2,
+    "gs": 8,
+    "eigenschaften": {
+        "MU": 16,
+        "KL": 20,
+        "IN": 18,
+        "CH": 20,
+        "FF": 18,
+        "GE": 18,
+        "KO": 18,
+        "KK": 14
+    },
+    "lep": {
+        "aktuell": 30,
+        "max": 30
+    },
+    "asp": {
+        "aktuell": 50,
+        "max": 50
+    },
+    "kampftechniken": [
+        {
+            "name": "Waffenlos",
+            "ktw": 18,
+            "pa": 14,
+            "paBrutto": 14
+        }
+    ],
+    "talente": [
+        {
+            "name": "Alchimie",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Boote & Schiffe",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Etikette",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Fährtensuche",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Gassenwissen",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Geographie",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Geschichtswissen",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Götter & Kulte",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Heilkunde Gift",
+            "fertigkeitswert": 6
+        },
+        {
+            "name": "Heilkunde Krankheiten",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Heilkunde Wunden",
+            "fertigkeitswert": 9
+        },
+        {
+            "name": "Holzbearbeitung",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Klettern",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Körperbeherrschung",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Kriegskunst",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Lebensmittelbearbeitung",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Magiekunde",
+            "fertigkeitswert": 13
+        },
+        {
+            "name": "Malen & Zeichnen",
+            "fertigkeitswert": 2
+        },
+        {
+            "name": "Menschenkenntnis",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Musizieren",
+            "fertigkeitswert": 12
+        },
+        {
+            "name": "Orientierung",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Pflanzenkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Rechnen",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Reiten",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Sagen & Legenden",
+            "fertigkeitswert": 11
+        },
+        {
+            "name": "Schwimmen",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Selbstbeherrschung",
+            "fertigkeitswert": 8
+        },
+        {
+            "name": "Sinnesschärfe",
+            "fertigkeitswert": 5
+        },
+        {
+            "name": "Sphärenkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Sternkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Tierkunde",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Überreden",
+            "fertigkeitswert": 10
+        },
+        {
+            "name": "Verbergen",
+            "fertigkeitswert": 1
+        },
+        {
+            "name": "Wildnisleben",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Willenskraft",
+            "fertigkeitswert": 3
+        },
+        {
+            "name": "Zechen",
+            "fertigkeitswert": 2
+        }
+    ],
+    "zauber": [
+        {
+            "name": "Affenruf",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Angst auslösen",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Armatrutz",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Axxeleratus",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Corpofrigo",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Dämonisches Vergessen",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Disruptivo",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Dunkelheit",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Duplicatus",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Ecliptifactus",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Eispfeil",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Eiswand",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Eulenruf",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Firnlauf",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Fledermausruf",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Fortifex",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Frigifaxius",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Frigisphaero",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Frostleib",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Gardianum",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Herzschlag ruhe",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Hornissenruf",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Invercano",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Katzenruf",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Krabbelnder Schrecken",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Krähenruf",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Last des Alters",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Pandaemonium",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Paralysis",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Pestodem",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Plumbumbarum",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Schlangenruf",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Skelettarius",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Spinnenruf",
+            "fertigkeitswert": 20
+        },
+        {
+            "name": "Transversalis",
+            "fertigkeitswert": 20
+        }
+    ],
+    "liturgien": [],
+    "rituale": [
+        {
+            "name": "Ruhe Körper",
+            "fertigkeitswert": 10
+        }
+    ],
+    "sonderfertigkeiten": [
+        {
+            "name": "Lieblingszauber",
+            "referenz": "Paralysis"
+        },
+        {
+            "name": "Magischer Schutzschild"
+        }
+    ],
+    "angelegteWaffen": [
+        "Streitkolben"
+    ],
+    "waffen": [
+        "Streitkolben"
+    ],
+    "vorteile": [
+        {
+            "name": "Adel I"
+        },
+        {
+            "name": "Hohe Astralkraft"
+        },
+        {
+            "name": "Vebesserte Regeneration I",
+            "category": "Astralenergie"
+        },
+        {
+            "name": "Vebesserte Regeneration II",
+            "category": "Astralenergie"
+        },
+        {
+            "name": "Vebesserte Regeneration III",
+            "category": "Astralenergie"
+        },
+        {
+            "name": "Verhüllte Aura"
+        },
+        {
+            "name": "Zauberer"
+        }
+    ],
+    "nachteile": [
+        {
+            "name": "Persönlichkeitsschwäche",
+            "category": "Verwöhnt"
+        },
+        {
+            "name": "Prinzipientreue I",
+            "category": "Loyalität, Schutz der Gefährten, Hilfe für Kranke"
+        },
+        {
+            "name": "Prinzipientreue II",
+            "category": "Loyalität, Schutz der Gefährten, Hilfe für Kranke"
+        },
+        {
+            "name": "Verpflichtung I",
+            "category": "Akademie"
+        }
+    ],
+    "initiative": 16,
+    "quickProbeFavorites": [
+        {
+            "category": "zauber",
+            "name": "Paralysis",
+            "label": "paralys"
+        },
+        null,
+        null
+    ]
+}

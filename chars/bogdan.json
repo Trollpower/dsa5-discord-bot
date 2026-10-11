@@ -113,6 +113,10 @@
             "fertigkeitswert": 12
         },
         {
+            "name": "Orientierung",
+            "fertigkeitswert": 1
+        },
+        {
             "name": "Pflanzenkunde",
             "fertigkeitswert": 1
         },
@@ -229,10 +233,6 @@
         {
             "name": "Odem Arcanum",
             "fertigkeitswert": 12
-        },
-        {
-            "name": "Orientierung",
-            "fertigkeitswert": 1
         },
         {
             "name": "Paralysis",
