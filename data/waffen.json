@@ -4873,5 +4873,39 @@
         "technik": "Bögen",
         "at": 2,
         "hinweis": "Milzenis Haar gilt als magisch und ist somit unzerstörbar. Dies gilt auch für den Bogen den es spannt."
+    },
+    {
+        "name": "Karmoth-Axt",
+        "tp": "2W6+18",
+        "l+s": "KK 14",
+        "at/pa-mod": "0/-1",
+        "rw": "mittel",
+        "gewicht": "1,5 Stein",
+        "länge": "100 HF",
+        "preis": "105 S",
+        "komplexität": "einf",
+        "gattung": "Hiebwaffen",
+        "at": "0",
+        "pa": "-1",
+        "leit": "KK",
+        "schwelle": "14",
+        "technik": "Hiebwaffen"
+    },
+    {
+        "name": "Karmoth-Schwert",
+        "tp": "2W6+14",
+        "l+s": "GE/KK 15",
+        "at/pa-mod": "-1/-1",
+        "rw": "mittel",
+        "gewicht": "1,5 Stein",
+        "länge": "90 HF",
+        "preis": "140 S",
+        "komplexität": "einf",
+        "gattung": "Schwerter",
+        "at": "-1",
+        "pa": "-1",
+        "leit": "GE/KK",
+        "schwelle": "15",
+        "technik": "Schwerter"
     }
 ]

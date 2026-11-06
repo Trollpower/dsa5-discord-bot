@@ -1,0 +1,99 @@
+{
+   "name": "Kazak",
+   "displayName": "Kazak watet-in-Blut",
+   "wesenszug": "",
+   "gs": 10,
+   "zk": 12,
+   "sk": 9,
+   "cheating": {
+      "general": 59,
+      "crit": 15
+   },
+   "eigenschaften": {
+      "MU": 24,
+      "KL": 10,
+      "IN": 14,
+      "CH": 14,
+      "FF": 12,
+      "GE": 17,
+      "KO": 40,
+      "KK": 36
+   },
+   "lep": {
+      "aktuell": 700,
+      "max": 700
+   },
+   "kampftechniken": [
+      {
+         "name": "Raufen",
+         "ktw": 21
+      },
+      {
+         "name": "Hiebwaffen",
+         "ktw": 18
+      },
+      {
+         "name": "Schwerter",
+         "ktw": 18
+      }
+   ],
+   "talente": [
+      {
+         "name": "Körperbeherrschung",
+         "fertigkeitswert": 18
+      },
+      {
+         "name": "Sinnesschärfe",
+         "fertigkeitswert": 20
+      }
+   ],
+   "zauber": [],
+   "liturgien": [],
+   "sonderfertigkeiten": [
+      {
+         "name": "Feindgespür"
+      },
+      {
+         "name": "Kampfreflexe I"
+      },
+      {
+         "name": "Kampfreflexe II"
+      },
+      {
+         "name": "Kampfreflexe III"
+      },
+      {
+         "name": "Klingentänzer"
+      },
+      {
+         "name": "Meisterlicher Klingentänzer"
+      },
+      {
+         "name": "Meisterliches Ausweichen"
+      },
+      {
+         "name": "Verbessertes Ausweichen I"
+      },
+      {
+         "name": "Verbessertes Ausweichen II"
+      },
+      {
+         "name": "Verbessertes Ausweichen III"
+      }
+   ],
+   "ruestungen": [],
+   "waffen": [
+      "Karmoth-Axt",
+      "Karmoth-Schwert"
+   ],
+   "angelegteWaffen": [
+      "Karmoth-Axt",
+      "Karmoth-Schwert"
+   ],
+   "initiative": 33,
+   "quickProbeFavorites": [
+      null,
+      null,
+      null
+   ]
+}
